@@ -1,0 +1,11 @@
+{
+  "name": "Vortex Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://vortex.towerstats.com/*"],
+      "css": ["custom-style.css"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+body{
+    background: rgb(27, 26, 26) !important;
+    color: white;
+}
+
+button, input{
+    background: rgb( 53, 53, 56) !important;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 0px !important;
+}
+
+#username, #password{
+    border: 0px !important;
+    color: white;
+}
+
+.logo, .wrap h1, .link-row{
+    text-align: center;
+}
+
+.link-row a{
+   color: white !important;
+}
+
+.friend-name{
+   color: white !important;
+}
+
+.profile-stat strong{
+   color: white !important;
+}
+
+.navbar{
+   color: white !important;
+   background-color: rgb(27, 26, 26) !important;
+}
+
+.navbar-logo{
+   color: white !important;
+   background-color: rgb(27, 26, 26) !important;
+}
+
+.body{
+   border-top-color: 1px solid rgb(65, 65, 65) !important;
+    border-bottom-color: 1px solid rgb(65, 65, 65) !important;
+     border-right-color: 1px solid rgb(65, 65, 65) !important;
+      border-left-color: 1px solid rgb(65, 65, 65) !important;
+}
+
+.field label:hover{
+   font-size: 15px !important;
+   transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.link-row a:hover, button:hover{
+   color: rgb(139, 139, 139) !important;
+   transition: 0.3s;
+}
+
+h1,h2,h3,h4,h5,h6,p,strong,div,label, input{
+    color: white;
+}
