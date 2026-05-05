@@ -18,6 +18,25 @@
       "js": [
         "content.js"
       ]
+    },
+    {
+      "matches": [
+        "https://vortex.towerstats.com/*"
+      ],
+      "js": [
+        "injectShader.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/Shader.js"
+      ],
+      "matches": [
+        "https://vortex.towerstats.com/*"
+      ]
     }
   ],
   "permissions": [
