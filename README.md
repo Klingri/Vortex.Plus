@@ -3,7 +3,7 @@ This is a chrome extension or general extension for the platform "Vortex".
 https://discord.gg/kedeZpj8eN The Official Vortex Plus Discord Server.
 
 # How To Install
-#### 1. Download the "custom-style.css" file and the "manifest.json" and "content.js" file
+#### 1. Download the necessary files, those that aren't .txt, .md or other file formats except .js, .css and .html which you need.
 #### 1.5 Or you can just download the files in the latest release or zip folder and click unload in the extensions management.
 #### 2. Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
 #### 3. Click "Enable Developer Mode"
