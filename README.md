@@ -1,6 +1,7 @@
 # Vortex+
 This is a chrome or general extension for the platform "Vortex".
 Credits to Enk for the player list.
+Credits to SlimeKing for the shaders.
 https://discord.gg/kedeZpj8eN discord server
 
 # How To Install
