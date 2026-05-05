@@ -1,5 +1,6 @@
 # Vortex+
 This is a chrome or general extension for the platform "Vortex".
+https://discord.gg/kedeZpj8eN discord server
 
 # How To Install
 # 1. Download the "custom-style.css" file and the "manifest.json" file.
