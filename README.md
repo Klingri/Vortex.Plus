@@ -3,10 +3,10 @@ This is a chrome or general extension for the platform "Vortex".
 https://discord.gg/kedeZpj8eN discord server
 
 # How To Install
-## 1. Download the "custom-style.css" file and the "manifest.json" file.
-## 2. Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
-## 3. Click "Enable Developer Mode"
-## 4. Click "Load Unpacked" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
+### 1. Download the "custom-style.css" file and the "manifest.json" file.
+### 2. Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
+### 3. Click "Enable Developer Mode"
+### 4. Click "Load Unpacked" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
 
 # Known Issues
 The extension doesn't update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
