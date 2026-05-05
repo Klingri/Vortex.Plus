@@ -6,6 +6,10 @@
     {
       "matches": ["https://vortex.towerstats.com/*"],
       "css": ["custom-style.css"]
+    },
+    {
+      "matches": ["https://vortex.towerstats.com/search*"],
+      "js": ["content.js"]
     }
   ]
 }
