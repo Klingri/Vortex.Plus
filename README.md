@@ -17,10 +17,33 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 #### Q: How Can I suggest Feedback or report a bug?
 #### A: Message me on discord my username is "Klingri" or you can talk to me on the Vortex discord server.
 
+# Our Current Priorities
+- Improve Performance
+- Improve Security
+- Improve Optimization
+- Improve Modularity
+- Improve Scalability
+- Improve Documentation
+- Make things more Convinent
+- Improve Customization
+- Improve Code
+- Improve reliability
+- Improve Compatibility
+- Fix Bugs
+- Add New Features
+
+# Planned Updates
+- Auto updating the Extension.
+- Adding Notes
+- Adding More Statistics
+
 # Credits
 - Enk for the Revamped Player List.
 - Slime King for the Shaders.
 - And You The Community for Supporting me and using this extension.
+  
+# License
+- This repository uses the MIT LICENSE, Read the License for mroe Information.
 
 # Version History
 - Version 1.0 (05.05.2026) Initial release, only Dark Mode is present.
