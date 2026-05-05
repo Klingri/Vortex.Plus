@@ -19,3 +19,4 @@ It only has dark mode for now, and it's in the very early stages of development 
 
 # Version History
 ## Version 1.0 (05.05.2026) Initial release, only Dark Mode is present.
+## Version 1.1 (05.05.2026) Added A Better Player List created by Enk.
