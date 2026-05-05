@@ -3,11 +3,11 @@ Vortex+ is a chrome extension or general extension for the platform "Vortex".
 https://discord.gg/kedeZpj8eN The Official Vortex Plus Discord Server.
 
 # How To Install
-- 1. Download the necessary files, those that aren't .txt, .md or other file formats except .js, .css and .html which you need.
-- 1.5 Or you can just download the files in the latest release or zip folder and click unload in the extensions management.
-- 2. Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
-- 3. Click "Enable Developer Mode"
-- 4. Click "Load Unpacked" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
+- Download the necessary files, those that aren't .txt, .md or other file formats except .js, .css and .html which you need.
+- Or you can just download the files in the latest release or zip folder and click unload in the extensions management.
+- Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
+- Click "Enable Developer Mode"
+- Click "Load Unpacked" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
 
 # Known Issues
 The Vortex+ Extension doesn't update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
