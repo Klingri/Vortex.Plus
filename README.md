@@ -4,7 +4,7 @@ Credits to Enk for the player list.
 https://discord.gg/kedeZpj8eN discord server
 
 # How To Install
-### 1. Download the "custom-style.css" file and the "manifest.json" file.
+### 1. Download the "custom-style.css" file and the "manifest.json" and "content.js" file.
 ### 2. Go To CHROME//EXTENSIONS Management and NOT THE CHROME WEB STORE.
 ### 3. Click "Enable Developer Mode"
 ### 4. Click "Load Unpacked" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
