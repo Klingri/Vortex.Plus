@@ -1,3 +1,4 @@
+// Created by Enk
 (async function listUsersInfiniteScroll() {
     async function userExists(id) {
         const res = await fetch(`/api/users/${id}`);

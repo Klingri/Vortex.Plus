@@ -1,3 +1,4 @@
+// Made by Klingri
 document.getElementById('colorWheel').addEventListener('input', (event) => {
   const color = event.target.value;
 

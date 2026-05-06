@@ -1,5 +1,6 @@
+// Made by Slime King
 (() => {
-  const scriptURL = chrome.runtime.getURL('js/Shader.js');
+  const scriptURL = chrome.runtime.getURL('scripts/features/shaders.js');
   if (document.querySelector(`script[src="${scriptURL}"]`)) return;
 
   const script = document.createElement('script');

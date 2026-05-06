@@ -9,9 +9,11 @@
 //==/UserScript==
 
 //Good luck
+// Made by Slime King
 //Btw I had Co-Pilot help me with ts math portions at some points, not a guy willing to be doing math first thing in the morning
 
-(function () {'use strict';
+(function () {
+    'use strict';
     const page = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
     const AUTO_ENABLE = true; //Might want this on lowky
     const TOGGLE_KEY = 'F7'; //This key will toggle the shader
@@ -26,26 +28,33 @@
     const MAX_SCENE_EXPOSURE = 0.72;
     const MIN_SCENE_EXPOSURE = 0.90;
     function log(...args) {
-        console.info('Raytracing or DLSS 3.5?', ...args);}
+        console.info('Raytracing or DLSS 3.5?', ...args);
+    }
     function isTypingTarget(target) {
         if (!target) return false;
         const tag = (target.tagName || '').toLowerCase();
-        return tag === 'input' || tag === 'textarea' || target.isContentEditable;}
+        return tag === 'input' || tag === 'textarea' || target.isContentEditable;
+    }
     //Patience is key
     function waitForVortex() {
         const started = Date.now();
         return new Promise((resolve, reject) => {
-            const timer = page.setInterval(() => {const ready = page.THREE && page.THREE.WebGLRenderer && page._vortex && page._vortex.scene && page._vortex.getCamera;
-                if (ready) {page.clearInterval(timer); resolve(); return;}
-                if (Date.now() - started > MAX_WAIT_MS) {page.clearInterval(timer);reject(new Error('Ts wont load scene.'));}}, POLL_MS);});}
+            const timer = page.setInterval(() => {
+                const ready = page.THREE && page.THREE.WebGLRenderer && page._vortex && page._vortex.scene && page._vortex.getCamera;
+                if (ready) { page.clearInterval(timer); resolve(); return; }
+                if (Date.now() - started > MAX_WAIT_MS) { page.clearInterval(timer); reject(new Error('Ts wont load scene.')); }
+            }, POLL_MS);
+        });
+    }
     //Unironically installs the shader to the game
-    function installShader() {const THREE = page.THREE; const vortex = page._vortex; const scene = vortex.scene;
-        if (!THREE || !vortex || !scene) {return { ok: false, reason: 'Scene not done.' };}
-        if (page.VortexRaytraceShader && page.VortexRaytraceShader.dispose) {page.VortexRaytraceShader.dispose();}
+    function installShader() {
+        const THREE = page.THREE; const vortex = page._vortex; const scene = vortex.scene;
+        if (!THREE || !vortex || !scene) { return { ok: false, reason: 'Scene not done.' }; }
+        if (page.VortexRaytraceShader && page.VortexRaytraceShader.dispose) { page.VortexRaytraceShader.dispose(); }
         const rendererProto = THREE.WebGLRenderer.prototype; const baseRender = rendererProto.__vortexRaytraceBaseRender || rendererProto.render;
         rendererProto.__vortexRaytraceBaseRender = baseRender;
         const postScene = new THREE.Scene(); const postCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1); const planeGeo = THREE.PlaneBufferGeometry ? new THREE.PlaneBufferGeometry(2, 2) : new THREE.PlaneGeometry(2, 2);
-        const uniforms = {tDiffuse: { value: null }, time: { value: 0 }, resolution: { value: new THREE.Vector2(1, 1) }, cameraPos: { value: new THREE.Vector3() }, projectionInv: { value: new THREE.Matrix4() }, cameraWorld: { value: new THREE.Matrix4() }, sunDir: { value: new THREE.Vector3(0.42, 0.78, 0.32).normalize() }, moonDir: { value: new THREE.Vector3(-0.42, -0.78, -0.32).normalize() }, dayAmount: { value: 1 }, twilightAmount: { value: 0 },};
+        const uniforms = { tDiffuse: { value: null }, time: { value: 0 }, resolution: { value: new THREE.Vector2(1, 1) }, cameraPos: { value: new THREE.Vector3() }, projectionInv: { value: new THREE.Matrix4() }, cameraWorld: { value: new THREE.Matrix4() }, sunDir: { value: new THREE.Vector3(0.42, 0.78, 0.32).normalize() }, moonDir: { value: new THREE.Vector3(-0.42, -0.78, -0.32).normalize() }, dayAmount: { value: 1 }, twilightAmount: { value: 0 }, };
         const vertexShader = `varying vec2 vUv; void main() {vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0);}`;
         const fragmentShader = `precision highp float; uniform sampler2D tDiffuse; uniform vec2 resolution; uniform float time; uniform vec3 cameraPos; uniform mat4 projectionInv; uniform mat4 cameraWorld; uniform vec3 sunDir; uniform vec3 moonDir; uniform float dayAmount; uniform float twilightAmount;
             varying vec2 vUv;
@@ -82,7 +91,7 @@
                 col = mix(vec3(gray), col, saturation); col *= mix(${MIN_SCENE_EXPOSURE.toFixed(2)}, ${MAX_SCENE_EXPOSURE.toFixed(2)}, dayAmount);
                 float grain = hash(uv * resolution + time * 71.0) - 0.5;
                 col += grain * mix(0.012, 0.006, dayAmount); gl_FragColor = vec4(sat3(col), 1.0);}`;
-        const postMaterial = new THREE.ShaderMaterial({ uniforms, vertexShader, fragmentShader, depthTest: false, depthWrite: false,});
+        const postMaterial = new THREE.ShaderMaterial({ uniforms, vertexShader, fragmentShader, depthTest: false, depthWrite: false, });
         postScene.add(new THREE.Mesh(planeGeo, postMaterial));
         let target = null;
         let inPost = false;
@@ -94,22 +103,30 @@
         let upgradedMaterials = 0;
         let frameIndex = 0;
         const originalSceneAdd = scene.add;
-        function setMatrixInverse(out, matrix) {if (out.copy && out.invert) return out.copy(matrix).invert(); if (out.getInverse) return out.getInverse(matrix); return out.copy(matrix);}
-        function ensureTarget(renderer) {const size = renderer.getDrawingBufferSize ? renderer.getDrawingBufferSize(new THREE.Vector2()) : renderer.getSize(new THREE.Vector2());
+        function setMatrixInverse(out, matrix) { if (out.copy && out.invert) return out.copy(matrix).invert(); if (out.getInverse) return out.getInverse(matrix); return out.copy(matrix); }
+        function ensureTarget(renderer) {
+            const size = renderer.getDrawingBufferSize ? renderer.getDrawingBufferSize(new THREE.Vector2()) : renderer.getSize(new THREE.Vector2());
             const width = Math.max(1, Math.floor(size.x * POST_RENDER_SCALE));
             const height = Math.max(1, Math.floor(size.y * POST_RENDER_SCALE));
             if (!target || target.width !== width || target.height !== height) {
                 if (target) target.dispose();
-                target = new THREE.WebGLRenderTarget(width, height, {minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat, depthBuffer: true, stencilBuffer: false,});
-                uniforms.resolution.value.set(width, height);}}
+                target = new THREE.WebGLRenderTarget(width, height, { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBAFormat, depthBuffer: true, stencilBuffer: false, });
+                uniforms.resolution.value.set(width, height);
+            }
+        }
         function configureRendererShadows(renderer) {
             if (!renderer || !renderer.shadowMap) return;
             if (!rendererShadowState.has(renderer)) {
-                rendererShadowState.set(renderer, {enabled: renderer.shadowMap.enabled, type: renderer.shadowMap.type, autoUpdate: renderer.shadowMap.autoUpdate, needsUpdate: renderer.shadowMap.needsUpdate,});}
-            renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap || renderer.shadowMap.type; renderer.shadowMap.autoUpdate = false;}
+                rendererShadowState.set(renderer, { enabled: renderer.shadowMap.enabled, type: renderer.shadowMap.type, autoUpdate: renderer.shadowMap.autoUpdate, needsUpdate: renderer.shadowMap.needsUpdate, });
+            }
+            renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap || renderer.shadowMap.type; renderer.shadowMap.autoUpdate = false;
+        }
         function restoreRendererShadows() {
-            rendererShadowState.forEach((state, renderer) => {if (!renderer || !renderer.shadowMap) return;
-                renderer.shadowMap.enabled = state.enabled; renderer.shadowMap.type = state.type; renderer.shadowMap.autoUpdate = state.autoUpdate; renderer.shadowMap.needsUpdate = state.needsUpdate;});}
+            rendererShadowState.forEach((state, renderer) => {
+                if (!renderer || !renderer.shadowMap) return;
+                renderer.shadowMap.enabled = state.enabled; renderer.shadowMap.type = state.type; renderer.shadowMap.autoUpdate = state.autoUpdate; renderer.shadowMap.needsUpdate = state.needsUpdate;
+            });
+        }
         function configureDirectionalShadow(light, range) {
             if (!light || !light.shadow) return;
             light.castShadow = true;
@@ -126,24 +143,31 @@
             light.shadow.radius = 4;
             light.shadow.autoUpdate = false;
             light.shadow.needsUpdate = true;
-            light.shadow.camera.updateProjectionMatrix();}
+            light.shadow.camera.updateProjectionMatrix();
+        }
         function configureExistingShadows() {
             scene.traverse((node) => {
                 if (node.isDirectionalLight) {
-                    originalLightStates.push({light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow, });
-                    node.castShadow = false;}
+                    originalLightStates.push({ light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow, });
+                    node.castShadow = false;
+                }
                 else if (node.isAmbientLight) {
-                    originalLightStates.push({light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow,});}
+                    originalLightStates.push({ light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow, });
+                }
                 else if (node.isSpotLight && node.shadow) {
-                    originalLightStates.push({light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow,});
+                    originalLightStates.push({ light: node, intensity: node.intensity, color: node.color.clone(), castShadow: node.castShadow, });
                     node.castShadow = true;
                     node.shadow.mapSize.width = 1024;
                     node.shadow.mapSize.height = 1024;
                     node.shadow.bias = -0.00015;
                     node.shadow.normalBias = 0.025;
-                    node.shadow.needsUpdate = true;}});}
+                    node.shadow.needsUpdate = true;
+                }
+            });
+        }
         function restoreOriginalLights() {
-            originalLightStates.forEach((state) => {state.light.intensity = state.intensity; state.light.color.copy(state.color); state.light.castShadow = state.castShadow;});}
+            originalLightStates.forEach((state) => { state.light.intensity = state.intensity; state.light.color.copy(state.color); state.light.castShadow = state.castShadow; });
+        }
 
         function upgradeMaterial(material) {
             if (!material || (material.userData && material.userData.vortexRaytraced)) return material;
@@ -153,12 +177,14 @@
                 material.userData = material.userData || {};
                 material.userData.vortexRaytraced = true;
                 material.needsUpdate = true;
-                return material;}
+                return material;
+            }
             if (!THREE.MeshStandardMaterial) return material;
-            const next = new THREE.MeshStandardMaterial({color: material.color ? material.color.clone() : new THREE.Color(0xffffff), map: material.map || null, transparent: !!material.transparent, opacity: material.opacity == null ? 1 : material.opacity, roughness: 0.46, metalness: 0.035,});
+            const next = new THREE.MeshStandardMaterial({ color: material.color ? material.color.clone() : new THREE.Color(0xffffff), map: material.map || null, transparent: !!material.transparent, opacity: material.opacity == null ? 1 : material.opacity, roughness: 0.46, metalness: 0.035, });
             next.userData.vortexRaytraced = true;
             upgradedMaterials += 1;
-            return next;}
+            return next;
+        }
         function upgradeObjectTree(object) {
             if (!object) return;
             object.traverse((node) => {
@@ -166,8 +192,10 @@
                 if (!node.isMesh || node.isSprite || !node.material) return;
                 if (node.material.isShaderMaterial) return; node.material = Array.isArray(node.material) ? node.material.map(upgradeMaterial) : upgradeMaterial(node.material);
                 node.castShadow = true;
-                node.receiveShadow = true;});}
-        scene.add = function patchedSceneAdd(...objects) {const result = originalSceneAdd.apply(this, objects); objects.forEach(upgradeObjectTree); return result;};
+                node.receiveShadow = true;
+            });
+        }
+        scene.add = function patchedSceneAdd(...objects) { const result = originalSceneAdd.apply(this, objects); objects.forEach(upgradeObjectTree); return result; };
         upgradeObjectTree(scene);
         scene.fog = new THREE.FogExp2(0x9ed7ff, 0.0028);
         const hemi = new THREE.HemisphereLight(0xcdeeff, 0x172018, 0.34);
@@ -176,10 +204,11 @@
         const shadowTarget = new THREE.Object3D();
         const shadowSun = new THREE.DirectionalLight(0xfff1d0, 0.82);
         const moonLight = new THREE.DirectionalLight(0x9fb7ff, 0.12);
-        const skyUniforms = { sunDir: uniforms.sunDir, moonDir: uniforms.moonDir, dayAmount: uniforms.dayAmount, twilightAmount: uniforms.twilightAmount, time: uniforms.time,};
+        const skyUniforms = { sunDir: uniforms.sunDir, moonDir: uniforms.moonDir, dayAmount: uniforms.dayAmount, twilightAmount: uniforms.twilightAmount, time: uniforms.time, };
         const skyGeo = THREE.SphereGeometry ? new THREE.SphereGeometry(1800, 32, 16) : new THREE.SphereBufferGeometry(1800, 32, 16);
-        const skyMat = new THREE.ShaderMaterial({uniforms: skyUniforms, vertexShader:
-            `
+        const skyMat = new THREE.ShaderMaterial({
+            uniforms: skyUniforms, vertexShader:
+                `
                 varying vec3 vWorldDir;
                 void main( ) {
                     vec4 worldPosition = modelMatrix * vec4(position, 1.0);
@@ -187,7 +216,7 @@
                     gl_Position = projectionMatrix * viewMatrix * worldPosition;
                 }
             `, fragmentShader:
-            `
+                `
                 precision highp float;
                 uniform vec3 sunDir;
                 uniform vec3 moonDir;
@@ -244,7 +273,8 @@
                     float gray = dot(sky, vec3(0.299, 0.587, 0.114));
                     sky = mix(vec3(gray), sky, mix(${NIGHT_SATURATION.toFixed(2)}, ${DAY_SATURATION.toFixed(2)}, dayAmount));
                     gl_FragColor = vec4(sky, 1.0);}
-            `, side: THREE.BackSide, depthWrite: false, depthTest: false, fog: false,});
+            `, side: THREE.BackSide, depthWrite: false, depthTest: false, fog: false,
+        });
         //I am locked and geeked at the same time
         const skyDome = new THREE.Mesh(skyGeo, skyMat);
         const sunCanvas = document.createElement('canvas');
@@ -259,7 +289,7 @@
         sunCtx.fillStyle = sunGrad;
         sunCtx.fillRect(0, 0, 128, 128);
         const sunTexture = new THREE.CanvasTexture(sunCanvas);
-        const sunSprite = new THREE.Sprite(new THREE.SpriteMaterial({map: sunTexture, color: 0xffffff, transparent: true, opacity: 0.9, depthWrite: false, depthTest: true, fog: false, blending: THREE.AdditiveBlending,}));
+        const sunSprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: sunTexture, color: 0xffffff, transparent: true, opacity: 0.9, depthWrite: false, depthTest: true, fog: false, blending: THREE.AdditiveBlending, }));
         const moonCanvas = document.createElement('canvas');
         moonCanvas.width = 128;
         moonCanvas.height = 128;
@@ -279,7 +309,7 @@
         moonCtx.fill();
         moonCtx.globalCompositeOperation = 'source-over';
         const moonTexture = new THREE.CanvasTexture(moonCanvas);
-        const moonSprite = new THREE.Sprite(new THREE.SpriteMaterial({map: moonTexture, color: 0xc9d6ff, transparent: true, opacity: 0, depthWrite: false, depthTest: true, fog: false, blending: THREE.AdditiveBlending,}));
+        const moonSprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: moonTexture, color: 0xc9d6ff, transparent: true, opacity: 0, depthWrite: false, depthTest: true, fog: false, blending: THREE.AdditiveBlending, }));
         skyDome.userData.vortexRtHelper = true;
         sunSprite.userData.vortexRtHelper = true;
         moonSprite.userData.vortexRtHelper = true;
@@ -302,10 +332,10 @@
         scene.add(skyDome, sunSprite, moonSprite, shadowTarget, hemi, rim, glint, shadowSun, moonLight);
         //I feel I don't need to explain everything that goes on because of the names
         rendererProto.render = function patchedVortexRaytraceRender(renderScene, renderCamera) {
-            if (inPost || !enabled || renderScene !== scene) {return baseRender.call(this, renderScene, renderCamera);}
+            if (inPost || !enabled || renderScene !== scene) { return baseRender.call(this, renderScene, renderCamera); }
             frameIndex += 1;
             configureRendererShadows(this);
-            if (this.shadowMap && frameIndex % SHADOW_UPDATE_INTERVAL === 0) {this.shadowMap.needsUpdate = true;}
+            if (this.shadowMap && frameIndex % SHADOW_UPDATE_INTERVAL === 0) { this.shadowMap.needsUpdate = true; }
             ensureTarget(this);
             const oldTarget = this.getRenderTarget ? this.getRenderTarget() : null;
             const oldAutoClear = this.autoClear;
@@ -316,17 +346,18 @@
             uniforms.tDiffuse.value = target.texture;
             uniforms.time.value = performance.now() * 0.001;
             uniforms.cameraPos.value.copy(renderCamera.position);
-            if (renderCamera.projectionMatrixInverse) {uniforms.projectionInv.value.copy(renderCamera.projectionMatrixInverse);} else {setMatrixInverse(uniforms.projectionInv.value, renderCamera.projectionMatrix);}
+            if (renderCamera.projectionMatrixInverse) { uniforms.projectionInv.value.copy(renderCamera.projectionMatrixInverse); } else { setMatrixInverse(uniforms.projectionInv.value, renderCamera.projectionMatrix); }
             uniforms.cameraWorld.value.copy(renderCamera.matrixWorld);
-            inPost = true; this.autoClear = true; baseRender.call(this, postScene, postCamera); this.autoClear = oldAutoClear; inPost = false;};
+            inPost = true; this.autoClear = true; baseRender.call(this, postScene, postCamera); this.autoClear = oldAutoClear; inPost = false;
+        };
         //Math functions
-        function clamp01(value) {return Math.max(0, Math.min(1, value));}
-        function clamp(value, min, max) {return Math.max(min, Math.min(max, value));}
-        function smoothstep(edge0, edge1, value) {const x = clamp01((value - edge0) / (edge1 - edge0)); return x * x * (3 - 2 * x);}
+        function clamp01(value) { return Math.max(0, Math.min(1, value)); }
+        function clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }
+        function smoothstep(edge0, edge1, value) { const x = clamp01((value - edge0) / (edge1 - edge0)); return x * x * (3 - 2 * x); }
         //Just the lerp function
-        function lerp(a, b, t) {return a + (b - a) * t;}
+        function lerp(a, b, t) { return a + (b - a) * t; }
         //Day cycle blending
-        function mixColor(color, night, day, amount) {color.setRGB(lerp(night[0], day[0], amount), lerp(night[1], day[1], amount), lerp(night[2], day[2], amount));}
+        function mixColor(color, night, day, amount) { color.setRGB(lerp(night[0], day[0], amount), lerp(night[1], day[1], amount), lerp(night[2], day[2], amount)); }
         //This might just be more math
         function getCycleState(timeSeconds) {
             const cycle = ((timeSeconds / DAY_LENGTH_SECONDS) % 1 + 1) % 1;
@@ -339,9 +370,11 @@
             const dayAmount = smoothstep(-0.04, 0.34, elevation);
             const twilightAmount = (1 - smoothstep(0.10, 0.48, Math.abs(elevation))) * smoothstep(-0.30, -0.02, elevation) * (1 - smoothstep(0.45, 0.95, dayAmount));
             const warmAmount = twilightAmount + smoothstep(-0.02, 0.12, elevation) * (1 - smoothstep(0.12, 0.42, elevation)) * 0.55;
-            return { sunVector, moonVector, dayAmount, twilightAmount, warmAmount, nightAmount: 1 - dayAmount };}
+            return { sunVector, moonVector, dayAmount, twilightAmount, warmAmount, nightAmount: 1 - dayAmount };
+        }
         //Ts here is just repetitive back and forth, don't care to stopping by
-        function animateExtras() {if (!page.VortexRaytraceShader || page.VortexRaytraceShader.disposed) return;
+        function animateExtras() {
+            if (!page.VortexRaytraceShader || page.VortexRaytraceShader.disposed) return;
             const t = performance.now() * 0.001; const character = vortex.getCharacter && vortex.getCharacter(); const position = character ? character.position : { x: 0, y: 28, z: 0 }; const shadowFocusY = Math.max(8, position.y + 8); const { sunVector, moonVector, dayAmount, twilightAmount, warmAmount, nightAmount } = getCycleState(t); const activeShadow = smoothstep(0.04, 0.30, sunVector.y) * dayAmount;
             glint.position.set(position.x + Math.sin(t * 0.55) * 15, position.y + 17 + Math.sin(t * 1.1) * 2, position.z + Math.cos(t * 0.48) * 15);
             glint.intensity = enabled ? lerp(0.015, 0.42, dayAmount) + warmAmount * 0.10 : 0;
@@ -360,7 +393,7 @@
             mixColor(hemi.groundColor, [0.015, 0.018, 0.026], [0.18, 0.28, 0.18], dayAmount);
             mixColor(rim.color, [0.16, 0.20, 0.38], [0.70, 0.84, 1.00], dayAmount);
             mixColor(shadowSun.color, [0.35, 0.28, 0.18], [1.00, 0.88, 0.66], dayAmount);
-            if (warmAmount > 0.02) {rim.color.lerp(new THREE.Color(0xff8a3d), warmAmount * 0.45);shadowSun.color.lerp(new THREE.Color(0xff9d43), warmAmount * 0.35);}
+            if (warmAmount > 0.02) { rim.color.lerp(new THREE.Color(0xff8a3d), warmAmount * 0.45); shadowSun.color.lerp(new THREE.Color(0xff9d43), warmAmount * 0.35); }
             hemi.intensity = enabled ? lerp(0.012, 0.26, dayAmount) + twilightAmount * 0.018 : 0;
             rim.intensity = enabled ? lerp(0.006, 0.16, dayAmount) + warmAmount * 0.08 : 0;
             shadowSun.intensity = enabled ? (0.66 * activeShadow + warmAmount * 0.16) : 0;
@@ -370,25 +403,31 @@
                 if (light.isAmbientLight) {
                     mixColor(light.color, [0.018, 0.024, 0.050], [0.72, 0.78, 0.82], dayAmount);
                     if (warmAmount > 0.02) light.color.lerp(new THREE.Color(0xff7a38), warmAmount * 0.18);
-                    light.intensity = intensity * (lerp(0.015, 0.22, dayAmount) + twilightAmount * 0.035);} else if (light.isDirectionalLight) {mixColor(light.color, [0.10, 0.13, 0.24], [1.00, 0.88, 0.68], dayAmount);
+                    light.intensity = intensity * (lerp(0.015, 0.22, dayAmount) + twilightAmount * 0.035);
+                } else if (light.isDirectionalLight) {
+                    mixColor(light.color, [0.10, 0.13, 0.24], [1.00, 0.88, 0.68], dayAmount);
                     if (warmAmount > 0.02) light.color.lerp(new THREE.Color(0xff8a32), warmAmount * 0.32);
-                    light.intensity = intensity * (lerp(0.0, 0.16, dayAmount) + warmAmount * 0.08);} else {light.intensity = intensity * lerp(0.04, 0.55, dayAmount);}});
-            if (scene.fog) {scene.fog.density = lerp(0.0125, 0.0026, dayAmount) + twilightAmount * 0.0015; mixColor(scene.fog.color, [0.010, 0.014, 0.026], [0.48, 0.64, 0.78], dayAmount); if (warmAmount > 0.02) scene.fog.color.lerp(new THREE.Color(0x9b4d2a), warmAmount * 0.28);}
+                    light.intensity = intensity * (lerp(0.0, 0.16, dayAmount) + warmAmount * 0.08);
+                } else { light.intensity = intensity * lerp(0.04, 0.55, dayAmount); }
+            });
+            if (scene.fog) { scene.fog.density = lerp(0.0125, 0.0026, dayAmount) + twilightAmount * 0.0015; mixColor(scene.fog.color, [0.010, 0.014, 0.026], [0.48, 0.64, 0.78], dayAmount); if (warmAmount > 0.02) scene.fog.color.lerp(new THREE.Color(0x9b4d2a), warmAmount * 0.28); }
             shadowSun.target.updateMatrixWorld();
             moonLight.target.updateMatrixWorld();
-            if (frameIndex % SHADOW_UPDATE_INTERVAL === 0) {shadowSun.shadow.needsUpdate = true;}
+            if (frameIndex % SHADOW_UPDATE_INTERVAL === 0) { shadowSun.shadow.needsUpdate = true; }
             uniforms.sunDir.value.copy(sunVector);
             uniforms.moonDir.value.copy(moonVector);
             uniforms.dayAmount.value = dayAmount;
             uniforms.twilightAmount.value = twilightAmount;
-            page.requestAnimationFrame(animateExtras);}
+            page.requestAnimationFrame(animateExtras);
+        }
         page.VortexRaytraceShader = {
-            get enabled() {return enabled;},
+            get enabled() { return enabled; },
             set enabled(value) {
                 enabled = !!value;
-                addedLights.forEach((light) => {light.visible = enabled;});
-                addedObjects.forEach((object) => {object.visible = enabled;});
-                if (!enabled) restoreOriginalLights(); log(enabled ? 'enabled' : 'disabled');},
+                addedLights.forEach((light) => { light.visible = enabled; });
+                addedObjects.forEach((object) => { object.visible = enabled; });
+                if (!enabled) restoreOriginalLights(); log(enabled ? 'enabled' : 'disabled');
+            },
             upgradedMaterials,
             dispose() {
                 this.disposed = true;
@@ -408,15 +447,20 @@
                 sunSprite.material.dispose();
                 moonTexture.dispose();
                 moonSprite.material.dispose();
-                log('disposed');}, toggle() {this.enabled = !enabled;},};
+                log('disposed');
+            }, toggle() { this.enabled = !enabled; },
+        };
         animateExtras();
         //congrads
-        log('installed', {upgradedMaterials, addedLights: addedLights.length, toggleKey: TOGGLE_KEY,}); return { ok: true, upgradedMaterials, addedLights: addedLights.length };}
+        log('installed', { upgradedMaterials, addedLights: addedLights.length, toggleKey: TOGGLE_KEY, }); return { ok: true, upgradedMaterials, addedLights: addedLights.length };
+    }
     page.addEventListener('keydown', (event) => {
         if (isTypingTarget(event.target)) return;
         const shader = page.VortexRaytraceShader;
         if (!shader) return;
-        if (event.code === TOGGLE_KEY) {event.preventDefault(); shader.toggle(); return;}}, true);
+        if (event.code === TOGGLE_KEY) { event.preventDefault(); shader.toggle(); return; }
+    }, true);
     //waiting
     waitForVortex()
-        .then(() => {if (AUTO_ENABLE) installShader();}) .catch((error) => console.warn('Raytracing -->', error));})();
+        .then(() => { if (AUTO_ENABLE) installShader(); }).catch((error) => console.warn('Raytracing -->', error));
+})();

@@ -1,3 +1,4 @@
+/*Made by Klingri*/
 body {
    background: #121212 !important;
    color: white;
@@ -11,28 +12,29 @@ input {
    border: 0px !important;
 }
 
-#username,#password {
+#username,
+#password {
    border: 0px !important;
    color: white;
 }
 
 * {
    border-color: rgb(56, 56, 56) 1px solid !important;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.game-stat-value, .user-row-name, input {
-   color: #FFFFFF !important;
+body::selection {
+   color: rgb(108, 214, 9) !important;
 }
 
-.tab-btn.active {
-   color: #FFFFFF !important;
-}
-
-.logo,.wrap h1,.link-row {
+.logo,
+.wrap h1,
+.link-row {
    text-align: center;
 }
 
-.navbar-logo:hover, .profile-username:hover {
+.navbar-logo:hover,
+.profile-username:hover {
    color: rgb(163, 163, 163) !important;
    transition: 0.5s;
 }
@@ -45,21 +47,8 @@ input {
    background: black !important;
 }
 
-
-.link-row a {
-   color: #FFFFFF !important;
-}
-
 input:focus {
    border: 2px solid rgb(67, 153, 238) !important;
-}
-
-.friend-name {
-   color: #FFFFFF !important;
-}
-
-.profile-stat strong {
-   color: #FFFFFF !important;
 }
 
 .navbar {
@@ -85,10 +74,28 @@ input:focus {
    cursor: pointer;
 }
 
-.link-row a:hover,button:hover {
+.link-row a:hover,
+button:hover {
    color: rgb(139, 139, 139) !important;
    transition: 0.3s;
 }
-h1,h2,h3,h4,h5,h6,p,strong,div,label,input {
-   color: #FFFFFF;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong,
+div,
+label,
+.profile-stat strong,
+.friend-name,
+.link-row a,
+.tab-btn.active,
+.user-row-name,
+.game-stat-value,
+input {
+   color: #FFFFFF !important;
 }

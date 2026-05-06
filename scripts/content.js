@@ -1,3 +1,4 @@
+// Created by Enk
 (async function listUsersInfiniteScroll() {
     // Find the highest existing user ID dynamically
     async function userExists(id) {
