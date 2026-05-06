@@ -15,7 +15,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 # FAQ
 #### Q: How Can I suggest Feedback or report a bug?
-#### A: Message me on discord my username is "Klingri" or you can talk to me on the Vortex discord server.
+#### A: Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
 #### Q: How Can I disable Shaders?
 #### A: Press F7 Or fn + F7 for Laptops.
 
