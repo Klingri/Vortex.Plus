@@ -1,5 +1,5 @@
 # Introduction
-**Vortex+** also known as **Vortex.Plus** or simply **Vortex Plus**, is a chrome extension or general extension for the platform "Vortex".
+**Vortex+** also known as **Vortex.Plus** or simply **Vortex Plus**, is a web extension for the platform "**Vortex**".
 https://discord.gg/kedeZpj8eN is The Official Vortex Plus Discord Server.
 
 # Installation
@@ -10,7 +10,7 @@ https://discord.gg/kedeZpj8eN is The Official Vortex Plus Discord Server.
 - Click **"Load Unpacked**" and put a extension folder therem you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
 
 # Known Issues
-The Vortex+ Extension doesn't automatically update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
+The Vortex+ Web Extension doesn't automatically update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
 It only has dark mode and shaders for now, and it's in the very early stages of development so expect bugs and thing's to not work untill I make it stable enough.
 
 # FAQ
