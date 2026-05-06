@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
-https://img.shields.io/github/stars/Klingri/Vortex.Plus
+(https://img.shields.io/github/stars/Klingri/Vortex.Plus)
 
 ---
 
