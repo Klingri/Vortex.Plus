@@ -3,11 +3,11 @@
 https://discord.gg/kedeZpj8eN is The Official Vortex Plus Discord Server.
 
 # Installation
-- Download the necessary files, those that aren't .txt, .md or other file formats except **.js**, **.css** and **.html** which you need.
+- Download the necessary files, you need ALL the **.js**, **.css** and **.html** files in this repository in whichever release you choose. You don't need  .txt, .md files or other file formats, as those aren't Part of the actual extension, once you have downloaded all the necessary files, group them into a folder and call it whatever you want.
 - Or you can just download the files in the latest release or zip folder and click unload in the extensions management.
-- Go To **CHROME//EXTENSIONS** Management and NOT THE CHROME WEB STORE.
-- Click "**Enable Developer Mode**"
-- Click **"Load Unpacked**" you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
+- Go To **chrome://extensions/** Management if you use Chrome and NOT THE CHROME WEB STORE, Go To **edge://extensions/** if you use MS Edge and NOT The MS Edge Addon Store.
+- Click "**Enable Developer Mode**" It is similar for both browsers.
+- Click **"Load Unpacked**" and put a extension folder therem you should see it there and once you go to Vortex it will work if you followed all the steps correctly.
 
 # Known Issues
 The Vortex+ Extension doesn't automatically update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
@@ -16,6 +16,8 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 # FAQ
 #### Q: How Can I suggest Feedback or report a bug?
 #### A: Message me on discord my username is "Klingri" or you can talk to me on the Vortex discord server.
+#### Q: How Can I disable Shaders?
+#### A: Press F7 Or fn + F7 for Laptops.
 
 # Our Current Priorities
 - Improve Performance
@@ -36,6 +38,11 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 - Auto updating the Extension.
 - Adding Notes
 - Adding More Statistics
+
+# Current Features
+- Dark Mode
+- Better Player List
+- Shaders
 
 # Credits
 - **Enk** for the Revamped Player List.
