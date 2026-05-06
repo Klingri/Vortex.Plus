@@ -40,25 +40,12 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 ---
 
 # Roadmap
-- **Performance** to make the code run faster and smoother.
-- **Security:** to Make the Code more secure.
-- **Optimization:** Optimizing Code to improve efficiency and performance.
-- **Modularity:** Ability to toggle specific features on/off to reduce bloat.
-- **Scalability:** So the project can grow with less hurdles.
-- **Documentation:** Document everything so you and me can keep track on things.
-- **Convinency:** Make doing things less of a hurdle.
-- **Customization:** Give you options and choices to allow you to change things to you're liking.
-- **Reliability:** Make the code more reliable
-- **Compatibility:** Make the code work and run fine in different browsers
-- **Bugs:** Fix as many bugs as possible.
-- **Features:** Add New things along the way.
-
----
-
-# Planned Updates
-- Auto updating the Extension.
-- Adding Notes
-- Adding More Statistics
+| Feature | Description | Priority |
+| :--- | :--- | :--- |
+| **Avatar Customization** | Full platform-wide dark theme. | Very High |
+| **Game Making** | Revamped UI for social clarity. | Very High |
+| **Emotes** | Experimental visual effects (Toggle with F7). | Medium |
+| **Tools** | Custom environment injection. | High |
 
 ---
 
