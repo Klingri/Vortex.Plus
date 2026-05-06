@@ -1,0 +1,76 @@
+body {
+   background: #121212 !important;
+   color: white;
+}
+
+button,
+input {
+   background: #2b2a2a !important;
+   color: #FFFFFF;
+   outline: none;
+   border: 0px !important;
+}
+
+#username,#password {
+   border: 0px !important;
+   color: white;
+}
+
+* {
+   border-color: rgb(56, 56, 56) 1px solid !important;
+}
+
+.game-stat-value, .user-row-name, input {
+   color: #FFFFFF !important;
+}
+
+.tab-btn.active {
+   color: #FFFFFF !important;
+}
+
+.logo,.wrap h1,.link-row {
+   text-align: center;
+}
+
+.link-row a {
+   color: #FFFFFF !important;
+}
+
+.friend-name {
+   color: #FFFFFF !important;
+}
+
+.profile-stat strong {
+   color: #FFFFFF !important;
+}
+
+.navbar {
+   color: #FFFFFF !important;
+   background-color: #1E1E1E !important;
+}
+
+.navbar-logo {
+   color: #FFFFFF !important;
+   background-color: rgb(27, 26, 26) !important;
+}
+
+.body {
+   border-top-color: 1px solid rgb(65, 65, 65) !important;
+   border-bottom-color: 1px solid rgb(65, 65, 65) !important;
+   border-right-color: 1px solid rgb(65, 65, 65) !important;
+   border-left-color: 1px solid rgb(65, 65, 65) !important;
+}
+
+.field label:hover {
+   font-size: 15px !important;
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.link-row a:hover,button:hover {
+   color: rgb(139, 139, 139) !important;
+   transition: 0.3s;
+}
+h1,h2,h3,h4,h5,h6,p,strong,div,label,input {
+   color: #FFFFFF;
+}

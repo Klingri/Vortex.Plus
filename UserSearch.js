@@ -94,10 +94,10 @@
     try {
         const meFriends = await fetch('/api/friends').then(r => r.ok ? r.json() : []);
         friends = new Set(meFriends.map(f => f.id));
-    } catch {}
+    } catch { }
 
     function avatarColor(username) {
-        const colors = ['rgb(8,145,178)','rgb(147,51,234)','rgb(217,119,6)','rgb(37,99,235)','rgb(26,26,26)'];
+        const colors = ['rgb(8,145,178)', 'rgb(147,51,234)', 'rgb(217,119,6)', 'rgb(37,99,235)', 'rgb(26,26,26)'];
         return colors[username.charCodeAt(0) % colors.length];
     }
 
