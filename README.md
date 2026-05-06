@@ -58,4 +58,5 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 - Version 1.1 (05.05.2026) Added A Better Player List created by Enk.
 - Version 1.1.1 (05.05.2026) Added A Color Wheel Popup that does nothing.
 - Version 1.2 (05.05.2026) Introduced Shaders created by Slime King.
+- Version 1.2.1 (05.05.2026) Small Fix by Enk.
 - Version 1.3 (06.05.2026) Upcoming Release of Vortex Plus.
