@@ -70,11 +70,8 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 ---
 
-# Credits
-- **@Enk** for the Revamped Player List.
-- **@Slime King** for the Shaders.
--  **@Inuk** for the Custom Map Loadar.
-- And You **The Community** for Supporting me and using this extension.
+# Bug Testing
+- **Want to Become a Bug Tester?** Join the Vortex+ Discord Server to communicate with us! and we will give you a special role as your prize :).
 
 ---
   
