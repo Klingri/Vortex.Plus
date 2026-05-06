@@ -99,3 +99,191 @@ label,
 input {
    color: #FFFFFF !important;
 }
+
+/* Better spacing for the profile actions */
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Make the profile avatar pop */
+.profile-avatar {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+/* Subtle animation for status dots */
+.status-dot.online {
+    box-shadow: 0 0 8px #2ecc71;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Copy button style */
+.vortex-copy-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 8px;
+}
+
+.vortex-copy-btn:hover {
+    color: #fff;
+}
+
+/* Custom Scrollbar for the whole site */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Friend Note Styling */
+.vortex-note-container {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #7289da; /* Discord Blue */
+}
+
+.vortex-note-input {
+    width: 100%;
+    background: transparent;
+    border: 1px dashed #444;
+    color: #eee;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    resize: vertical;
+}
+
+/* Stat Card Styling */
+.vortex-stat-card {
+    background: #252525 !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border: 1px solid #333;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.vortex-stat-card:hover {
+    border-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+}
+
+.vortex-stat-card strong {
+    color: #2ecc71;
+    font-size: 1.1rem;
+}
+
+/* Profile Polish */
+.profile-avatar-wrap {
+    position: relative;
+    padding: 5px;
+    background: linear-gradient(45deg, #2ecc71, #3498db);
+    border-radius: 50%;
+}
+
+.vortex-copy-btn {
+    background: none; border: none; color: #666;
+    cursor: pointer; margin-left: 10px; transition: 0.2s;
+}
+
+.vortex-copy-btn:hover { color: #2ecc71; transform: scale(1.2); }
+
+/* --- NEUROMORPHIC STAT CARDS --- */
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 20px;
+    padding: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-stat {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 14px !important;
+    text-align: center;
+    padding: 20px !important;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-stat:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* --- BUTTONS: THE "GLOW-RUN" EFFECT --- */
+.btn-primary {
+    background: #2ecc71 !important;
+    color: #000 !important;
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(46, 204, 113, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}
+
+/* --- DYNAMIC FRIEND AVATARS --- */
+.friend-avatar {
+    border-radius: 12px !important; /* Squircle shape */
+    transform: rotate(-3deg);
+    transition: 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.friend-card:hover .friend-avatar {
+    transform: rotate(0deg) scale(1.1);
+    border-color: #2ecc71;
+}
+
+/* --- CUSTOM SCROLLBAR FOR BIO --- */
+.bio-textarea {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid #333 !important;
+    border-radius: 12px;
+    color: #00ff88 !important;
+    font-family: 'Courier New', monospace;
+}
+
+
+.navbar-search input:focus {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #2ecc71 !important;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+    outline: none;
+}
+
+.navbar {
+  /* Semi-transparent background color (white with 20% opacity) */
+  background: rgba(53, 53, 53, 0.2) !important; 
+  
+  /* The actual blur effect */
+  backdrop-filter: blur(28px) !important; 
+  -webkit-backdrop-filter: blur(32px) !important; /* Required for Safari support */
+  
+  /* Optional: Adds a subtle border to the bottom of the header */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important; 
+}

@@ -270,3 +270,134 @@
 
     await loadBatch();
 })();
+
+function enhanceProfile() {
+    // 1. Add a "Copy Username" button next to the name
+    const usernameElement = document.querySelector('.profile-username');
+    if (usernameElement && !document.getElementById('vortex-copy-btn')) {
+        const copyBtn = document.createElement('button');
+        copyBtn.id = 'vortex-copy-btn';
+        copyBtn.className = 'vortex-copy-btn';
+        copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+        copyBtn.title = 'Copy Username';
+        
+        copyBtn.onclick = () => {
+            const name = usernameElement.innerText.trim();
+            navigator.clipboard.writeText(name);
+            copyBtn.innerHTML = '<i class="fa-solid fa-check" style="color: #2ecc71;"></i>';
+            setTimeout(() => {
+                copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+            }, 2000);
+        };
+        usernameElement.appendChild(copyBtn);
+    }
+
+    // 2. Highlight high-visit profiles (e.g., over 1,000 visits)
+    const visitValue = document.querySelector('.join-date-value');
+    if (visitValue) {
+        const count = parseInt(visitValue.textContent.replace(/,/g, ''));
+        if (count > 1000) {
+            visitValue.style.color = '#f1c40f'; // Gold color for popular users
+            visitValue.style.fontWeight = 'bold';
+        }
+    }
+}
+
+// Since the site uses an async init() function to render the UI,
+// we use a MutationObserver to wait for the content to actually appear.
+const observer = new MutationObserver((mutations, obs) => {
+    const profile = document.querySelector('.profile-username');
+    if (profile) {
+        enhanceProfile();
+        // We don't disconnect because the user might navigate to other profiles
+    }
+});
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+// da
+
+// Function to add features
+async function enhanceVortex() {
+    const page = document.querySelector('.page');
+    const actions = document.getElementById('profile-actions');
+    const usernameHeader = document.querySelector('.profile-username');
+    
+    if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
+    usernameHeader.id = 'vortex-enhanced';
+
+    const userId = location.pathname.split('/')[2];
+
+    // 1. ADD FRIEND NOTES (Saved to Chrome Storage)
+    const bioBox = document.querySelector('.bio-box');
+    if (bioBox) {
+        const noteContainer = document.createElement('div');
+        noteContainer.className = 'vortex-note-container';
+        
+        const noteLabel = document.createElement('div');
+        noteLabel.className = 'bio-label';
+        noteLabel.innerHTML = '<span>Private Note (Only you see this)</span>';
+        
+        const noteArea = document.createElement('textarea');
+        noteArea.className = 'vortex-note-input';
+        noteArea.placeholder = 'Add a private note about this player...';
+        
+        // Load existing note
+        chrome.storage.local.get([`note_${userId}`], (res) => {
+            if (res[`note_${userId}`]) noteArea.value = res[`note_${userId}`];
+        });
+
+        // Save note on type
+        noteArea.addEventListener('input', (e) => {
+            chrome.storage.local.set({ [`note_${userId}`]: e.target.value });
+        });
+
+        noteContainer.appendChild(noteLabel);
+        noteContainer.appendChild(noteArea);
+        bioBox.parentNode.insertBefore(noteContainer, bioBox.nextSibling);
+    }
+
+    // 2. QUICK SOCIAL LINKS
+    if (actions) {
+        const discordBtn = document.createElement('a');
+        discordBtn.href = "https://discord.gg/ncNzKqeJrh";
+        discordBtn.target = "_blank";
+        discordBtn.className = 'btn-secondary';
+        discordBtn.innerHTML = '<i class="fa-brands fa-discord"></i> Community Discord';
+        discordBtn.style.marginLeft = '10px';
+        actions.appendChild(discordBtn);
+    }
+
+    // 3. ENHANCED STATS CARDS
+    const statLinks = document.querySelectorAll('.profile-stat');
+    statLinks.forEach(link => {
+        link.classList.add('vortex-stat-card');
+    });
+
+    // 4. COPY USERNAME BUTTON
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'vortex-copy-btn';
+    copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
+    copyBtn.onclick = () => {
+        const name = usernameHeader.innerText.split('\n')[0].trim();
+        navigator.clipboard.writeText(name);
+        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>', 2000);
+    };
+    usernameHeader.appendChild(copyBtn);
+}
+
+// Global Search Shortcut (Press '/' to search)
+document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        document.getElementById('search-input')?.focus();
+    }
+});
+
+// Run enhancement
+const observer = new MutationObserver(() => enhanceVortex());
+observer.observe(document.body, { childList: true, subtree: true });

@@ -2,38 +2,38 @@
   "name": "Vortex+",
   "version": "1.4",
   "manifest_version": 3,
-   "icons": {
+  "description": "An extension to enhance Towerstats with shaders and map loaders.",
+  "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  "options_ui": {
+    "page": "settings/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://vortex.towerstats.com/*"
-      ],
-      "css": [
-        "styles/main.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://vortex.towerstats.com/search*"
-      ],
-      "js": [
-        "scripts/search.js"
-      ]
-    },
-    {
-      "matches": [
-        "https://vortex.towerstats.com/*"
-      ],
+      "matches": ["https://vortex.towerstats.com/*"],
+      "css": ["styles/main.css"],
       "js": [
         "scripts/features/injectshaders.js",
         "scripts/features/injectmaploader.js"
       ],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://vortex.towerstats.com/search*"],
+      "js": ["scripts/search.js"]
     }
   ],
   "web_accessible_resources": [
@@ -42,16 +42,7 @@
         "scripts/features/shaders.js",
         "scripts/features/maploader.js"
       ],
-      "matches": [
-        "https://vortex.towerstats.com/*"
-      ]
+      "matches": ["https://vortex.towerstats.com/*"]
     }
-  ],
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
-  "action": {
-    "default_popup": "popup/popup.html"
-  }
+  ]
 }
