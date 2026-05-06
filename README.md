@@ -3,8 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
-[![Total Forks](https://img.shields.io/github/forks/:Klingri/:Vortex.Plus
-)](https://github.com/Vortex.Plus)
+[![Total Forks](https://img.shields.io/github/forks/:Klingri/:Vortex.Plus)](https://github.com/Vortex.Plus)
 ---
 
 # Installation
