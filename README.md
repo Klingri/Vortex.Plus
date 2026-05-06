@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/Vortex.Plus)
-
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Klingri/Vortex.Plus/total)
 
 ---
 
