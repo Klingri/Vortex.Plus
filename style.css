@@ -32,8 +32,26 @@ input {
    text-align: center;
 }
 
+.navbar-logo:hover, .profile-username:hover {
+   color: rgb(163, 163, 163) !important;
+   transition: 0.5s;
+}
+
+.game-card-thumb {
+   background-color: #646464 !important;
+}
+
+.friend-avatar:hover {
+   background: black !important;
+}
+
+
 .link-row a {
    color: #FFFFFF !important;
+}
+
+input:focus {
+   border: 2px solid rgb(67, 153, 238) !important;
 }
 
 .friend-name {
