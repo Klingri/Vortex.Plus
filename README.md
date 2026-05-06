@@ -29,10 +29,11 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 ---
 
 # FAQ
-#### Q: How Can I suggest Feedback or report a bug?
-#### A: On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
-#### Q: How Can I disable Shaders?
-#### A: Press F7 Or fn + F7 for Laptops.
+
+| Question | Answer
+| :--- | :--- |
+| **How Can I suggest Feedback or report a bug?** | On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
+| **How Can I disable Shaders?** | Press F7 Or fn + F7 for Laptops.
 
 > [!IMPORTANT]
 > **Updates:** Currently, you must re-download the latest release and repeat these steps to update. We are working on a seamless auto-updater for a future version!
