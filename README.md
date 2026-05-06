@@ -44,10 +44,12 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 - Dark Mode
 - Better Player List
 - Shaders
+- Custom Map Loader
 
 # Credits
 - **Enk** for the Revamped Player List.
 - **Slime King** for the Shaders.
+-  **Inuk** for the Custom Map Loadar.
 - And You **The Community** for Supporting me and using this extension.
   
 # License
@@ -59,4 +61,5 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 - Version 1.1.1 (05.05.2026) Added A Color Wheel Popup that does nothing.
 - Version 1.2 (05.05.2026) Introduced Shaders created by Slime King.
 - Version 1.2.1 (05.05.2026) Small Fix by Enk.
-- Version 1.3 (06.05.2026) Upcoming Release of Vortex Plus.
+- Version 1.3 (06.05.2026) Released Custom Map Loader by Inuk and Fixed text bugs.
+- Version 1.4 (06.05.2026) Upcoming Release of Vortex Plus.
