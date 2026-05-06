@@ -1,5 +1,6 @@
 # Introduction
 **Vortex+** also known as **Vortex.Plus** or simply **Vortex Plus**, is a web extension for the platform "**Vortex**".
+I Started This Web Extension Project to enhance the look and feel of the Vortex platform, we began with Dark Mode, now we have way more than that thanks to our contributors.
 https://discord.gg/kedeZpj8eN is The Official Vortex Plus Discord Server.
 
 # Installation
