@@ -97,4 +97,5 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | **V.1.2.1** | Small Fix by Enk. | 05.05.2026 |
 | **V.1.3** | Released Custom Map Loader by Inuk and Fixed text bugs. | 06.05.2026 |
 | **V.1.3** | Added Some Animations. | 06.05.2026 |
-| **V.1.4** | Upcoming Release of Vortex Plus. | 06.05.2026 |
+| **V.1.4** | Restructed Everything, And More. | 06.05.2026 |
+| **V.1.5** | Added More Animations and Effects | 06.05.2026 |
