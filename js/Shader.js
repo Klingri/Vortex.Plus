@@ -22,9 +22,9 @@
     const SHADOW_UPDATE_INTERVAL = 5; //How often you want your little shadows to update
     const DAY_LENGTH_SECONDS = 240; //This is only set to 240 for faster times to test out both day and night
     const DAY_SATURATION = 0.92; //How do you love your sugar?
-    const NIGHT_SATURATION = 0.44; //How do you hate your darkness?
+    const NIGHT_SATURATION = 0.40; //How do you hate your darkness?
     const MAX_SCENE_EXPOSURE = 0.72;
-    const MIN_SCENE_EXPOSURE = 0.08;
+    const MIN_SCENE_EXPOSURE = 0.90;
     function log(...args) {
         console.info('Raytracing or DLSS 3.5?', ...args);}
     function isTypingTarget(target) {

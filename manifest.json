@@ -16,7 +16,7 @@
         "https://vortex.towerstats.com/search*"
       ],
       "js": [
-        "content.js"
+        "UserSearch.js"
       ]
     },
     {
