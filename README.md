@@ -87,10 +87,14 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 ---
 
 # Version History
-- Version 1.0 (05.05.2026) Initial release, only Dark Mode is present.
-- Version 1.1 (05.05.2026) Added A Better Player List created by Enk.
-- Version 1.1.1 (05.05.2026) Added A Color Wheel Popup that does nothing.
-- Version 1.2 (05.05.2026) Introduced Shaders created by Slime King.
-- Version 1.2.1 (05.05.2026) Small Fix by Enk.
-- Version 1.3 (06.05.2026) Released Custom Map Loader by Inuk and Fixed text bugs.
-- Version 1.4 (06.05.2026) Upcoming Release of Vortex Plus.
+
+| Version | Description | Release |
+| :--- | :--- | :--- |
+| **V.1.0** | Initial release, only Dark Mode is present. | 05.05.2026 |
+| **V.1.** | Added A Better Player List created by Enk. | 05.05.2026 |
+| **V.1.1** | Added A Color Wheel Popup that does nothing. | 05.05.2026 |
+| **V.1.2** | Introduced Shaders created by Slime King. | 05.05.2026 |
+| **V.1.2.1** | Small Fix by Enk. | 05.05.2026 |
+| **V.1.3** | Released Custom Map Loader by Inuk and Fixed text bugs. | 06.05.2026 |
+| **V.1.3** | Added Some Animations. | 06.05.2026 |
+| **V.1.4** | Upcoming Release of Vortex Plus. | 06.05.2026 |
