@@ -97,3 +97,4 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | **V.1.3** | Added Some Animations. | 06.05.2026 |
 | **V.1.4** | Restructed Everything, And More. | 06.05.2026 |
 | **V.1.5** | Added More Animations and Effects | 06.05.2026 |
+| **V.1.6** | Added Blue Theme, Music player and other changes | 07.05.2026 |
