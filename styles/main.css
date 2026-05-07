@@ -11,12 +11,12 @@
 }
 
 html[data-theme='ocean'] {
-   --bg-main: #000391;
+   --bg-main: #070057;
    --text-main: #FFFFFF;
    --accent: #C9C9FF;
    --nav-bg: rgba(8, 0, 74, 0.2);
-   --card-bg: #16457D;
-   --input-bg: #2b2a2a;
+   --card-bg: #530399;
+   --input-bg: #033d99;
 }
 
 body {
