@@ -36,6 +36,9 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 **Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex discord server.**
 
+> [!IMPORTANT]
+> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers, Chromium works tho!
+
 ---
 
 # FAQ
