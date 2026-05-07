@@ -1,5 +1,6 @@
 // Created by Enk
 (async function listUsersInfiniteScroll() {
+    document.documentElement.setAttribute('data-theme', 'ocean');
     // Find the highest existing user ID dynamically
     async function userExists(id) {
         const res = await fetch(`/api/users/${id}`);
@@ -401,4 +402,3 @@ document.addEventListener('keydown', (e) => {
 // Run enhancement
 const observer = new MutationObserver(() => enhanceVortex());
 observer.observe(document.body, { childList: true, subtree: true });
-document.documentElement.setAttribute('data-theme', 'ocean');
