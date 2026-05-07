@@ -29,7 +29,6 @@
       "matches": ["https://vortex.towerstats.com/*"],
       "css": ["styles/main.css"],
       "js": [
-        "scripts/content.js",
         "scripts/features/injectshaders.js",
         "scripts/features/injectmaploader.js"
       ],
