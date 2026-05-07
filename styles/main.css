@@ -1,13 +1,36 @@
-/*Made by Klingri*/
+/*Made by Klingri and kodi helped make the themes*/
+
+:root {
+   /* default theme*/
+   --bg-main: #121212;
+   --text-main: #FFFFFF;
+   --accent: #2ecc71;
+   --nav-bg: rgba(53, 53, 53, 0.2);
+   --card-bg: #252525;
+   --input-bg: #2b2a2a;
+}
+
+
+[data-theme='ocean'] {
+   --bg-main: #000391;
+   --text-main: #FFFFFF;
+   --accent: #C9C9FF;
+   --nav-bg: rgba(8, 0, 74, 0.2);
+   --card-bg: #16457D;
+   --input-bg: #2b2a2a;
+}
+
+
+
 body {
-   background: #121212 !important;
-   color: white;
+   background: var(--bg-main) !important;
+   color: var(--text-main);
 }
 
 button,
 input {
-   background: #2b2a2a !important;
-   color: #FFFFFF;
+   background: var(--input-bg) !important;
+   color: var(--text-main);
    outline: none;
    border: 0px !important;
 }
@@ -52,8 +75,8 @@ input:focus {
 }
 
 .navbar {
-   color: #FFFFFF !important;
-   background-color: #1E1E1E !important;
+   color: var(--text-main) !important;
+   background-color: var(--nav-bg) !important;
 }
 
 .navbar-logo {
@@ -172,7 +195,7 @@ input {
 
 /* Stat Card Styling */
 .vortex-stat-card {
-    background: #252525 !important;
+    background: var(--card-bg) !important;
     padding: 10px 15px !important;
     border-radius: 6px !important;
     border: 1px solid #333;
@@ -187,7 +210,7 @@ input {
 }
 
 .vortex-stat-card strong {
-    color: #2ecc71;
+    color: var(--accent);
     font-size: 1.1rem;
 }
 
@@ -233,7 +256,7 @@ input {
 
 /* --- BUTTONS: THE "GLOW-RUN" EFFECT --- */
 .btn-primary {
-    background: #2ecc71 !important;
+    background: var(--accent) !important;
     color: #000 !important;
     box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
     animation: pulse-glow 2s infinite;
