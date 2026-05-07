@@ -92,11 +92,11 @@ window.onload = () => {
         btn.onclick = () => {
             if (loaded) {
                 unloadMap(map.name)
-                btn.innerHTML = map.name + '(Not loaded)'
+                btn.innerHTML = map.name + ' (Not loaded)'
                 loaded = false
             } else {
                 onLoad(map.name, map.url);
-                btn.innerHTML = map.name + '(Loaded)'
+                btn.innerHTML = map.name + ' (Loaded)'
                 loaded = true
             }
         };
@@ -135,6 +135,8 @@ window.onload = () => {
     panel.appendChild(loadBtn);
 
     console.log('loading');
+    document.documentElement.setAttribute('data-theme', 'ocean');
+    console.log("Theme set to ocean!");
     // finally, add the gui to the page
     document.body.appendChild(panel);
 }

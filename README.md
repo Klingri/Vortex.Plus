@@ -1,8 +1,13 @@
 # Introduction
-**Vortex+** is a performance-focused web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
+**Vortex+** is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
+![GitHub Release](https://img.shields.io/github/v/release/Klingri/Vortex.Plus)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Klingri/Vortex.Plus/total)
+![GitHub Repo stars](https://img.shields.io/github/stars/Klingri/Vortex.Plus)
+![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/Vortex.Plus)
+![GitHub top language](https://img.shields.io/github/languages/top/Klingri/Vortex.Plus)
 
 ---
 
@@ -13,6 +18,11 @@
 3. **Open Extensions Page:**
    - Chrome: `chrome://extensions/`
    - Edge: `edge://extensions/`
+   - Brave: `brave://extensions/`
+   - Vivaldi: `vivaldi://extensions`
+   - Opera/OperaGX: `opera://extensions`
+   - Arc: `arc://extensions`
+   - Helium: `helium://extensions`
 4. **Developer Mode:** Toggle the **Developer mode** switch in the top right.
 5. **Load Unpacked:** Click **"Load unpacked"** and select the folder you just extracted.
 
@@ -26,13 +36,17 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 **Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex discord server.**
 
+> [!IMPORTANT]
+> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers, Chromium works tho!
+
 ---
 
 # FAQ
-#### Q: How Can I suggest Feedback or report a bug?
-#### A: On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
-#### Q: How Can I disable Shaders?
-#### A: Press F7 Or fn + F7 for Laptops.
+
+| Question | Answer
+| :--- | :--- |
+| **How Can I suggest Feedback or report a bug?** | On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
+| **How Can I disable Shaders?** | Press F7 Or fn + F7 for Laptops.
 
 > [!IMPORTANT]
 > **Updates:** Currently, you must re-download the latest release and repeat these steps to update. We are working on a seamless auto-updater for a future version!
@@ -40,25 +54,12 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 ---
 
 # Roadmap
-- **Performance** to make the code run faster and smoother.
-- **Security:** to Make the Code more secure.
-- **Optimization:** Optimizing Code to improve efficiency and performance.
-- **Modularity:** Ability to toggle specific features on/off to reduce bloat.
-- **Scalability:** So the project can grow with less hurdles.
-- **Documentation:** Document everything so you and me can keep track on things.
-- **Convinency:** Make doing things less of a hurdle.
-- **Customization:** Give you options and choices to allow you to change things to you're liking.
-- **Reliability:** Make the code more reliable
-- **Compatibility:** Make the code work and run fine in different browsers
-- **Bugs:** Fix as many bugs as possible.
-- **Features:** Add New things along the way.
-
----
-
-# Planned Updates
-- Auto updating the Extension.
-- Adding Notes
-- Adding More Statistics
+| Feature | Description | Priority |
+| :--- | :--- | :--- |
+| **Avatar Customization** | Full platform-wide dark theme. | Very High |
+| **Game Making** | Revamped UI for social clarity. | Very High |
+| **Emotes** | Experimental visual effects (Toggle with F7). | Medium |
+| **Tools** | Custom environment injection. | High |
 
 ---
 
@@ -72,11 +73,8 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 ---
 
-# Credits
-- **@Enk** for the Revamped Player List.
-- **@Slime King** for the Shaders.
--  **@Inuk** for the Custom Map Loadar.
-- And You **The Community** for Supporting me and using this extension.
+# Bug Testing
+- **Want to Become a Bug Tester?** Join the Vortex+ Discord Server to communicate with us! and we will give you a special role as your prize :).
 
 ---
   

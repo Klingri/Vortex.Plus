@@ -1,14 +1,16 @@
 {
   "name": "Vortex+",
-  "version": "1.4",
+  "version": "1.6",
   "manifest_version": 3,
-  "description": "An extension to enhance Towerstats with shaders and map loaders.",
+  "description": "An extension to enhance Vortex with new features.",
+  "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml",
   "options_ui": {
     "page": "settings/options.html",
     "open_in_tab": false
@@ -23,17 +25,28 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://vortex.towerstats.com/*"],
-      "css": ["styles/main.css"],
+      "matches": [
+        "https://vortex.towerstats.com/*"
+      ],
+      "css": [
+        "styles/main.css",
+        "styles/menu-themes.css"
+      ],
       "js": [
         "scripts/features/injectshaders.js",
-        "scripts/features/injectmaploader.js"
+        "scripts/features/injectmaploader.js",
+        "scripts/features/musicplayer.js",
+        "scripts/features/theme-manager.js"
       ],
       "run_at": "document_start"
     },
     {
-      "matches": ["https://vortex.towerstats.com/search*"],
-      "js": ["scripts/search.js"]
+      "matches": [
+        "https://vortex.towerstats.com/search*"
+      ],
+      "js": [
+        "scripts/search.js"
+      ]
     }
   ],
   "web_accessible_resources": [
@@ -42,7 +55,9 @@
         "scripts/features/shaders.js",
         "scripts/features/maploader.js"
       ],
-      "matches": ["https://vortex.towerstats.com/*"]
+      "matches": [
+        "https://vortex.towerstats.com/*"
+      ]
     }
   ]
 }

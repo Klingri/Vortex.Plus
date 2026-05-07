@@ -280,7 +280,7 @@ function enhanceProfile() {
         copyBtn.className = 'vortex-copy-btn';
         copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
         copyBtn.title = 'Copy Username';
-        
+
         copyBtn.onclick = () => {
             const name = usernameElement.innerText.trim();
             navigator.clipboard.writeText(name);
@@ -325,7 +325,7 @@ async function enhanceVortex() {
     const page = document.querySelector('.page');
     const actions = document.getElementById('profile-actions');
     const usernameHeader = document.querySelector('.profile-username');
-    
+
     if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
     usernameHeader.id = 'vortex-enhanced';
 
@@ -336,15 +336,15 @@ async function enhanceVortex() {
     if (bioBox) {
         const noteContainer = document.createElement('div');
         noteContainer.className = 'vortex-note-container';
-        
+
         const noteLabel = document.createElement('div');
         noteLabel.className = 'bio-label';
         noteLabel.innerHTML = '<span>Private Note (Only you see this)</span>';
-        
+
         const noteArea = document.createElement('textarea');
         noteArea.className = 'vortex-note-input';
         noteArea.placeholder = 'Add a private note about this player...';
-        
+
         // Load existing note
         chrome.storage.local.get([`note_${userId}`], (res) => {
             if (res[`note_${userId}`]) noteArea.value = res[`note_${userId}`];
@@ -401,3 +401,78 @@ document.addEventListener('keydown', (e) => {
 // Run enhancement
 const observer = new MutationObserver(() => enhanceVortex());
 observer.observe(document.body, { childList: true, subtree: true });
+
+ function renderMutualFriends(friends) {
+        const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
+        
+        const header = el('div', { className: 'section-header' });
+        header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
+        section.appendChild(header);
+
+        const wrap = el('div', { className: 'carousel-wrap' });
+        const row = el('div', { className: 'friends-row' });
+        
+        if (friends.length === 0) {
+            row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
+        } else {
+            for (const f of friends) {
+                const card = el('a', {
+                    className: 'friend-card',
+                    href: `/users/${f.id}/profile`
+                });
+                card.innerHTML = `
+                    <div class="friend-avatar-wrap">
+                        <div class="friend-avatar" style="background:${avatarColor(f.username)}">${initial(f.username)}</div>
+                        ${statusDotHTML(f.online_status)}
+                    </div>
+                    <span class="friend-name">${f.username}</span>
+                `;
+                row.appendChild(card);
+            }
+        }
+        
+        wrap.appendChild(row);
+        section.appendChild(wrap);
+        if (typeof initCarousel === 'function') initCarousel(wrap);
+        return section;
+    }
+
+    async function enhanceVortex() {
+        const page = document.querySelector('.page');
+        const usernameHeader = document.querySelector('.profile-username');
+        
+        if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
+        usernameHeader.id = 'vortex-enhanced';
+
+        const userId = getProfileUserId();
+        if (!userId) return;
+
+        const [meFriends, data, friends] = await Promise.all([
+            api.friends(),
+            api.user(userId),
+            fetch(`/api/friends/${userId}`).then(r => r.ok ? r.json() : [])
+        ]);
+
+        const myFriendIds = new Set(meFriends.map(f => f.id));
+        const mutualFriends = friends.filter(f => myFriendIds.has(f.id));
+
+        // Add mutual friends section
+        document.getElementById('vortex-mutual-friends-section')?.remove();
+        const mutualSection = renderMutualFriends(mutualFriends);
+        const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
+        if (friendHeader?.parentNode) {
+            friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
+        } else {
+            const friendsSection = page.querySelector('.section');
+            if (friendsSection?.parentNode) {
+                friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
+            } else {
+                page.appendChild(mutualSection);
+            }
+        }
+    }
+
+    const vortexObserver = new MutationObserver(() => enhanceVortex());
+    vortexObserver.observe(document.body, { childList: true, subtree: true });
+
+    start();

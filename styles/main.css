@@ -1,83 +1,103 @@
-/*Made by Klingri*/
+/*Made by Klingri and kodi helped make the themes*/
+
+:root {
+    /* default theme*/
+    --bg-main: #121212;
+    --text-main: #FFFFFF;
+    --accent: #2ecc71;
+    --nav-bg: rgba(53, 53, 53, 0.2);
+    --card-bg: #252525;
+    --input-bg: #2b2a2a;
+}
+
+html[data-theme='ocean'] {
+    --bg-main: #070057;
+    --text-main: #FFFFFF;
+    --accent: #C9C9FF;
+    --nav-bg: rgba(8, 0, 74, 0.2);
+    --card-bg: #530399;
+    --input-bg: #033d99;
+}
+
 body {
-   background: #121212 !important;
-   color: white;
+    background: var(--bg-main) !important;
+    color: var(--text-main) !important;
 }
 
 button,
 input {
-   background: #2b2a2a !important;
-   color: #FFFFFF;
-   outline: none;
-   border: 0px !important;
+    background: var(--input-bg) !important;
+    color: var(--text-main) !important;
+    outline: none;
+    border: 0px !important;
 }
 
 #username,
 #password {
-   border: 0px !important;
-   color: white;
+    border: 0px !important;
+    color: white;
 }
 
 * {
-   border-color: rgb(56, 56, 56) 1px solid !important;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(56, 56, 56) !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body::selection {
-   color: rgb(108, 214, 9) !important;
+    color: rgb(108, 214, 9) !important;
 }
 
 .logo,
 .wrap h1,
 .link-row {
-   text-align: center;
+    text-align: center;
 }
 
 .navbar-logo:hover,
 .profile-username:hover {
-   color: rgb(163, 163, 163) !important;
-   transition: 0.5s;
+    color: rgb(163, 163, 163) !important;
+    transition: 0.5s;
 }
 
 .game-card-thumb {
-   background-color: #646464 !important;
+    background-color: #646464 !important;
 }
 
 .friend-avatar:hover {
-   background: black !important;
+    background: black !important;
 }
 
 input:focus {
-   border: 2px solid rgb(67, 153, 238) !important;
+    border: 2px solid rgb(67, 153, 238) !important;
 }
 
 .navbar {
-   color: #FFFFFF !important;
-   background-color: #1E1E1E !important;
+    color: var(--text-main) !important;
+    background-color: var(--nav-bg) !important;
 }
 
 .navbar-logo {
-   color: #FFFFFF !important;
-   background-color: rgb(27, 26, 26) !important;
+    color: #FFFFFF !important;
+    background-color: rgb(27, 26, 26) !important;
 }
 
 .body {
-   border-top-color: 1px solid rgb(65, 65, 65) !important;
-   border-bottom-color: 1px solid rgb(65, 65, 65) !important;
-   border-right-color: 1px solid rgb(65, 65, 65) !important;
-   border-left-color: 1px solid rgb(65, 65, 65) !important;
+    border-top-color: 1px solid rgb(65, 65, 65) !important;
+    border-bottom-color: 1px solid rgb(65, 65, 65) !important;
+    border-right-color: 1px solid rgb(65, 65, 65) !important;
+    border-left-color: 1px solid rgb(65, 65, 65) !important;
 }
 
 .field label:hover {
-   font-size: 15px !important;
-   transition: 0.3s ease-in-out;
-   cursor: pointer;
+    font-size: 15px !important;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .link-row a:hover,
 button:hover {
-   color: rgb(139, 139, 139) !important;
-   transition: 0.3s;
+    color: rgb(139, 139, 139) !important;
+    transition: 0.3s;
 }
 
 h1,
@@ -97,7 +117,7 @@ label,
 .user-row-name,
 .game-stat-value,
 input {
-   color: #FFFFFF !important;
+    color: var(--text-main) !important;
 }
 
 /* Better spacing for the profile actions */
@@ -109,7 +129,7 @@ input {
 
 /* Make the profile avatar pop */
 .profile-avatar {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
 }
 
@@ -124,9 +144,17 @@ input {
 }
 
 @keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Copy button style */
@@ -144,10 +172,22 @@ input {
 }
 
 /* Custom Scrollbar for the whole site */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #1a1a1a; }
-::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #555; }
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 /* Friend Note Styling */
 .vortex-note-container {
@@ -155,7 +195,8 @@ input {
     background: rgba(255, 255, 255, 0.05);
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #7289da; /* Discord Blue */
+    border-left: 4px solid #7289da;
+    /* Discord Blue */
 }
 
 .vortex-note-input {
@@ -172,7 +213,7 @@ input {
 
 /* Stat Card Styling */
 .vortex-stat-card {
-    background: #252525 !important;
+    background: var(--card-bg) !important;
     padding: 10px 15px !important;
     border-radius: 6px !important;
     border: 1px solid #333;
@@ -181,13 +222,13 @@ input {
 }
 
 .vortex-stat-card:hover {
-    border-color: #2ecc71;
+    border-color: var(--accent);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
 }
 
 .vortex-stat-card strong {
-    color: #2ecc71;
+    color: var(--accent);
     font-size: 1.1rem;
 }
 
@@ -200,11 +241,18 @@ input {
 }
 
 .vortex-copy-btn {
-    background: none; border: none; color: #666;
-    cursor: pointer; margin-left: 10px; transition: 0.2s;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.2s;
 }
 
-.vortex-copy-btn:hover { color: #2ecc71; transform: scale(1.2); }
+.vortex-copy-btn:hover {
+    color: var(--accent);
+    transform: scale(1.2);
+}
 
 /* --- NEUROMORPHIC STAT CARDS --- */
 .profile-stats {
@@ -233,21 +281,30 @@ input {
 
 /* --- BUTTONS: THE "GLOW-RUN" EFFECT --- */
 .btn-primary {
-    background: #2ecc71 !important;
+    background: var(--accent) !important;
     color: #000 !important;
     box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
     animation: pulse-glow 2s infinite;
 }
 
 @keyframes pulse-glow {
-    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(46, 204, 113, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(46, 204, 113, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+    }
 }
 
 /* --- DYNAMIC FRIEND AVATARS --- */
 .friend-avatar {
-    border-radius: 12px !important; /* Squircle shape */
+    border-radius: 12px !important;
+    /* Squircle shape */
     transform: rotate(-3deg);
     transition: 0.3s;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -255,7 +312,7 @@ input {
 
 .friend-card:hover .friend-avatar {
     transform: rotate(0deg) scale(1.1);
-    border-color: #2ecc71;
+    border-color: var(--accent);
 }
 
 /* --- CUSTOM SCROLLBAR FOR BIO --- */
@@ -271,19 +328,20 @@ input {
 .navbar-search input:focus {
     width: 300px;
     background: rgba(255, 255, 255, 0.1) !important;
-    border-color: #2ecc71 !important;
+    border-color: var(--accent) !important;
     box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
     outline: none;
 }
 
 .navbar {
-  /* Semi-transparent background color (white with 20% opacity) */
-  background: rgba(53, 53, 53, 0.2) !important; 
-  
-  /* The actual blur effect */
-  backdrop-filter: blur(28px) !important; 
-  -webkit-backdrop-filter: blur(32px) !important; /* Required for Safari support */
-  
-  /* Optional: Adds a subtle border to the bottom of the header */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important; 
+    /* Semi-transparent background color (white with 20% opacity) */
+    background: var(--nav-bg) !important;
+
+    /* The actual blur effect */
+    backdrop-filter: blur(28px) !important;
+    -webkit-backdrop-filter: blur(32px) !important;
+    /* Required for Safari support */
+
+    /* Optional: Adds a subtle border to the bottom of the header */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
