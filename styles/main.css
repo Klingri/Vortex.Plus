@@ -10,8 +10,7 @@
    --input-bg: #2b2a2a;
 }
 
-
-[data-theme='ocean'] {
+html[data-theme='ocean'] {
    --bg-main: #000391;
    --text-main: #FFFFFF;
    --accent: #C9C9FF;
@@ -20,17 +19,15 @@
    --input-bg: #2b2a2a;
 }
 
-
-
 body {
    background: var(--bg-main) !important;
-   color: var(--text-main);
+   color: var(--text-main) !important;
 }
 
 button,
 input {
    background: var(--input-bg) !important;
-   color: var(--text-main);
+   color: var(--text-main) !important;
    outline: none;
    border: 0px !important;
 }
@@ -120,7 +117,7 @@ label,
 .user-row-name,
 .game-stat-value,
 input {
-   color: #FFFFFF !important;
+   color: var(--text-main) !important;
 }
 
 /* Better spacing for the profile actions */
@@ -204,7 +201,7 @@ input {
 }
 
 .vortex-stat-card:hover {
-    border-color: #2ecc71;
+    border-color: var(--accent);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
 }
@@ -227,7 +224,7 @@ input {
     cursor: pointer; margin-left: 10px; transition: 0.2s;
 }
 
-.vortex-copy-btn:hover { color: #2ecc71; transform: scale(1.2); }
+.vortex-copy-btn:hover { color: var(--accent); transform: scale(1.2); }
 
 /* --- NEUROMORPHIC STAT CARDS --- */
 .profile-stats {
@@ -278,7 +275,7 @@ input {
 
 .friend-card:hover .friend-avatar {
     transform: rotate(0deg) scale(1.1);
-    border-color: #2ecc71;
+    border-color: var(--accent);
 }
 
 /* --- CUSTOM SCROLLBAR FOR BIO --- */
@@ -294,14 +291,14 @@ input {
 .navbar-search input:focus {
     width: 300px;
     background: rgba(255, 255, 255, 0.1) !important;
-    border-color: #2ecc71 !important;
+    border-color: var(--accent) !important;
     box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
     outline: none;
 }
 
 .navbar {
   /* Semi-transparent background color (white with 20% opacity) */
-  background: rgba(53, 53, 53, 0.2) !important; 
+  background: var(--nav-bg) !important; 
   
   /* The actual blur effect */
   backdrop-filter: blur(28px) !important; 
