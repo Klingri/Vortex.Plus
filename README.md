@@ -70,6 +70,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | **Better Player List** | Revamped UI for social clarity. | @Enk |
 | **Shaders (F7)** | Experimental visual effects (Toggle with F7). | @Slime King |
 | **Map Loader** | Custom environment injection. | @Inuk |
+| **Music Player** | A Music Player | @Enk |
 
 ---
 
