@@ -19,7 +19,7 @@ input {
 }
 
 * {
-   border-color: rgb(56, 56, 56) 1px solid !important;
+   border-color: rgb(56, 56, 56) !important;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
