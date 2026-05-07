@@ -9,6 +9,9 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+
+  "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml", 
+  
   "options_ui": {
     "page": "settings/options.html",
     "open_in_tab": false
