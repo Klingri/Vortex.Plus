@@ -1,4 +1,4 @@
-/*Made by Klingri and kodi helped make the themes*/
+/*Made by Klingri and kodi made the themes*/
 
 :root {
     /* default theme*/
@@ -17,6 +17,15 @@ html[data-theme='ocean'] {
     --nav-bg: rgba(8, 0, 74, 0.2);
     --card-bg: #530399;
     --input-bg: #033d99;
+}
+
+html[data-theme='poop'] {
+    --bg-main: #5B6650;
+    --text-main: #FFFFFF;
+    --accent: #38312F;
+    --nav-bg: rgba(8, 0, 74, 0.2);
+    --card-bg: #998D03;
+    --input-bg: #996503;
 }
 
 body {
