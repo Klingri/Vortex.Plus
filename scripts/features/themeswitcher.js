@@ -14,7 +14,7 @@ function initThemeUI() {
     Object.assign(panel.style, {
         position: 'fixed',
         bottom: '500px',
-        right: '24px',
+        right: '12px',
         width: '160px',
         background: 'rgba(18,18,26,0.97)',
         padding: '48px',
