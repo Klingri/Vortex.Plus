@@ -40,9 +40,13 @@
         "scripts/features/injectmaploader.js",
         "scripts/features/musicplayer.js",
         "scripts/features/theme-manager.js",
-        "scripts/features/stafficon.js"
+        "scripts/features/stafficon.js",
+        "scripts/features/inject.js",
+        "scripts/features/mutualfriends.js"
       ],
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
     },
     {
       "matches": [
@@ -58,6 +62,9 @@
       "resources": [
         "scripts/features/shaders.js",
         "scripts/features/maploader.js",
+        "styles/main.css",
+        "images/*.png",
+        "assets/fonts/*",
         "settings/options.html"
       ],
       "matches": [

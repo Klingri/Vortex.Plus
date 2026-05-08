@@ -23,7 +23,7 @@
         localStorage.setItem('v_lst_thm', JSON.stringify(thm));
         let styl = document.getElementById('v-dyn-css') || document.createElement('style');
         styl.id = 'v-dyn-css';
-        document.head.appendChild(styl);
+        (document.head || document.documentElement).appendChild(styl);
         // code injection defines which one belongs to which group eg what it tagets
         styl.innerHTML = `
         body, .navbar, .page, .navbar-search input, .bio-textarea { background:${thm.bg}!important; color:${thm.tx}!important; }

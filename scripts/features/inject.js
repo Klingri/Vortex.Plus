@@ -1,14 +1,12 @@
-const codeToInject = `(function () {
-    // 1. Give the icon some actual content (e.g., an SVG or Emoji)
+// inject.js
+(function () {
     const STAFF_ICON = '<span class="lb-staff-icon">★</span>';
-    const FRIEND_RX = /\\s*/;
-
+    
     function patchPlayers() {
         const lb = window.Leaderboard;
         if (!lb || lb.__staffPatched) return;
         lb.__staffPatched = true;
-
-        let myId = null;
+     let myId = null;
         const origSetMyId = lb.setMyId.bind(lb);
         lb.setMyId = function (id) {
             myId = id;
@@ -76,10 +74,4 @@ const codeToInject = `(function () {
     } else {
         start();
     }
-})();`;
-
-// This part bypasses the "Isolated World" restriction
-const script = document.createElement('script');
-script.textContent = codeToInject;
-(document.head || document.documentElement).appendChild(script);
-script.remove();
+})();

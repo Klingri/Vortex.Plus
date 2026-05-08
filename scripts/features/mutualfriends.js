@@ -1,9 +1,9 @@
-// Created by Hayden
 (async (targetUserId) => {
     try {
         const [myFriends, theirFriends] = await Promise.all([
-            fetch('/api/friends').then(r => r.ok ? r.json() : []),
-            fetch(`/api/friends/${targetUserId}`).then(r => r.ok ? r.json() : [])
+            fetch('https://vortex.towerstats.com/api/friends').then(r => r.ok ? r.json() : []),
+            fetch(`https://vortex.towerstats.com/api/friends/${targetUserId}`).then(r => r.ok ? r.json() : [])
+            
         ]);
 
         const myFriendIds = new Set(myFriends.map(f => f.id));

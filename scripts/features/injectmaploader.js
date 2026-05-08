@@ -36,4 +36,4 @@
     childList: true,
     subtree: true
   });
-})();
+})

@@ -521,3 +521,39 @@ style.textContent = `
 `;
 document.head.append(style);
 }
+
+// content.js
+
+// Function to apply/remove the "No Animations" effect
+function applyAnimationSetting(isDisabled) {
+    let styleTag = document.getElementById('vortex-no-animations');
+    
+    if (isDisabled) {
+        if (!styleTag) {
+            styleTag = document.createElement('style');
+            styleTag.id = 'vortex-no-animations';
+            styleTag.innerHTML = `
+                *, *::before, *::after {
+                    transition: none !important;
+                    animation: none !important;
+                }
+            `;
+            document.head.appendChild(styleTag);
+        }
+    } else {
+        if (styleTag) styleTag.remove();
+    }
+}
+
+// 1. Check the setting when the page first loads
+chrome.storage.sync.get(['toggle1'], (result) => {
+    // If toggle1 is checked, we disable animations
+    applyAnimationSetting(result.toggle1);
+});
+
+// 2. Listen for changes while the user is on the site
+chrome.storage.onChanged.addListener((changes, namespace) => {
+    if (changes.toggle1) {
+        applyAnimationSetting(changes.toggle1.newValue);
+    }
+});
