@@ -1,52 +1,36 @@
-document.getElementById('theme-switch-panel')?.remove();
+window.addEventListener("load", () => {
 
-const panel = document.createElement('div');
-panel.id = "theme-switch-panel";
+    document.getElementById("theme-switch-panel")?.remove();
 
-Object.assign(panel.style, {
-    position: "fixed",
-    bottom: "24px",
-    right: "24px",
-    width: "160px",
-    background: "rgba(18, 18, 26, 0.95)",
-    borderRadius: "8px",
-    padding: "12px",
-    zIndex: "999999",
-    fontFamily: "system-ui, sans-serif",
-    display: "flex",
-    flexDirection: "column",
-    gap: "8px"
-});
+    const panel = document.createElement("div");
 
-const label = document.createElement('span');
-label.textContent = "🎨 Theme";
+    panel.id = "theme-switch-panel";
 
-Object.assign(label.style, {
-    color: "white",
-    fontSize: "13px",
-    fontWeight: "bold"
-});
-
-panel.appendChild(label);
-
-["Light", "Dark", "System"].forEach(theme => {
-    const btn = document.createElement('button');
-
-    btn.textContent = theme;
-
-    Object.assign(btn.style, {
-        background: "#2a2a3a",
+    Object.assign(panel.style, {
+        position: "fixed",
+        bottom: "24px",
+        right: "24px",
+        width: "160px",
+        background: "red",
         color: "white",
-        border: "none",
-        borderRadius: "6px",
-        padding: "6px 10px",
-        cursor: "pointer",
-        fontSize: "13px"
+        padding: "12px",
+        zIndex: "2147483647",
+        display: "flex",
+        flexDirection: "column",
+        gap: "8px",
+        border: "4px solid yellow"
     });
-    
-    btn.onclick = () => alert(`Switched to ${theme}`);
 
-    panel.appendChild(btn);
+    panel.innerHTML = `
+        <div>THE PANEL EXISTS</div>
+        <button>Light</button>
+        <button>Dark</button>
+        <button>System</button>
+    `;
+
+    document.body.appendChild(panel);
+
+    console.log("PANEL ADDED");
 });
 
-document.body.appendChild(panel);
+//WOR KWO TKOWRKKOWKR AOPFDLKJGS
