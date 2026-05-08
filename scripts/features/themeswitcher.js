@@ -1,5 +1,5 @@
     const panel = document.createElement('div');
-    panel.id = "maps-loader-panel";
+    panel.id = "theme-switch-panel";
 
     Object.assign(panel.style, {
         position: "fixed",
