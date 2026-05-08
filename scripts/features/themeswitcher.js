@@ -15,3 +15,5 @@
         flexDirection: "column",
         gap: "8px"
     });
+
+document.body.appendChild(panel);
