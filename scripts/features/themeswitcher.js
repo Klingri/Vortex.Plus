@@ -1,28 +1,10 @@
 function initThemeUI() {
 
     document.getElementById('theme-switch-panel')?.remove();
-    document.getElementById('theme-injected-style')?.remove();
-
-    var styleEl = document.createElement('style');
-    styleEl.id = 'theme-injected-style';
-    (document.head || document.documentElement).appendChild(styleEl);
-
-    var galaxyInterval = null;
-
-    function applyTheme(bg, accent) {
-        if (galaxyInterval) clearInterval(galaxyInterval);
-
-        styleEl.textContent = `
-html, body { background-color: ${bg} !important; color: #fff !important; }
-a { color: ${accent} !important; }
-input, textarea, select { background-color: ${bg} !important; color: #fff !important; }
-`;
-    }
 
     var themes = [
-        { name: 'Dark', bg: '#121212', accent: '#bb86fc' },
-        { name: 'Blue', bg: '#0d1b2a', accent: '#60b4ff' },
-        { name: 'Reset', bg: null, accent: null }
+        { name: 'Dark', cssname: ''},
+        { name: 'Blue', cssname: 'ocean'},
     ];
 
     var panel = document.createElement('div');
@@ -46,9 +28,9 @@ input, textarea, select { background-color: ${bg} !important; color: #fff !impor
     label.style.color = 'white';
     panel.appendChild(label);
 
-    themes.forEach(t => {
+    themes.forEach(theme => {
         var btn = document.createElement('button');
-        btn.textContent = t.name;
+        btn.textContent = theme.name;
 
         Object.assign(btn.style, {
             background: '#1e1e2e',
@@ -59,11 +41,7 @@ input, textarea, select { background-color: ${bg} !important; color: #fff !impor
         });
 
         btn.onclick = () => {
-            if (t.name === 'Reset') {
-                styleEl.textContent = '';
-            } else {
-                applyTheme(t.bg, t.accent);
-            }
+            document.documentElement.setAttribute('data-theme', theme.cssname);
         };
 
         panel.appendChild(btn);
