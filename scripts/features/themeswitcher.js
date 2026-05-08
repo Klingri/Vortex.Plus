@@ -133,7 +133,7 @@ input, textarea, select { background-color: ${bg} !important; color: #fff !impor
 
     Object.assign(panel.style, {
         position: 'fixed',
-        bottom: '80px',
+        bottom: '160px',
         right: '24px',
         width: '150px',
         background: 'rgba(18,18,26,0.97)',
