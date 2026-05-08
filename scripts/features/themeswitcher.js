@@ -1,6 +1,6 @@
+function createPanel() {
     const panel = document.createElement('div');
     panel.id = "theme-switch-panel";
-
     Object.assign(panel.style, {
         position: "fixed",
         bottom: "24px",
@@ -15,5 +15,12 @@
         flexDirection: "column",
         gap: "8px"
     });
+    document.body.appendChild(panel);
+}
 
-document.body.appendChild(panel);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createPanel);
+} else {
+    createPanel(); "
+}
+'
