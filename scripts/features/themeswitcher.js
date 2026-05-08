@@ -3,7 +3,7 @@ document.getElementById('theme-injected-style')?.remove();
 
 var styleEl = document.createElement('style');
 styleEl.id = 'theme-injected-style';
-document.head.appendChild(styleEl);
+(document.head || document.documentElement).appendChild(styleEl);
 
 var galaxyInterval = null;
 
