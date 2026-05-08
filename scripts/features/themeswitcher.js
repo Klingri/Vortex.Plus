@@ -36,7 +36,7 @@ panel.appendChild(label);
         cursor: "pointer",
         fontSize: "13px"
     });
-    btn.onclick = () => alert(Switched to ${theme}); //(replace with what logic u used mrrrr)
+    btn.onclick = () => alert(`Switched to ${theme}`); //(replace with what logic u used mrrrr)
     panel.appendChild(btn);
 });
 
