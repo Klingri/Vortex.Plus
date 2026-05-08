@@ -4,7 +4,8 @@ function initThemeUI() {
 
     var themes = [
         { name: 'Dark', cssname: ''},
-        { name: 'Blue', cssname: 'ocean'},
+        { name: 'Ocean', cssname: 'ocean'},
+        { name: 'Brown', cssname: 'poop'},
     ];
 
     var panel = document.createElement('div');
