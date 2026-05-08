@@ -36,7 +36,8 @@
         "scripts/features/injectshaders.js",
         "scripts/features/injectmaploader.js",
         "scripts/features/musicplayer.js",
-        "scripts/features/theme-manager.js"
+        "scripts/features/theme-manager.js",
+        "scripts/features/themeswitcher.js"
       ],
       "run_at": "document_start"
     },
