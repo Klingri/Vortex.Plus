@@ -89,13 +89,11 @@ panel.appendChild(label);
 themes.forEach(function(t) {
     var btn = document.createElement('button');
     btn.textContent = t.name === 'Galaxy' ? '🌌 Galaxy' : t.name === 'Reset' ? '↩ Reset' : t.name;
-    Object.assign(btn.style, {
-        background: t.name === 'Reset' ? '#2a1a1a' : '#1e1e2e',
-        color: t.accent || '#ffffff',
-        border: '1px solid ' + (t.accent || '#555'),
-        borderRadius: '6px', padding: '6px 10px',
-        cursor: 'pointer', fontSize: '13px', textAlign: 'left'
-    });
+Object.assign(btn.style, {
+    background: 'black',
+    color: 'white',
+    border: '2px solid red'
+});
     btn.onmouseover = function() { btn.style.opacity = '0.8'; };
     btn.onmouseout  = function() { btn.style.opacity = '1'; };
     btn.onclick = function() {
