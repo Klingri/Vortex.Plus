@@ -17,7 +17,7 @@ function initThemeUI() {
         right: '24px',
         width: '160px',
         background: 'rgba(18,18,26,0.97)',
-        padding: '12px',
+        padding: '48px',
         zIndex: '999999',
         display: 'flex',
         flexDirection: 'column',
