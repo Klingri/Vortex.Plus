@@ -135,8 +135,6 @@ window.onload = () => {
     panel.appendChild(loadBtn);
 
     console.log('loading');
-    document.documentElement.setAttribute('data-theme', 'ocean');
-    console.log("Theme set to ocean!");
     // finally, add the gui to the page
     document.body.appendChild(panel);
 }
