@@ -1,7 +1,7 @@
 // created by hayden
-(function() {
+(function () {
     const STORAGE_KEY = 'vortex_player_state';
-    
+
     const player = {
         audio: null,
         isPlaying: false,
@@ -19,7 +19,7 @@
             this.createUI();
             this.attachEvents();
             this.restoreState();
-            
+
             // Save state periodically while playing
             setInterval(() => this.saveState(), 1000);
         },
@@ -373,7 +373,7 @@
             this.audio.addEventListener('timeupdate', () => {
                 const percent = (self.audio.currentTime / self.audio.duration) * 100;
                 document.getElementById('progress-fill').style.width = percent + '%';
-                
+
                 const current = self.formatTime(self.audio.currentTime);
                 const duration = self.formatTime(self.audio.duration);
                 document.getElementById('time-display').textContent = `${current} / ${duration}`;

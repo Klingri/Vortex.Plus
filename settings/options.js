@@ -1,34 +1,34 @@
-console.log("VORTEX+ DEBUG: Script starting...");
+// List of IDs we want to track
+const ids = ['toggle1', 'toggle2', 'toggle3', 'toggle4', 'toggle5'];
 
-// This will turn the entire website background red for 1 second
-// if the script is actually running.
-document.body.style.border = "10px solid red";
+// Saves the state of all checkboxes
+function saveOptions() {
+    const settings = {};
+    ids.forEach(id => {
+        settings[id] = document.getElementById(id).checked;
+    });
 
-function inject() {
-    // We will try to find the navbar, but if we can't, 
-    // we'll just put the button at the very top of the body.
-    const navbar = document.querySelector('nav.navbar') || document.querySelector('.navbar');
-
-    if (navbar && !document.getElementById('vplus-settings-nav')) {
-        console.log("VORTEX+ DEBUG: Navbar found!");
-
-        const settingsLink = document.createElement('a');
-        settingsLink.id = 'vplus-settings-nav';
-        settingsLink.innerText = '⚙️ V+ Settings';
-        settingsLink.style.cssText = `
-            color: #00ff00 !important;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
-            z-index: 9999;
-        `;
-
-        navbar.appendChild(settingsLink);
-    } else if (!navbar) {
-        console.log("VORTEX+ DEBUG: Navbar NOT found yet...");
-    }
+    chrome.storage.sync.set(settings, () => {
+        console.log('Settings saved');
+    });
 }
 
-// Run immediately and then every second
-inject();
-setInterval(inject, 1000);
+// Restores the state of all checkboxes
+function restoreOptions() {
+    // Pass the ids array to get all values at once
+    chrome.storage.sync.get(ids, (items) => {
+        ids.forEach(id => {
+            // If items[id] is undefined (first time run), default to false
+            document.getElementById(id).checked = items[id] || false;
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    restoreOptions();
+
+    // Add an event listener to every checkbox
+    ids.forEach(id => {
+        document.getElementById(id).addEventListener('change', saveOptions);
+    });
+});

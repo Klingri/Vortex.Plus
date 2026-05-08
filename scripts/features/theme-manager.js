@@ -3,7 +3,7 @@
 //rules: have fun reading the vovels were deleted for faster coding and shortining{lol}
 // PRESS ' TO OPEN MENU'
 // purple horse is an outlier
-(function() {
+(function () {
     const prsts = [
         { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//default themes
         { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// old roblox is wip submit ur preset to me
@@ -19,7 +19,7 @@
 
     let usr_thms = JSON.parse(localStorage.getItem('v_usr_thms')) || [];
 
-    const appl_thm=(thm) =>  {
+    const appl_thm = (thm) => {
         localStorage.setItem('v_lst_thm', JSON.stringify(thm));
         let styl = document.getElementById('v-dyn-css') || document.createElement('style');
         styl.id = 'v-dyn-css';
@@ -55,7 +55,7 @@
         const gui = document.createElement('div');
         gui.id = 'v-thm-mn';
         gui.innerHTML = `<div class="m-tp">
-        ${['background','accent','text','border'].map(lbl=>`<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
+        ${['background', 'accent', 'text', 'border'].map(lbl => `<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
         <button id="v-appl" style="width:100%;margin:5px 0;border:none;border-radius:0;background:#111;color:white;">Apply</button>
         <div style="display:flex;gap:2px;"><input id="v-nm-inp" type="text" placeholder="name of theme" style="flex:1;border:none;border-radius:0;"><button id="v-sv-bttn" style="border:none;border-radius:0;background:#111;color:white;">Save</button></div>
         </div>
@@ -69,12 +69,12 @@
         const tgl_sect = (hd, cnt) => {
             let h = document.getElementById(hd), c = document.getElementById(cnt);
             h.onclick = () => {
-                let opn = c.style.display==='flex';
+                let opn = c.style.display === 'flex';
                 c.style.display = opn ? 'none' : 'flex';
                 h.innerText = (opn ? '▶ ' : '▼ ') + h.innerText.slice(2);
             };
         };
-        tgl_sect('h-prst','c-prst'); tgl_sect('h-usr','c-usr');
+        tgl_sect('h-prst', 'c-prst'); tgl_sect('h-usr', 'c-usr');
 
         prsts.forEach(p => {
             let bttn = document.createElement('div');
@@ -85,7 +85,7 @@
             document.getElementById('c-prst').appendChild(bttn);
         });
         //user theme rendering (x on line 89 is a button which deletes ur theme)
-        const rndr_usr_thms=()=> {
+        const rndr_usr_thms = () => {
             let lst = document.getElementById('c-usr');
             lst.innerHTML = '';
             usr_thms.forEach((thm, i) => {
@@ -93,9 +93,9 @@
                 let bttn = document.createElement('div'); bttn.className = 'thm-bttn';
                 bttn.style = `flex:1;background:${thm.bg};color:${thm.tx};border:none;border-radius:0;`;
                 bttn.innerText = thm.nm; bttn.onclick = () => appl_thm(thm);
-                let del = document.createElement('button'); del.innerText = 'X'; del.style="border:none;border-radius:0;background:#111;color:white;";
-                del.onclick = () => { usr_thms.splice(i,1); localStorage.setItem('v_usr_thms',JSON.stringify(usr_thms)); rndr_usr_thms(); };
-                rw.append(bttn,del); lst.appendChild(rw);
+                let del = document.createElement('button'); del.innerText = 'X'; del.style = "border:none;border-radius:0;background:#111;color:white;";
+                del.onclick = () => { usr_thms.splice(i, 1); localStorage.setItem('v_usr_thms', JSON.stringify(usr_thms)); rndr_usr_thms(); };
+                rw.append(bttn, del); lst.appendChild(rw);
             });
         };
         rndr_usr_thms();
@@ -103,18 +103,18 @@
         document.getElementById('v-appl').onclick = () => appl_thm({
             nm: "Custom",
             bg: document.getElementById('e-background').value,
-                                                                   ac: document.getElementById('e-accent').value,
-                                                                   tx: document.getElementById('e-text').value,
-                                                                   br: document.getElementById('e-border').value
+            ac: document.getElementById('e-accent').value,
+            tx: document.getElementById('e-text').value,
+            br: document.getElementById('e-border').value
         });
         //see the values
         document.getElementById('v-sv-bttn').onclick = () => {
             usr_thms.push({
                 nm: document.getElementById('v-nm-inp').value || "Thm",
-                          bg: document.getElementById('e-background').value,
-                          ac: document.getElementById('e-accent').value,
-                          tx: document.getElementById('e-text').value,
-                          br: document.getElementById('e-border').value
+                bg: document.getElementById('e-background').value,
+                ac: document.getElementById('e-accent').value,
+                tx: document.getElementById('e-text').value,
+                br: document.getElementById('e-border').value
             });
             localStorage.setItem('v_usr_thms', JSON.stringify(usr_thms));
             rndr_usr_thms();
@@ -130,7 +130,7 @@
         if (e.key === "'" && document.querySelector('.navbar')) {
             bld_mn();
             let gui = document.getElementById('v-thm-mn');
-            gui.style.display = gui.style.display==='flex' ? 'none' : 'flex';
+            gui.style.display = gui.style.display === 'flex' ? 'none' : 'flex';
 
             // Re-fill boxes when menu opens so they aren't empty
             const curr = localStorage.getItem('v_lst_thm');

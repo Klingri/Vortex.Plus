@@ -1,9 +1,8 @@
 {
   "name": "Vortex+",
-  "version": "1.6",
+  "version": "1.7",
   "manifest_version": 3,
   "description": "An extension to enhance Vortex with new features.",
-  "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -13,8 +12,12 @@
   "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml",
   "options_ui": {
     "page": "settings/options.html",
-    "open_in_tab": false
+    "open_in_tab": true
   },
+  "host_permissions": [
+    "https://pastebin.com/*",
+    "https://vortex.towerstats.com/"
+  ],
   "permissions": [
     "storage",
     "activeTab",
@@ -36,7 +39,8 @@
         "scripts/features/injectshaders.js",
         "scripts/features/injectmaploader.js",
         "scripts/features/musicplayer.js",
-        "scripts/features/theme-manager.js"
+        "scripts/features/theme-manager.js",
+        "scripts/features/stafficon.js"
       ],
       "run_at": "document_start"
     },
@@ -53,7 +57,8 @@
     {
       "resources": [
         "scripts/features/shaders.js",
-        "scripts/features/maploader.js"
+        "scripts/features/maploader.js",
+        "settings/options.html"
       ],
       "matches": [
         "https://vortex.towerstats.com/*"

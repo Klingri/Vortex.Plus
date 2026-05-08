@@ -1,10 +1,20 @@
-// Made by Klingri
-document.getElementById('colorWheel').addEventListener('input', (event) => {
-  const color = event.target.value;
+// popup.js
+const openSettings = () => {
+  const settingsBtn = document.getElementById('open-settings');
 
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    chrome.scripting.executeScript({
-      target: { tabId: tabs[0].id },
-    });
-  });
-});
+  if (settingsBtn) {
+    settingsBtn.onclick = () => {
+      chrome.tabs.create({ url: 'settings/options.html' });
+    };
+    console.log("Vortex+: Settings listener attached.");
+  } else {
+    console.error("Vortex+: Button not found in DOM.");
+  }
+};
+
+// This checks if the page is already loaded, otherwise waits for it
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', openSettings);
+} else {
+  openSettings();
+}

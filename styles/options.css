@@ -1,0 +1,72 @@
+body {
+    background-color: #141212;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input {
+    color: #FFF;
+    text-align: center;
+}
+
+#featureToggle {
+    /* Changes the primary color of the checkbox */
+    accent-color: #2563eb;
+
+    /* Adjusts the size of the original element */
+    width: 1.2rem;
+    height: 1.2rem;
+
+    /* Adjusts the vertical alignment with text */
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#featureToggle {
+    cursor: pointer;
+
+    /* Adds spacing between the box and the label text */
+    margin-right: 8px;
+
+    /* Basic sizing */
+    transform: scale(1.2);
+}
+
+label {
+    font-family: Georgia, serif;
+    /* Using a clean serif font for the label */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#toggle1,
+#toggle2,
+#toggle3,
+#toggle4,
+#toggle5 {
+    /* Shifts the blue default to a green/purple/etc */
+    filter: hue-rotate(250deg) brightness(1.1);
+
+    width: 18px;
+    height: 18px;
+}
+
+/* Re-enable pointer events only for the checkbox input */
+label input[type="checkbox"] {
+    pointer-events: auto;
+}
+
+.perftweaktxt {
+    text-align: left;
+    color: grey;
+}

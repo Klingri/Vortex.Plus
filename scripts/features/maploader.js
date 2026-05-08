@@ -60,6 +60,19 @@ window.onload = () => {
     });
     panel.appendChild(title);
 
+    // Automatically unlock cursor when hovering over the Maploader
+panel.onmouseenter = () => {
+    if (document.pointerLockElement) {
+        document.exitPointerLock();
+    }
+};
+
+// Optional: If you want the game to re-capture the mouse when you leave the panel
+// panel.onmouseleave = () => {
+//    // Most browsers require a fresh click to re-lock, 
+//    // so auto-locking here might not work without a user click.
+// };
+
     // button styler
     function styleBtn(btn, type = "default") {
         Object.assign(btn.style, {
@@ -92,11 +105,11 @@ window.onload = () => {
         btn.onclick = () => {
             if (loaded) {
                 unloadMap(map.name)
-                btn.innerHTML = map.name + ' (Not loaded)'
+                btn.innerHTML = map.name + '(Not loaded)'
                 loaded = false
             } else {
                 onLoad(map.name, map.url);
-                btn.innerHTML = map.name + ' (Loaded)'
+                btn.innerHTML = map.name + '(Loaded)'
                 loaded = true
             }
         };

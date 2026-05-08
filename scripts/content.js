@@ -402,77 +402,122 @@ document.addEventListener('keydown', (e) => {
 const observer = new MutationObserver(() => enhanceVortex());
 observer.observe(document.body, { childList: true, subtree: true });
 
- function renderMutualFriends(friends) {
-        const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
-        
-        const header = el('div', { className: 'section-header' });
-        header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
-        section.appendChild(header);
+function renderMutualFriends(friends) {
+    const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
 
-        const wrap = el('div', { className: 'carousel-wrap' });
-        const row = el('div', { className: 'friends-row' });
-        
-        if (friends.length === 0) {
-            row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
-        } else {
-            for (const f of friends) {
-                const card = el('a', {
-                    className: 'friend-card',
-                    href: `/users/${f.id}/profile`
-                });
-                card.innerHTML = `
+    const header = el('div', { className: 'section-header' });
+    header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
+    section.appendChild(header);
+
+    const wrap = el('div', { className: 'carousel-wrap' });
+    const row = el('div', { className: 'friends-row' });
+
+    if (friends.length === 0) {
+        row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
+    } else {
+        for (const f of friends) {
+            const card = el('a', {
+                className: 'friend-card',
+                href: `/users/${f.id}/profile`
+            });
+            card.innerHTML = `
                     <div class="friend-avatar-wrap">
                         <div class="friend-avatar" style="background:${avatarColor(f.username)}">${initial(f.username)}</div>
                         ${statusDotHTML(f.online_status)}
                     </div>
                     <span class="friend-name">${f.username}</span>
                 `;
-                row.appendChild(card);
-            }
+            row.appendChild(card);
         }
-        
-        wrap.appendChild(row);
-        section.appendChild(wrap);
-        if (typeof initCarousel === 'function') initCarousel(wrap);
-        return section;
     }
 
-    async function enhanceVortex() {
-        const page = document.querySelector('.page');
-        const usernameHeader = document.querySelector('.profile-username');
-        
-        if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
-        usernameHeader.id = 'vortex-enhanced';
+    wrap.appendChild(row);
+    section.appendChild(wrap);
+    if (typeof initCarousel === 'function') initCarousel(wrap);
+    return section;
+}
 
-        const userId = getProfileUserId();
-        if (!userId) return;
+async function enhanceVortex() {
+    const page = document.querySelector('.page');
+    const usernameHeader = document.querySelector('.profile-username');
 
-        const [meFriends, data, friends] = await Promise.all([
-            api.friends(),
-            api.user(userId),
-            fetch(`/api/friends/${userId}`).then(r => r.ok ? r.json() : [])
-        ]);
+    if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
+    usernameHeader.id = 'vortex-enhanced';
 
-        const myFriendIds = new Set(meFriends.map(f => f.id));
-        const mutualFriends = friends.filter(f => myFriendIds.has(f.id));
+    const userId = getProfileUserId();
+    if (!userId) return;
 
-        // Add mutual friends section
-        document.getElementById('vortex-mutual-friends-section')?.remove();
-        const mutualSection = renderMutualFriends(mutualFriends);
-        const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
-        if (friendHeader?.parentNode) {
-            friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
+    const [meFriends, data, friends] = await Promise.all([
+        api.friends(),
+        api.user(userId),
+        fetch(`/api/friends/${userId}`).then(r => r.ok ? r.json() : [])
+    ]);
+
+    const myFriendIds = new Set(meFriends.map(f => f.id));
+    const mutualFriends = friends.filter(f => myFriendIds.has(f.id));
+
+    // Add mutual friends section
+    document.getElementById('vortex-mutual-friends-section')?.remove();
+    const mutualSection = renderMutualFriends(mutualFriends);
+    const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
+    if (friendHeader?.parentNode) {
+        friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
+    } else {
+        const friendsSection = page.querySelector('.section');
+        if (friendsSection?.parentNode) {
+            friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
         } else {
-            const friendsSection = page.querySelector('.section');
-            if (friendsSection?.parentNode) {
-                friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
-            } else {
-                page.appendChild(mutualSection);
-            }
+            page.appendChild(mutualSection);
         }
     }
+}
 
-    const vortexObserver = new MutationObserver(() => enhanceVortex());
-    vortexObserver.observe(document.body, { childList: true, subtree: true });
+const vortexObserver = new MutationObserver(() => enhanceVortex());
+vortexObserver.observe(document.body, { childList: true, subtree: true });
 
-    start();
+start();
+
+console.log("Vortex+: Script Loaded");
+
+const inject = () => {
+    const nav = document.querySelector('nav.navbar');
+    if (!nav) {
+        console.log("Vortex+: Looking for nav.navbar... (not found yet)");
+        return;
+    }
+    
+    if (document.getElementById('vortex-nav-btn')) return;
+
+    console.log("Vortex+: Navbar found! Injecting...");
+    const b = document.createElement('button');
+    b.id = 'vortex-nav-btn';
+    b.innerText = 'SETTINGS';
+    b.style.cssText = "all: initial; position: relative; z-index: 9999; color: red; background: yellow; padding: 10px; cursor: pointer; border: 2px solid black;";
+    
+    b.onclick = () => {
+        window.open(chrome.runtime.getURL('settings/options.html'));
+    };
+
+    nav.appendChild(b);
+};
+
+setInterval(inject, 1000);
+
+// Find the element
+const overlay = document.getElementById('overlay');
+
+if (overlay) {
+  // Option A: Make it transparent (standard "removal")
+ // overlay.style.backgroundColor = 'transparent';
+  
+  // Option B: Remove the inline style entirely
+ // overlay.style.removeProperty('background-color');
+ const style = document.createElement('style');
+style.textContent = `
+  #overlay {
+    background: transparent !important;
+    background: none !important;
+  }
+`;
+document.head.append(style);
+}
