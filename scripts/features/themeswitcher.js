@@ -2,6 +2,7 @@ document.getElementById('theme-switch-panel')?.remove();
 
 const panel = document.createElement('div');
 panel.id = "theme-switch-panel";
+
 Object.assign(panel.style, {
     position: "fixed",
     bottom: "24px",
@@ -17,16 +18,22 @@ Object.assign(panel.style, {
     gap: "8px"
 });
 
-// Add a label
 const label = document.createElement('span');
 label.textContent = "🎨 Theme";
-Object.assign(label.style, { color: "white", fontSize: "13px", fontWeight: "bold" });
+
+Object.assign(label.style, {
+    color: "white",
+    fontSize: "13px",
+    fontWeight: "bold"
+});
+
 panel.appendChild(label);
 
-// Add theme buttons
 ["Light", "Dark", "System"].forEach(theme => {
     const btn = document.createElement('button');
+
     btn.textContent = theme;
+
     Object.assign(btn.style, {
         background: "#2a2a3a",
         color: "white",
@@ -36,7 +43,9 @@ panel.appendChild(label);
         cursor: "pointer",
         fontSize: "13px"
     });
-    btn.onclick = () => alert(`Switched to ${theme}`); //(replace with what logic u used mrrrr)
+    
+    btn.onclick = () => alert(`Switched to ${theme}`);
+
     panel.appendChild(btn);
 });
 
