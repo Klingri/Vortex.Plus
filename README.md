@@ -78,7 +78,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 # Further Reading
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
-[Localization](https://github.com/Klingri/Vortex.Plus)
+[Localization](https://github.com/Klingri/Vortex.Plus/blob/main/.github/LOCALIZATION.md)
 
 ---
   
