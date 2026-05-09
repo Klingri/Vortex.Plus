@@ -37,7 +37,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 **Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex discord server.**
 
 > [!IMPORTANT]
-> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers, Chromium works tho!
+> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers and On Safari, Chromium works tho!
 
 ---
 
@@ -56,10 +56,10 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 # Roadmap
 | Feature | Description | Priority |
 | :--- | :--- | :--- |
-| **Avatar Customization** | Full platform-wide dark theme. | Very High |
-| **Game Making** | Revamped UI for social clarity. | Very High |
-| **Emotes** | Experimental visual effects (Toggle with F7). | Medium |
-| **Tools** | Custom environment injection. | High |
+| **Avatar Customization** | Full platform-wide Avatar Customization. | Very High |
+| **Game Making** | Game Making for social clarity. | Very High |
+| **Emotes** | Animations you can ply. | Medium |
+| **Tools** | Tools to hold and use. | High |
 
 ---
 
@@ -68,14 +68,15 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
 | **Better Player List** | Revamped UI for social clarity. | @Enk |
-| **Shaders (F7)** | Experimental visual effects (Toggle with F7). | @Slime King |
-| **Map Loader** | Custom environment injection. | @Inuk |
+| **Shaders (F7) REMOVED** | Experimental visual effects (Toggle with F7). | @Slime King |
+| **Map Loader REMOVED** | Custom environment injection. | @Inuk |
 | **Music Player** | A Music Player. | @Enk |
+| **Custom Theme Manager** | Allows you to change themes. | @Myro |
 
 ---
 
-# Bug Testing
-- **Want to Become a Bug Tester?** Join the Vortex+ Discord Server to communicate with us! and we will give you a special role as your prize :).
+# Further Reading
+- **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
 
 ---
   
@@ -100,3 +101,6 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | **V.1.5** | Added More Animations and Effects | 06.05.2026 |
 | **V.1.6** | Added Blue Theme, Music player and other changes | 07.05.2026 |
 | **V.1.7** | Added Settings, Hided MapLoader and other changes | 08.05.2026 |
+| **V.1.8** | Added Custom Themes, Broke shaders and MapLoader | 08.05.2026 |
+| **V.1.9** | Upcoming Release | 09.05.2026 |
+| **V.2.0** | Upcoming Release | 10.05.2026 |
