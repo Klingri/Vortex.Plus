@@ -1,4 +1,5 @@
 // Created by Enk
+// new test
 (async function listUsersInfiniteScroll() {
     // Find the highest existing user ID dynamically
     async function userExists(id) {
@@ -271,6 +272,32 @@
     await loadBatch();
 })();
 
+// Helper functions for profile enhancement
+function el(tag, attrs = {}) {
+    const element = document.createElement(tag);
+    Object.assign(element, attrs);
+    return element;
+}
+
+function statusDotHTML(status) {
+    const colors = {
+        'online': '#2ecc71',
+        'idle': '#f39c12',
+        'offline': '#7f8c8d'
+    };
+    const color = colors[status] || colors.offline;
+    return `<div class="status-dot" style="background:${color};width:12px;height:12px;border-radius:50%;position:absolute;bottom:0;right:0;border:2px solid rgb(27, 26, 26);"></div>`;
+}
+
+function avatarColor(username) {
+    const colors = ['rgb(8,145,178)', 'rgb(147,51,234)', 'rgb(217,119,6)', 'rgb(37,99,235)', 'rgb(26,26,26)'];
+    return colors[username.charCodeAt(0) % colors.length];
+}
+
+function initial(username) {
+    return username[0].toUpperCase();
+}
+
 function renderMutualFriends(friends) {
         const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
         
@@ -306,7 +333,7 @@ function renderMutualFriends(friends) {
         return section;
 }
 
-function enhanceProfile() {
+async function enhanceProfile() {
     // 1. Add a "Copy Username" button next to the name
     const usernameElement = document.querySelector('.profile-username');
     if (usernameElement && !document.getElementById('vortex-copy-btn')) {
@@ -337,19 +364,32 @@ function enhanceProfile() {
         }
     }
 
-    document.getElementById('vortex-mutual-friends-section')?.remove();
+    // 3. Fetch and display mutual friends
+    try {
+        // Extract user ID from the current profile URL
+        const urlMatch = window.location.pathname.match(/\/users\/(\d+)/);
+        if (!urlMatch) return;
+        
+        const userId = urlMatch[1];
+        const res = await fetch(`/api/users/${userId}/mutual-friends`);
+        const mutualFriends = res.ok ? await res.json() : [];
+        
+        document.getElementById('vortex-mutual-friends-section')?.remove();
         const mutualSection = renderMutualFriends(mutualFriends);
-        const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
+        const friendHeader = Array.from(document.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
         if (friendHeader?.parentNode) {
             friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
         } else {
-            const friendsSection = page.querySelector('.section');
+            const friendsSection = document.querySelector('.section');
             if (friendsSection?.parentNode) {
                 friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
             } else {
-                page.appendChild(mutualSection);
+                document.body.appendChild(mutualSection);
             }
         }
+    } catch (err) {
+        console.error('Error loading mutual friends:', err);
+    }
 }
 
 // Since the site uses an async init() function to render the UI,
