@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vortex+</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#05010d;
+    --card:#0d0718;
+    --purple:#a020ff;
+    --purple2:#5f00ff;
+    --text:#f5f5f5;
+    --muted:#b7b7c7;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(160,32,255,.45), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(111,0,255,.35), transparent 25%),
+        radial-gradient(circle at 70% 80%, rgba(95,0,255,.3), transparent 30%),
+        #05010d;
+    color:var(--text);
+    min-height:100vh;
+    overflow-x:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+    background-size:40px 40px;
+    pointer-events:none;
+    mask-image:linear-gradient(to bottom, rgba(255,255,255,.6), transparent);
+}
+
+.cursor-glow{
+    width:120px;
+    height:120px;
+    position:fixed;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(168,85,247,.12) 0%, transparent 70%);
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:0;
+    transition:transform .08s linear;
+}
+
+.sidebar{
+    position:fixed;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    width:84px;
+    height:calc(100vh - 40px);
+    max-height:620px;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 0;
+    z-index:5;
+    box-shadow:
+        0 0 40px rgba(128,0,255,.15),
+        inset 0 0 0 1px rgba(255,255,255,.02);
+}
+
+.logo-small{
+    width:52px;
+    height:52px;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+}
+
+.logo-small img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transform:scale(1.3);
+}
+
+.nav{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.nav a{
+    width:54px;
+    height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:18px;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.05);
+    transition:.25s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.nav a::before,
+.download-btn::before,
+.feature-card::before{
+    content:"";
+    position:absolute;
+    inset:-100%;
+    background:linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(255,255,255,.18),
+        transparent 70%
+    );
+    transition:.6s;
+}
+
+.nav a:hover::before,
+.download-btn:hover::before,
+.feature-card:hover::before{
+    inset:100%;
+}
+
+.nav a:hover{
+    transform:translateY(-2px);
+    background:rgba(170,80,255,.12);
+    border-color:rgba(170,80,255,.3);
+    box-shadow:0 0 25px rgba(140,0,255,.25);
+}
+
+.main{
+    margin-left:130px;
+    padding:80px 70px;
+    position:relative;
+    z-index:2;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.left{
+    max-width:650px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    margin-bottom:28px;
+    color:#d4c4ff;
+    font-size:14px;
+    backdrop-filter:blur(10px);
+}
+
+h1{
+    font-size:84px;
+    line-height:0.95;
+    letter-spacing:-4px;
+    margin-bottom:20px;
+    background:linear-gradient(to bottom,#fff,#cfc3ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+    font-size:22px;
+    color:var(--muted);
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.changing{
+    color:white;
+    text-shadow:0 0 18px rgba(180,80,255,.5);
+    transition:opacity .3s ease;
+}
+
+.desc{
+    max-width:520px;
+    color:#9e9eb1;
+    line-height:1.7;
+    margin-bottom:34px;
+}
+
+.actions{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.download-btn{
+    position:relative;
+    overflow:hidden;
+    padding:16px 26px;
+    border-radius:18px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    background:linear-gradient(135deg,#a020ff,#5f00ff);
+    box-shadow:
+        0 10px 35px rgba(128,0,255,.35),
+        inset 0 0 15px rgba(255,255,255,.12);
+    transition:.25s ease;
+}
+
+.download-btn:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:
+        0 18px 45px rgba(128,0,255,.45),
+        inset 0 0 15px rgba(255,255,255,.15);
+}
+
+.ghost{
+    color:#cfcfe4;
+    text-decoration:none;
+    padding:15px 24px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.03);
+    transition:.25s ease;
+}
+
+.ghost:hover{
+    background:rgba(255,255,255,.06);
+    border-color:rgba(255,255,255,.12);
+}
+
+.right{
+    position:relative;
+}
+
+.logo-wrap{
+    width:340px;
+    height:340px;
+    border-radius:40px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.06);
+    backdrop-filter:blur(20px);
+    overflow:hidden;
+    box-shadow:
+        0 0 120px rgba(128,0,255,.25),
+        inset 0 0 50px rgba(255,255,255,.03);
+    animation:float 5s ease-in-out infinite;
+}
+
+.logo-wrap::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    border-radius:inherit;
+    background:linear-gradient(135deg, rgba(180,80,255,.5), transparent, rgba(95,0,255,.4));
+    z-index:-1;
+    filter:blur(20px);
+    opacity:.6;
+}
+
+.logo-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transform:scale(1.35);
+    user-select:none;
+    pointer-events:none;
+}
+
+.features{
+    margin-top:40px;
+}
+
+.section-title{
+    font-size:38px;
+    margin-bottom:26px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+}
+
+.feature-card{
+    position:relative;
+    overflow:hidden;
+    padding:28px;
+    border-radius:28px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    backdrop-filter:blur(18px);
+    transition:.25s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(160,32,255,.28);
+    box-shadow:0 0 35px rgba(128,0,255,.18);
+}
+
+.feature-card h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.feature-card p{
+    color:#a5a5b8;
+    line-height:1.6;
+}
+
+.blur-orb{
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(132,0,255,.12);
+    filter:blur(120px);
+    z-index:0;
+}
+
+.orb1{
+    top:-100px;
+    right:-100px;
+}
+
+.orb2{
+    bottom:-150px;
+    left:-120px;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@media(max-width:1000px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    h1{
+        font-size:62px;
+    }
+
+    .sidebar{
+        width:calc(100% - 30px);
+        height:80px;
+        left:15px;
+        bottom:15px;
+        top:auto;
+        transform:none;
+        flex-direction:row;
+        padding:0 18px;
+        max-height:none;
+    }
+
+    .nav{
+        flex-direction:row;
+    }
+
+    .main{
+        margin-left:0;
+        padding:60px 25px 120px;
+    }
+
+    .logo-wrap{
+        width:260px;
+        height:260px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+<div class="blur-orb orb1"></div>
+<div class="blur-orb orb2"></div>
+
+<div class="sidebar">
+
+    <div class="logo-small">
+        <img src="https://i.ibb.co/r2xkW92k/Untitled-1.png" alt="Vortex+ Logo">
+    </div>
+
+    <div class="nav">
+        <a href="#home">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 10.5L11 4l8 6.5"/>
+                <path d="M5 9.5V18h12V9.5"/>
+            </svg>
+        </a>
+
+        <a href="https://github.com/Klingri/Vortex.Plus/releases" target="_blank">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v10"/>
+                <path d="M7 10l5 5 5-5"/>
+                <path d="M5 18h14"/>
+            </svg>
+        </a>
+    </div>
+
+</div>
+
+<main class="main" id="home">
+
+<section class="hero">
+
+    <div class="left">
+
+        <div class="badge">
+            vortex extension
+        </div>
+
+        <h1>Vortex+</h1>
+
+        <div class="subtitle">
+            Vortex+ is
+            <span class="changing">slick.</span>
+        </div>
+
+        <p class="desc">
+            A new Vortex experience..
+        </p>
+
+        <div class="actions">
+            <a class="download-btn" href="https://github.com/Klingri/Vortex.Plus/releases" target="_blank">
+                Download
+            </a>
+
+            <a class="ghost" href="https://github.com/Klingri/Vortex.Plus" target="_blank">
+                Source code
+            </a>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="logo-wrap">
+            <img src="https://i.ibb.co/r2xkW92k/Untitled-1.png" alt="Vortex+ Logo">
+        </div>
+    </div>
+
+</section>
+
+<section class="features">
+
+    <h2 class="section-title">features</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <h3>about vortex+</h3>
+            <p>
+                Vortex+ is an advanced chrome extension for the web-game Vortex,
+                it includes several quality-of-life and overhauls the base game
+                to the way you like it! It includes shaders, friend updates, and active updates with so many features. Owned and developed by Klingri.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<script>
+const words = [
+    "slick.",
+    "innovative.",
+    "irresistible.",
+    "clean.",
+    "fast.",
+    "tuff.",
+    "goated."
+]
+
+const changing = document.querySelector(".changing")
+
+let index = 0
+
+setInterval(() => {
+
+    changing.style.opacity = 0
+
+    setTimeout(() => {
+        index = (index + 1) % words.length
+        changing.textContent = words[index]
+        changing.style.opacity = 1
+    }, 250)
+
+}, 2200)
+
+const glow = document.querySelector(".cursor-glow")
+
+document.addEventListener("mousemove", e => {
+    glow.style.left = e.clientX + "px"
+    glow.style.top = e.clientY + "px"
+})
+
+document.querySelectorAll("a, .feature-card, .logo-wrap").forEach(el => {
+
+    el.addEventListener("mouseenter", () => {
+        glow.style.background = "radial-gradient(circle, rgba(180,80,255,.18) 0%, transparent 70%)"
+    })
+
+    el.addEventListener("mouseleave", () => {
+        glow.style.background = "radial-gradient(circle, rgba(168,85,247,.12) 0%, transparent 70%)"
+    })
+
+})
+</script>
+
+</body>
+</html>
