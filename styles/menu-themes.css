@@ -1,3 +1,4 @@
+/*Made By Myro*/
 #v-thm-mn {
     position: fixed;
     right: 20px;
@@ -5,17 +6,17 @@
     width: 260px;
     background: #1b1a1a;
     border: none;
-    color: #fff;
+    color: #FFF;
     z-index: 1000000;
     font-family: monospace;
     display: none;
     flex-direction: column;
     box-shadow: 0px 10px 30px #000;
     border-radius: 0 !important;
-    /* makes corners sharp but- you gay */
+    /* Makes Corners Sharp */
 }
 
-/* the sizes */
+/* The Sizes */
 .m-tp {
     padding: 12px;
     border-bottom: 1px solid #333;
@@ -38,9 +39,9 @@
 .ed-r input {
     width: 70px;
     background: #111 !important;
-    color: #fff !important;
+    color: #FFF !important;
     border: none !important;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }
 
 .cl-hd {
@@ -50,7 +51,7 @@
     font-weight: bold;
     border: none;
     font-size: 11px;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }
 
 .cl-cntnt {
@@ -61,7 +62,7 @@
     gap: 4px;
     max-height: 140px;
     overflow-y: auto;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }
 
 .thm-bttn {
@@ -70,7 +71,7 @@
     text-align: left;
     font-size: 12px;
     border: none;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }
 
 #v-thm-mn button {
@@ -78,5 +79,5 @@
     background: #222;
     color: #fff;
     cursor: pointer;
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }

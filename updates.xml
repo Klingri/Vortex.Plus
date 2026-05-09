@@ -3,6 +3,6 @@
   <app appid='kloclpljagoiakkpbnahcpojfloaokgo'>
     <updatecheck
       codebase='https://github.com/Klingri/Vortex.Plus/releases/v1.6/vortex-plus.crx'
-      version='1.7' />
+      version='2.0' />
   </app>
 </gupdate>

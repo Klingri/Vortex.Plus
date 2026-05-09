@@ -1,5 +1,9 @@
 body {
-    background-color: #141212;
+    background-color: #101010;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,

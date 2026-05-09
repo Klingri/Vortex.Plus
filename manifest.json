@@ -1,8 +1,8 @@
 {
   "name": "Vortex+",
-  "version": "1.7",
+  "version": "1.9",
   "manifest_version": 3,
-  "description": "An extension to enhance Vortex with new features.",
+  "description": "Vortex, but Bigger.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -36,13 +36,12 @@
         "styles/menu-themes.css"
       ],
       "js": [
-        "scripts/features/injectshaders.js",
-        "scripts/features/injectmaploader.js",
         "scripts/features/musicplayer.js",
         "scripts/features/theme-manager.js",
         "scripts/features/stafficon.js",
-        "scripts/features/inject.js",
-        "scripts/features/mutualfriends.js"
+        "scripts/features/snowparticles.js",
+        "scripts/features/background.js",
+        "scripts/features/inject.js"
       ],
       "run_at": "document_start",
       "world": "MAIN",
@@ -60,8 +59,6 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "scripts/features/shaders.js",
-        "scripts/features/maploader.js",
         "styles/main.css",
         "images/*.png",
         "assets/fonts/*",

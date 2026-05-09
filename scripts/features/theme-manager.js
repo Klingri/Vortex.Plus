@@ -1,12 +1,13 @@
-//hello, and welcome to vortthemes
-// the comments will explin the code maybe
-//rules: have fun reading the vovels were deleted for faster coding and shortining{lol}
-// PRESS ' TO OPEN MENU'
-// purple horse is an outlier
+// Vortthemes.
+// The Comments Explain The Code.
+// Have fun reading. the vovels were deleted for faster coding and shortening.
+// Press ' TO OPEN MENU'.
+// Purple Horse is an outlier.
+//Made by Myro.
 (function () {
     const prsts = [
-        { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//default themes
-        { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// old roblox is wip submit ur preset to me
+        { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//Default Themes.
+        { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// Old Roblox is Work In Progress.
         { nm: "Dark Mode", bg: "#181818", ac: "#333", tx: "#e0e0e0", br: "#404040" },
         { nm: "Deep Sea", bg: "#041424", ac: "#145299", tx: "#9cf", br: "#0a2e54" },
         { nm: "Midnight", bg: "#0a0a0a", ac: "#444", tx: "#fff", br: "#222" },
@@ -24,7 +25,7 @@
         let styl = document.getElementById('v-dyn-css') || document.createElement('style');
         styl.id = 'v-dyn-css';
         (document.head || document.documentElement).appendChild(styl);
-        // code injection defines which one belongs to which group eg what it tagets
+        // Code injection defines which one belongs to which group eg. what it tagets.
         styl.innerHTML = `
         body, .navbar, .page, .navbar-search input, .bio-textarea { background:${thm.bg}!important; color:${thm.tx}!important; }
         .btn-primary, .navbar-search bttn, .badge, .btn-play, .status-dot.online { background:${thm.ac}!important; color:${thm.bg}!important; border:none!important; }
@@ -40,7 +41,7 @@
         }
         `;
 
-        // fix: only update boxes if the gui is actually open/exists
+        // Fix: only update boxes if the gui is actually open/exists.
         const box = document.getElementById('e-background');
         if (box) {
             box.value = thm.bg;
@@ -49,7 +50,7 @@
             document.getElementById('e-border').value = thm.br;
         }
     };
-    // what u see .map is the stuff you see at the top presets and themes are at the bottom of innerhtml
+    // What you see .map is the stuff you see at the top presets and themes are at the bottom of innerhtml.
     const bld_mn = () => {
         if (document.getElementById('v-thm-mn')) return;
         const gui = document.createElement('div');
@@ -57,12 +58,12 @@
         gui.innerHTML = `<div class="m-tp">
         ${['background', 'accent', 'text', 'border'].map(lbl => `<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
         <button id="v-appl" style="width:100%;margin:5px 0;border:none;border-radius:0;background:#111;color:white;">Apply</button>
-        <div style="display:flex;gap:2px;"><input id="v-nm-inp" type="text" placeholder="name of theme" style="flex:1;border:none;border-radius:0;"><button id="v-sv-bttn" style="border:none;border-radius:0;background:#111;color:white;">Save</button></div>
+        <div style="display:flex;gap:2px;"><input id="v-nm-inp" type="text" placeholder="Theme Name" style="flex:1;border:none;border-radius:0;"><button id="v-sv-bttn" style="border:none;border-radius:0;background:#111;color:white;">Save</button></div>
         </div>
         <div class="m-bt">
-        <div class="cl-hd" id="h-prst" style="border:none;border-radius:0;">▶ presets</div><div class="cl-cntnt" id="c-prst"></div>
+        <div class="cl-hd" id="h-prst" style="border:none;border-radius:0;">▶ Presets</div><div class="cl-cntnt" id="c-prst"></div>
         <div style="height:4px"></div>
-        <div class="cl-hd" id="h-usr" style="border:none;border-radius:0;">▶ my themes</div><div class="cl-cntnt" id="c-usr"></div>
+        <div class="cl-hd" id="h-usr" style="border:none;border-radius:0;">▶ My Themes</div><div class="cl-cntnt" id="c-usr"></div>
         </div>`;
         document.body.appendChild(gui);
 
@@ -84,7 +85,7 @@
             bttn.onclick = () => appl_thm(p);
             document.getElementById('c-prst').appendChild(bttn);
         });
-        //user theme rendering (x on line 89 is a button which deletes ur theme)
+        //User theme rendering (x on line 89 is a button which deletes ur theme).
         const rndr_usr_thms = () => {
             let lst = document.getElementById('c-usr');
             lst.innerHTML = '';
@@ -107,7 +108,7 @@
             tx: document.getElementById('e-text').value,
             br: document.getElementById('e-border').value
         });
-        //see the values
+        //See the values.
         document.getElementById('v-sv-bttn').onclick = () => {
             usr_thms.push({
                 nm: document.getElementById('v-nm-inp').value || "Thm",
@@ -120,7 +121,7 @@
             rndr_usr_thms();
         };
     };
-    // which key open the menu if u want to change (if (e.key === " ' "))
+    // Which key opens the menu if you want to change (if (e.key === " ' ")).
     const lst_thm = localStorage.getItem('v_lst_thm');
     if (lst_thm) {
         appl_thm(JSON.parse(lst_thm));

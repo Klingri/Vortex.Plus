@@ -318,242 +318,430 @@ observer.observe(document.body, {
     subtree: true
 });
 
-// da
+(function () {
 
-// Function to add features
-async function enhanceVortex() {
-    const page = document.querySelector('.page');
-    const actions = document.getElementById('profile-actions');
-    const usernameHeader = document.querySelector('.profile-username');
+    if (window.__vortexLoaded) return;
+    window.__vortexLoaded = true;
 
-    if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
-    usernameHeader.id = 'vortex-enhanced';
-
-    const userId = location.pathname.split('/')[2];
-
-    // 1. ADD FRIEND NOTES (Saved to Chrome Storage)
-    const bioBox = document.querySelector('.bio-box');
-    if (bioBox) {
-        const noteContainer = document.createElement('div');
-        noteContainer.className = 'vortex-note-container';
-
-        const noteLabel = document.createElement('div');
-        noteLabel.className = 'bio-label';
-        noteLabel.innerHTML = '<span>Private Note (Only you see this)</span>';
-
-        const noteArea = document.createElement('textarea');
-        noteArea.className = 'vortex-note-input';
-        noteArea.placeholder = 'Add a private note about this player...';
-
-        // Load existing note
-        chrome.storage.local.get([`note_${userId}`], (res) => {
-            if (res[`note_${userId}`]) noteArea.value = res[`note_${userId}`];
-        });
-
-        // Save note on type
-        noteArea.addEventListener('input', (e) => {
-            chrome.storage.local.set({ [`note_${userId}`]: e.target.value });
-        });
-
-        noteContainer.appendChild(noteLabel);
-        noteContainer.appendChild(noteArea);
-        bioBox.parentNode.insertBefore(noteContainer, bioBox.nextSibling);
-    }
-
-    // 2. QUICK SOCIAL LINKS
-    if (actions) {
-        const discordBtn = document.createElement('a');
-        discordBtn.href = "https://discord.gg/ncNzKqeJrh";
-        discordBtn.target = "_blank";
-        discordBtn.className = 'btn-secondary';
-        discordBtn.innerHTML = '<i class="fa-brands fa-discord"></i> Community Discord';
-        discordBtn.style.marginLeft = '10px';
-        actions.appendChild(discordBtn);
-    }
-
-    // 3. ENHANCED STATS CARDS
-    const statLinks = document.querySelectorAll('.profile-stat');
-    statLinks.forEach(link => {
-        link.classList.add('vortex-stat-card');
-    });
-
-    // 4. COPY USERNAME BUTTON
-    const copyBtn = document.createElement('button');
-    copyBtn.className = 'vortex-copy-btn';
-    copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
-    copyBtn.onclick = () => {
-        const name = usernameHeader.innerText.split('\n')[0].trim();
-        navigator.clipboard.writeText(name);
-        copyBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
-        setTimeout(() => copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>', 2000);
-    };
-    usernameHeader.appendChild(copyBtn);
-}
-
-// Global Search Shortcut (Press '/' to search)
-document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-        e.preventDefault();
-        document.getElementById('search-input')?.focus();
-    }
+    /* ── fonts ── */
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;700&display=swap";
+    document.head.appendChild(link);
 });
-
-// Run enhancement
-const observer = new MutationObserver(() => enhanceVortex());
-observer.observe(document.body, { childList: true, subtree: true });
-
-function renderMutualFriends(friends) {
-    const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
-
-    const header = el('div', { className: 'section-header' });
-    header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
-    section.appendChild(header);
-
-    const wrap = el('div', { className: 'carousel-wrap' });
-    const row = el('div', { className: 'friends-row' });
-
-    if (friends.length === 0) {
-        row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
-    } else {
-        for (const f of friends) {
-            const card = el('a', {
-                className: 'friend-card',
-                href: `/users/${f.id}/profile`
-            });
-            card.innerHTML = `
-                    <div class="friend-avatar-wrap">
-                        <div class="friend-avatar" style="background:${avatarColor(f.username)}">${initial(f.username)}</div>
-                        ${statusDotHTML(f.online_status)}
-                    </div>
-                    <span class="friend-name">${f.username}</span>
-                `;
-            row.appendChild(card);
-        }
-    }
-
-    wrap.appendChild(row);
-    section.appendChild(wrap);
-    if (typeof initCarousel === 'function') initCarousel(wrap);
-    return section;
-}
-
-async function enhanceVortex() {
-    const page = document.querySelector('.page');
-    const usernameHeader = document.querySelector('.profile-username');
-
-    if (!usernameHeader || document.getElementById('vortex-enhanced')) return;
-    usernameHeader.id = 'vortex-enhanced';
-
-    const userId = getProfileUserId();
-    if (!userId) return;
-
-    const [meFriends, data, friends] = await Promise.all([
-        api.friends(),
-        api.user(userId),
-        fetch(`/api/friends/${userId}`).then(r => r.ok ? r.json() : [])
-    ]);
-
-    const myFriendIds = new Set(meFriends.map(f => f.id));
-    const mutualFriends = friends.filter(f => myFriendIds.has(f.id));
-
-    // Add mutual friends section
-    document.getElementById('vortex-mutual-friends-section')?.remove();
-    const mutualSection = renderMutualFriends(mutualFriends);
-    const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
-    if (friendHeader?.parentNode) {
-        friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
-    } else {
-        const friendsSection = page.querySelector('.section');
-        if (friendsSection?.parentNode) {
-            friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
-        } else {
-            page.appendChild(mutualSection);
-        }
-    }
-}
-
-const vortexObserver = new MutationObserver(() => enhanceVortex());
-vortexObserver.observe(document.body, { childList: true, subtree: true });
-
-start();
-
-console.log("Vortex+: Script Loaded");
-
-const inject = () => {
-    const nav = document.querySelector('nav.navbar');
-    if (!nav) {
-        console.log("Vortex+: Looking for nav.navbar... (not found yet)");
-        return;
-    }
-    
-    if (document.getElementById('vortex-nav-btn')) return;
-
-    console.log("Vortex+: Navbar found! Injecting...");
-    const b = document.createElement('button');
-    b.id = 'vortex-nav-btn';
-    b.innerText = 'SETTINGS';
-    b.style.cssText = "all: initial; position: relative; z-index: 9999; color: red; background: yellow; padding: 10px; cursor: pointer; border: 2px solid black;";
-    
-    b.onclick = () => {
-        window.open(chrome.runtime.getURL('settings/options.html'));
-    };
-
-    nav.appendChild(b);
-};
-
-setInterval(inject, 1000);
-
-// Find the element
-const overlay = document.getElementById('overlay');
-
-if (overlay) {
-  // Option A: Make it transparent (standard "removal")
- // overlay.style.backgroundColor = 'transparent';
-  
-  // Option B: Remove the inline style entirely
- // overlay.style.removeProperty('background-color');
- const style = document.createElement('style');
+/* ── styles ── NOTE: NO body/html overrides so the host page bg is untouched ── */
+var style = document.createElement("style");
 style.textContent = `
-  #overlay {
-    background: transparent !important;
-    background: none !important;
-  }
-`;
-document.head.append(style);
-}
+    #vortex-gui {
+      position: fixed;
+      top: 50%;
+      right: 24px;
+      transform: translateY(-50%);
+      z-index: 99999;
+      width: 320px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(120,180,255,0.12),
+        0 0 60px rgba(90,140,255,0.12),
+        0 40px 100px rgba(0,0,0,0.85);
+      transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.34,1.56,0.64,1), visibility 0.3s;
+      font-family: 'Rajdhani', sans-serif;
+      visibility: visible;
+    }
+    #vortex-gui.v-hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-50%) scale(0.93) translateX(18px);
+      pointer-events: none;
+    }
+    #space-canvas {
+      position: absolute;
+      top: 0; left: 0;
+      display: block;
+    }
+    #gui-content {
+      position: relative;
+      z-index: 2;
+      padding: 28px 26px 22px;
+    }
+    #v-close-btn {
+      position: absolute;
+      top: 10px; right: 10px;
+      z-index: 10;
+      width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(148,163,184,0.06);
+      border: 1px solid rgba(148,163,184,0.18);
+      border-radius: 4px;
+      color: rgba(148,163,184,0.6);
+      font-family: 'Orbitron', monospace;
+      font-size: 0.62rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 1;
+    }
+    #v-close-btn:hover {
+      background: rgba(125,211,252,0.12);
+      border-color: rgba(125,211,252,0.4);
+      color: #7dd3fc;
+      box-shadow: 0 0 10px rgba(125,211,252,0.18);
+    }
 
-// content.js
+    /* ── toast hint shown after closing ── */
+    #v-toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 100000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Orbitron', monospace;
+      font-size: 0.5rem;
+      letter-spacing: 0.08em;
+      color: #bae6fd;
+      background: rgba(5, 8, 22, 0.94);
+      border: 1px solid rgba(125,211,252,0.25);
+      border-radius: 8px;
+      padding: 10px 16px;
+      box-shadow: 0 0 24px rgba(125,211,252,0.12), 0 8px 32px rgba(0,0,0,0.7);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    #v-toast.v-toast-show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    #v-toast .v-toast-key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px; height: 18px;
+      background: rgba(125,211,252,0.1);
+      border: 1px solid rgba(125,211,252,0.35);
+      border-radius: 3px;
+      color: #7dd3fc;
+      font-size: 0.55rem;
+      flex-shrink: 0;
+    }
 
-// Function to apply/remove the "No Animations" effect
-function applyAnimationSetting(isDisabled) {
-    let styleTag = document.getElementById('vortex-no-animations');
-    
-    if (isDisabled) {
-        if (!styleTag) {
-            styleTag = document.createElement('style');
-            styleTag.id = 'vortex-no-animations';
-            styleTag.innerHTML = `
-                *, *::before, *::after {
-                    transition: none !important;
-                    animation: none !important;
-                }
-            `;
-            document.head.appendChild(styleTag);
+    .v-title {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(1.5rem, 5vw, 2.1rem);
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-align: center;
+      background: linear-gradient(105deg, #e0f2fe 0%, #93c5fd 22%, #c084fc 52%, #fbbf24 78%, #e0f2fe 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: vx-shimmer 5s linear infinite;
+      display: block;
+      line-height: 1;
+      filter: drop-shadow(0 0 24px rgba(147,197,253,0.3));
+      margin-bottom: 4px;
+    }
+    .v-subtitle {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.42rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: rgba(148,163,184,0.4);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .v-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(147,197,253,0.3), rgba(192,132,252,0.3), transparent);
+      margin-bottom: 18px;
+    }
+    .v-section { margin-bottom: 16px; }
+    .v-section-label {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 8px;
+    }
+    .v-section-label span {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.42rem; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(148,163,184,0.42); white-space: nowrap;
+    }
+    .v-line { flex: 1; height: 1px; background: rgba(148,163,184,0.1); }
+    .v-badges { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+    .v-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 6px 12px; border-radius: 5px;
+      border: 1px solid rgba(125,211,252,0.16);
+      background: rgba(125,211,252,0.05);
+      cursor: default;
+      transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1),
+                  box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+    .v-badge:hover {
+      transform: translateY(-2px) scale(1.05);
+      border-color: rgba(125,211,252,0.55);
+      background: rgba(125,211,252,0.12);
+      box-shadow: 0 0 18px rgba(125,211,252,0.18), 0 6px 20px rgba(0,0,0,0.4);
+    }
+    .v-badge.owner { padding: 8px 16px; border-color: rgba(192,132,252,0.18); background: rgba(192,132,252,0.06); }
+    .v-badge.owner:hover { border-color: rgba(192,132,252,0.55); background: rgba(192,132,252,0.14); box-shadow: 0 0 20px rgba(192,132,252,0.22), 0 6px 20px rgba(0,0,0,0.45); }
+    .v-dot { width: 5px; height: 5px; border-radius: 50%; background: #7dd3fc; box-shadow: 0 0 5px #7dd3fc; flex-shrink: 0; }
+    .v-badge.owner .v-dot { width: 6px; height: 6px; background: #c084fc; box-shadow: 0 0 6px #c084fc; animation: vx-pulse 2.5s ease-in-out infinite; }
+    .v-name { font-family: 'Rajdhani', sans-serif; font-size: 0.85rem; font-weight: 600; color: #bae6fd; letter-spacing: 0.05em; }
+    .v-badge.owner .v-name { font-size: 1rem; font-weight: 700; color: #ede9fe; }
+    .v-owner-tag { font-family: 'Orbitron', monospace; font-size: 0.4rem; letter-spacing: 0.2em; text-transform: uppercase; color: #c084fc; background: rgba(192,132,252,0.14); border: 1px solid rgba(192,132,252,0.3); border-radius: 2px; padding: 1px 5px; }
+    .v-footer { margin-top: 4px; padding-top: 14px; border-top: 1px solid rgba(148,163,184,0.08); text-align: center; }
+    .v-footer p { font-size: 0.75rem; color: rgba(148,163,184,0.36); line-height: 1.7; margin-bottom: 10px; }
+    .v-dc-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: 'Orbitron', monospace; font-size: 0.52rem; letter-spacing: 0.07em;
+      color: #7dd3fc; background: rgba(125,211,252,0.06);
+      border: 1px solid rgba(125,211,252,0.18); border-radius: 4px;
+      padding: 5px 12px; cursor: pointer; outline: none; transition: all 0.25s;
+    }
+    .v-dc-btn:hover { background: rgba(125,211,252,0.12); border-color: rgba(125,211,252,0.4); box-shadow: 0 0 12px rgba(125,211,252,0.15); }
+    .v-dc-btn.copied { color: #86efac; background: rgba(134,239,172,0.07); border-color: rgba(134,239,172,0.28); box-shadow: 0 0 12px rgba(134,239,172,0.14); }
+
+    @keyframes vx-shimmer { 0% { background-position: 0% center } 100% { background-position: 200% center } }
+    @keyframes vx-pulse { 0%,100% { box-shadow: 0 0 6px #c084fc, 0 0 12px #c084fc } 50% { box-shadow: 0 0 12px #c084fc, 0 0 28px rgba(192,132,252,0.55) } }
+  `;
+
+document.head.appendChild(style);
+
+/* ── DOM ── */
+var gui = document.createElement("div");
+gui.id = "vortex-gui";
+
+var closeBtn = document.createElement("div");
+closeBtn.id = "v-close-btn";
+closeBtn.title = "Close (press / to reopen)";
+closeBtn.textContent = "/";
+gui.appendChild(closeBtn);
+
+var canvas = document.createElement("canvas");
+canvas.id = "space-canvas";
+gui.appendChild(canvas);
+
+var content = document.createElement("div");
+content.id = "gui-content";
+
+var titleEl = document.createElement("span");
+titleEl.className = "v-title";
+titleEl.textContent = "VORTEX+";
+content.appendChild(titleEl);
+
+var subEl = document.createElement("p");
+subEl.className = "v-subtitle";
+subEl.textContent = "\u2736  credits & contributors  \u2736";
+content.appendChild(subEl);
+
+var divEl = document.createElement("div");
+divEl.className = "v-divider";
+content.appendChild(divEl);
+
+function makeSection(label, names) {
+    var sec = document.createElement("div");
+    sec.className = "v-section";
+    var lrow = document.createElement("div");
+    lrow.className = "v-section-label";
+    lrow.innerHTML = '<div class="v-line"></div><span>' + label + '</span><div class="v-line"></div>';
+    sec.appendChild(lrow);
+    var badges = document.createElement("div");
+    badges.className = "v-badges";
+    for (var i = 0; i < names.length; i++) {
+        var item = names[i];
+        var b = document.createElement("div");
+        b.className = item.owner ? "v-badge owner" : "v-badge";
+        var dot = document.createElement("span"); dot.className = "v-dot"; b.appendChild(dot);
+        var nm = document.createElement("span"); nm.className = "v-name"; nm.textContent = item.name; b.appendChild(nm);
+        if (item.owner) {
+            var tag = document.createElement("span"); tag.className = "v-owner-tag"; tag.textContent = "owner"; b.appendChild(tag);
         }
+        badges.appendChild(b);
+    }
+    sec.appendChild(badges);
+    return sec;
+}
+
+content.appendChild(makeSection("Owner", [{ name: "Klingri", owner: true }]));
+content.appendChild(makeSection("Non-Random", [{ name: "Idk" }]));
+content.appendChild(makeSection("Randoms Trust!!", [
+    { name: "enk" }, { name: "duck" }, { name: "pl1t" }, { name: "inuk" }
+]));
+
+var footer = document.createElement("div");
+footer.className = "v-footer";
+footer.innerHTML = "<p>if u helped and i didn't mention you<br>js message me on dc</p>";
+
+var dcBtn = document.createElement("button");
+dcBtn.className = "v-dc-btn";
+dcBtn.innerHTML = "<span>\u2606</span> bjkbxbjdjdbkfkncskbej";
+dcBtn.addEventListener("click", function () {
+    if (navigator.clipboard) navigator.clipboard.writeText("bjkbxbjdjdbkfkncskbej").catch(function () { });
+    dcBtn.className = "v-dc-btn copied";
+    dcBtn.innerHTML = "<span>\u2713</span> copied!";
+    setTimeout(function () {
+        dcBtn.className = "v-dc-btn";
+        dcBtn.innerHTML = "<span>\u2606</span> bjkbxbjdjdbkfkncskbej";
+    }, 2200);
+});
+footer.appendChild(dcBtn);
+content.appendChild(footer);
+gui.appendChild(content);
+document.body.appendChild(gui);
+
+/* ── toast ── */
+var toast = document.createElement("div");
+toast.id = "v-toast";
+toast.innerHTML = '<span class="v-toast-key">/</span> press <span class="v-toast-key">/</span> to reopen VORTEX+';
+toast.title = "Click to reopen";
+document.body.appendChild(toast);
+
+var toastTimer = null;
+function showToast() {
+    toast.classList.add("v-toast-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 4000);
+}
+function hideToast() {
+    toast.classList.remove("v-toast-show");
+}
+
+/* ── toggle via / key or close btn ── */
+function closePanel() {
+    gui.classList.add("v-hidden");
+    showToast();
+}
+function openPanel() {
+    gui.classList.remove("v-hidden");
+    hideToast();
+}
+
+closeBtn.addEventListener("click", closePanel);
+toast.addEventListener("click", openPanel);
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
+        e.preventDefault();
+        if (gui.classList.contains("v-hidden")) {
+            openPanel();
+        } else {
+            closePanel();
+        }
+    }
+});
+
+/* ── canvas animation ── */
+var c = canvas.getContext("2d");
+function rng(a, b) { return Math.random() * (b - a) + a; }
+var W = 0, H = 0, tick = 0;
+var stars = [], nebulas = [], meteors = [];
+var animRunning = false;
+
+function spawnMeteor(df) {
+    return { x: rng(W * 0.05, W * 0.95), y: rng(-60, H * 0.3), len: rng(60, 140), spd: rng(6, 14), alpha: rng(0.5, 1), ang: rng(0.38, 0.62), prog: -(df || 0), life: rng(80, 160) };
+}
+
+function buildScene(w, h) {
+    W = w; H = h; stars = []; nebulas = []; meteors = [];
+    var counts = [40, 80, 120], sizes = [0.5, 0.9, 1.4], alphas = [0.38, 0.55, 0.82];
+    for (var li = 0; li < 3; li++) for (var i = 0; i < counts[li]; i++)
+        stars.push({ x: rng(0, W), y: rng(0, H), r: sizes[li] + rng(0, 0.25), tw: rng(0, Math.PI * 2), ts: rng(0.004, 0.018), a: alphas[li] });
+    nebulas = [
+        { x: W * 0.15, y: H * 0.20, rx: W * 0.45, ry: H * 0.35, rgb: "55,0,130", a: 0.18 },
+        { x: W * 0.82, y: H * 0.72, rx: W * 0.40, ry: H * 0.38, rgb: "0,60,160", a: 0.15 },
+        { x: W * 0.50, y: H * 0.50, rx: W * 0.55, ry: H * 0.45, rgb: "80,10,140", a: 0.10 },
+        { x: W * 0.88, y: H * 0.10, rx: W * 0.30, ry: H * 0.28, rgb: "140,40,0", a: 0.11 },
+        { x: W * 0.20, y: H * 0.88, rx: W * 0.32, ry: H * 0.26, rgb: "0,100,90", a: 0.09 }
+    ];
+    for (var m = 0; m < 4; m++) meteors.push(spawnMeteor(m * 110 + rng(0, 60)));
+}
+
+function syncSize() {
+    var w = gui.offsetWidth, h = gui.offsetHeight;
+    if (!w || !h) return false;
+    if (canvas.width === w && canvas.height === h) return true;
+    canvas.width = w; canvas.height = h;
+    buildScene(w, h);
+    return true;
+}
+
+function drawFrame() {
+    if (!W || !H) { syncSize(); requestAnimationFrame(drawFrame); return; }
+    tick++;
+    c.clearRect(0, 0, W, H);
+    c.fillStyle = "#02040f"; c.fillRect(0, 0, W, H);
+
+    var bg = c.createRadialGradient(W * 0.3, H * 0.25, 0, W * 0.5, H * 0.5, W * 0.9);
+    bg.addColorStop(0, "rgba(10,4,40,0.75)"); bg.addColorStop(0.5, "rgba(4,8,28,0.5)"); bg.addColorStop(1, "rgba(0,0,8,0)");
+    c.fillStyle = bg; c.fillRect(0, 0, W, H);
+
+    for (var ni = 0; ni < nebulas.length; ni++) {
+        var n = nebulas[ni], pulse = 0.82 + 0.18 * Math.sin(tick * 0.003 + n.x * 0.01), maxR = Math.max(n.rx, n.ry);
+        c.save(); c.translate(n.x, n.y);
+        var g = c.createRadialGradient(0, 0, 0, 0, 0, maxR);
+        g.addColorStop(0, "rgba(" + n.rgb + "," + (n.a * pulse) + ")");
+        g.addColorStop(0.45, "rgba(" + n.rgb + "," + (n.a * pulse * 0.3) + ")");
+        g.addColorStop(1, "rgba(" + n.rgb + ",0)");
+        c.scale(n.rx / maxR, n.ry / maxR); c.beginPath(); c.arc(0, 0, maxR, 0, Math.PI * 2); c.fillStyle = g; c.fill(); c.restore();
+    }
+
+    for (var si = 0; si < stars.length; si++) {
+        var s = stars[si], tw = 0.5 + 0.5 * Math.sin(tick * s.ts + s.tw), a = s.a * (0.55 + 0.45 * tw);
+        if (s.r > 1.1) {
+            var sg = c.createRadialGradient(s.x, s.y, 0, s.x, s.y, s.r * 5);
+            sg.addColorStop(0, "rgba(210,225,255," + (a * 0.3) + ")"); sg.addColorStop(1, "rgba(0,0,0,0)");
+            c.beginPath(); c.arc(s.x, s.y, s.r * 5, 0, Math.PI * 2); c.fillStyle = sg; c.fill();
+        }
+        c.beginPath(); c.arc(s.x, s.y, s.r, 0, Math.PI * 2); c.fillStyle = "rgba(215,228,255," + a + ")"; c.fill();
+    }
+
+    for (var mi = 0; mi < meteors.length; mi++) {
+        var m = meteors[mi]; m.prog++;
+        if (m.prog < 0) continue;
+        if (m.prog > m.life) { meteors[mi] = spawnMeteor(rng(180, 480)); continue; }
+        var pct = m.prog / m.life, fade = pct < 0.12 ? pct / 0.12 : pct > 0.72 ? 1 - (pct - 0.72) / 0.28 : 1;
+        var hx = m.x + Math.cos(m.ang) * m.spd * m.prog, hy = m.y + Math.sin(m.ang) * m.spd * m.prog;
+        var tx = hx - Math.cos(m.ang) * m.len, ty = hy - Math.sin(m.ang) * m.len;
+        var tr = c.createLinearGradient(tx, ty, hx, hy);
+        tr.addColorStop(0, "rgba(180,210,255,0)");
+        tr.addColorStop(0.55, "rgba(200,220,255," + (0.1 * fade * m.alpha) + ")");
+        tr.addColorStop(1, "rgba(255,255,255," + (0.9 * fade * m.alpha) + ")");
+        c.beginPath(); c.moveTo(tx, ty); c.lineTo(hx, hy); c.strokeStyle = tr; c.lineWidth = 1.5; c.stroke();
+        c.beginPath(); c.arc(hx, hy, 1.6, 0, Math.PI * 2); c.fillStyle = "rgba(255,255,255," + (0.95 * fade * m.alpha) + ")"; c.fill();
+        var hg = c.createRadialGradient(hx, hy, 0, hx, hy, 6);
+        hg.addColorStop(0, "rgba(220,235,255," + (0.35 * fade * m.alpha) + ")"); hg.addColorStop(1, "rgba(0,0,0,0)");
+        c.beginPath(); c.arc(hx, hy, 6, 0, Math.PI * 2); c.fillStyle = hg; c.fill();
+    }
+
+    var eg = c.createLinearGradient(0, 0, 0, H);
+    eg.addColorStop(0, "rgba(125,211,252,0.05)"); eg.addColorStop(0.5, "rgba(0,0,0,0)"); eg.addColorStop(1, "rgba(192,132,252,0.04)");
+    c.fillStyle = eg; c.fillRect(0, 0, W, H);
+
+    requestAnimationFrame(drawFrame);
+}
+
+function init() {
+    if (syncSize()) {
+        if (!animRunning) { animRunning = true; drawFrame(); }
     } else {
-        if (styleTag) styleTag.remove();
+        setTimeout(init, 30);
     }
 }
 
-// 1. Check the setting when the page first loads
-chrome.storage.sync.get(['toggle1'], (result) => {
-    // If toggle1 is checked, we disable animations
-    applyAnimationSetting(result.toggle1);
-});
+if (window.ResizeObserver) new ResizeObserver(function () { syncSize(); }).observe(gui);
 
-// 2. Listen for changes while the user is on the site
-chrome.storage.onChanged.addListener((changes, namespace) => {
-    if (changes.toggle1) {
-        applyAnimationSetting(changes.toggle1.newValue);
-    }
-});
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () { setTimeout(init, 0); });
+} else {
+    setTimeout(init, 0);
+}
+

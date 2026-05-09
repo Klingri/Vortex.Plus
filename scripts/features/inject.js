@@ -1,12 +1,12 @@
 // inject.js
 (function () {
     const STAFF_ICON = '<span class="lb-staff-icon">★</span>';
-    
+
     function patchPlayers() {
         const lb = window.Leaderboard;
         if (!lb || lb.__staffPatched) return;
         lb.__staffPatched = true;
-     let myId = null;
+        let myId = null;
         const origSetMyId = lb.setMyId.bind(lb);
         lb.setMyId = function (id) {
             myId = id;
@@ -38,7 +38,7 @@
     function injectIntoSelfRow() {
         const bodyEl = document.getElementById('lb-body');
         if (!bodyEl) return;
-        
+
         const selfRow = bodyEl.querySelector('.lb-row.lb-self .lb-name');
         if (!selfRow || selfRow.querySelector('.lb-staff-icon')) return;
 
@@ -59,7 +59,7 @@
     function start() {
         ensureCss();
         patchPlayers();
-        
+
         // Use a persistent observer on the body
         const observer = new MutationObserver(() => {
             patchPlayers(); // Try to patch if Leaderboard loads late
