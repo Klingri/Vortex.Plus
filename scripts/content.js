@@ -271,6 +271,41 @@
     await loadBatch();
 })();
 
+function renderMutualFriends(friends) {
+        const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
+        
+        const header = el('div', { className: 'section-header' });
+        header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
+        section.appendChild(header);
+
+        const wrap = el('div', { className: 'carousel-wrap' });
+        const row = el('div', { className: 'friends-row' });
+        
+        if (friends.length === 0) {
+            row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
+        } else {
+            for (const f of friends) {
+                const card = el('a', {
+                    className: 'friend-card',
+                    href: `/users/${f.id}/profile`
+                });
+                card.innerHTML = `
+                    <div class="friend-avatar-wrap">
+                        <div class="friend-avatar" style="background:${avatarColor(f.username)}">${initial(f.username)}</div>
+                        ${statusDotHTML(f.online_status)}
+                    </div>
+                    <span class="friend-name">${f.username}</span>
+                `;
+                row.appendChild(card);
+            }
+        }
+        
+        wrap.appendChild(row);
+        section.appendChild(wrap);
+        if (typeof initCarousel === 'function') initCarousel(wrap);
+        return section;
+}
+
 function enhanceProfile() {
     // 1. Add a "Copy Username" button next to the name
     const usernameElement = document.querySelector('.profile-username');
@@ -301,6 +336,20 @@ function enhanceProfile() {
             visitValue.style.fontWeight = 'bold';
         }
     }
+
+    document.getElementById('vortex-mutual-friends-section')?.remove();
+        const mutualSection = renderMutualFriends(mutualFriends);
+        const friendHeader = Array.from(page.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));
+        if (friendHeader?.parentNode) {
+            friendHeader.parentNode.insertAdjacentElement('afterend', mutualSection);
+        } else {
+            const friendsSection = page.querySelector('.section');
+            if (friendsSection?.parentNode) {
+                friendsSection.parentNode.insertBefore(mutualSection, friendsSection.nextSibling);
+            } else {
+                page.appendChild(mutualSection);
+            }
+        }
 }
 
 // Since the site uses an async init() function to render the UI,
