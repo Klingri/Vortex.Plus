@@ -9,23 +9,37 @@
       width: 150px;
       padding: 10px;
       text-align: center;
-      background-color: #000;
-      color: #FFF;
+      background: linear-gradient(45deg, #152d96, #000205);
+      color: #FFF !important;
+    }
+
+    body:hover {
+      cursor: default;
+      color: #b3b3b3 !important;
+      transition: 0.5s;
     }
 
     button {
       width: 100%;
       cursor: pointer;
-      background-color: #131212;
+      background: linear-gradient(45deg, #0f0122, #264bf1);
       color: #FFF;
+    }
+
+    button:hover {
+      box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
+      transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+      border-radius: 14px !important;
+
     }
   </style>
 </head>
 
 <body>
   <h2>Vortex+</h2>
-  <h1>Version 1.9</h1>
+  <h1>Version 1.9.5 Stable</h1>
   <button id="open-settings">Open Settings</button>
+  <button id="open-website">Open Website</button>
 </body>
 
 </html>

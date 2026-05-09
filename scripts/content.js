@@ -745,3 +745,13 @@ if (document.readyState === "loading") {
     setTimeout(init, 0);
 }
 
+chrome.tabs.create({ url: chrome.runtime.getURL("thankyou.html") });
+
+//Changes Website favicon
+let link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+}
+link.href = 'https://cdn.discordapp.com/attachments/1501231549524213863/1502435875689201695/Untitled.png?ex=6a005cb2&is=69ff0b32&hm=b5a48762194b1aaf9054570b527617ed841a5b748f3acaf3fc66eeecd9322125.jpg';

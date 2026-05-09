@@ -13,7 +13,7 @@
 body {
     background: var(--bg-main) !important;
     color: var(--text-main) !important;
-    caret-color: red;
+    caret-color: hsl(0, 100%, 35%);
     /* Can be any valid color name, hex, or RGB */
 }
 
@@ -36,29 +36,42 @@ input {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Animations for Hovering Things */
 .profile-info-panel:hover,
 .bio-box:hover,
 .game-card:hover,
 .profile-avatar-wrap:hover {
-    box-shadow: #000 2px 4px 6px;
+    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
     transition: 0.2s;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     border-radius: 14px !important;
 }
 
+/* Color for Selection */
 body::selection {
     color: hsl(90, 90%, 45%) !important;
 }
 
+/* Different Cursor State */
 .tag:hover,
 .join-date-label:hover,
 .join-date-value:hover,
 .section-title:hover,
 .bio-box:hover,
-.profile-username:hover {
+.profile-username:hover,
+.info-msg:hover,
+.section-header:hover,
+.page-title:hover,
+.game-stat-value:hover,
+.profile-last-seen:hover,
+.game-detail-title:hover,
+.game-stat-label:hover,
+.game-description-label:hover,
+.game-description-text:hover {
     cursor: default !important;
 }
 
+/* Animation when Hovering */
 .btn-discord:hover,
 .btn-signout-sm:hover,
 .navbar-search button:hover,
@@ -67,7 +80,7 @@ body::selection {
 .game-banner:hover,
 .game-stat:hover,
 .game-description-box:hover {
-    box-shadow: #000 2px 4px 6px;
+    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
     border-radius: 14px !important;
 }
@@ -78,24 +91,25 @@ body::selection {
     text-align: center;
 }
 
+/* Animations for Hovering Things */
 .navbar-logo:hover,
 .profile-username:hover,
 .game-detail-title:hover,
 .game-detail-creator:hover {
-    color: #a5a5a5 !important;
+    color: hsl(0, 0%, 65%) !important;
     transition: 0.5s;
 }
 
 .game-card-thumb {
-    background-color: #656565 !important;
+    background-color: hsl(0, 0%, 40%) !important;
 }
 
 .friend-avatar:hover {
-    background: #000 !important;
+    background: hsl(0, 0%, 0%) !important;
 }
 
 input:focus {
-    border: 2px solid #419bf0 !important;
+    border: 2px solid hsl(210, 85%, 60%) !important;
 }
 
 .navbar {
@@ -104,15 +118,14 @@ input:focus {
 }
 
 .navbar-logo {
-    color: #FFF !important;
-    background-color: #202020 !important;
+    color: hsl(0, 0%, 100%) !important;
 }
 
 .body {
-    border-top-color: 1px solid #404040 !important;
-    border-bottom-color: 1px solid #404040 !important;
-    border-right-color: 1px solid #404040 !important;
-    border-left-color: 1px solid #404040 !important;
+    border-top-color: 1px solid hsl(0, 0%, 25%) !important;
+    border-bottom-color: 1px solid hsl(0, 0%, 25%) !important;
+    border-right-color: 1px solid hsl(0, 0%, 25%) !important;
+    border-left-color: 1px solid hsl(0, 0%, 25%) !important;
 }
 
 .field label:hover {
@@ -123,7 +136,7 @@ input:focus {
 
 .link-row a:hover,
 button:hover {
-    color: #8c8c8c !important;
+    color: hsl(0, 0%, 55%) !important;
     transition: 0.3s;
 }
 
@@ -166,7 +179,7 @@ input {
 
 /* Subtle animation for status dots */
 .status-dot.online {
-    box-shadow: 0 0 8px #2ecc71;
+    box-shadow: 0 0 8px hsl(145, 65%, 50%);
     animation: pulse 2s infinite;
 }
 
@@ -187,19 +200,33 @@ input {
 /* Custom Scrollbar for the whole site */
 ::-webkit-scrollbar {
     width: 8px !important;
+    cursor: grab !important;
+    scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1a1a !important;
+    background: hsl(0, 0%, 10%) !important;
+    cursor: grabbing !important;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar::after {
+    background: hsl(0, 0%, 10%) !important;
+    cursor: grabbing !important;
+    scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #444 !important;
+    background: hsl(0, 0%, 25%) !important;
     border-radius: 10px !important;
+    cursor: grabbing !important;
+    scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555 !important;
+    background: hsl(0, 0%, 35%) !important;
+    cursor: grab !important;
+    scroll-behavior: smooth !important;
 }
 
 /* Profile Polish */
@@ -227,9 +254,9 @@ input {
 /* --- Custom Scrollbar for Bio --- */
 .bio-textarea {
     background: rgba(0, 0, 0, 0.4) !important;
-    border: 1px solid #333 !important;
+    border: 1px solid hsl(0, 0, 20%) !important;
     border-radius: 12px;
-    color: #00ff88 !important;
+    color: hsl(150, 100%, 50%) !important;
     font-family: 'Courier New', monospace;
 }
 
@@ -255,8 +282,9 @@ input {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
+/* Custom Play Button */
 .btn-play {
-    background-color: #2ecc71;
+    background-color: hsl(145, 65%, 50%);
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -279,7 +307,7 @@ input {
     right: 10px;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid #2ecc71;
+    border: 2px solid hsl(145, 65%, 50%);
     animation: pulse 2s infinite;
 }
 
@@ -299,7 +327,16 @@ input {
     transform: scale(1.1);
 }
 
+/* To Remove the Black Overlay */
 #overlay {
     background-color: none !important;
     background: none !important;
 }
+
+body {
+    cursor: url('../cursorpack/Normal\ Select.cur'), auto !important;
+}
+
+/*body:hover {
+  cursor: url('../cursorpack/Horizontal\ Resize.cur'), pointer !important;
+}*/

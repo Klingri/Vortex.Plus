@@ -21,6 +21,7 @@
     --purple2:#5f00ff;
     --text:#f5f5f5;
     --muted:#b7b7c7;
+    --discord:#5865F2;
 }
 
 body{
@@ -120,6 +121,18 @@ body::before{
     overflow:hidden;
 }
 
+.discord-btn{
+    background:rgba(88,101,242,.18) !important;
+    border:1px solid rgba(88,101,242,.45) !important;
+    box-shadow:0 0 22px rgba(88,101,242,.28);
+}
+
+.discord-btn:hover{
+    background:rgba(88,101,242,.28) !important;
+    border-color:rgba(88,101,242,.7) !important;
+    box-shadow:0 0 30px rgba(88,101,242,.45) !important;
+}
+
 .nav a::before,
 .download-btn::before,
 .feature-card::before{
@@ -143,9 +156,6 @@ body::before{
 
 .nav a:hover{
     transform:translateY(-2px);
-    background:rgba(170,80,255,.12);
-    border-color:rgba(170,80,255,.3);
-    box-shadow:0 0 25px rgba(140,0,255,.25);
 }
 
 .main{
@@ -432,6 +442,13 @@ h1{
     </div>
 
     <div class="nav">
+
+        <a class="discord-btn" href="https://discord.gg/SJp4meJWbR" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 127.14 96.36" fill="white">
+                <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36a77.7,77.7,0,0,0,6.89-11.31,68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2.06a75.57,75.57,0,0,0,64.32,0c.87.72,1.76,1.4,2.67,2.06a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.3A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C35.93,65.69,30.6,59.77,30.6,52.5S35.84,39.3,42.45,39.3c6.69,0,12,6,11.85,13.2C54.3,59.77,49.14,65.69,42.45,65.69Zm42.24,0c-6.52,0-11.85-5.92-11.85-13.19S78.08,39.3,84.69,39.3c6.69,0,12,6,11.85,13.2C96.54,59.77,91.38,65.69,84.69,65.69Z"/>
+            </svg>
+        </a>
+
         <a href="#home">
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M3 10.5L11 4l8 6.5"/>
@@ -446,6 +463,7 @@ h1{
                 <path d="M5 18h14"/>
             </svg>
         </a>
+
     </div>
 
 </div>
@@ -502,7 +520,13 @@ h1{
             <p>
                 Vortex+ is an advanced chrome extension for the web-game Vortex,
                 it includes several quality-of-life and overhauls the base game
-                to the way you like it! It includes shaders, friend updates, and active updates with so many features. Owned and developed by Klingri.
+                to the way you like it! It includes several highly compatible mods, examples include: friend updates, dark mode, UI enhancements and custom themes, and so much more!
+                <br>
+                <br>
+                Owned and developed by Klingri and the development team.
+                <br>
+                <br>
+                For a complete list of features please continue to our README, <a href="https://github.com/Klingri/Vortex.Plus/blob/main/README.md">here</a>
             </p>
         </div>
 
@@ -515,6 +539,7 @@ h1{
 <script>
 const words = [
     "slick.",
+    "compatible",
     "innovative.",
     "irresistible.",
     "clean.",

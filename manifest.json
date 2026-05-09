@@ -1,8 +1,8 @@
 {
   "name": "Vortex+",
-  "version": "1.9",
+  "version": "1.9.5",
   "manifest_version": 3,
-  "description": "Vortex, but Bigger.",
+  "description": "A Better Vortex.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -36,12 +36,14 @@
         "styles/menu-themes.css"
       ],
       "js": [
-        "scripts/features/musicplayer.js",
-        "scripts/features/theme-manager.js",
-        "scripts/features/stafficon.js",
-        "scripts/features/snowparticles.js",
-        "scripts/features/background.js",
-        "scripts/features/inject.js"
+        "scripts/modules/musicplayer.js",
+        "scripts/modules/theme-manager.js",
+        "scripts/modules/stafficon.js",
+        "scripts/modules/background.js",
+        "scripts/modules/fov.js",
+        "scripts/modules/chat.js",
+        "scripts/modules/enveditor.js",
+        "scripts/modules/inject.js"
       ],
       "run_at": "document_start",
       "world": "MAIN",

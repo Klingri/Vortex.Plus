@@ -1,5 +1,6 @@
 body {
-    background-color: #101010;
+    background: linear-gradient(45deg, #152d96, #000205);
+    color: #FFF !important;
 }
 
 * {
@@ -15,13 +16,13 @@ h6,
 p,
 label,
 input {
-    color: #FFF;
+    color: hsl(0, 0%, 100%);
     text-align: center;
 }
 
 #featureToggle {
     /* Changes the primary color of the checkbox */
-    accent-color: #2563eb;
+    accent-color: hsl(220, 85%, 55%);
 
     /* Adjusts the size of the original element */
     width: 1.2rem;
@@ -72,5 +73,5 @@ label input[type="checkbox"] {
 
 .perftweaktxt {
     text-align: left;
-    color: grey;
+    color: hsl(0, 0%, 50%);
 }

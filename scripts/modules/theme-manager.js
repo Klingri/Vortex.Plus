@@ -8,7 +8,9 @@
     const prsts = [
         { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//Default Themes.
         { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// Old Roblox is Work In Progress.
-        { nm: "Dark Mode", bg: "#181818", ac: "#333", tx: "#e0e0e0", br: "#404040" },
+        { nm: "Scooby Doo", bg: "#1f5017", ac: "#8e49aa", tx: "#0c011f", br: "#0c0900" },// Added by Klingri
+        { nm: "Vortex Plus", bg: "#7344b1", ac: "#212ea7", tx: "#290d58", br: "#0c0900" },// Added by Klingri
+        { nm: "Dark Mode", bg: "#181818", ac: "#333", tx: "#e0e0e0", br: "#927447" },
         { nm: "Deep Sea", bg: "#041424", ac: "#145299", tx: "#9cf", br: "#0a2e54" },
         { nm: "Midnight", bg: "#0a0a0a", ac: "#444", tx: "#fff", br: "#222" },
         { nm: "Vortex Purple", bg: "#130b1c", ac: "#592d8f", tx: "#d4b3ff", br: "#3a1c5e" },

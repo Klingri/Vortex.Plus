@@ -1,5 +1,6 @@
 # Introduction
 **Vortex+** is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
+Our Website: https://klingri.github.io/Vortex.Plus/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
@@ -77,6 +78,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 
 # Further Reading
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
+[Localization](https://github.com/Klingri/Vortex.Plus)
 
 ---
   

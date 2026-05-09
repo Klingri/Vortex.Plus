@@ -85,7 +85,7 @@
                 min-height: 60px;
             `;
             display.innerHTML = `
-                <div id="track-name" style="color: #999; margin-bottom: 4px; word-break: break-all;">-- no track --</div>
+                <div id="track-name" style="color: #999; margin-bottom: 4px; word-break: break-all;">-- No Track --</div>
                 <div id="time-display" style="font-size: 10px; color: #666;">00:00 / 00:00</div>
             `;
 
@@ -127,7 +127,7 @@
 
             // Select file button
             const selectBtn = document.createElement('button');
-            selectBtn.innerHTML = '[load]';
+            selectBtn.innerHTML = '[Load]';
             selectBtn.style.cssText = `
                 background: #1a1a1a;
                 border: 1px solid #333;
@@ -208,7 +208,7 @@
 
             const loopBtn = document.createElement('button');
             loopBtn.id = 'loop-btn';
-            loopBtn.innerHTML = '[loop]';
+            loopBtn.innerHTML = '[Loop]';
             loopBtn.style.cssText = `
                 flex: 1;
                 background: #1a1a1a;
