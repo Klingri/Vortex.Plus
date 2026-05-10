@@ -26,7 +26,23 @@ body {
 }
 
 body {
+    cursor: url('../cursorpack/Alternate\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Busy.ani'), auto !important;
+    cursor: url('../cursorpack/Diagonal\ Resize\ 1.cur'), auto !important;
+    cursor: url('../cursorpack/Diagonal\ Resize\ 2.cur'), auto !important;
+    cursor: url('../cursorpack/HandWriting.cur'), auto !important;
+    cursor: url('../cursorpack/Help\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Horizontal\ Resize.cur'), auto !important;
+    cursor: url('../cursorpack/Link\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Location\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Move.cur'), auto !important;
     cursor: url('../cursorpack/Normal\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Person\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Precision\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Text\ Select.cur'), auto !important;
+    cursor: url('../cursorpack/Unavailable.cur'), auto !important;
+    cursor: url('../cursorpack/Vertical\ Resize.cur'), auto !important;
+    cursor: url('../cursorpack/Working\ In\ Background.ani'), auto !important;
 }
 
 /*body:hover {
