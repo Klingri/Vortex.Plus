@@ -70,7 +70,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
 | **Better Player List** | Revamped UI for social clarity. | @SlimeKing |
 | **Music Player** | A Music Player. | @Hayden |
-| **Custom Theme Manager** | Allows you to change themes. | @Myro |
+| **Custom Theme Manager** | Allows you to change themes. | @Hayden |
 
 ---
 
@@ -82,7 +82,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Slime King, Myroshlaug and Hayden.**
+- Special thanks to our early contributors: **Slime King and Hayden.**
 
 ---
 
