@@ -71,6 +71,10 @@ input {
     text-align: center;
 }
 
+.profile-last-seen {
+    color: var(--text-main);
+}
+
 .btn-discord {
     background-color: hsl(245, 90%, 40%) !important;
 }
@@ -165,7 +169,9 @@ body::selection {
 .game-detail-title:hover,
 .game-stat-label:hover,
 .game-description-label:hover,
-.game-description-text:hover {
+.game-description-text:hover,
+.profile-meta:hover,
+.profile-avatar:hover {
     cursor: default !important;
 }
 
@@ -191,13 +197,57 @@ body::selection {
 .navbar-logo:hover,
 .profile-username:hover,
 .game-detail-title:hover,
-.game-detail-creator:hover {
+.game-detail-creator:hover,
+.section-title:hover,
+.bio-label:hover,
+.join-date-label:hover,
+.join-date-value:hover,
+.btn-discord:hover,
+.profile-stat:hover,
+.game-card-title:hover,
+.game-card-meta:hover,
+.game-description-label:hover,
+.game-stat-value:hover,
+.game-stat-label:hover,
+.game-description-text:hover,
+.bio-counter:hover,
+.tag:hover,
+.profile-last-seen:hover,
+.bio-text:hover,
+.bio-label:hover,
+.profile-meta:hover,
+.profile-avatar:hover {
     color: hsl(0, 0%, 65%) !important;
     transition: 0.5s;
 }
 
 .friend-avatar:hover {
     background: var(--input-bg) !important;
+    transition: 0.2s;
+}
+
+.game-card-title:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.game-card-meta:hover,
+.game-stat-value:hover,
+.game-stat-label:hover,
+.btn-play:hover,
+.navbar-logo:hover, .section-title:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.friend-name:hover {
+    text-decoration: underline !important;
+    transition: 0.2s;
+}
+
+.section-link:hover {
+    color: #FFF !important;
+    transition: 0.2s;
 }
 
 .field label:hover {
