@@ -68,7 +68,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Better Player List** | Revamped UI for social clarity. | @Enk |
+| **Better Player List** | Revamped UI for social clarity. | @SlimeKing |
 | **Music Player** | A Music Player. | @Hayden |
 | **Custom Theme Manager** | Allows you to change themes. | @Myro |
 
@@ -82,7 +82,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Enk and Slime King.**
+- Special thanks to our early contributors: **Slime King, Myroshlaug and Hayden.**
 
 ---
 
