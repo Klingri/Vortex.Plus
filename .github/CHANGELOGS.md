@@ -19,11 +19,11 @@
 
 # Version 2.0
 
--Changed Website
--Reduced Bloat and lines of code
--Deleted some .js files
--Made loading pages faster
--Shift lock crosshair in-game is now black
--Renamed themes
--Renamed files
--Added things to .gitignore
+- Changed Website
+- Reduced Bloat and lines of code
+- Deleted some .js files
+- Made loading pages faster
+- Shift lock crosshair in-game is now black
+- Renamed themes
+- Renamed files
+- Added things to .gitignore
