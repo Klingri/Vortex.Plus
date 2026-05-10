@@ -27,3 +27,13 @@ Thumbs.db
 
 # IDEs
 .idea/
+
+# Build output
+builds-dist/
+
+# MacOS-specific files
+.DS_Store
+
+# Secret files to hide from git
+**/*_secret*
+secret/
