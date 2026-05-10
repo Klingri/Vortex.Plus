@@ -68,9 +68,9 @@ It only has dark mode and a music player for now, and it's in the very early sta
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Better Player List** | Revamped UI for social clarity. | @SlimeKing |
-| **Music Player** | A Music Player. | @Hayden |
-| **Custom Theme Manager** | Allows you to change themes. | @Hayden |
+| **Better Player List** | Revamped UI for social clarity. | @atharv |
+| **Music Player** | A Music Player. | @atharv |
+| **Custom Theme Manager** | Allows you to change themes. | @atharv |
 
 ---
 
@@ -82,7 +82,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Slime King and Hayden.**
+- Special thanks to our early contributors: **Atharv and da_mochaax3.**
 
 ---
 
