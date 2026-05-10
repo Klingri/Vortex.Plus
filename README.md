@@ -1,7 +1,7 @@
 # Introduction
 **Vortex+** is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
-You can find our Website [here.](https://klingri.github.io/Vortex.Plus/)
-We also have a fork, Vortex2plus2 is a direct fork of Vortex+ that I made, keep in mind that they aren't both compatible, but you can find Vortex2plus2 [here.](https://github.com/inuk84/Vortex2plus2)
+- You can find our Website [here.](https://klingri.github.io/Vortex.Plus/)
+- We also have a fork, Vortex2plus2 is a direct fork of Vortex+ that I made, keep in mind that they aren't both compatible, but you can find Vortex2plus2 [here.](https://github.com/inuk84/Vortex2plus2)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
@@ -32,7 +32,7 @@ We also have a fork, Vortex2plus2 is a direct fork of Vortex+ that I made, keep 
 
 # Known Issues & Stability
 The Vortex+ Web Extension doesn't automatically update on it's own because it doesn't exist on the chrome web store due to the strict requirements by Google.
-It only has dark mode and shaders for now, and it's in the very early stages of development so expect bugs and thing's to not work untill I make it stable enough.
+It only has dark mode and a music player for now, and it's in the very early stages of development so expect bugs and thing's to not work untill I make it stable enough.
 - **Performance:** Shaders are currently experimental and may cause lag on lower-end systems.
 - **UI Glitches:** Some text visibility issues may persist on specific platform pages.
 
