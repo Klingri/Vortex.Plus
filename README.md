@@ -1,6 +1,6 @@
 # Introduction
 **Vortex+** is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
-You can find our Website [here.](https://github.com/Klingri/Vortex.Plus)
+You can find our Website [here.](https://klingri.github.io/Vortex.Plus/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
@@ -38,7 +38,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 **Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex discord server.**
 
 > [!IMPORTANT]
-> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers and On Safari, Chromium works tho!
+> **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers and On Safari, Chromium works, But the general experience on different browsers may be different from eachother, we can't gurantee that it all works.
 
 ---
 
@@ -47,7 +47,6 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
 | Question | Answer
 | :--- | :--- |
 | **How Can I suggest Feedback or report a bug?** | On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
-| **How Can I disable Shaders?** | Press F7 Or fn + F7 for Laptops.
 
 > [!IMPORTANT]
 > **Updates:** Currently, you must re-download the latest release and repeat these steps to update. We are working on a seamless auto-updater for a future version!
@@ -82,7 +81,7 @@ It only has dark mode and shaders for now, and it's in the very early stages of 
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Enk, Slime King, and Inuk.**
+- Special thanks to our early contributors: **Enk and Slime King.**
 
 ---
 
