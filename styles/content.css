@@ -216,7 +216,7 @@ body::selection {
 .bio-text:hover,
 .bio-label:hover,
 .profile-meta:hover,
-.profile-avatar:hover {
+.profile-avatar:hover, .page-title:hover, .info-msg:hover {
     color: hsl(0, 0%, 65%) !important;
     transition: 0.5s;
 }
@@ -235,7 +235,7 @@ body::selection {
 .game-stat-value:hover,
 .game-stat-label:hover,
 .btn-play:hover,
-.navbar-logo:hover, .section-title:hover {
+.navbar-logo:hover, .section-title:hover, .page-title:hover {
     text-decoration: underline;
     transition: 0.2s;
 }

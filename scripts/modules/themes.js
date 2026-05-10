@@ -30,7 +30,7 @@
         body, .navbar, .page, .navbar-search input, .bio-textarea { background:${thm.bg}!important; color:${thm.tx}!important; }
         .btn-primary, .navbar-search bttn, .badge, .btn-play, .status-dot.online { background:${thm.ac}!important; color:${thm.bg}!important; border:none!important; }
         .navbar { border-bottom: 1px solid ${thm.br}!important; }
-        .game-card, .user-row, .bio-box, .section-sep {
+        .game-card, .user-row, .bio-box, .section-sep, .game-description-box, .profile-info-panel {
             border: 1px solid ${thm.br} !important;
         }
         /* FIX FOR THE SQUARE AVATARS */
