@@ -21,6 +21,7 @@
   "permissions": [
     "storage",
     "activeTab",
+    "declarativeNetRequest",
     "scripting"
   ],
   "action": {

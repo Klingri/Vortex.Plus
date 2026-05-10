@@ -7,6 +7,7 @@ desktop.ini
 
 # Ignore workspace settings
 .vscode/
+_metadata/
 
 # Dependencies
 node_modules/

@@ -858,3 +858,29 @@ if (logoLink) {
 
 const cursorUrl = chrome.runtime.getURL('cursorpack/Normal Select.png'); // Convert to PNG first!
 document.body.style.cursor = `url('${cursorUrl}'), auto`;
+{
+window.onload = () => {
+        initialize()
+
+        if (typeof connect != 'undefined') connect()
+
+        let watermark = document.createElement('a')
+        watermark.innerHTML = 'Vortex+ v0.2.0'
+        Object.assign(watermark.style, {
+            position: 'fixed',
+            bottom: '5px',
+            left: '5px',
+            color: 'white',
+            fontSize: 'x-small',
+            opacity: '0.1',
+        })
+        document.body.appendChild(watermark)
+        let vortexprimary = document.getElementsByClassName('navbar-logo')[0];
+        if (!vortexprimary) vortexprimary = document.getElementsByClassName('logo')[0]
+        if (!vortexprimary) return;
+        let vortexsecondary = vortexprimary.cloneNode()
+        vortexsecondary.className = 'navbar-logo navbar-logo-secondary'
+        vortexsecondary.innerHTML = ' + v0.2.0'
+        vortexprimary.appendChild(vortexsecondary)
+    }
+};
