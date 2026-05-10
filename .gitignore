@@ -7,3 +7,22 @@ desktop.ini
 
 # Ignore workspace settings
 .vscode/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+web-ext-artifacts/
+
+# Sensitive info
+.env
+*.pem
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/

@@ -1,4 +1,3 @@
-// Vortthemes.
 // The Comments Explain The Code.
 // Have fun reading. the vovels were deleted for faster coding and shortening.
 // Press ' TO OPEN MENU'.
@@ -8,8 +7,7 @@
     const prsts = [
         { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//Default Themes.
         { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// Old Roblox is Work In Progress.
-        { nm: "Scooby Doo", bg: "#1f5017", ac: "#8e49aa", tx: "#0c011f", br: "#0c0900" },// Added by Klingri
-        { nm: "Vortex Plus", bg: "#7344b1", ac: "#212ea7", tx: "#290d58", br: "#0c0900" },// Added by Klingri
+        { nm: "Swampy Green", bg: "#1f5017", ac: "#8e49aa", tx: "#0c011f", br: "#0c0900" },// Added by Klingri
         { nm: "Dark Mode", bg: "#181818", ac: "#333", tx: "#e0e0e0", br: "#927447" },
         { nm: "Deep Sea", bg: "#041424", ac: "#145299", tx: "#9cf", br: "#0a2e54" },
         { nm: "Midnight", bg: "#0a0a0a", ac: "#444", tx: "#fff", br: "#222" },
@@ -58,7 +56,7 @@
         const gui = document.createElement('div');
         gui.id = 'v-thm-mn';
         gui.innerHTML = `<div class="m-tp">
-        ${['background', 'accent', 'text', 'border'].map(lbl => `<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
+        ${['Background', 'Accent', 'Text', 'Border'].map(lbl => `<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
         <button id="v-appl" style="width:100%;margin:5px 0;border:none;border-radius:0;background:#111;color:white;">Apply</button>
         <div style="display:flex;gap:2px;"><input id="v-nm-inp" type="text" placeholder="Theme Name" style="flex:1;border:none;border-radius:0;"><button id="v-sv-bttn" style="border:none;border-radius:0;background:#111;color:white;">Save</button></div>
         </div>

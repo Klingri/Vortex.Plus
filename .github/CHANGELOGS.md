@@ -16,3 +16,7 @@
 | **V.1.8** | Added Custom Themes, Broke shaders and MapLoader | 08.05.2026 |
 | **V.1.9** | Upcoming Release | 09.05.2026 |
 | **V.2.0** | Upcoming Release | 10.05.2026 |
+
+# Version 2.0
+
+- Added Things

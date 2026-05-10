@@ -1,10 +1,33 @@
+:root {
+    /* Default theme*/
+    --bg-main: #121212;
+    --text-main: #FFFFFF;
+    --input-bg: #2b2a2a;
+}
+
 body {
-    background: linear-gradient(45deg, #152d96, #000205);
+    background: linear-gradient(85deg, #152d96, #000205);
     color: #FFF !important;
 }
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    background: var(--input-bg) !important;
+    color: var(--text-main) !important;
+    outline: none;
+    border: 0px !important;
+}
+
+button:hover{
+    background: hsl(0, 0%, 27%) !important;
+    color: var(--text-main) !important;
+    outline: none;
+    border: 0px !important;
+    transition: 0.2s;
+    cursor: pointer !important;
 }
 
 h1,

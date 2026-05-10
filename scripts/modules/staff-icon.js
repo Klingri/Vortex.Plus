@@ -1,3 +1,5 @@
+// staff-icon.js
+// A Staff Icon for a player in-game.
 const codeToInject = `(function () {
     // 1. Give the icon some actual content (e.g., an SVG or Emoji)
     const STAFF_ICON = '<span class="lb-staff-icon">★</span>';

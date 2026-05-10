@@ -1,8 +1,8 @@
 {
   "name": "Vortex+",
-  "version": "1.9.5",
+  "version": "2.0",
   "manifest_version": 3,
-  "description": "A Better Vortex.",
+  "description": "Open Source -- 2.0 Alpha",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -32,18 +32,15 @@
         "https://vortex.towerstats.com/*"
       ],
       "css": [
-        "styles/main.css",
-        "styles/menu-themes.css"
+        "styles/content.css",
+        "styles/themes.css"
       ],
       "js": [
-        "scripts/modules/musicplayer.js",
-        "scripts/modules/theme-manager.js",
-        "scripts/modules/stafficon.js",
+        "scripts/modules/music-player.js",
+        "scripts/modules/themes.js",
+        "scripts/modules/staff-icon.js",
         "scripts/modules/background.js",
-        "scripts/modules/fov.js",
-        "scripts/modules/chat.js",
-        "scripts/modules/enveditor.js",
-        "scripts/modules/inject.js"
+        "scripts/modules/inject-icon.js"
       ],
       "run_at": "document_start",
       "world": "MAIN",
@@ -61,7 +58,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "styles/main.css",
+        "styles/content.css",
         "images/*.png",
         "assets/fonts/*",
         "settings/options.html"

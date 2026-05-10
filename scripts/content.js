@@ -1,5 +1,4 @@
-// Created by Enk
-// new test
+// Created by Enk.
 (async function listUsersInfiniteScroll() {
     // Find the highest existing user ID dynamically
     async function userExists(id) {
@@ -299,38 +298,38 @@ function initial(username) {
 }
 
 function renderMutualFriends(friends) {
-        const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
-        
-        const header = el('div', { className: 'section-header' });
-        header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
-        section.appendChild(header);
+    const section = el('div', { className: 'section', id: 'vortex-mutual-friends-section' });
 
-        const wrap = el('div', { className: 'carousel-wrap' });
-        const row = el('div', { className: 'friends-row' });
-        
-        if (friends.length === 0) {
-            row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
-        } else {
-            for (const f of friends) {
-                const card = el('a', {
-                    className: 'friend-card',
-                    href: `/users/${f.id}/profile`
-                });
-                card.innerHTML = `
+    const header = el('div', { className: 'section-header' });
+    header.innerHTML = `<span class="section-title">Mutual Friends</span><span class="section-title" style="font-weight:400;font-size:0.85rem;color:#888;">${friends.length}</span>`;
+    section.appendChild(header);
+
+    const wrap = el('div', { className: 'carousel-wrap' });
+    const row = el('div', { className: 'friends-row' });
+
+    if (friends.length === 0) {
+        row.innerHTML = '<span class="empty-msg">No mutual friends.</span>';
+    } else {
+        for (const f of friends) {
+            const card = el('a', {
+                className: 'friend-card',
+                href: `/users/${f.id}/profile`
+            });
+            card.innerHTML = `
                     <div class="friend-avatar-wrap">
                         <div class="friend-avatar" style="background:${avatarColor(f.username)}">${initial(f.username)}</div>
                         ${statusDotHTML(f.online_status)}
                     </div>
                     <span class="friend-name">${f.username}</span>
                 `;
-                row.appendChild(card);
-            }
+            row.appendChild(card);
         }
-        
-        wrap.appendChild(row);
-        section.appendChild(wrap);
-        if (typeof initCarousel === 'function') initCarousel(wrap);
-        return section;
+    }
+
+    wrap.appendChild(row);
+    section.appendChild(wrap);
+    if (typeof initCarousel === 'function') initCarousel(wrap);
+    return section;
 }
 
 async function enhanceProfile() {
@@ -369,11 +368,11 @@ async function enhanceProfile() {
         // Extract user ID from the current profile URL
         const urlMatch = window.location.pathname.match(/\/users\/(\d+)/);
         if (!urlMatch) return;
-        
+
         const userId = urlMatch[1];
         const res = await fetch(`/api/users/${userId}/mutual-friends`);
         const mutualFriends = res.ok ? await res.json() : [];
-        
+
         document.getElementById('vortex-mutual-friends-section')?.remove();
         const mutualSection = renderMutualFriends(mutualFriends);
         const friendHeader = Array.from(document.querySelectorAll('.section-header')).find(header => header.textContent.trim().startsWith('Friends'));

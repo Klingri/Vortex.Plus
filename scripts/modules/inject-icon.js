@@ -1,4 +1,5 @@
-// inject.js
+// inject-icon.js
+// Injects a Staff Icon to the player in-game.
 (function () {
     const STAFF_ICON = '<span class="lb-staff-icon">★</span>';
 

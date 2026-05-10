@@ -1,3 +1,4 @@
+// Checks the extension version then tells you.
 async function checkVersion() {
     const GITHUB_MANIFEST_URL = 'https://raw.githubusercontent.com/Klingri/Vortex.Plus/main/manifest.json';
 

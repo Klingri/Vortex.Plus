@@ -1,4 +1,4 @@
-// created by hayden
+// Created by Hayden.
 (function () {
     const STORAGE_KEY = 'vortex_player_state';
 
@@ -20,12 +20,12 @@
             this.attachEvents();
             this.restoreState();
 
-            // Save state periodically while playing
+            // Save state periodically while playing.
             setInterval(() => this.saveState(), 1000);
         },
 
         createUI() {
-            // Main player container
+            // Main player container.
             const playerContainer = document.createElement('div');
             playerContainer.id = 'vortex-dvd-player';
             playerContainer.style.cssText = `
@@ -44,7 +44,7 @@
                 overflow: hidden;
             `;
 
-            // Header with title and toggle
+            // Header with title and toggle.
             const header = document.createElement('div');
             header.style.cssText = `
                 background: #222;
@@ -71,7 +71,7 @@
                 ">_</button>
             `;
 
-            // Display area
+            // Display Area.
             const display = document.createElement('div');
             display.id = 'player-display';
             display.style.cssText = `
@@ -89,7 +89,7 @@
                 <div id="time-display" style="font-size: 10px; color: #666;">00:00 / 00:00</div>
             `;
 
-            // Progress bar
+            // Progress bar.
             const progressBar = document.createElement('div');
             progressBar.style.cssText = `
                 background: #0d0d0d;
@@ -108,7 +108,7 @@
             `;
             progressBar.appendChild(progressFill);
 
-            // Controls container
+            // Controls Container.
             const controlsContainer = document.createElement('div');
             controlsContainer.id = 'controls-container';
             controlsContainer.style.cssText = `
@@ -118,14 +118,14 @@
                 gap: 4px;
             `;
 
-            // File input (hidden)
+            // File input (hidden).
             const fileInput = document.createElement('input');
             fileInput.type = 'file';
             fileInput.id = 'music-file-input';
             fileInput.accept = 'audio/*';
             fileInput.style.display = 'none';
 
-            // Select file button
+            // Select file button.
             const selectBtn = document.createElement('button');
             selectBtn.innerHTML = '[Load]';
             selectBtn.style.cssText = `
@@ -143,7 +143,7 @@
             selectBtn.onmouseout = () => selectBtn.style.color = '#888';
             selectBtn.onclick = () => fileInput.click();
 
-            // Playback controls
+            // Playback Controls.
             const buttonRow1 = document.createElement('div');
             buttonRow1.style.cssText = 'display: flex; gap: 3px;';
 
@@ -202,7 +202,7 @@
             buttonRow1.appendChild(pauseBtn);
             buttonRow1.appendChild(stopBtn);
 
-            // Loop and Volume controls
+            // Loop and Volume Controls.
             const buttonRow2 = document.createElement('div');
             buttonRow2.style.cssText = 'display: flex; gap: 3px;';
 
@@ -238,19 +238,19 @@
             buttonRow2.appendChild(loopBtn);
             buttonRow2.appendChild(volumeLabel);
 
-            // Assemble controls container
+            // Assemble controls Container.
             controlsContainer.appendChild(selectBtn);
             controlsContainer.appendChild(buttonRow1);
             controlsContainer.appendChild(buttonRow2);
 
-            // Assemble player
+            // Assemble Player.
             playerContainer.appendChild(header);
             playerContainer.appendChild(display);
             playerContainer.appendChild(progressBar);
             playerContainer.appendChild(controlsContainer);
             playerContainer.appendChild(fileInput);
 
-            // Store references
+            // Store references.
             this.playerContainer = playerContainer;
             this.display = display;
             this.controls = controlsContainer;
@@ -262,7 +262,7 @@
         attachEvents() {
             const self = this;
 
-            // Dragging
+            // Dragging.
             this.header.addEventListener('mousedown', (e) => {
                 if (e.target.tagName === 'BUTTON') return;
                 self.isDragging = true;
@@ -287,7 +287,7 @@
                 }
             });
 
-            // Toggle expand/collapse
+            // Toggle expand/collapse.
             document.getElementById('player-toggle').addEventListener('click', () => {
                 self.isExpanded = !self.isExpanded;
                 const toggle = document.getElementById('player-toggle');
@@ -297,7 +297,7 @@
                 document.getElementById('progress-fill').parentElement.style.display = self.isExpanded ? 'block' : 'none';
             });
 
-            // File selection
+            // File Selection.
             document.getElementById('music-file-input').addEventListener('change', (e) => {
                 const file = e.target.files[0];
                 if (file) {
@@ -315,7 +315,7 @@
                 }
             });
 
-            // Playback controls
+            // Playback Controls.
             document.getElementById('play-btn').addEventListener('click', () => {
                 if (self.currentFile) {
                     self.audio.play();
@@ -342,23 +342,23 @@
                 self.saveState();
             });
 
-            // Loop toggle
+            // Loop Toggle.
             document.getElementById('loop-btn').addEventListener('click', () => {
                 self.isLooping = !self.isLooping;
                 const loopBtn = document.getElementById('loop-btn');
                 self.audio.loop = self.isLooping;
-                loopBtn.innerHTML = self.isLooping ? '[loop on]' : '[loop]';
+                loopBtn.innerHTML = self.isLooping ? '[Loop On]' : '[Loop]';
                 loopBtn.style.color = self.isLooping ? '#ccc' : '#888';
                 self.saveState();
             });
 
-            // Volume control
+            // Volume Control.
             document.getElementById('volume-slider').addEventListener('input', (e) => {
                 self.audio.volume = e.target.value / 100;
                 self.saveState();
             });
 
-            // Progress bar click
+            // Progress bar Click.
             const progressBar = document.querySelector('#progress-fill').parentElement;
             progressBar.addEventListener('click', (e) => {
                 if (self.currentFile) {
@@ -369,7 +369,7 @@
                 }
             });
 
-            // Update progress and time display
+            // Update progress and Time Display.
             this.audio.addEventListener('timeupdate', () => {
                 const percent = (self.audio.currentTime / self.audio.duration) * 100;
                 document.getElementById('progress-fill').style.width = percent + '%';
@@ -422,7 +422,7 @@
                         if (state.isLooping) {
                             this.isLooping = true;
                             this.audio.loop = true;
-                            document.getElementById('loop-btn').innerHTML = '[loop on]';
+                            document.getElementById('loop-btn').innerHTML = '[Loop On]';
                             document.getElementById('loop-btn').style.color = '#ccc';
                         }
                     }
@@ -440,7 +440,7 @@
         }
     };
 
-    // Initialize when DOM is ready
+    // Initialize when DOM is ready.
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => player.init());
     } else {
