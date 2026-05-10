@@ -88,4 +88,4 @@ It only has dark mode and a music player for now, and it's in the very early sta
 
 # Version History
 
-To see the version history please go here. (NOT DONE WIP)
+To see the version history please go [here.](https://github.com/Klingri/Vortex.Plus/blob/main/.github/CHANGELOGS.md)
