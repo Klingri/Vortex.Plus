@@ -14,6 +14,7 @@
 ---
 
 # Installation
+For more Info on methods of Installation, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
 ### Step-by-Step:
 1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.
 2. **Extract:** Unzip the folder to a permanent location on your PC.
@@ -74,7 +75,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
 
 # Further Reading
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
-[Localization](https://github.com/Klingri/VortexPro/blob/main/.github/LOCALIZATION.md)
+[Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
 
 ---
   
