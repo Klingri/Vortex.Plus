@@ -6,30 +6,41 @@
   <script src="./popup.js" defer></script>
   <style>
     body {
-      width: 150px;
+      width: 200px;
       padding: 10px;
       text-align: center;
-      background: linear-gradient(95deg, #152d96, #000205);
+      background: linear-gradient(120deg, #152d96, #000205);
       color: #FFF !important;
+      box-shadow: #000205 2px 4px 6px 4px;
     }
 
-    body:hover {
+    h1:hover, h2:hover {
       cursor: default;
       color: #b3b3b3 !important;
       transition: 0.5s;
     }
 
+     h1,h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2:hover {
+      text-decoration: underline;
+    }
+
     button {
       width: 100%;
       cursor: pointer;
-      background: linear-gradient(45deg, #0f0122, #264bf1);
-      color: #FFF;
+      background: linear-gradient(100deg, #0f0122, #264bf1);
+      color: #afafaf;
+      border: none;
     }
 
     button:hover {
       box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
       transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
       border-radius: 14px !important;
+      text-decoration: underline;
 
     }
   </style>

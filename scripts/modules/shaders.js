@@ -42,7 +42,7 @@
 
     // ─── Config ───────────────────────────────────────────────────────────────────
     const CFG = {
-        AUTO_ENABLE:            true,
+        AUTO_ENABLE:            false,
         TOGGLE_KEY:             'F7',
         POLL_MS:                1000,
         MAX_WAIT_MS:            30_000,
