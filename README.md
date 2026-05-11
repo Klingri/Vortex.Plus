@@ -36,7 +36,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
 - **Performance:** Shaders are currently experimental and may cause lag on lower-end systems.
 - **UI Glitches:** Some text visibility issues may persist on specific platform pages.
 
-**Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex discord server.**
+**Report bugs via [GitHub Issues](https://github.com/YOUR_USER/Vortex-Plus/issues) or my Discord Username Klingri, or the Vortex+ discord server.**
 
 > [!IMPORTANT]
 > **Compatibility:** Currently, The Extension is not compatible at all in Firefox and Firefox-based web browsers and On Safari, Chromium works, But the general experience on different browsers may be different from eachother, we can't gurantee that it all works.
@@ -47,7 +47,7 @@ It only has dark mode and a music player for now, and it's in the very early sta
 
 | Question | Answer
 | :--- | :--- |
-| **How Can I suggest Feedback or report a bug?** | On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex discord server.
+| **How Can I suggest Feedback or report a bug?** | On Github or Contact me on the Discord Platform, my Username is "Klingri" or you can communicate to me directly on the Vortex+ discord server.
 
 > [!IMPORTANT]
 > **Updates:** Currently, you must re-download the latest release and repeat these steps to update. We are working on a seamless auto-updater for a future version!
