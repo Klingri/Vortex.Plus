@@ -52,7 +52,7 @@
         "https://vortex.towerstats.com/search*"
       ],
       "js": [
-        "scripts/search.js"
+        "scripts/content.js"
       ]
     }
   ],
