@@ -51,6 +51,10 @@ body {
     color: var(--text-main) !important;
 }
 
+.bio-text {
+    color: #888 !important;
+}
+
 
 button,
 input {
