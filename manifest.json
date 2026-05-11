@@ -37,7 +37,6 @@
         "styles/themes.css"
       ],
       "js": [
-        "scripts/modules/music-player.js",
         "scripts/modules/themes.js",
         "scripts/modules/staff-icon.js",
         "scripts/modules/background.js",
