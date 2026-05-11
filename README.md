@@ -68,8 +68,6 @@ It only has dark mode and a music player for now, and it's in the very early sta
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Better Player List** | Revamped UI for social clarity. | @atharv |
-| **Music Player** | A Music Player. | @atharv |
 | **Custom Theme Manager** | Allows you to change themes. | @atharv |
 
 ---
