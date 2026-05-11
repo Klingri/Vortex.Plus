@@ -1,6 +1,6 @@
 # **[KLINGRI]** PRIVACY POLICY
 
-Last Revised: **[ 09.05.2026 ]**
+Last Revised: **[ 11.05.2026 ]**
 
 Our privacy policy applies to information we collect when you use or access our website, application, or just interact with us. We may change this privacy policy from time to time. Whenever we make changes to this privacy policy, the changes are effective **[7 DAYS]** after we post the revised privacy policy (as indicated by revising the date at the top of our privacy policy). We encourage you to review our privacy policy whenever you access our services to stay informed about our information practices and the ways you can help protect your privacy.
 

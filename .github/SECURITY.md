@@ -13,5 +13,5 @@
 
 You can report a vulnerability by contacting me, Klingri.
 
-On Discord my username is Klingri or you can contact me on the Vortex Discord Server, updates happen randomly so a
+On Discord my username is Klingri or you can contact me on the VortexPro Discord Server, updates happen randomly so a
 reported vulnerability will take a certain amount of time to fix, what to expect if the vulnerability is accepted we will fix it, if it's declined it may be ignored for some time.

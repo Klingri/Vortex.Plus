@@ -6,9 +6,9 @@ const openSettings = () => {
     settingsBtn.onclick = () => {
       chrome.tabs.create({ url: 'settings/options.html' });
     };
-    console.log("Vortex+: Settings listener attached.");
+    console.log("VortexPro: Settings listener attached.");
   } else {
-    console.error("Vortex+: Button not found in DOM.");
+    console.error("VortexPro: Button not found in DOM.");
   }
 };
 
@@ -17,11 +17,11 @@ const openWebsite = () => {
 
   if (websiteBtn) {
     websiteBtn.onclick = () => {
-      chrome.tabs.create({ url: 'https://klingri.github.io/Vortex.Plus/' });
+      chrome.tabs.create({ url: 'https://klingri.github.io/VortexPro/' });
     };
-    console.log("Vortex+: Settings listener attached.");
+    console.log("VortexPro: Settings listener attached.");
   } else {
-    console.error("Vortex+: Button not found in DOM.");
+    console.error("VortexPro: Button not found in DOM.");
   }
 };
 

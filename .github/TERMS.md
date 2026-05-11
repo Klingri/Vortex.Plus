@@ -1,8 +1,8 @@
 # **[Klingri]** TERMS OF SERVICE
 
-Last Updated: **[09.05.2026]**
+Last Updated: **[11.05.2026]**
 
-These terms of service ("Terms") apply to your access and use of **[Vorte+]** (the "Service"). Please read them carefully.
+These terms of service ("Terms") apply to your access and use of **[VortexPro]** (the "Service"). Please read them carefully.
 
 ## Accepting these Terms
 
@@ -12,7 +12,7 @@ If you access or use the Service, it means you agree to be bound by all of the t
 
 We reserve the right to modify these Terms at any time. For instance, we may need to change these Terms if we come out with a new feature or for some other reason.
 
-Whenever we make changes to these Terms, the changes are effective **[7 days]** after we post such revised Terms (indicated by revising the date at the top of these Terms) or upon your acceptance if we provide a mechanism for your immediate acceptance of the revised Terms (such as a click-through confirmation or acceptance button). It is your responsibility to check **[Vortex+]** for changes to these Terms.
+Whenever we make changes to these Terms, the changes are effective **[7 days]** after we post such revised Terms (indicated by revising the date at the top of these Terms) or upon your acceptance if we provide a mechanism for your immediate acceptance of the revised Terms (such as a click-through confirmation or acceptance button). It is your responsibility to check **[VortexPro]** for changes to these Terms.
 
 If you continue to use the Service after the revised Terms go into effect, then you have accepted the changes to these Terms.
 
@@ -101,7 +101,7 @@ These Terms constitute the entire agreement between you and **[Klingri]** regard
 
 ## Feedback
 
-Please let us know what you think of the Service, these Terms and, in general, **[Vortex+]**. When you provide us with any feedback, comments or suggestions about the Service, these Terms and, in general, **[APP NAME]**, you irrevocably assign to us all of your right, title and interest in and to your feedback, comments and suggestions.
+Please let us know what you think of the Service, these Terms and, in general, **[VortexPro]**. When you provide us with any feedback, comments or suggestions about the Service, these Terms and, in general, **[VortexPro]**, you irrevocably assign to us all of your right, title and interest in and to your feedback, comments and suggestions.
 
 ## Questions & Contact Information
 

@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Zip Folder
-        run: zip -r VortexPlus.zip . -x "*.git*" ".github*" # Zips everything except git files
+        run: zip -r VortexPro.zip . -x "*.git*" ".github*" # Zips everything except git files
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: VortexPlus.zip
+          files: VortexPro.zip

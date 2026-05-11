@@ -1,5 +1,5 @@
 {
-  "name": "Vortex+",
+  "name": "VortexPro",
   "version": "2.0",
   "manifest_version": 3,
   "description": "Open Source -- 2.0 Pre-Alpha",
@@ -9,7 +9,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "update_url": "https://klingri.github.io/Vortex.Plus/updates.xml",
+  "update_url": "https://klingri.github.io/VortexPro/updates.xml",
   "options_ui": {
     "page": "settings/options.html",
     "open_in_tab": true

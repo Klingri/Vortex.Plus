@@ -5,7 +5,7 @@
 
 - # Localization Guide
 
-Thank you for your interest in helping translate [Vortex+]! Your contributions help make this project accessible to a global audience.
+Thank you for your interest in helping translate [VortexPro]! Your contributions help make this project accessible to a global audience.
 
 ## 📁 Project Structure
 We follow a specific file naming convention for localized documents:

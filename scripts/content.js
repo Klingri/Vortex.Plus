@@ -623,7 +623,7 @@ content.id = "gui-content";
 
 var titleEl = document.createElement("span");
 titleEl.className = "v-title";
-titleEl.textContent = "VORTEX+";
+titleEl.textContent = "VORTEX PRO";
 content.appendChild(titleEl);
 
 var subEl = document.createElement("p");
@@ -689,7 +689,7 @@ document.body.appendChild(gui);
 /* ── toast ── */
 var toast = document.createElement("div");
 toast.id = "v-toast";
-toast.innerHTML = '<span class="v-toast-key">/</span> press <span class="v-toast-key">/</span> to reopen VORTEX+';
+toast.innerHTML = '<span class="v-toast-key">/</span> press <span class="v-toast-key">/</span> to reopen VORTEX PRO';
 toast.title = "Click to reopen";
 document.body.appendChild(toast);
 
@@ -865,7 +865,7 @@ window.onload = () => {
         if (typeof connect != 'undefined') connect()
 
         let watermark = document.createElement('a')
-        watermark.innerHTML = 'Vortex+ v0.2.0'
+        watermark.innerHTML = 'VortexPro v0.2.0'
         Object.assign(watermark.style, {
             position: 'fixed',
             bottom: '5px',

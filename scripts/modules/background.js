@@ -1,6 +1,6 @@
 // Checks the extension version then tells you.
 async function checkVersion() {
-    const GITHUB_MANIFEST_URL = 'https://raw.githubusercontent.com/Klingri/Vortex.Plus/main/manifest.json';
+    const GITHUB_MANIFEST_URL = 'https://raw.githubusercontent.com/Klingri/VortexPro/main/manifest.json';
 
     try {
         const response = await fetch(GITHUB_MANIFEST_URL);
