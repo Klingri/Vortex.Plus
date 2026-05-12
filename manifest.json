@@ -44,7 +44,6 @@
         "content/website/background.js",
         "content/header/header.js",
         "content/ingame/staff-icon.js",
-        "content/ingame/shaders.js",
         "content/ingame/inject-icon.js"
       ],
       "run_at": "document_start",
