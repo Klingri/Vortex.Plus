@@ -34,23 +34,6 @@ body {
   cursor: url('../cursorpack/Horizontal\ Resize.cur'), pointer !important;
 }*/
 
-.navbar {
-    /* Semi-transparent background color (white with 20% opacity) */
-    background: var(--nav-bg) !important;
-
-    /* The actual blur effect */
-    backdrop-filter: blur(28px) !important;
-    -webkit-backdrop-filter: blur(32px) !important;
-    /* Required for Safari support */
-
-    /* Optional: Adds a subtle border to the bottom of the header */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.navbar-logo {
-    color: var(--text-main) !important;
-}
-
 .bio-text {
     color: #888 !important;
 }
@@ -78,10 +61,6 @@ input {
 
 .profile-last-seen {
     color: var(--text-main);
-}
-
-.btn-discord {
-    background-color: hsl(245, 90%, 40%) !important;
 }
 
 /* Profile Polish */
@@ -143,15 +122,6 @@ input {
 .profile-avatar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
-}
-
-
-.navbar-search input:focus {
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-color: var(--accent) !important;
-    box-shadow: 0px 0px 20px rgba(46, 204, 113, 0.2);
-    outline: none;
 }
 
 /* Color for Selection */
@@ -289,18 +259,6 @@ button:hover {
 .btn-play:hover {
     transform: scale(1.1);
     transition: 0.2s;
-}
-
-/* To Remove the Black Overlay in-game */
-#overlay {
-    background-color: none !important;
-    background: none !important;
-}
-
-/* To Remove the Black Overlay in-game */
-#crosshair {
-    background-color: #000 !important;
-    border: 1px solid #757575 !important;
 }
 
 /* Subtle animation for status dots */

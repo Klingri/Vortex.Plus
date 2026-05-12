@@ -1,0 +1,28 @@
+.navbar {
+    /* Semi-transparent background color (white with 20% opacity) */
+    background: var(--nav-bg) !important;
+
+    /* The actual blur effect */
+    backdrop-filter: blur(28px) !important;
+    -webkit-backdrop-filter: blur(32px) !important;
+    /* Required for Safari support */
+
+    /* Optional: Adds a subtle border to the bottom of the header */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-logo {
+    color: var(--text-main) !important;
+}
+
+.btn-discord {
+    background-color: hsl(245, 90%, 40%) !important;
+}
+
+.navbar-search input:focus {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0px 0px 20px rgba(46, 204, 113, 0.2);
+    outline: none;
+}
