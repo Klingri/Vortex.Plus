@@ -29,3 +29,8 @@
 - Renamed themes
 - Renamed files
 - Added things to .gitignore
+
+# Version 2.1
+
+- Changelog Text
+
