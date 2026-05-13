@@ -48,15 +48,7 @@
       ],
       "run_at": "document_start",
       "world": "MAIN",
-      "all_frames": true
-    },
-    {
-      "matches": [
-        "https://vortex.towerstats.com/search*"
-      ],
-      "js": [
-        "content/website/content.js"
-      ]
+      "all_frames": false
     }
   ],
   "web_accessible_resources": [

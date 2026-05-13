@@ -1,40 +1,30 @@
-// popup.js
-const openSettings = () => {
+// popup.js - Optimized & Consolidated
+const initPopup = () => {
   const settingsBtn = document.getElementById('open-settings');
-
-  if (settingsBtn) {
-    settingsBtn.onclick = () => {
-      chrome.tabs.create({ url: 'settings/options.html' });
-    };
-    console.log("VortexPro: Settings listener attached.");
-  } else {
-    console.error("VortexPro: Button not found in DOM.");
-  }
-};
-
-const openWebsite = () => {
   const websiteBtn = document.getElementById('open-website');
 
-  if (websiteBtn) {
-    websiteBtn.onclick = () => {
-      chrome.tabs.create({ url: 'https://klingri.github.io/VortexPro/' });
-    };
-    console.log("VortexPro: Settings listener attached.");
-  } else {
-    console.error("VortexPro: Button not found in DOM.");
+  // Attach Settings Listener
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', () => {
+      // Best practice for manifest v3 options pages
+      chrome.runtime.openOptionsPage();
+    });
   }
+
+  // Attach Website Listener
+  if (websiteBtn) {
+    websiteBtn.addEventListener('click', () => {
+      chrome.tabs.create({ url: 'https://klingri.github.io/VortexPro/' });
+    });
+  }
+
+  // Optional: Debugging log (can be removed for production)
+  console.log("VortexPro: Popup listeners initialized.");
 };
 
-// This checks if the page is already loaded, otherwise waits for it
+// Single listener for DOM content
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', openWebsite);
+  document.addEventListener('DOMContentLoaded', initPopup);
 } else {
-  openWebsite();
-}
-
-// This checks if the page is already loaded, otherwise waits for it
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', openSettings);
-} else {
-  openSettings();
+  initPopup();
 }
