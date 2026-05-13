@@ -342,3 +342,29 @@ input:checked + .slider:before {
 .nav-link {
     transition: background 0.2s, color 0.2s;
 }
+
+aside, #container, ul, li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-self: flex-start;
+    justify-items: flex-start;
+}
+
+button {
+    text-align: left;
+    margin-left: 10px;
+    padding: 4px 4px 4px;
+}
+
+button:hover {
+    border: #FFF 2px solid;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}

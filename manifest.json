@@ -4,10 +4,10 @@
   "manifest_version": 3,
   "description": "Open Source -- 2.0 Pre-Alpha",
   "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
   },
   "update_url": "https://klingri.github.io/VortexPro/updates.xml",
   "options_ui": {
@@ -64,7 +64,7 @@
       "resources": [
         "content/website/content.css",
         "images/*.png",
-        "cursorpack/*",
+        "cursors/*",
         "https://cdn.discordapp.com/attachments/1501231549524213863/1502435875689201695/Untitled.png?ex=6a005cb2&is=69ff0b32&hm=b5a48762194b1aaf9054570b527617ed841a5b748f3acaf3fc66eeecd9322125.jpg*",
         "assets/fonts/*",
         "settings/options.html"
