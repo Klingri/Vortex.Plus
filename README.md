@@ -1,7 +1,7 @@
 # Introduction
 **Vortex Pro** is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
 - You can find our Website [here.](https://klingri.github.io/VortexPro/)
-- Vortex2plus2 is a direct fork of VortexPro, keep in mind that they aren't both compatible, but you can find Vortex2plus2 [here.](https://github.com/inuk84/Vortex2plus2)
+- Vortex2plus2 is a partial fork of VortexPro, keep in mind that they aren't both compatible, but you can find Vortex2plus2 [here.](https://github.com/inuk84/Vortex2plus2)
 - The owner of Vortex2plus2 is known for harassing people and spreading misinformation about VortexPro.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
