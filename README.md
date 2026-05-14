@@ -14,6 +14,11 @@
 
 ---
 
+# Drama
+
+DO NOT TRUST HALO.
+
+---
 # Installation
 For more Info on methods of Installation, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
 ### Step-by-Step:
