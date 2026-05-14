@@ -1,8 +1,8 @@
 # Introduction
 **VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the **Vortex** platform. Evolved from a simple dark mode project, it has matured into a comprehensive, community-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
-- Vortex2plus2 (or Vortex2+2) is NOT a fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
-- The owner of Vortex2plus2 is known for being very nice and good and beautiful
+- Vortex2plus2 (or Vortex2+2) is a fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
+- The owner of Vortex2plus2 is known for being a manipulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
@@ -16,13 +16,12 @@
 
 # Drama
 
-please TRUST HALO. he is right, im wrong.
-
+please don't  HALO. he is wrong. ALSO i was getting manipulated by p1lt bro :sob:
 ---
 
 # Blacklisted people
 here are people who are blacklisted from using the extension:
-nobody
+some people
 
 ---
 
