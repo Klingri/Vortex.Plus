@@ -19,6 +19,14 @@
 DO NOT TRUST HALO.
 
 ---
+
+# Transparency
+
+no this extension doesn't have malware you can look at the entire code and any injection scripts are necessary for auto updater or external things.
+if you dont wanna trust the extension then DONT use it. im just saying that out there so yall can decide for urself
+
+
+---
 # Installation
 For more Info on methods of Installation, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
 ### Step-by-Step:
