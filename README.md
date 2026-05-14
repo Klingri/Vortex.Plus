@@ -1,8 +1,8 @@
 # Introduction
-**Vortex Pro** (formerly known as Vortex+) is a performance-focused and general-purpose web extension designed to enhance the visual and functional experience of the **Vortex** platform. Born from a simple Dark Mode project, it has evolved into a community-driven toolkit for power users.
-- You can find our Website [here.](https://klingri.github.io/VortexPro/)
-- Vortex2plus2 (also known as Vortex2+2) is a partial fork of VortexPro, keep in mind that they aren't both compatible, but you can find Vortex2plus2 [here.](https://github.com/inuk84/Vortex2plus2)
-- The Owner of Vortex2plus2 is known for allegedly harassing people and allegedly spreading misinformation about VortexPro.
+**VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the **Vortex** platform. Evolved from a simple dark mode project, it has matured into a comprehensive, community-driven toolkit.
+- Visit our [website.](https://klingri.github.io/VortexPro/)
+- Vortex2plus2 (or Vortex2+2) is a partial fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
+- The owner of Vortex2plus2 is known for alleged harassment and for spreading misinformation regarding VortexPro.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
@@ -33,23 +33,36 @@ For more Info on methods of Installation, go [here.](https://github.com/Klingri/
 ---
 
 # Known Issues & Stability
+For more Info on known issues and stability, go (WIP WORK IN PROGRESS)
 Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro web extension must be updated manually.
 Currently in early development, this web extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
 
-**Report bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues) or my Discord Username Klingri, or the VortexPro discord server.**
+**Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues) or the VortexPro Discord (User: Klingri).**
 
 > [!IMPORTANT]
 > **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
 
 ---
 
+# Compatibility
+- WIP (work in progress)
+
+---
+
+# Developing
+- WIP (work in progress)
+
+---
+
 # FAQ
 
-| Question | Answer
-| :--- | :--- |
-| **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub or Discord (username: Klingri). For the fastest response, connect with me on the VortexPro Discord server.
+For more Info of frequently asked questions, go (WIP WORK IN PROGRESS)
+
+| Topic | Question | Answer
+| :--- | :--- | :--- |
+General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub or Discord (username: Klingri). For the fastest response, connect with me on the VortexPro Discord server.
 
 > [!IMPORTANT]
 > **Updates:** Currently, updates require re-downloading the latest release and repeating the installation steps. We are actively developing a seamless auto-updater for a future release.
@@ -57,16 +70,19 @@ Currently in early development, this web extension features a dark mode and them
 ---
 
 # Roadmap
+
+For the full roadmap, go (WIP WORK IN PROGRESS)
 | Feature | Description | Priority |
 | :--- | :--- | :--- |
 | **Avatar Customization** | Full platform-wide Avatar Customization. | Very High |
 | **Game Making** | Game Making for social clarity. | Very High |
 | **Emotes** | Animations you can play. | Medium |
-| **Tools** | Tools to hold and use. | High |
+| **Tools** | Useful and functional tools. | High |
 
 ---
 
 ## Current Features
+For more Info on our current features, go (WIP WORK IN PROGRESS)
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
@@ -89,3 +105,17 @@ Currently in early development, this web extension features a dark mode and them
 # Version History
 
 View the version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+
+---
+
+# Support
+For more Info on ways to support me, go (WIP WORK IN PROGRESS)
+
+- Thank you for all the support!
+
+---
+
+# Forks & Mini-Projects
+
+For more Info on our forks and mini-projects, go (WIP WORK IN PROGRESS)
+WIP
