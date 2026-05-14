@@ -20,6 +20,12 @@ DO NOT TRUST HALO.
 
 ---
 
+# Blacklisted people
+here are people who are blacklisted from using the extension:
+Enk, Inuk, Halo, Zenith, Kostas, and other
+
+---
+
 # Transparency
 
 no this extension doesn't have malware you can look at the entire code and any injection scripts are necessary for auto updater or external things.
