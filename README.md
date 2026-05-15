@@ -1,9 +1,11 @@
 # Introduction
-**VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the **Vortex** platform. Evolved from a simple dark mode project, it has matured into a comprehensive, community-driven toolkit.
+**VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the [Vortex](https://vortex.towerstats.com/) platform. Evolved from a simple dark mode project, it has matured into a comprehensive, niche-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
-- Other
-  - Vortex2plus2 (or Vortex2+2) is allegedly a partial of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
-  - I am deeply concerned by the misinformation campaign being waged against me by the owner of Vortex2plus2.
+- Extra Info
+  - Vortex2plus2 (or Vortex2+2) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project [here.](https://github.com/inuk84/Vortex2plus2)
+  - VortexAIS (or Vortex.AIS) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the VortexAIS project [here.](https://github.com/codep1ltio/Vortex.AIS)
+  - VortexAIS Bot (or Vortex.AIS.BOT) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the VortexAIS project [here.](https://github.com/codep1ltio/Vortex.AIS)
+  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)
@@ -15,27 +17,28 @@
 ---
 
 # Drama
-
+To view more click here (WIP work in progress not done)
 > [!IMPORTANT]
 > I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
 
 ---
 
-# Blacklisted people
+# Blacklisted Indiviuals
+View the full list here: (WIP work in progress not done)
 > [!IMPORTANT]
 > The following individuals are prohibited from accessing the extension:
 
 - Vortex Community
-   - @Halo (@thehalodeveloper)
+   - [@Halo](https://github.com/thehalodeveloper) (@thehalodeveloper, @TheHaloDeveloper)
    - @paint.exe
    - @kostas (@actuallykostas)
    - @Zenith (Zen on Vortex, @itzmezenith)
    - @LovelyJacob (@lovelyjacob)
 - Vortex2plus2 Community
-   - @inuk (@inuk1, @inuk84)
+   - [@inuk](https://github.com/inuk84) (@inuk1, @inuk84)
    - @enk (@enkubik)
    - @slimeking (@slimeking463, @Kid)
-   - @p1lt (@cod.io, @code, @codep1ltio, @_codep1ltio)
+   - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
 
 ---
 
@@ -64,7 +67,7 @@ For more Info on methods of Installation, go [here.](https://github.com/Klingri/
 ---
 
 # Known Issues & Stability
-For more Info on known issues and stability, go (WIP WORK IN PROGRESS)
+For more Info on known issues and stability, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
 Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro web extension must be updated manually.
 Currently in early development, this web extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
@@ -75,25 +78,27 @@ Currently in early development, this web extension features a dark mode and them
 > [!IMPORTANT]
 > **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
 
----
-
-# Compatibility
-- WIP (work in progress)
+- The Extension may or may not be compatible on other web extensions made by @Klingri.
+For More Info on compatiblity go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
 
 ---
 
 # Developing
-- WIP (work in progress)
+If you wish to develop on this extension, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
 
 ---
 
 # FAQ
 
-For more Info of frequently asked questions, go (WIP WORK IN PROGRESS)
+For more Info of frequently asked questions, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
+General | **Is the extension malware?** | No, the extension is not malware but feel free to not use it.
+Drama | **You were in a drama, you're not trustable?** | Feel free to not use the extension.
+General | **How Often does the extension update?** | Typically every few days.
+General | **Is this project open-source?** | Yes.
 
 > [!IMPORTANT]
 > **Updates:** Currently, updates require re-downloading the latest release and repeating the installation steps. We are actively developing a seamless auto-updater for a future release.
@@ -101,29 +106,83 @@ General | **How can I submit feedback or report a bug?** | Feel free to reach ou
 ---
 
 # Roadmap
+> [!IMPORTANT]
+> Please note that this roadmap is subject to change. Features may be added, removed, or modified at any time, as this list is not comprehensive and represents a flexible plan rather than a final commitment.
+> The Following below are list of the most important features:
 
-For the full roadmap, go (WIP WORK IN PROGRESS)
 | Feature | Description | Priority |
 | :--- | :--- | :--- |
 | **Avatar Customization** | Full platform-wide Avatar Customization. | Very High |
 | **Game Making** | Game Making for social clarity. | Very High |
 | **Emotes** | Animations you can play. | Medium |
 | **Tools** | Useful and functional tools. | High |
+| **Groups** | Communities for players. | High |
+
+For the full roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ROADMAP.md)
 
 ---
 
 ## Current Features
-For more Info on our current features, go (WIP WORK IN PROGRESS)
+
+> [!IMPORTANT]
+> Please note that this list is subject to change. Features may be added, removed, or modified at any time, as this list is not comprehensive and represents a flexible list rather than a final commitment.
+> The Following below are list of the most important features:
+
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Custom Theme Manager** | Enables theme customization. | @Myroshlaug |
+| **Removed Black Overlay** | No more black-overlay in-game. | @Klingri |
+| **Animations & Effects** | Beautiful Animations and effects. | @Klingri |
+| **Hover Animations** | Instant dopamine. | @Klingri |
+| **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
+
+For more Info on our current features, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
 ---
 
 # Further Reading
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
-[Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
+  - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
+  - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
+  - [Developing](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
+  - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+  - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
+  - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
+  - [Issues_Stability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
+  - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
+  - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
+  - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/ROADMAP.md)
+  - [Support](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
+  - [Security](https://github.com/Klingri/VortexPro/blob/stable/.github/SECURITY.md)
+  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+
+  View the code here: (WIP WORK IN PROGRESS NOT DONE)
+
+---
+
+# Version History
+
+View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+
+---
+
+# Forks & Mini-Projects
+
+For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
+WIP
+
+---
+
+# Partners
+our partners WIP (WORK IN PROGRESS)
+Our current partners are [Vortex-Re-UI](https://github.com/AtharvAsgola/Vortex-Re-UI) by [@AtharvAsgola](https://github.com/AtharvAsgola)
+
+---
+
+# Support
+For more Info on ways to support me, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
+
+- Thank you for all the support! ♥️
 
 ---
   
@@ -132,21 +191,3 @@ For more Info on our current features, go (WIP WORK IN PROGRESS)
 - Special thanks to our early contributors: **Atharv and da_mochaax3.**
 
 ---
-
-# Version History
-
-View the version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
-
----
-
-# Support
-For more Info on ways to support me, go (WIP WORK IN PROGRESS)
-
-- Thank you for all the support! ♥️
-
----
-
-# Forks & Mini-Projects
-
-For more Info on our forks and mini-projects, go (WIP WORK IN PROGRESS)
-WIP
