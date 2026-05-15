@@ -1,11 +1,11 @@
 # Introduction
 **VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the **Vortex** platform. Evolved from a simple dark mode project, it has matured into a comprehensive, community-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
-- Vortex2plus2 (or Vortex2+2) is a fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
-- The owner of Vortex2plus2 is known for being a manipulator
+- Other
+  - Vortex2plus2 (or Vortex2+2) is allegedly a partial of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project here. [here.](https://github.com/inuk84/Vortex2plus2)
+  - I am deeply concerned by the misinformation campaign being waged against me by the owner of Vortex2plus2.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=flat&logo=discord)](https://discord.gg/kedeZpj8eN)
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Klingri/VortexPro/total)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Klingri/VortexPro)
@@ -16,19 +16,32 @@
 
 # Drama
 
-please don't  HALO. he is wrong. ALSO i was getting manipulated by p1lt bro :sob:
+> [!IMPORTANT]
+> I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+
 ---
 
 # Blacklisted people
-here are people who are blacklisted from using the extension:
-some people
+> [!IMPORTANT]
+> The following individuals are prohibited from accessing the extension:
+
+- Vortex Community
+   - @Halo (@thehalodeveloper)
+   - @paint.exe
+   - @kostas (@actuallykostas)
+   - @Zenith (Zen on Vortex, @itzmezenith)
+   - @LovelyJacob (@lovelyjacob)
+- Vortex2plus2 Community
+   - @inuk (@inuk1, @inuk84)
+   - @enk (@enkubik)
+   - @slimeking (@slimeking463, @Kid)
+   - @p1lt (@cod.io, @code, @codep1ltio, @_codep1ltio)
 
 ---
 
 # Transparency
-
-no this extension doesn't have malware you can look at the entire code and any injection scripts are necessary for auto updater or external things.
-if you dont wanna trust the extension then DONT use it. im just saying that out there so yall can decide for urself
+> [!IMPORTANT]
+> To be clear, this extension does not contain malware. The code is entirely open for inspection, and any detected injection scripts are solely for functionality, such as the auto-updater or external integrations. However, if you are uncomfortable, I respect your decision not to use it. I am simply providing the facts so you can make an informed choice.
 
 
 ---
@@ -57,7 +70,7 @@ Currently in early development, this web extension features a dark mode and them
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
 
-**Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues) or the VortexPro Discord (User: Klingri).**
+**Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
 
 > [!IMPORTANT]
 > **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
@@ -80,7 +93,7 @@ For more Info of frequently asked questions, go (WIP WORK IN PROGRESS)
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
-General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub or Discord (username: Klingri). For the fastest response, connect with me on the VortexPro Discord server.
+General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
 
 > [!IMPORTANT]
 > **Updates:** Currently, updates require re-downloading the latest release and repeating the installation steps. We are actively developing a seamless auto-updater for a future release.
@@ -104,7 +117,7 @@ For more Info on our current features, go (WIP WORK IN PROGRESS)
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Custom Theme Manager** | Enables theme customization. | @atharv |
+| **Custom Theme Manager** | Enables theme customization. | @Myroshlaug |
 
 ---
 
@@ -129,7 +142,7 @@ View the version history [here.](https://github.com/Klingri/VortexPro/blob/stabl
 # Support
 For more Info on ways to support me, go (WIP WORK IN PROGRESS)
 
-- Thank you for all the support!
+- Thank you for all the support! ♥️
 
 ---
 
