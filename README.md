@@ -1,10 +1,10 @@
 # Introduction
-**VortexPro** (formerly Vortex+) is a high-performance, general-purpose browser extension engineered to enhance the visual and functional experience of the [Vortex](https://vortex.towerstats.com/) platform. Evolved from a simple dark mode project, it has matured into a comprehensive, niche-driven toolkit.
+**VortexPro** (formerly Vortex+) is a high-performance, general-purpose quality-of-life browser extension engineered to enhance the visual and functional experience of the [Vortex](https://vortex.towerstats.com/) platform. Evolved from a simple dark mode project, it has matured into a comprehensive, niche-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
 - Extra Info
-  - Vortex2plus2 (or Vortex2+2) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the Vortex2plus2 project [here.](https://github.com/inuk84/Vortex2plus2)
-  - VortexAIS (or Vortex.AIS) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the VortexAIS project [here.](https://github.com/codep1ltio/Vortex.AIS)
-  - VortexAIS Bot (or Vortex.AIS.BOT) is allegedly a partial fork of VortexPro. Please note that the two are not compatible, but you can find the VortexAIS project [here.](https://github.com/codep1ltio/Vortex.AIS)
+  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro. Please note that the two are not compatible.
+  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
+  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
   - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -34,10 +34,35 @@ View the full list here: (WIP work in progress not done)
    - @kostas (@actuallykostas)
    - @Zenith (Zen on Vortex, @itzmezenith)
    - @LovelyJacob (@lovelyjacob)
+   - @airbornrabbits (@air_node)
+   - @Taunt (@grilled25)
+   - @error (@n1run)
+   - @yxritelost_hisacc (@yxrite)
+   - @thoren (@athrn)
+   - @Jun (@mrkrab191)
+   - @jalo (@jalobean)
+   - @EludingDreams (@owiginal)
+   - @FileNotFound (@da_mochaax3)
+   - @spruce (@onespruce)
+   - @Gameability (@gameability)
+   - @Robin (@bricktaria)
+   - @dboi (@dboo)
+   - @KoopaKing_Da1st (@superluigi_6400)
+   - @SparkleDoesWebsite (@eidfahed)
+   - @LocalDiskC (@awsom5000)
+   - @gtebb
+   - [@Kodi](https://github.com/KodiDaBear) (@kodidabear, @KodiDaBear)
+   - @duh (@karl.073)
+   - @Miki23 (@miki3746)
+   - @mrbeast6000 (@mrbeast60o0)
+   - @7_7 (@jalobean)
+   - @Fanup (@mrfanup)
+   - @alliedmastercomp (@testbqjhdk_64174)
+   - [@Hayden](https://github.com/HaydenGitHub-2) (@HaydenGitHub-2, @haydengit69)
 - Vortex2plus2 Community
    - [@inuk](https://github.com/inuk84) (@inuk1, @inuk84)
-   - @enk (@enkubik)
-   - @slimeking (@slimeking463, @Kid)
+   - [@enk](https://github.com/enkubik) (@enkubik)
+   - [@Slimeking](https://github.com/Slimeking463) (@slimeking463, @Kid)
    - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
 
 ---
@@ -68,8 +93,8 @@ For more Info on methods of Installation, go [here.](https://github.com/Klingri/
 
 # Known Issues & Stability
 For more Info on known issues and stability, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
-Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro web extension must be updated manually.
-Currently in early development, this web extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release
+Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro browser extension must be updated manually.
+Currently in early development, this browser extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
 
@@ -78,7 +103,7 @@ Currently in early development, this web extension features a dark mode and them
 > [!IMPORTANT]
 > **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
 
-- The Extension may or may not be compatible on other web extensions made by @Klingri.
+- The Extension may or may not be compatible on other browser extensions made by [@Klingri](https://github.com/Klingri).
 For More Info on compatiblity go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
 
 ---
@@ -188,7 +213,7 @@ For more Info on ways to support me, go [here.](https://github.com/Klingri/Vorte
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Atharv and da_mochaax3.**
+- Special thanks to our early contributors: **Atharv and .**
 
 # our milestones
 
