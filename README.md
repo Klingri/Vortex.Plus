@@ -16,24 +16,26 @@
 
 ---
 
-# Drama
+# Addressing Controversy
 To view more click here (WIP work in progress not done)
 > [!IMPORTANT]
 > I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
 
 ---
 
-# Blacklisted Indiviuals
+# Excluded Persons
 View the full list here: (WIP work in progress not done)
 > [!IMPORTANT]
 > The following individuals are prohibited from accessing the extension:
 
 - Vortex Community
-   - [@Halo](https://github.com/thehalodeveloper) (@thehalodeveloper, @TheHaloDeveloper)
-   - @paint.exe
-   - @kostas (@actuallykostas)
-   - @Zenith (Zen on Vortex, @itzmezenith)
-   - @LovelyJacob (@lovelyjacob)
+   - Vortex Admins 
+      - [@Halo](https://github.com/thehalodeveloper) (@thehalodeveloper, @TheHaloDeveloper)
+      - @paint.exe
+      - @kostas (@actuallykostas)
+      - @Zenith (Zen on Vortex, @itzmezenith)
+      - @LovelyJacob (@lovelyjacob)
+      - @Gameability (@gameability)
    - @airbornrabbits (@air_node)
    - @Taunt (@grilled25)
    - @error (@n1run)
@@ -44,7 +46,6 @@ View the full list here: (WIP work in progress not done)
    - @EludingDreams (@owiginal)
    - @FileNotFound (@da_mochaax3)
    - @spruce (@onespruce)
-   - @Gameability (@gameability)
    - @Robin (@bricktaria)
    - @dboi (@dboo)
    - @KoopaKing_Da1st (@superluigi_6400)
@@ -167,8 +168,13 @@ For more Info on our current features, go [here.](https://github.com/Klingri/Vor
 
 # Further Reading
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
+- Security
+   - [Support](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
+   - [Security](https://github.com/Klingri/VortexPro/blob/stable/.github/SECURITY.md)
+- Legal
+   - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
+- General
   - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
-  - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
   - [Developing](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
   - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
@@ -177,8 +183,6 @@ For more Info on our current features, go [here.](https://github.com/Klingri/Vor
   - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
   - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
   - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/ROADMAP.md)
-  - [Support](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
-  - [Security](https://github.com/Klingri/VortexPro/blob/stable/.github/SECURITY.md)
   - [Version History](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
 
   View the code here: (WIP WORK IN PROGRESS NOT DONE)
@@ -213,7 +217,9 @@ For more Info on ways to support me, go [here.](https://github.com/Klingri/Vorte
   
 # License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Atharv and .**
+- Special thanks to our early contributors: **Atharv and Klingri.**
+
+---
 
 # our milestones
 
