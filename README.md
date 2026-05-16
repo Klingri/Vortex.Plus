@@ -245,3 +245,8 @@ Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/
 | 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
 
 ---
+
+# Supported Languages
+- English
+
+---
