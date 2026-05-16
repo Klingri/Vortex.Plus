@@ -24,6 +24,7 @@ To view more click [here.](https://github.com/Klingri/VortexPro/blob/stable/.git
 
 - Extra Info
   - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
+  - We aren't trying to be the best extension with the most features, just the most High Quality
 
 ---
 
