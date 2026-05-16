@@ -1,11 +1,6 @@
 # Introduction
 **VortexPro** (formerly Vortex+) is a high-performance, general-purpose quality-of-life browser extension engineered to enhance the visual and functional experience of the [Vortex](https://vortex.towerstats.com/) platform. Evolved from a simple dark mode project, it has matured into a comprehensive, niche-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
-- Extra Info
-  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro. Please note that the two are not compatible.
-  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
-  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
-  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)
@@ -13,20 +8,29 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/Klingri/VortexPro)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
 ![GitHub top language](https://img.shields.io/github/languages/top/Klingri/VortexPro)
+![GitHub branch status](https://img.shields.io/github/checks-status/Klingri/VortexPro/stable)
+![GitHub code search count](https://img.shields.io/github/search?query=VortexPro)
+![GitHub branch count](https://img.shields.io/github/branches/Klingri/VortexPro)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/Klingri/VortexPro/latest)
+![GitHub contributors](https://img.shields.io/github/contributors/Klingri/VortexPro)
+
 
 ---
 
 # Addressing Controversy
-To view more click here (WIP work in progress not done)
+To view more click [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CONTROVERSY.md) (WIP work in progress not done)
 > [!IMPORTANT]
 > I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+
+- Extra Info
+  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
 
 ---
 
 # Excluded Persons
-View the full list here: (WIP work in progress not done)
+View the full list [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md) (WIP work in progress not done)
 > [!IMPORTANT]
-> The following individuals are prohibited from accessing the extension:
+> This is a shortened list, view the full list in the link above. The following individuals are prohibited from accessing the extension:
 
 - Vortex Community
    - Vortex Admins 
@@ -36,35 +40,17 @@ View the full list here: (WIP work in progress not done)
       - @Zenith (Zen on Vortex, @itzmezenith)
       - @LovelyJacob (@lovelyjacob)
       - @Gameability (@gameability)
-   - @airbornrabbits (@air_node)
-   - @Taunt (@grilled25)
-   - @error (@n1run)
-   - @yxritelost_hisacc (@yxrite)
-   - @thoren (@athrn)
-   - @Jun (@mrkrab191)
-   - @jalo (@jalobean)
-   - @EludingDreams (@owiginal)
-   - @FileNotFound (@da_mochaax3)
-   - @spruce (@onespruce)
-   - @Robin (@bricktaria)
-   - @dboi (@dboo)
-   - @KoopaKing_Da1st (@superluigi_6400)
-   - @SparkleDoesWebsite (@eidfahed)
-   - @LocalDiskC (@awsom5000)
-   - @gtebb
    - [@Kodi](https://github.com/KodiDaBear) (@kodidabear, @KodiDaBear)
    - @duh (@karl.073)
-   - @Miki23 (@miki3746)
-   - @mrbeast6000 (@mrbeast60o0)
-   - @7_7 (@jalobean)
-   - @Fanup (@mrfanup)
-   - @alliedmastercomp (@testbqjhdk_64174)
-   - [@Hayden](https://github.com/HaydenGitHub-2) (@HaydenGitHub-2, @haydengit69)
+   - [@Hayden](https://github.com/HaydenGitHub-2) (@HaydenGitHub-2, @haydengit69, hayden___________
+)
 - Vortex2plus2 Community
-   - [@inuk](https://github.com/inuk84) (@inuk1, @inuk84)
-   - [@enk](https://github.com/enkubik) (@enkubik)
-   - [@Slimeking](https://github.com/Slimeking463) (@slimeking463, @Kid)
-   - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
+   - Vortex2+2 Admins & Contributors
+     - [@inuk](https://github.com/inuk84) (@inuk1, @inuk84)
+     - [@enk](https://github.com/enkubik) (@enkubik)
+     - [@Slimeking](https://github.com/Slimeking463) (@slimeking463, @Kid)
+     - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
+     - @exelerantt
 
 ---
 
@@ -75,7 +61,7 @@ View the full list here: (WIP work in progress not done)
 
 ---
 # Installation
-For more Info on methods of Installation, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
+For other methods of Installation, please see our [Installation guide.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
 ### Step-by-Step:
 1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.
 2. **Extract:** Unzip the folder to a permanent location on your PC.
@@ -110,13 +96,13 @@ For More Info on compatiblity go [here.](https://github.com/Klingri/VortexPro/bl
 ---
 
 # Developing
-If you wish to develop on this extension, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
+If you wish to develop on this browser extension, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
 
 ---
 
-# FAQ
+# Frequently-Asked-Questions
 
-For more Info of frequently asked questions, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
+For more frequently asked questions, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
@@ -187,11 +173,25 @@ For more Info on our current features, go [here.](https://github.com/Klingri/Vor
 
   View the code here: (WIP WORK IN PROGRESS NOT DONE)
 
+  - [index.html](https://github.com/Klingri/VortexPro/blob/stable/index.html)
+  - [manifest.json](https://github.com/Klingri/VortexPro/blob/stable/manifest.json)
+  - [thankyou.html](https://github.com/Klingri/VortexPro/blob/stable/thankyou.html)
+  - [.gitignore](https://github.com/Klingri/VortexPro/blob/stable/.gitignore)
+  - [LICENSE.md](https://github.com/Klingri/VortexPro/blob/stable/LICENSE)
+  - Scripts
+     - content.js
+
 ---
 
 # Version History
 
 View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+
+| Date | Version | Release | Additions/Changes |
+|------|-----------|--------|-------------------|
+| 10.05.26 | v2.0  | Pre-Alpha | Did Stuff. |
+| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff |
+| 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
 
 ---
 
@@ -199,17 +199,29 @@ View the full version history [here.](https://github.com/Klingri/VortexPro/blob/
 
 For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
 WIP
+- We sometimes make mini-projects and forks (WIP WORK IN PROGRESS)
+
+- Mini-Projects
+  - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
+  - [VortexUltra](https://github.com/Klingri/VortexUltra)
+  - [Dvortek](https://github.com/Klingri/Dvortek)
+  - [VortexWiki](https://github.com/Klingri/VortexWiki)
+- Forks (Including partial ones and inspired projects)
+  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro. Please note that the two are not compatible.
+  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
+  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro. Please note that the two are not compatible.
 
 ---
 
 # Partners
-our partners WIP (WORK IN PROGRESS)
-Our current partners are [Vortex-Re-UI](https://github.com/AtharvAsgola/Vortex-Re-UI) by [@AtharvAsgola](https://github.com/AtharvAsgola)
+Here are our partners to be a partner [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PARTNERS.md) WIP (WORK IN PROGRESS)
+Our current partners are:
+- [Vortex-Re-UI](https://github.com/AtharvAsgola/Vortex-Re-UI) by [@AtharvAsgola](https://github.com/AtharvAsgola)
 
 ---
 
 # Support
-For more Info on ways to support me, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
+Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
 
 - Thank you for all the support! ♥️
 
@@ -221,6 +233,15 @@ For more Info on ways to support me, go [here.](https://github.com/Klingri/Vorte
 
 ---
 
-# our milestones
+# Milestones
+- Pre-Indev Release
+- Indev-Release
+- Pre-Alpha Release
+
+| Date | Version | Release | Milestone |
+|------|-----------|--------|-------------------|
+| 10.05.26 | v2.0  | Pre-Alpha | No longer indev. |
+| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff |
+| 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
 
 ---
