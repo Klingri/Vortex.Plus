@@ -235,7 +235,7 @@ Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/
 ---
 
 # Milestones
-- Pre-Indev Release
+- Pre-Indev Release Debuted on May 5th, 2026 at Version 1.0
 - Indev-Release
 - Pre-Alpha Release
 
