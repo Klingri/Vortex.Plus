@@ -1,3 +1,9 @@
+# IMPORTANT DISCLAIMER!
+> [!IMPORTANT]
+> I got banned from the Vortex website randomly with no given reason, but that isn't stopping me from continuing to develop the extension.
+
+---
+
 # Introduction
 **VortexPro** (formerly Vortex+) is a high-performance, general-purpose quality-of-life browser extension engineered to enhance the visual and functional experience of the [Vortex](https://vortex.towerstats.com/) platform. Evolved from a simple dark mode project, it has matured into a comprehensive, niche-driven toolkit.
 - Visit our [website.](https://klingri.github.io/VortexPro/)
