@@ -147,6 +147,65 @@ For the full roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stabl
 > Please note that this list is subject to change. Features may be added, removed, or modified at any time, as this list is not comprehensive and represents a flexible list rather than a final commitment.
 > The Following below are list of the most important features:
 
+<table>
+<tr>
+  <td align="center" width="33%">
+    <h3>Dark Mode</h3>
+    <p>Full platform-wide dark theme.</p>
+  </td>
+  <td align="center" width="33%">
+    <h3>Removed Black Overlay</h3>
+    <p>No more black-overlay in-game.</p>
+  </td>
+  <td align="center" width="33%">
+    <h3>Animations & Effects</h3>
+    <p>Beautiful Animations and effects.</p>
+  </td>
+</tr>
+<tr>
+  <td align="center" valign="top">
+    <h3>Hover Animations</h3>
+    <p>Instant Dopamine</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Custom Theme Manager</h3>
+    <p>Enables theme customization.</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+</tr>
+<tr>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature.</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+</tr>
+<tr>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+  <td align="center" valign="top">
+    <h3>Feature</h3>
+    <p>Feature</p>
+  </td>
+</tr>
+</table>
+
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
