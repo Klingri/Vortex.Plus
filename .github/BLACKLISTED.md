@@ -56,3 +56,15 @@ here how u get blacklisted (WIP WORK IN PROGRESS)
    - @ploobiee
    - @pagon fugi (@ofugi)
    - @smiteMadara43 (@energetic_otter_31683)
+
+   # Addressing Controversy
+
+> [!IMPORTANT]
+> I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+
+- Extra Info
+  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
+  - We aren't trying to be the best extension with the most features, just the most High Quality
+
+  > [!IMPORTANT]
+> Although I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.

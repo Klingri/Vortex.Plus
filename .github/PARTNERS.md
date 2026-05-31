@@ -1,1 +1,1 @@
-# our partners
+# discontinued
