@@ -16,7 +16,7 @@
   },
   "host_permissions": [
     "https://pastebin.com/*",
-    "https://vortex.towerstats.com/"
+    "https://playvortex.io/*"
   ],
   "permissions": [
     "storage",
@@ -30,21 +30,18 @@
   "content_scripts": [
     {
       "matches": [
-        "https://vortex.towerstats.com/*"
+        "https://playvortex.io/*"
       ],
       "css": [
         "content/website/content.css",
         "content/website/themes.css",
-        "content/header/header.css",
-        "content/ingame/ingame.css"
+        "content/header/header.css"
       ],
       "js": [
         "content/website/content.js",
         "content/website/themes.js",
         "content/website/background.js",
-        "content/header/header.js",
-        "content/ingame/staff-icon.js",
-        "content/ingame/inject-icon.js"
+        "content/header/header.js"
       ],
       "run_at": "document_start",
       "world": "MAIN",
@@ -62,7 +59,7 @@
         "settings/options.html"
       ],
       "matches": [
-        "https://vortex.towerstats.com/*"
+        "https://playvortex.io/*"
       ]
     }
   ]

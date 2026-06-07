@@ -93,6 +93,10 @@ input {
     color: var(--text-main);
 }
 
+bdt {
+    color: #2ecc71;
+}
+
 /* Profile Polish */
 .profile-avatar-wrap {
     position: relative;
