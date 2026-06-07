@@ -39,7 +39,6 @@ In May 2026, Klingri joined the Vortex Platform and was frustrated with the lack
 - All of Vortex's strengths (gamees, friends, bio's, the website)
 - Zero of its weaknesses (beautiful UI, lots of animations and themes)
 - Plus everything users have been asking for but never got (we dont have everything just yet)
-- The extension is NOT "obfuscated" and even if it was, it's not malicious and we do want to de-obfuscate whenever we can but we can't guarantee that everything is de-obfuscated.
 
 ---
 
@@ -51,6 +50,7 @@ To view more click [here.](https://github.com/Klingri/VortexPro/blob/stable/.git
 
 - This extension does not contain malware. The code is entirely open for inspection, and any detected injection scripts are solely for functionality, such as the auto-updater or external integrations.
 
+- The extension is NOT "obfuscated" and even if it was, it's not malicious and we do want to de-obfuscate whenever we can but we can't guarantee that everything is de-obfuscated.
 
 ---
 ## Installation
@@ -105,7 +105,7 @@ For more frequently asked questions, go [here.](https://github.com/Klingri/Vorte
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
 General | **Is the extension malware?** | No, the extension is not malware but feel free to not use it.
 Drama | **You were in a drama, you're not trustable?** | Feel free to not use the extension.
-General | **How Often does the extension update?** | Typically every few days.
+General | **How Often does the extension update?** | Typically every few days, however the extension may go weeks without updates if it's not needed.
 General | **Is this project open-source?** | Yes.
 
 ---
@@ -133,7 +133,7 @@ For the full roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stabl
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
 | **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Removed Black Overlay** | No more black-overlay in-game. | @Klingri |
+| **Improved Accesibility** | Nice. | @Klingri |
 | **Animations & Effects** | Beautiful Animations and effects. | @Klingri |
 | **Hover Animations** | Instant dopamine. | @Klingri |
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
@@ -175,7 +175,7 @@ For more Info on our current features, go [here.](https://github.com/Klingri/Vor
 
 ## Version History
 
-View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
 
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
