@@ -22,7 +22,7 @@
 [![JSON](https://img.shields.io/badge/JSON-Latest-yellow.svg)](https://www.json.org/json-en.html)
 [![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-darkred.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 [![Creator](https://img.shields.io/badge/Creator%20-@Klingri-darkred.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
-[![Partner](https://img.shields.io/badge/Partner%20-@AtharvAsgola-orange.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
+[![Partner](https://img.shields.io/badge/Partner%20-@None-orange.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 
 ###### other stats coming soon.
 ![VortexProLogo](image.png)
@@ -204,7 +204,7 @@ WIP
 
 ## Partners
 Our current partners are:
-- [Vortex-Re-UI](https://github.com/AtharvAsgola/Vortex-Re-UI) by [@AtharvAsgola](https://github.com/AtharvAsgola)
+- [@AtharvAsgola](https://github.com/AtharvAsgola)
 
 ## Support
 Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
@@ -215,7 +215,7 @@ Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/
   
 ## License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Atharv and Klingri.**
+- Special thanks to our early contributors: **Others and Klingri.**
 
 ---
 
