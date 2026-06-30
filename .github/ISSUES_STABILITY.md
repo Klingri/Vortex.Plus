@@ -9,3 +9,5 @@ Currently in early development, this browser extension features a dark mode and 
 
 > [!WARNING]
 > **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
+
+- The Extension may suffer from a wide variety of Issues (WIP)

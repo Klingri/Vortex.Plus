@@ -1,1 +1,2 @@
-# work in progress
+# WIP
+- Currently, the Extension is.. (WIP)

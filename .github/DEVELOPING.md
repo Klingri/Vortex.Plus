@@ -1,1 +1,1 @@
-# to contribute, do this (WIP)
+# Discontinued

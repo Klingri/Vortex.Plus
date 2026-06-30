@@ -1,10 +1,10 @@
 <div align="center">
 
-# 😎 VortexPro
+# VortexPro (The First REAL Extension of the Vortex Platform)
 
-### The Vortex Enhancer — Privacy-First, Community Extension
+### Privacy-First, Community Extension, You take back Control.
 
-**Better Design. Better Experience. No Surveillance. No Bad Updates. Ever.**
+**Customization, features and control is what a lot of people want, this project is working to achieve that for you.**
 
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Klingri/VortexPro/total)
@@ -17,14 +17,11 @@
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/Klingri/VortexPro/latest)
 ![GitHub contributors](https://img.shields.io/github/contributors/Klingri/VortexPro)
 [![License: MIT](https://img.shields.io/badge/License-MIT%20-blue.svg)](https://opensource.org/licenses/MIT)
-[![HTML](https://img.shields.io/badge/HTML-5-orange.svg)](https://html.spec.whatwg.org/)
-[![CSS](https://img.shields.io/badge/CSS-3-darkblue.svg)](https://www.w3.org/TR/css/#css)
-[![JSON](https://img.shields.io/badge/JSON-Latest-yellow.svg)](https://www.json.org/json-en.html)
-[![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-darkred.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
-[![Creator](https://img.shields.io/badge/Creator%20-@Klingri-darkred.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
-[![Partner](https://img.shields.io/badge/Partner%20-@None-orange.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
+[![Test](https://img.shields.io/badge/Test-gray.svg)](https://html.spec.whatwg.org/)
+[![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-royalblue.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
+[![Creator](https://img.shields.io/badge/Made_With_Love_♥️%20-@Klingri-plum.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 
-###### other stats coming soon.
+###### Work in Progress.
 ![VortexProLogo](image.png)
 </div>
 
@@ -32,7 +29,7 @@
 
 ## Why VortexPro Exists
 
-In May 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI and not much functionality. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ was made.
+In Early May 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
 
 **VortexPro is what Vortex should have been:**
 
@@ -43,14 +40,16 @@ In May 2026, Klingri joined the Vortex Platform and was frustrated with the lack
 ---
 
 ## Disclaimers
-- Addressing Controversy
-To view more click [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md)
 
-- View the full list of blacklisted people who are not allowed to use the extension [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md)
+- The Browser Extension Isn't guaranteed to function on firefox-based web browsers.
 
 - This extension does not contain malware. The code is entirely open for inspection, and any detected injection scripts are solely for functionality, such as the auto-updater or external integrations.
 
 - The extension is NOT "obfuscated" and even if it was, it's not malicious and we do want to de-obfuscate whenever we can but we can't guarantee that everything is de-obfuscated.
+
+- Klingri is the sole concurrent contributor to the extension, so updates may take some time.
+
+- I have addressed Controversy [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md)
 
 ---
 ## Installation
@@ -73,26 +72,13 @@ For other methods of Installation, please see our [Installation guide.](https://
 ---
 
 ## Known Issues & Stability
-For more Info on known issues and stability, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
-Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro browser extension must be updated manually.
-Currently in early development, this browser extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release
+View the full list [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
+- **No native Auto-Updater:** Manual updating, the same way you first downloaded it.
+- **Compatibility:** The extension may be incompatible with Firefox and Firefox-based browsers, The extension may or may not be compatible with other extensions made by Klingri,
 
 **Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
-
-> [!WARNING]
-> **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
-
-> [!NOTE]
-> **Updates:** Currently, updates require re-downloading the latest release and repeating the installation steps. We are actively developing a seamless auto-updater for a future release.
-
-- The Extension may or may not be compatible on other browser extensions made by [@Klingri](https://github.com/Klingri).
-For More Info on compatiblity go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
-
-
-- Developing
-If you wish to develop on this browser extension, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
 
 ---
 
@@ -107,23 +93,7 @@ General | **Is the extension malware?** | No, the extension is not malware but f
 Drama | **You were in a drama, you're not trustable?** | Feel free to not use the extension.
 General | **How Often does the extension update?** | Typically every few days, however the extension may go weeks without updates if it's not needed.
 General | **Is this project open-source?** | Yes.
-
----
-
-## Roadmap
-
-Please note that this roadmap is subject to change. Features may be added, removed, or modified at any time, as this list is not comprehensive and represents a flexible plan rather than a final commitment this applies both to the roadmap and current features.
-- The Following below are list of the most important features:
-
-| Feature | Description | Priority |
-| :--- | :--- | :--- |
-| **Avatar Customization** | Full platform-wide Avatar Customization. | Very High |
-| **Game Making** | Game Making for social clarity. | Very High |
-| **Emotes** | Animations you can play. | Medium |
-| **Tools** | Useful and functional tools. | High |
-| **Groups** | Communities for players. | High |
-
-For the full roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+General | **Can I contribute or develop for this extension?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
 
 ---
 
@@ -138,11 +108,35 @@ For the full roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stabl
 | **Hover Animations** | Instant dopamine. | @Klingri |
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
 
-For more Info on our current features, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+For more Info on our current features and the roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+
+View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
 
 ---
 
-## Further Reading
+## Accesibility
+VortexPro is commited to making the Vortex Platform more accessible.
+
+---
+
+## Our Commitments
+- We are commited to being responsible (WIP)
+
+---
+
+## Trivia
+
+- Vortex+ (VortexPro) is the first browser extension of the vortex platform to ever be created, and it inspired many other people to make their own extensions, like Vortex2plus2.
+
+- Klingri (User ID 847) got banned from the Vortex Platform
+
+- Milestones
+   - Pre-Alpha Release, Achieved on 05.05.2026
+   - Alpha Release (soon)
+
+---
+
+## Further Reading & Shortcuts
 - **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
 - Security
    - [Support](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
@@ -173,65 +167,47 @@ For more Info on our current features, go [here.](https://github.com/Klingri/Vor
 
 ---
 
-## Version History
-
-View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
-
-| Date | Version | Release | Additions/Changes |
-|------|-----------|--------|-------------------|
-| 10.05.26 | v2.0  | Pre-Alpha | Did Stuff. |
-| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff |
-| 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
-
----
-
 ## Forks & Mini-Projects
 For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
 WIP
-- We sometimes make mini-projects and people sometimes have forked and partially-forked the project.
+- We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
 
 - Mini-Projects
   - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
   - [VortexUltra](https://github.com/Klingri/VortexUltra)
   - [Dvortek](https://github.com/Klingri/Dvortek)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
-- Forks (Including partial ones and inspired projects, all forks are incompatible.)
+- Alleged Forks & Partial-Forks (All forks are incompatible.)
   - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro.
   - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro.
   - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro.
 
 ---
 
-## Partners
-Our current partners are:
-- [@AtharvAsgola](https://github.com/AtharvAsgola)
-
 ## Support
-Support my work: find out how [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
-
+You can support the continuing development of this extension by Staring it, following me on Github, spreading and awareness.
 - Thank you for all the support! ♥️
 
 ---
   
 ## License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our early contributors: **Others and Klingri.**
-
----
-
-## Milestones
-- Pre-Alpha Release
-
-| Date | Version | Release | Milestone |
-|------|-----------|--------|-------------------|
-| 10.05.26 | v2.0  | Pre-Alpha | No longer indev. |
-| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff |
-| 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
+- Special thanks to our former contributors: **@Myroshlaug, @enkubik, @inuk.**
 
 ---
 
 **Supported Languages**
-- <img src="https://flagcdn.com/w20/us.png" width="20"> English
+- <img src="https://flagcdn.com/w20/us.png" width="20"> English US (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia (Since 05.05.2026)
 
-more .md's
+**Planned**
+
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin, Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic, Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский (Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch (Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/es.png" width="20"> Español (Support Planned for Mid-2026)
+
 ---

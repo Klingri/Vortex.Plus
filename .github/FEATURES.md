@@ -1,4 +1,4 @@
-# work in progress
+# WIP
 
 ## Current Features
 - The Following below are list of the most important features:
@@ -11,7 +11,7 @@
 | **Hover Animations** | Instant dopamine. | @Klingri |
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
 
-# roadmap
+# Roadmap
 
 Please note that this roadmap is subject to change. Features may be added, removed, or modified at any time, as this list is not comprehensive and represents a flexible plan rather than a final commitment this applies both to the roadmap and current features.
 - The Following below are list of the most important features:
