@@ -59,12 +59,6 @@ input {
     text-align: center;
 }
 
-.custom-nav-btn {
-    font-weight: lighter;
-    text-decoration: none;
-
-}
-
 .btn-secondary {
     background-color: var(--input-bg) !important;
     color: var(--text-main) !important;
@@ -81,20 +75,12 @@ input {
 
 }
 
-
-.custom-nav-btn:hover {
-    background: rgba(255, 255, 255, 0.07) !important;
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
-
-}
-
 .profile-last-seen {
     color: var(--text-main);
 }
 
-bdt {
-    color: #2ecc71;
+nav a {
+    background-color: white !important;
 }
 
 /* Profile Polish */
@@ -111,18 +97,6 @@ bdt {
     text-align: center;
     padding: 20px !important;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Custom Play Button */
-.btn-play {
-    background-color: var(--input-bg);
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 0.3s ease;
 }
 
 h1,
@@ -152,15 +126,9 @@ input {
     margin-top: 10px;
 }
 
-/* Make the profile avatar pop */
-.profile-avatar {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
 /* Color for Selection */
 body::selection {
-    background-color: var(--input-bg) !important;
+    background-color: #920000;
 }
 
 /* Different Cursor State */
@@ -185,8 +153,7 @@ body::selection {
 }
 
 /* Animation when Hovering */
-.btn-discord:hover,
-.btn-signout-sm:hover,
+.navbar-actions a:hover,
 .navbar-search button:hover,
 .tag:hover,
 .btn-secondary:hover,
@@ -211,7 +178,7 @@ body::selection {
 .bio-label:hover,
 .join-date-label:hover,
 .join-date-value:hover,
-.btn-discord:hover,
+.navbar-actions a:hover,
 .profile-stat:hover,
 .game-card-title:hover,
 .game-card-meta:hover,
@@ -269,6 +236,11 @@ body::selection {
     cursor: pointer;
 }
 
+.game-description-text:hover {
+    text-decoration: underline !important;
+
+    }
+
 .link-row a:hover,
 button:hover {
     color: hsl(0, 0%, 55%) !important;
@@ -295,8 +267,9 @@ button:hover {
 /* The Play Button Animation */
 
 .btn-play:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
     transition: 0.2s;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Subtle animation for status dots */
@@ -317,30 +290,4 @@ button:hover {
     100% {
         opacity: 1;
     }
-}
-
-/* Custom Scrollbar for the whole site */
-::-webkit-scrollbar {
-    width: 8px !important;
-    cursor: grab !important;
-    scroll-behavior: smooth !important;
-}
-
-::-webkit-scrollbar-track {
-    background: hsl(0, 0%, 10%) !important;
-    cursor: grabbing !important;
-    scroll-behavior: smooth !important;
-}
-
-::-webkit-scrollbar::after {
-    background: hsl(0, 0%, 10%) !important;
-    cursor: grabbing !important;
-    scroll-behavior: smooth !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background: hsl(0, 0%, 25%) !important;
-    border-radius: 10px !important;
-    cursor: grabbing !important;
-    scroll-behavior: smooth !important;
 }
