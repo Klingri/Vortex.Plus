@@ -10,7 +10,6 @@ here how u get blacklisted (WIP WORK IN PROGRESS)
       - [@Halo](https://github.com/thehalodeveloper) (@thehalodeveloper, @TheHaloDeveloper)
       - @paint.exe
       - @kostas (@actuallykostas)
-      - @Zenith (Zen on Vortex, @itzmezenith)
       - @LovelyJacob (@lovelyjacob)
       - @Gameability (@gameability)
    - @airbornrabbits (@air_node)

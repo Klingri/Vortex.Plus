@@ -21,7 +21,7 @@
 [![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-royalblue.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 [![Creator](https://img.shields.io/badge/Made_With_Love_♥️%20-@Klingri-plum.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 
-###### Work in Progress.
+###### Version 2.4 (01.07.2026).
 ![VortexProLogo](image.png)
 </div>
 
@@ -29,7 +29,7 @@
 
 ## Why VortexPro Exists
 
-On May 5th 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
+On the 5th of May 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
 
 **VortexPro is what Vortex should have been:**
 
@@ -47,13 +47,15 @@ On May 5th 2026, Klingri joined the Vortex Platform and was frustrated with the 
 
 - The extension is NOT "obfuscated" and even if it was, it's not malicious and we do want to de-obfuscate whenever we can but we can't guarantee that everything is de-obfuscated.
 
+- Obviously, to use this extension you must agree to the Vortex platform's terms of service and VortexPro's terms of service.
+
 - Klingri is the sole concurrent contributor to the extension, so updates may take some time.
 
 - I have addressed Controversy [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md)
 
 ---
 ## Installation
-For other methods of Installation, please see our [Installation guide.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
+For other methods of Installation, please see our [full Installation guide.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
 ### Step-by-Step:
 1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.
 2. **Extract:** Unzip the folder to a permanent location on your PC.
@@ -72,7 +74,7 @@ For other methods of Installation, please see our [Installation guide.](https://
 ---
 
 ## Known Issues & Stability
-View the full list [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
+View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
 - **No native Auto-Updater:** Manual updating, the same way you first downloaded it.
@@ -82,9 +84,38 @@ View the full list [here.](https://github.com/Klingri/VortexPro/blob/stable/.git
 
 ---
 
+## Forking
+1. Fork the Repository
+- Click the Fork button.
+- Find it at the top-right of this page.
+- Select your GitHub account as the owner.
+- Click Create fork.
+2. Clone Your Fork
+- Copy your fork's URL.
+- Open your local terminal.
+- Run this command:
+`git clone https://github.com`
+3. Create a Feature Branch
+- Navigate into the project folder.
+- Create a new branch for your changes:
+`git checkout -b feature/your-feature-name`
+4. Commit and Push Changes
+- Save your modifications.
+- Commit your changes with a clear message:
+`git commit -am "Add some amazing feature"`
+- Push the changes to your GitHub fork:
+`git push origin feature/your-feature-name`
+5. Open a Pull Request
+- Return to the original repository on GitHub.
+- Click the Compare & pull request button.
+- Describe your changes.
+- Click Create pull request.
+
+---
+
 ## Frequently-Asked-Questions
 
-For more frequently asked questions, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
+For more frequently asked questions, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
@@ -108,9 +139,9 @@ General | **Can I contribute or develop for this extension?** | Currently, no co
 | **Hover Animations** | Instant dopamine. | @Klingri |
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
 
-For more Info on our current features and the roadmap, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+[Full Road map & List of Features here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
-View the full version history [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
+[Full Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
 
 ---
 
@@ -129,6 +160,8 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 - VortexPro (Vortex+) is the first browser extension of the vortex platform to ever be created, and it inspired many other people to make their own extensions, like Vortex2plus2.
 
+- VortexPro (Vortex+) is the first browser extension of the vortex platform to have dark mode.
+
 - Klingri (User ID 847) got banned from the Vortex Platform
 
 - Milestones
@@ -146,15 +179,15 @@ VortexPro is commited to making the Vortex Platform more accessible.
    - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
 - General
   - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
-  - [Developing](https://github.com/Klingri/VortexPro/blob/stable/.github/DEVELOPING.md)
+  - [Contributing](https://github.com/Klingri/VortexPro/blob/stable/CONTRIBUTING.md)
   - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
-  - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FAQ.md)
+  - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Issues_Stability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
   - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
   - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
   - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md)
+  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOG.md)
 
   View the code here: (WIP WORK IN PROGRESS NOT DONE)
 
@@ -179,14 +212,17 @@ WIP
   - [Dvortek](https://github.com/Klingri/Dvortek)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged Forks & Partial-Forks (All forks are incompatible.)
-  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro.
+  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) allegedly originally began as a partial fork inspired by VortexPro.
+      - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon) is allegedly a partial fork inspired by Vortex2plus2.
+      - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web) is allegedly a partial fork inspired by Vortex2plus2.
+      - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter) is allegedly a partial fork inspired by Vortex2plus2.
   - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro.
   - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro.
 
 ---
 
 ## Support
-You can support the continuing development of this extension by Staring it, following me on Github, and spreading awareness.
+You can support the continuation of development of this browser extension by Staring it, following me on Github, and spreading awareness.
 - Thank you for all the support! ♥️
 
 ---

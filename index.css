@@ -4,6 +4,11 @@ body {
     background-color: hsl(155, 100%, 20%);
 }
 
+body:selection {
+    background-color: rgb(29, 29, 29);
+    color: #FFF;
+}
+
 a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(0, 12, 114);
