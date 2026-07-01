@@ -1,4 +1,4 @@
-# Coming Soon
+# Installation
 #### First Method:
 ### Step-by-Step:
 1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.

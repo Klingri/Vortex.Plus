@@ -1,4 +1,4 @@
-# work in progress
+# Issues & Stability
 
 Because it bypasses the Chrome Web Store to avoid strict compliance requirements, the VortexPro browser extension must be updated manually.
 Currently in early development, this browser extension features a dark mode and themes. Please expect bugs and potential instability as I work toward a stable release

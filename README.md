@@ -29,7 +29,7 @@
 
 ## Why VortexPro Exists
 
-In Early May 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
+On May 5th 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
 
 **VortexPro is what Vortex should have been:**
 
@@ -116,6 +116,7 @@ View the full version history [here.](https://github.com/Klingri/VortexPro/blob/
 
 ## Accesibility
 VortexPro is commited to making the Vortex Platform more accessible.
+- We will be Adding new options to make the Vortex Platform more accessible.
 
 ---
 
@@ -126,7 +127,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 ## Trivia
 
-- Vortex+ (VortexPro) is the first browser extension of the vortex platform to ever be created, and it inspired many other people to make their own extensions, like Vortex2plus2.
+- VortexPro (Vortex+) is the first browser extension of the vortex platform to ever be created, and it inspired many other people to make their own extensions, like Vortex2plus2.
 
 - Klingri (User ID 847) got banned from the Vortex Platform
 
@@ -185,14 +186,14 @@ WIP
 ---
 
 ## Support
-You can support the continuing development of this extension by Staring it, following me on Github, spreading and awareness.
+You can support the continuing development of this extension by Staring it, following me on Github, and spreading awareness.
 - Thank you for all the support! ♥️
 
 ---
   
 ## License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our former contributors: **@Myroshlaug, @enkubik, @inuk.**
+- Special thanks to our former contributors: **[@Myroshlaug](https://github.com/myroshlaug), @enkubik, @inuk84, @codep1ltio, @KodiDaBear, @Hayden, @Isfadev, @SlimeKing.**
 
 ---
 
