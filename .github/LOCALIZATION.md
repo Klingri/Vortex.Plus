@@ -1,13 +1,22 @@
 # Localization (WIP)
-- <img src="https://flagcdn.com/w20/us.png" width="20"> U.S.A
-- <img src="https://flagcdn.com/w20/ba.png" width="20"> Brazil
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> Serbian
+- <img src="https://flagcdn.com/w20/us.png" width="20"> English US (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada (Since 05.05.2026)
+- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia (Since 05.05.2026)
+
+**Planned**
+
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin, Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic, Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский (Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch (Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/es.png" width="20"> Español (Support Planned for Mid-2026)
 
 - # Localization Guide
 
 Thank you for your interest in helping translate [VortexPro]! Your contributions help make this project accessible to a global audience.
 
-## 📁 Project Structure
+## Project Structure
 We follow a specific file naming convention for localized documents:
 - **Original:** `README.md`
 - **Localized:** `README-{{locale}}.md` (e.g., `README-ja.md` for Japanese)
@@ -15,18 +24,18 @@ We follow a specific file naming convention for localized documents:
 Alternatively, localized files may be stored in a dedicated directory:
 - `/localization/{{language-code}}-{{region-code}}/` (e.g., `localization/en-US/`)
 
-## 🛠️ Translation Workflow
+## Translation Workflow
 1. **Find the source:** Identify the original Markdown file and vortex text you wish to translate.
 2. **Create the file:** Copy the original file and rename it for markdown files, and make a notepad with the list of untranslated and translated words using the suffix mentioned above.
 3. **Translate:** Localize all sections and paragraphs. Ensure all image links point to the original assets.
 4. **Submit:** Open a Pull Request with the tag `localization` or `translation`.
 
-## 📏 Guidelines
+## Guidelines
 - **Consistency:** Use consistent terminology throughout the translation.
 - **Accuracy:** Ensure code blocks and technical terms remain accurate.
 - **Formatting:** Maintain the original Markdown structure and formatting.
 
-## 🌐 Supported Locales
+## Supported Locales
 
 | Locale Code | Language | Status |
 | ----------- | -------- | ------ |

@@ -1,4 +1,4 @@
-# work in progress
+# WIP
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
@@ -7,3 +7,4 @@ General | **Is the extension malware?** | No, the extension is not malware but f
 Drama | **You were in a drama, you're not trustable?** | Feel free to not use the extension.
 General | **How Often does the extension update?** | Typically every few days.
 General | **Is this project open-source?** | Yes.
+General | **Can I contribute or develop for this extension?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.

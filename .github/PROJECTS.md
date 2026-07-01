@@ -1,4 +1,3 @@
-# work in progress
 ## Forks & Mini-Projects
 For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
 WIP
