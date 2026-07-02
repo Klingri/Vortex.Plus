@@ -20,3 +20,66 @@
     border-color: var(--nav-bg) !important;
     box-shadow: 2px var(--nav-bg) !important;
 }
+
+/* Ported over VortexGalactic 02/07/2026 Version 2.4 Pre-Alpha*/
+/* Made by Klingri*/
+/* Modernizing the existing Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px !important;
+    background: rgba(20, 20, 25, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #3e3e4a;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Enhancing Buttons */
+.btn-discord,
+#my-profile-btn,
+#logout-btn,
+.custom-nav-btn {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.btn-discord {
+    background-color: #5865F2 !important;
+    border: none;
+}
+
+.btn-discord:hover {
+    background-color: #4752c4 !important;
+    transform: translateY(-1px);
+}
+
+/* Custom "Quick Stats" button we will add */
+.custom-nav-btn {
+    background: #00c3ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Search Bar Polish */
+#search-input {
+    border-radius: 20px 0 0 20px !important;
+    border: 1px solid #3e3e4a !important;
+    background: #1a1a1d !important;
+    color: white !important;
+    padding: 8px 15px !important;
+}
+
+#search-form button {
+    border-radius: 0 20px 20px 0 !important;
+    background: #3e3e4a !important;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}

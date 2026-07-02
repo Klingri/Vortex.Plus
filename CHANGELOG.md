@@ -16,8 +16,8 @@
 | 08.05.26 | v1.8  | Indev | Added Custom Themes, Broke shaders and MapLoader. |
 | 09.05.26 | v1.9  | Indev | Did Stuff. |
 | 10.05.26 | v2.0  | Pre-Alpha | Did Stuff. |
-| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff |
-| 13.05.26 | v2.2  | Pre-Alpha | Upcoming Release |
+| 11.05.26 | v2.1  | Pre-Alpha | Did Stuff. |
+| 13.05.26 | v2.2  | Pre-Alpha | Did Stuff. |
 
 # Version 2.0
 

@@ -4,7 +4,7 @@ body {
     background-color: hsl(155, 100%, 20%);
 }
 
-body:selection {
+body::selection {
     background-color: rgb(29, 29, 29);
     color: #FFF;
 }

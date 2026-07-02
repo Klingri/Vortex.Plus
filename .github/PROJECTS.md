@@ -4,10 +4,10 @@ WIP
 - We sometimes make mini-projects and people sometimes have forked and partially-forked the project.
 
 - Mini-Projects
-  - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
-  - [VortexUltra](https://github.com/Klingri/VortexUltra)
-  - [Dvortek](https://github.com/Klingri/Dvortek)
-  - [VortexWiki](https://github.com/Klingri/VortexWiki)
+- [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
+- [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
+- [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
+- [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Forks (Including partial ones and inspired projects, all forks are incompatible.)
   - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) is allegedly a partial fork inspired by VortexPro.
   - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro.

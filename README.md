@@ -21,7 +21,7 @@
 [![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-royalblue.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 [![Creator](https://img.shields.io/badge/Made_With_Love_♥️%20-@Klingri-plum.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 
-###### Version 2.4 (01.07.2026).
+###### Version 2.4 Dev Mode (01.07.2026).
 ![VortexProLogo](image.png)
 </div>
 
@@ -141,7 +141,7 @@ General | **Can I contribute or develop for this extension?** | Currently, no co
 
 [Full Road map & List of Features here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
-[Full Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOGS.md) Currently we only keep track of recent versions.
+[Full Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md) Currently we only keep track of recent versions.
 
 ---
 
@@ -162,7 +162,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 - VortexPro (Vortex+) is the first browser extension of the vortex platform to have dark mode.
 
-- Klingri (User ID 847) got banned from the Vortex Platform
+- Klingri [UserID_847](https://playvortex.io/users/847/profile) got banned from the Vortex Platform.
 
 - Milestones
    - Pre-Alpha Release, Achieved on 05.05.2026
@@ -193,7 +193,6 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
   - [index.html](https://github.com/Klingri/VortexPro/blob/stable/index.html)
   - [manifest.json](https://github.com/Klingri/VortexPro/blob/stable/manifest.json)
-  - [thankyou.html](https://github.com/Klingri/VortexPro/blob/stable/thankyou.html)
   - [.gitignore](https://github.com/Klingri/VortexPro/blob/stable/.gitignore)
   - [LICENSE.md](https://github.com/Klingri/VortexPro/blob/stable/LICENSE)
   - Scripts
@@ -207,9 +206,9 @@ WIP
 - We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
 
 - Mini-Projects
-  - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
-  - [VortexUltra](https://github.com/Klingri/VortexUltra)
-  - [Dvortek](https://github.com/Klingri/Dvortek)
+  - [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
+  - [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
+  - [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged Forks & Partial-Forks (All forks are incompatible.)
   - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) allegedly originally began as a partial fork inspired by VortexPro.
@@ -229,22 +228,24 @@ You can support the continuation of development of this browser extension by Sta
   
 ## License
 - Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our former contributors: **[@Myroshlaug](https://github.com/myroshlaug), @enkubik, @inuk84, @codep1ltio, @KodiDaBear, @Hayden, @Isfadev, @SlimeKing.**
+- Special thanks to our former contributors: **[@Myroshlaug](https://github.com/myroshlaug), [@enkubik](https://github.com/enkubik), [@inuk84](https://github.com/inuk84), [@codep1ltio](https://github.com/codep1ltio), [@KodiDaBear](https://github.com/KodiDaBear), [@Hayden](https://github.com/HaydenGitHub-2), [@Isfadev](https://github.com/Isfadev), [@Slimeking](https://github.com/Slimeking463).**
 
 ---
 
 **Supported Languages**
-- <img src="https://flagcdn.com/w20/us.png" width="20"> English US (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia (Since 05.05.2026)
+#### All Since 05.05.2026
+- <img src="https://flagcdn.com/w20/us.png" width="20"> English US
+- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK
+- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada
+- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia
 
 **Planned**
 
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin, Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic, Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский (Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch (Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/es.png" width="20"> Español (Support Planned for Mid-2026)
+#### Support planned for mid 2026.
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin)
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic)
+- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский
+- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch
+- <img src="https://flagcdn.com/w20/es.png" width="20"> Español
 
 ---

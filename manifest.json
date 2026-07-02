@@ -53,8 +53,6 @@
       "resources": [
         "content/website/content.css",
         "images/*.png",
-        "cursors/*",
-        "https://cdn.discordapp.com/attachments/1501231549524213863/1502435875689201695/Untitled.png?ex=6a005cb2&is=69ff0b32&hm=b5a48762194b1aaf9054570b527617ed841a5b748f3acaf3fc66eeecd9322125.jpg*",
         "assets/fonts/*",
         "settings/options.html"
       ],
