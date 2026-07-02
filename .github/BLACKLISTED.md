@@ -1,6 +1,5 @@
 # Excluded Persons
-
-here how u get blacklisted (WIP WORK IN PROGRESS)
+- Blacklisted people are people who are banned from using the extension.
 
 > [!IMPORTANT]
 > The following individuals are prohibited from accessing the extension:

@@ -11,18 +11,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-.navbar-logo {
-    color: var(--text-main) !important;
-}
-
 .btn-discord {
-    background-color: hsl(245, 90%, 40%) !important;
+    background-color: hsl(245, 90%, 30%) !important;
 }
 
 .navbar-search input:focus {
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-color: var(--accent) !important;
-    box-shadow: 0px 0px 20px rgba(46, 204, 113, 0.2);
-    outline: none;
+    background: var(--nav-bg) !important;
+    border-color: var(--nav-bg) !important;
+    box-shadow: 2px var(--nav-bg) !important;
 }

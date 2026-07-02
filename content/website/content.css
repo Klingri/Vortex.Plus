@@ -21,26 +21,19 @@
 body {
     background: var(--bg-main) !important;
     color: var(--text-main) !important;
-    caret-color: var(--accent);
-    /* Can be any valid color name, hex, or RGB */
 }
-
-/*body {
-    /* Replace spaces with %20 and ensure the file is a PNG/SVG */
-/*cursor: url('chrome-extension://__MSG_@@extension_id__/cursorpack/Normal%20Select.png'), auto !important;
-}
-
-/*body:hover {
-  cursor: url('../cursorpack/Horizontal\ Resize.cur'), pointer !important;
-}*/
 
 .bio-text {
     color: #888 !important;
 }
 
+.navbar-logo {
+    background-color: none !important;
+}
+
 
 button,
-input {
+input, .btn-download-nav {
     background: var(--input-bg) !important;
     color: var(--text-main) !important;
     outline: none;
@@ -53,25 +46,9 @@ input {
     color: var(--text-main);
 }
 
-.logo,
-.wrap h1,
-.link-row {
-    text-align: center;
-}
-
 .btn-secondary {
     background-color: var(--input-bg) !important;
     color: var(--text-main) !important;
-
-}
-
-#vortex-loading-screen {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    overflow: hidden;
 
 }
 
@@ -80,7 +57,7 @@ input {
 }
 
 nav a {
-    background-color: white !important;
+    background-color: var(--card-bg) !important;
 }
 
 /* Profile Polish */
@@ -97,6 +74,35 @@ nav a {
     text-align: center;
     padding: 20px !important;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.user-card {
+    background-color: var(--bg-main) !important;
+    border: var(--accent) !important;
+}
+
+.user-card-name {
+    color: var(--text-main) !important;
+}
+
+.user-card-avatar:hover {
+    background-image: none !important;
+}
+
+.market-card {
+    background-color: var(--bg-main-bg) !important;
+    background: var(--input-bg) !important;
+}
+
+.catalog-section-divider, .catalog-header {
+    background-color: var(--bg-main-bg) !important;
+    background: var(--input-bg) !important;
+    border: var(--card-bg) !important;
+}
+
+.dl-notice {
+    background-color: var(--bg-main-bg) !important;
+    background: var(--input-bg) !important;
 }
 
 h1,
@@ -117,13 +123,6 @@ label,
 .game-stat-value,
 input {
     color: var(--text-main) !important;
-}
-
-/* Better spacing for the profile actions */
-.profile-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
 }
 
 /* Color for Selection */
@@ -239,7 +238,7 @@ body::selection {
 .game-description-text:hover {
     text-decoration: underline !important;
 
-    }
+}
 
 .link-row a:hover,
 button:hover {
