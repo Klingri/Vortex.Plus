@@ -1,3 +1,15 @@
+# Addressing Controversy
+
+> [!IMPORTANT]
+> I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+
+- Extra Info
+  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
+  - We aren't trying to be the best extension with the most features, just the most High Quality
+
+  > [!IMPORTANT]
+> Although I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.
+
 # Excluded Persons
 - Blacklisted people are people who are banned from using the extension.
 
@@ -22,15 +34,3 @@
      - [@Slimeking](https://github.com/Slimeking463) (@slimeking463, @Kid)
      - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
      - @exelerantt
-
-   # Addressing Controversy
-
-> [!IMPORTANT]
-> I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
-
-- Extra Info
-  - I am deeply concerned by the misinformation campaign being waged against me by the [owner](https://github.com/inuk84) of Vortex2plus2.
-  - We aren't trying to be the best extension with the most features, just the most High Quality
-
-  > [!IMPORTANT]
-> Although I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.

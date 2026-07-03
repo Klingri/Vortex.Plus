@@ -11,10 +11,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-.btn-discord {
-    background-color: hsl(245, 90%, 30%) !important;
-}
-
 .navbar-search input:focus {
     background: var(--nav-bg) !important;
     border-color: var(--nav-bg) !important;

@@ -148,11 +148,13 @@ General | **Can I contribute or develop for this extension?** | Currently, no co
 ## Accesibility
 VortexPro is commited to making the Vortex Platform more accessible.
 - We will be Adding new options to make the Vortex Platform more accessible.
+- Read the entire Accesibility [here.](https://github.com/Klingri/VortexPro/blob/stable/ACCESIBILITY.md)
 
 ---
 
 ## Our Commitments
 - We are commited to being responsible (WIP)
+- We are commited to deobfuscation whenever possible
 
 ---
 
@@ -166,6 +168,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 - Milestones
    - Pre-Alpha Release, Achieved on 05.05.2026
+   - Pre-Alpha Version 2.5 Release, Achieved on 10?.07.2026
    - Alpha Release (soon)
 
 ---
@@ -191,7 +194,6 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
   View the code here: (WIP WORK IN PROGRESS NOT DONE)
 
-  - [index.html](https://github.com/Klingri/VortexPro/blob/stable/index.html)
   - [manifest.json](https://github.com/Klingri/VortexPro/blob/stable/manifest.json)
   - [.gitignore](https://github.com/Klingri/VortexPro/blob/stable/.gitignore)
   - [LICENSE.md](https://github.com/Klingri/VortexPro/blob/stable/LICENSE)
@@ -201,22 +203,23 @@ VortexPro is commited to making the Vortex Platform more accessible.
 ---
 
 ## Forks & Mini-Projects
-For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
+[The Full list of Forks & Mini-Projects Here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
 WIP
 - We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
 
-- Mini-Projects
+- Mini-Projects Created by [@Klingri](https://github.com/Klingri)
   - [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
   - [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
   - [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
-- Alleged Forks & Partial-Forks (All forks are incompatible.)
-  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2) allegedly originally began as a partial fork inspired by VortexPro.
-      - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon) is allegedly a partial fork inspired by Vortex2plus2.
-      - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web) is allegedly a partial fork inspired by Vortex2plus2.
-      - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter) is allegedly a partial fork inspired by Vortex2plus2.
-  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS) allegedly started as a feature for VortexPro.
-  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT) allegedly started as a feature for VortexPro.
+- Alleged Forks & Partial-Forks (All of the alleged forks are incompatible.)
+- The following below allegedly either originally began as partial fork's, features or extensions by VortexPro or Vortex2plus2.
+  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2)
+      - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon)
+      - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web)
+      - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter)
+  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS)
+  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT)
 
 ---
 

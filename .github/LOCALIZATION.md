@@ -1,16 +1,18 @@
 # Localization (WIP)
-- <img src="https://flagcdn.com/w20/us.png" width="20"> English US (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada (Since 05.05.2026)
-- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia (Since 05.05.2026)
+
+**Supported since 05.05.2026**
+- <img src="https://flagcdn.com/w20/us.png" width="20"> English US
+- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK
+- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada
+- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia
 
 **Planned**
 
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin, Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic, Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский (Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch (Support Planned for Mid-2026)
-- <img src="https://flagcdn.com/w20/es.png" width="20"> Español (Support Planned for Mid-2026)
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin)
+- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic)
+- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский
+- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch
+- <img src="https://flagcdn.com/w20/es.png" width="20"> Español
 
 - # Localization Guide
 

@@ -15,4 +15,33 @@ Currently in early development, this browser extension features a dark mode and 
 # Compatability
 - Here's a list of all compatible browsers, extensions, forks and operating systems:
 
-(WIP)
+## Summary
+* **Current Status:** [Stable]
+* **Primary Maintainer:** [Klingri]
+
+## Version Support List
+*Use this section to outline which components, versions, or environments are supported.*
+
+| Component / System | Target Version | Status | Notes |
+| :--- | :--- | :--- | :--- |
+| [Item A] | [e.g., >= 3.4] | **Fully Supported** | [e.g., Tested and validated] |
+| [Item B] | [e.g., 2.x] | **Deprecated** | [e.g., Scheduled for removal in Q4] |
+| [Item C] | [e.g., 1.x] | **Not Supported** | [e.g., Known breaking changes] |
+
+## Compatibility Legend
+*Use these standard tags to describe the relationship or behavior of different elements.*
+
+* ✅ **Fully Compatible:** Seamless integration with no known issues.
+* ⚠️ **Partial Support:** Works, but with limited functionality or known constraints.
+* ❌ **Incompatible:** Cannot be combined or integrated.
+* 🚧 **Work in Progress:** Currently being tested/developed for compatibility.
+
+## Important Constraints
+*Note any specific configurations, environmental prerequisites, or breaking changes.*
+
+* **[Constraint 1]:** [Details regarding limitation or specific setup required]
+* **[Constraint 2]:** [Details regarding performance impact or deprecated APIs]
+
+## Testing Environment
+* **OS/Environment:** [Windows_11]
+* **Last Verified:** [03.07.2026]
