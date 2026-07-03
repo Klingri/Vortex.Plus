@@ -45,3 +45,25 @@ Currently in early development, this browser extension features a dark mode and 
 ## Testing Environment
 * **OS/Environment:** [Windows_11]
 * **Last Verified:** [03.07.2026]
+
+> [!IMPORTANT]
+> The following individuals were allegdly part of the drama:
+
+- Vortex Community
+   - Vortex Admins 
+      - [@Halo](https://github.com/thehalodeveloper) (@thehalodeveloper, @TheHaloDeveloper)
+      - @paint.exe
+      - @kostas (@actuallykostas)
+      - @LovelyJacob (@lovelyjacob)
+      - @Gameability (@gameability)
+   - @airbornrabbits (@air_node)
+   - @FileNotFound (@da_mochaax3)
+   - [@Hayden](https://github.com/HaydenGitHub-2) (@HaydenGitHub-2, @haydengit69, hayden___________
+)
+- Vortex2plus2 Community
+   - Vortex2+2 Admins & Contributors
+     - [@inuk](https://github.com/inuk84) (@inuk1, @inuk84)
+     - [@enk](https://github.com/enkubik) (@enkubik)
+     - [@Slimeking](https://github.com/Slimeking463) (@slimeking463, @Kid)
+     - [@p1lt](https://github.com/codep1ltio) (@cod.io, @code, @codep1ltio, @_codep1ltio)
+     - @exelerantt

@@ -49,9 +49,15 @@ On the 5th of May 2026, Klingri joined the Vortex Platform and was frustrated wi
 
 - Obviously, to use this extension you must agree to the Vortex platform's terms of service and VortexPro's terms of service.
 
+- We aren't trying to be the best extension with the most features, just the most High Quality
+
+- Although I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.
+
+- I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+
 - Klingri is the sole concurrent contributor to the extension, so updates may take some time.
 
-- I have addressed Controversy [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/BLACKLISTED.md)
+- I have addressed Controversy [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
 
 ---
 ## Installation
@@ -164,7 +170,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 - VortexPro (Vortex+) is the first browser extension of the vortex platform to have dark mode.
 
-- Klingri [UserID_847](https://playvortex.io/users/847/profile) got banned from the Vortex Platform.
+- Klingri [(UserID_847)](https://playvortex.io/users/847/profile) got banned from the Vortex Platform.
 
 - Milestones
    - Pre-Alpha Release, Achieved on 05.05.2026
@@ -184,7 +190,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
   - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
   - [Contributing](https://github.com/Klingri/VortexPro/blob/stable/CONTRIBUTING.md)
   - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
+  - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Issues_Stability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
   - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
@@ -199,11 +205,15 @@ VortexPro is commited to making the Vortex Platform more accessible.
   - [LICENSE.md](https://github.com/Klingri/VortexPro/blob/stable/LICENSE)
   - Scripts
      - content.js
+     - header.js
+     - background.js
+     - themes.js
+     - popup.js
 
 ---
 
 ## Forks & Mini-Projects
-[The Full list of Forks & Mini-Projects Here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
+[The Full list of Forks & Mini-Projects Here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 WIP
 - We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
 
