@@ -19,17 +19,8 @@
 }
 
 body {
-    background: var(--bg-main) !important;
-    color: var(--text-main) !important;
-}
-
-button,
-input,
-.btn-download-nav {
-    background: var(--input-bg) !important;
-    color: var(--text-main) !important;
-    outline: none;
-    border: 0px !important;
+    background: var(--bg-main);
+    color: var(--text-main);
 }
 
 #username,
@@ -46,10 +37,6 @@ input,
 
 .profile-last-seen {
     color: var(--text-main);
-}
-
-nav a {
-    background-color: var(--input-bg) !important;
 }
 
 /* Ported over VortexUltra 02/07/2026 Version 2.4 Pre-Alpha*/
@@ -127,10 +114,10 @@ nav a {
 }
 
 .profile-stat {
-    background: rgba(255, 255, 255, 0.03) !important;
-    border-radius: 14px !important;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
     text-align: center;
-    padding: 20px !important;
+    padding: 20px;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -223,7 +210,7 @@ body::selection {
 .game-card:hover,
 .profile-avatar-wrap:hover {
     box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 14px !important;
 }
 
@@ -257,52 +244,18 @@ body::selection {
     transition: 0.5s;
 }
 
-.friend-avatar:hover {
-    background: var(--input-bg) !important;
-    transition: 0.2s;
-}
-
-.game-card-title:hover {
-    text-decoration: underline;
-    transition: 0.2s;
-}
-
 .game-card-meta:hover,
 .game-stat-value:hover,
 .game-stat-label:hover,
 .btn-play:hover,
 .navbar-logo:hover,
 .section-title:hover,
-.page-title:hover {
+.page-title:hover,
+.friend-name:hover,
+.game-description-text:hover,
+.game-card-title:hover {
     text-decoration: underline;
     transition: 0.2s;
-}
-
-.friend-name:hover {
-    text-decoration: underline !important;
-    transition: 0.2s;
-}
-
-.section-link:hover {
-    color: #FFF !important;
-    transition: 0.2s;
-}
-
-.field label:hover {
-    font-size: 15px !important;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.game-description-text:hover {
-    text-decoration: underline !important;
-
-}
-
-.link-row a:hover,
-button:hover {
-    color: hsl(0, 0%, 55%) !important;
-    transition: 0.3s;
 }
 
 /* Make the profile avatar grow when hovered */
@@ -310,19 +263,13 @@ button:hover {
     transform: scale(1.15);
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: hsl(0, 0%, 35%) !important;
-    cursor: grab !important;
-    scroll-behavior: smooth !important;
-}
-
 .profile-stat:hover {
-    background: rgba(255, 255, 255, 0.07) !important;
+    background: rgba(255, 255, 255, 0.07);
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* The Play Button Animation */
+/* Game play button animation */
 
 .btn-play:hover {
     transform: scale(1.075);
@@ -330,10 +277,10 @@ button:hover {
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* Subtle animation for status dots */
+/* Animation for the online thingy on profiles */
 .status-dot.online {
     box-shadow: 0 0 8px var(--accent);
-    animation: pulse 2s infinite;
+    animation: pulse 4s infinite;
 }
 
 @keyframes pulse {
@@ -342,7 +289,7 @@ button:hover {
     }
 
     50% {
-        opacity: 0.5;
+        opacity: 0.2;
     }
 
     100% {

@@ -34,7 +34,6 @@ General | **Is this project open-source?** | Yes.
 General | **Can I contribute or develop for this extension?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
 
 ## Forks & Mini-Projects
-For more Info on our forks and mini-projects, go [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/PROJECTS.md)
 WIP
 - We sometimes make mini-projects and people sometimes have forked and partially-forked the project.
 

@@ -154,7 +154,7 @@ General | **Can I contribute or develop for this extension?** | Currently, no co
 ## Accesibility
 VortexPro is commited to making the Vortex Platform more accessible.
 - We will be Adding new options to make the Vortex Platform more accessible.
-- Read the entire Accesibility [here.](https://github.com/Klingri/VortexPro/blob/stable/ACCESIBILITY.md)
+- Read the entire Accesibility info [here.](https://github.com/Klingri/VortexPro/blob/stable/ACCESIBILITY.md)
 
 ---
 
@@ -187,7 +187,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
 - Legal
    - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
 - General
-  - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/COMPATABILITY.md)
+  - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
   - [Contributing](https://github.com/Klingri/VortexPro/blob/stable/CONTRIBUTING.md)
   - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
@@ -196,7 +196,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
   - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
   - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
   - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/.github/CHANGELOG.md)
+  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md)
 
   View the code here: (WIP WORK IN PROGRESS NOT DONE)
 

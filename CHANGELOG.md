@@ -22,42 +22,6 @@
 | 02.07.26 | v2.4  | Pre-Alpha | Removed bloat to make things faster and more manageable. |
 | 10?.07.26 | v2.5  | Pre-Alpha | Upcoming release. |
 
-# Version 2.0
-
-- Changed Website
-- Reduced Bloat and lines of code
-- Deleted some .js files
-- Made loading pages faster
-- Shift lock crosshair in-game is now black
-- Renamed themes
-- Renamed files
-- Added things to .gitignore
-
-# Version 2.1
-
-- Removed Music Player
-- Removed Code from Content.js
-- Renamed to Vortex Pro
-- Fixed some Bugs
-- Readded Shaders and optimized them a bit
-
-# Version 2.2
-
-- Release of VortexGalatic
-- Release of VortexUltra
-- Release of Dvortek Platform
-- Bug Fixes
-- Changed Popup menu and settings page
-- Changed .readme.md
-- New .md files
-- Added cores folder
-- Changed File Structure
-
-# Version 2.3
-
-- Almost no changes.
-- Not really a worth-it update.
-
 # Version 2.4
 
 - 02.07.2026 - 2.4
