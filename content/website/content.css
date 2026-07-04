@@ -23,6 +23,29 @@ body {
     color: var(--text-main);
 }
 
+.site-footer {
+    border-top-color: var(--card-bg) !important;
+    border-top: var(--card-bg) !important;
+}
+
+.tab-bar,
+.dl-hero,
+.dl-card {
+    border-bottom-color: var(--card-bg) !important;
+    border-bottom: var(--card-bg) !important;
+    border: var(--card-bg) !important;
+    border-color: var(--card-bg) !important;
+}
+
+.profile-actions a,
+.tag {
+    background-color: var(--input-bg) !important;
+    color: var(--text-main) !important;
+    border: 0px none !important;
+    border-color: none !important;
+}
+
+
 #username,
 #password {
     border: 0px !important;
@@ -31,8 +54,9 @@ body {
 
 .btn-secondary {
     background-color: var(--input-bg) !important;
-    color: var(--text-main) !important;
-
+    color: #888 !important;
+    border: 0px none !important;
+    border-color: none !important;
 }
 
 .profile-last-seen {
@@ -84,6 +108,11 @@ body {
 .bio-text {
     line-height: 1.6;
     color: #888 !important;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.15);
+    transition: 0.4ms;
 }
 
 /* Friend Cards hover effect */
@@ -151,6 +180,46 @@ body {
     background: var(--input-bg) !important;
 }
 
+.market-card:hover,
+.face-card:hover,
+.game-card:hover {
+    transform: translateY(-3px);
+}
+
+.catalog-title {
+    text-align: center !important;
+}
+
+.market-grid {
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+.tag:hover {
+    background-color: #1a743f !important;
+    transition: 0.7ms !important;
+    transform: scaleY(-3px) !important;
+}
+
+.carousel-arrow:hover {
+    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    background: #888 !important;
+    transform: scaleY(-3px) !important;
+    border-radius: 14px !important;
+}
+
+.game-detail-info,
+.game-description-box {
+    text-align: center;
+}
+
+.game-card-title,
+.game-detail-title,
+.game-description-label {
+    color: #ccb42e !important;
+}
+
 h1,
 h2,
 h3,
@@ -193,12 +262,20 @@ body::selection {
 .game-description-label:hover,
 .game-description-text:hover,
 .profile-meta:hover,
-.profile-avatar:hover {
+.profile-avatar:hover,
+.catalog-title:hover,
+.catalog-section-divider:hover,
+.dl-hero-title:hover,
+.dl-hero-sub:hover,
+.dl-card-platform:hover,
+.dl-notice:hover,
+.dl-footer-note:hover {
     cursor: default !important;
 }
 
 /* Animation when Hovering */
 .navbar-actions a:hover,
+.navbar-actions button:hover,
 .navbar-search button:hover,
 .tag:hover,
 .btn-secondary:hover,
@@ -208,7 +285,11 @@ body::selection {
 .profile-info-panel:hover,
 .bio-box:hover,
 .game-card:hover,
-.profile-avatar-wrap:hover {
+.profile-avatar-wrap:hover,
+#save-btn:hover,
+#rotate-toggle:hover,
+.color-swatch,
+.market-card {
     box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 14px !important;
@@ -239,7 +320,14 @@ body::selection {
 .profile-meta:hover,
 .profile-avatar:hover,
 .page-title:hover,
-.info-msg:hover {
+.info-msg:hover,
+.catalog-title:hover,
+.catalog-section-divider:hover,
+.dl-hero-title:hover,
+.dl-hero-sub:hover,
+.dl-card-platform:hover,
+.dl-notice:hover,
+.dl-footer-note:hover {
     color: hsl(0, 0%, 65%) !important;
     transition: 0.5s;
 }
@@ -253,9 +341,32 @@ body::selection {
 .page-title:hover,
 .friend-name:hover,
 .game-description-text:hover,
-.game-card-title:hover {
+.game-card-title:hover,
+.site-footer-links:hover,
+.catalog-title:hover,
+.catalog-section-divider:hover,
+.dl-hero-title:hover,
+.dl-hero-sub:hover,
+.dl-card-platform:hover,
+.dl-notice:hover,
+.dl-footer-note:hover {
     text-decoration: underline;
     transition: 0.2s;
+}
+
+.body-type-btn:hover {
+    background: #c447b3 !important;
+    transform: translateY(-1px);
+}
+
+.body-type-btn.active:hover {
+    background: #4752c4 !important;
+    transform: translateY(-1px);
+}
+
+.color-swatch:hover {
+    background: #4752c4 !important;
+    transform: translateY(-3px);
 }
 
 /* Make the profile avatar grow when hovered */

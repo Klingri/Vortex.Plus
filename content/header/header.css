@@ -32,10 +32,8 @@
 }
 
 /* Enhancing Buttons */
-.btn-discord,
-#my-profile-btn,
-#logout-btn,
-.custom-nav-btn {
+.navbar-actions a,
+.navbar-actions button {
     border-radius: 8px !important;
     padding: 8px 15px !important;
     transition: all 0.3s ease;
@@ -49,6 +47,25 @@
     background-color: #5865F2 !important;
     border: none;
 }
+
+.btn-download-nav:hover {
+    background-color: #6af258 !important;
+    border: none;
+}
+
+#logout-btn:hover {
+    background-color: #f25858 !important;
+    border: none;
+}
+
+.navbar-actions a,
+.navbar-actions button {
+    background-color: var(--nav-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
+
 
 .btn-discord:hover {
     background-color: #4752c4 !important;

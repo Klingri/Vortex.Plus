@@ -194,7 +194,7 @@ VortexPro is commited to making the Vortex Platform more accessible.
   - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Issues_Stability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
   - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
-  - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/LOCALIZATION.md)
+  - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/ACCESIBILITY.md)
   - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Version History](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md)
 
@@ -207,8 +207,18 @@ VortexPro is commited to making the Vortex Platform more accessible.
      - content.js
      - header.js
      - background.js
+     - options.js
      - themes.js
      - popup.js
+   - Styles
+         - popup.css
+         - options.css
+         - content.css
+         - themes.css
+         - header.css
+   - Pages
+         - options.html
+         - popup.html
 
 ---
 
@@ -220,7 +230,7 @@ WIP
 - Mini-Projects Created by [@Klingri](https://github.com/Klingri)
   - [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
   - [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
-  - [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
+  - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged Forks & Partial-Forks (All of the alleged forks are incompatible.)
 - The following below allegedly either originally began as partial fork's, features or extensions by VortexPro or Vortex2plus2.
