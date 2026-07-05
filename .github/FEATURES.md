@@ -38,8 +38,9 @@ WIP
 - We sometimes make mini-projects and people sometimes have forked and partially-forked the project.
 
 - Mini-Projects Created by [@Klingri](https://github.com/Klingri)
-  - [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
-  - [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
+  - Discontinued as of 04.07.2026
+    - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
+    - [VortexUltra](https://github.com/Klingri/VortexUltra)
   - [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged Forks & Partial-Forks (All of the alleged forks are incompatible.)

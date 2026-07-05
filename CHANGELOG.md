@@ -20,17 +20,12 @@
 | 15.05.26 | v2.2  | Pre-Alpha | Quality of life changes and new projects. |
 | 20.05.26 | v2.3  | Pre-Alpha | Almost no changes. |
 | 02.07.26 | v2.4  | Pre-Alpha | Removed bloat to make things faster and more manageable. |
-| 10?.07.26 | v2.5  | Pre-Alpha | Upcoming release. |
-
-# Version 2.4
-
-- 02.07.2026 - 2.4
-
-- Removed and merged a lot of .md files
-- Removed useless outdated lines of cod
-- Fixed a couple of UI issues
-- Made .Readme shorter
-- Removed all lines of code from background.js and header.js
+| 05.07.26 | v2.5  | Pre-Alpha | Upcoming release. |
+| ?.07.26 | v2.6  | Pre-Alpha | Upcoming release. |
+| ?.07.26 | v2.7  | Pre-Alpha | Upcoming release. |
+| ?.08.26 | v2.8 | Pre-Alpha | Upcoming release. |
+| ?.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
+| ?.09.26 | v3.0  | Pre-Alpha | Upcoming release. |
 
 # Version 2.5
 

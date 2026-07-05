@@ -22,6 +22,5 @@ Love using this project? There are several easy, non-code ways you can show your
 * **Star the Repository:** Click the ⭐ "Star" button at the top of the repository page.
 * **Share the Project:** Mention the project at local meetups, on social media, or tell your colleagues about it!
 * **Add a Backlink:** If you are using this in your own project, link back to this repository in your `README.md`. 
-* **Become a Sponsor:** If you would like to financially support the maintenance and development of this project, consider [sponsoring us here](insert-sponsorship-link-here). 
 
 Thank you for your support!

@@ -1,40 +1,83 @@
-// Ported over VortexGalactic 02/07/2026 Version 2.4 Pre-Alpha
-// Made by Klingri | Optimized by You
-// Function to inject new features
-function upgradeNavbar() {
-    // 1. Target the exact elements we need
-    const actionsArea = document.querySelector('.navbar-actions');
-    const navLogo = document.querySelector('.navbar-logo');
+// Empty as of Version 2.5 Pre Alpha 05.07.2026
+const navButton = document.querySelector('.navbar');
+const newElement = document.createElement("a");
+newElement.innerText = 'Vpro Github';
+newElement.className = 'btn-discord';
+newElement.style.backgroundColor = '#4c87af';
+navButton.appendChild(newElement);
+newElement.addEventListener('click', function () {
+    window.location.href = "https://github.com/Klingri/VortexPro";
+});
 
-    // 2. Safely exit if elements are missing or already injected
-    if (!actionsArea || document.getElementById('vortex-plus-injected')) {
-        return;
-    }
+const navArea = document.querySelector('.navbar');
+const vproSettings = document.createElement("a");
+vproSettings.innerText = 'Vpro Settings';
+vproSettings.className = 'btn-discord';
+vproSettings.style.backgroundColor = '#4c87af';
+navArea.appendChild(vproSettings);
+vproSettings.addEventListener('click', function () {
+    window.location.href = "https://playvortex.io/settings";
+});
 
-    // 3. Mark as injected
-    const tracker = document.createElement('div');
-    tracker.id = 'vortex-plus-injected';
-    tracker.style.display = 'none'; // Keeps the DOM clean
-    document.body.appendChild(tracker);
+const navPlace = document.querySelector('.navbar');
+const friendShortcut = document.createElement("a");
+friendShortcut.innerText = 'Friends';
+friendShortcut.className = 'btn-discord';
+friendShortcut.style.backgroundColor = '#4c87af';
+navPlace.appendChild(friendShortcut);
+friendShortcut.addEventListener('click', function () {
+    window.location.href = "https://playvortex.io/social?user=&tab=friends";
+});
 
-    // 4. TODO: Add your custom features here
+const navLogo = document.querySelector('.navbar');
+const navText = document.createElement('h6');
+navText.innerText = 'VortexPro v2.5';
+navText.className = 'nav-text';
+navText.style.color = '#FFF';
+navLogo.appendChild(navText);
 
-    // 5. Disconnect the observer once features have been successfully injected
-    if (window.vortexObserver) {
-        window.vortexObserver.disconnect();
-    }
-}
+const pageTitle = document.querySelector('.page-title');
+const settingsButton = document.createElement('button');
+settingsButton.innerText = 'VortexPro Settings';
+settingsButton.className = 'btn-discord';
+settingsButton.style.backgroundColor = '#014f8f';
+pageTitle.appendChild(settingsButton);
 
-// Run when the page loads
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', upgradeNavbar);
-} else {
-    upgradeNavbar();
-}
+settingsButton.addEventListener('click', function () {
+    const items = document.querySelectorAll(".page");
+    items.forEach(item => item.remove());;
+    const theBody = document.querySelector('body');
+    const settingsPage = document.createElement('div');
+    settingsPage.className = 'settings-page';
+    const settingsTitle = document.createElement('h2');
+    settingsTitle.innerText = 'VortexPro Settings // Work in Progress'
+    settingsTitle.className = 'settings-text';
+    settingsTitle.style.textAlign = "center";
+    settingsPage.appendChild(settingsTitle);
+    theBody.appendChild(settingsPage)
 
-// Run safely for SPAs, saving performance by targeting the exact parent (e.g., body)
-const observerTarget = document.body;
-const observerConfig = { childList: true, subtree: true };
+});
 
-window.vortexObserver = new MutationObserver(upgradeNavbar);
-window.vortexObserver.observe(observerTarget, observerConfig);
+const alertTest = document.querySelector('.navbar-actions')
+alertTest.addEventListener('click', function () {
+    alert("Are you sure you want to click this?");
+});
+
+const alertTest2 = document.querySelector('.item-image-wrap')
+alertTest2.addEventListener('click', function () {
+    alert("Are you sure you want to click this?");
+});
+
+// Creating a new element out of thin air
+const versionText = document.createElement('div');
+versionText.className = 'custom-feature-box';
+versionText.innerText = 'VortexPro Pre-Alpha v2.5';
+
+// Appending it to the body of the page/popup
+document.body.appendChild(versionText);
+
+const saveButton = document.querySelector('.avatar-panel')
+const resetButton = document.createElement('button');
+resetButton.className = '#save-btn';
+resetButton.innerText = 'Reset';
+saveButton.appendChild(resetButton);

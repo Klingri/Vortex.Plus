@@ -1,9 +1,5 @@
 /*Made by Klingri*/
 
-/* ==========================================================================
-   PRIMARY SECTION (e.g., COMPONENTS)
-   ========================================================================== */
-
 :root {
     /* Default theme*/
     --bg-main: #121212;
@@ -37,12 +33,77 @@ body {
     border-color: var(--card-bg) !important;
 }
 
-.profile-actions a,
+.profile-actions button,
 .tag {
-    background-color: var(--input-bg) !important;
-    color: var(--text-main) !important;
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--nav-bg) !important;
     border: 0px none !important;
     border-color: none !important;
+    color: #FFF !important;
+}
+
+.profile-actions button:hover,
+.tag:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--nav-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
+
+.profile-actions button:hover,
+.tag:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: #ccb42e !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
+
+.bio-label button, .bio-editor-footer button {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--input-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
+
+.bio-label button:hover, .bio-editor-footer button:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
 }
 
 
@@ -199,6 +260,9 @@ body {
     background-color: #1a743f !important;
     transition: 0.7ms !important;
     transform: scaleY(-3px) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    color: #FFF !important;
 }
 
 .carousel-arrow:hover {
@@ -243,6 +307,10 @@ input {
 /* Color for Selection */
 body::selection {
     background-color: #920000;
+}
+
+.profile-info-panel {
+    text-align: center;
 }
 
 /* Different Cursor State */
@@ -313,7 +381,6 @@ body::selection {
 .game-stat-label:hover,
 .game-description-text:hover,
 .bio-counter:hover,
-.tag:hover,
 .profile-last-seen:hover,
 .bio-text:hover,
 .bio-label:hover,
@@ -380,12 +447,69 @@ body::selection {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
+.user-card-avatar:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.site-footer-links a:hover:hover {
+    background: rgba(255, 2, 2, 0.726) !important;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
 /* Game play button animation */
+
+.btn-primary:hover, .user-card-actions button, .user-card-actions button:hover, .site-footer-links a, .site-footer-links a:hover {
+    transform: scale(1.075);
+    transition: 0.2s;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 2px;
+    background-color: var(--input-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
+
+.btn-play {
+    transform: scale(1.075);
+    transition: 0.2s;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--input-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
+}
 
 .btn-play:hover {
     transform: scale(1.075);
     transition: 0.2s;
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--input-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: #FFF !important;
 }
 
 /* Animation for the online thingy on profiles */

@@ -2,12 +2,14 @@
     --bg-main: #1b1a1a;
     --bg-header: #252525;
     --bg-input: #111;
-    --bg-dropdown: rgba(0, 0, 0, 0.2);
+    --bg-dropdown: rgba(0, 0, 0, 0.3);
     --bg-button: #222;
     --border-color: #333;
+    --border-focus: #555;
     --text-main: #FFF;
     --text-dark: #333;
-    --shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+    --shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+    --transition-speed: 0.25s;
 }
 
 #v-thm-mn {
@@ -19,91 +21,133 @@
     background: var(--bg-main);
     color: var(--text-main);
     z-index: 1000000;
-    font-family: monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: none;
     flex-direction: column;
     box-shadow: var(--shadow);
-    border: none;
-    border-radius: 0 !important;
+    border: 1px solid var(--border-color);
+    border-radius: 6px !important;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 
 /* Base resets for children inside menu */
 #v-thm-mn * {
     box-sizing: border-box;
     border: none;
+    outline: none;
     border-radius: 0 !important;
 }
 
-/* The Sizes */
+/* Header/Top Section */
 .m-tp {
-    padding: 12px;
+    padding: 14px 16px;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-header);
+    font-weight: 600;
 }
 
 .m-bt {
-    padding: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
+/* Row elements */
 .ed-r {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6px;
-    font-size: 11px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .ed-r input {
     width: 70px;
-    padding: 4px 8px;
+    padding: 6px 8px;
     background: var(--bg-input) !important;
     color: var(--text-main) !important;
     text-align: center;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px !important;
+    font-family: monospace;
+    transition: border-color var(--transition-speed) ease;
 }
 
+.ed-r input:focus {
+    border-color: var(--border-focus) !important;
+}
+
+/* Dropdown/Collapsible */
 .cl-hd {
-    padding: 8px;
+    padding: 10px 14px;
     background: var(--border-color);
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 11px;
-    transition: background 0.2s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background var(--transition-speed) ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cl-hd:hover {
-    background: #444;
+.cl-hd::after {
+    content: "▼";
+    font-size: 8px;
+    opacity: 0.7;
+    transition: transform var(--transition-speed) ease;
+}
+
+.cl-hd.active::after {
+    transform: rotate(180deg);
 }
 
 .cl-cntnt {
     display: none;
-    padding: 8px;
+    padding: 10px;
     background: var(--bg-dropdown);
     flex-direction: column;
     gap: 6px;
-    max-height: 140px;
+    max-height: 160px;
     overflow-y: auto;
 }
 
-.thm-bttn {
-    padding: 6px;
+/* Custom Scrollbar for Dropdown */
+.cl-cntnt::-webkit-scrollbar {
+    width: 6px;
+}
+.cl-cntnt::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+.cl-cntnt::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px !important;
+}
+.cl-cntnt::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+/* Buttons */
+.thm-bttn, #v-thm-mn button {
+    padding: 8px 10px;
     cursor: pointer;
     text-align: left;
     font-size: 12px;
     background: var(--bg-button);
     color: var(--text-main);
-    transition: background 0.2s ease;
+    border-radius: 4px !important;
+    border: 1px solid var(--border-color) !important;
+    transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease;
 }
 
-.thm-bttn:hover {
+.thm-bttn:hover, #v-thm-mn button:hover {
     background: #333;
+    border-color: #444;
 }
 
-#v-thm-mn button {
-    background: var(--bg-button);
-    color: var(--text-main);
-    cursor: pointer;
-}
-
-#v-thm-mn button:hover {
-    background: #333;
+.thm-bttn:active, #v-thm-mn button:active {
+    transform: translateY(1px);
 }

@@ -1,6 +1,6 @@
 <div align="center">
 
-# VortexPro (The First REAL Extension of the Vortex Platform)
+# VortexPro - Pre-Alpha
 
 ### Privacy-First, Community Extension, You take back Control.
 
@@ -21,9 +21,7 @@
 [![Pre-Alpha](https://img.shields.io/badge/Pre_Alpha%20-Ongoing%20Development-royalblue.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 [![Creator](https://img.shields.io/badge/Made_With_Love_♥️%20-@Klingri-plum.svg)](https://img.shields.io/github/v/release/Klingri/VortexPro)
 
-###### Version 2.4 Dev Mode (01.07.2026).
-![VortexProLogo](image.png)
-</div>
+###### Version 2.5 Pre-Alpha (05.07.2026).
 
 ---
 
@@ -49,16 +47,13 @@ On the 5th of May 2026, Klingri joined the Vortex Platform and was frustrated wi
 
 - Obviously, to use this extension you must agree to the Vortex platform's terms of service and VortexPro's terms of service.
 
-- We aren't trying to be the best extension with the most features, just the most High Quality
+- We aren't trying to be the best extension with the most features, just the most High Quality.
 
-- Although I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.
+- I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.
 
-- I'm concerned about the drama surrounding me lately. Please don't believe everything you hear. I urge you to ignore the misinformation being spread.
+- Please don't believe everything you hear. I urge you to ignore the misinformation being spread about this project.
 
 - Klingri is the sole concurrent contributor to the extension, so updates may take some time.
-
-- I have addressed Controversy [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
-
 ---
 ## Installation
 For other methods of Installation, please see our [full Installation guide.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
@@ -92,30 +87,30 @@ View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/s
 
 ## Forking
 1. Fork the Repository
-- Click the Fork button.
-- Find it at the top-right of this page.
-- Select your GitHub account as the owner.
-- Click Create fork.
+   - Click the Fork button.
+   - Find it at the top-right of this page.
+   - Select your GitHub account as the owner.
+   - Click Create fork.
 2. Clone Your Fork
-- Copy your fork's URL.
-- Open your local terminal.
-- Run this command:
-`git clone https://github.com`
+   - Copy your fork's URL.
+   - Open your local terminal.
+   - Run this command:
+   `git clone https://github.com`
 3. Create a Feature Branch
-- Navigate into the project folder.
-- Create a new branch for your changes:
+   - Navigate into the project folder.
+   - Create a new branch for your changes:
 `git checkout -b feature/your-feature-name`
 4. Commit and Push Changes
-- Save your modifications.
-- Commit your changes with a clear message:
+   - Save your modifications.
+   - Commit your changes with a clear message:
 `git commit -am "Add some amazing feature"`
-- Push the changes to your GitHub fork:
+   - Push the changes to your GitHub fork:
 `git push origin feature/your-feature-name`
 5. Open a Pull Request
-- Return to the original repository on GitHub.
-- Click the Compare & pull request button.
-- Describe your changes.
-- Click Create pull request.
+   - Return to the original repository on GitHub.
+   - Click the Compare & pull request button.
+   - Describe your changes.
+   - Click Create pull request.
 
 ---
 
@@ -170,11 +165,11 @@ VortexPro is commited to making the Vortex Platform more accessible.
 
 - VortexPro (Vortex+) is the first browser extension of the vortex platform to have dark mode.
 
-- Klingri [(UserID_847)](https://playvortex.io/users/847/profile) got banned from the Vortex Platform.
+- Klingri [(UserID_847)](https://playvortex.io/users/847/profile) the creator of VortexPro got banned from the Vortex Platform.
 
 - Milestones
    - Pre-Alpha Release, Achieved on 05.05.2026
-   - Pre-Alpha Version 2.5 Release, Achieved on 10?.07.2026
+   - Pre-Alpha Version 2.5 Release, Achieved on 5.07.2026
    - Alpha Release (soon)
 
 ---
@@ -198,28 +193,6 @@ VortexPro is commited to making the Vortex Platform more accessible.
   - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
   - [Version History](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md)
 
-  View the code here: (WIP WORK IN PROGRESS NOT DONE)
-
-  - [manifest.json](https://github.com/Klingri/VortexPro/blob/stable/manifest.json)
-  - [.gitignore](https://github.com/Klingri/VortexPro/blob/stable/.gitignore)
-  - [LICENSE.md](https://github.com/Klingri/VortexPro/blob/stable/LICENSE)
-  - Scripts
-     - content.js
-     - header.js
-     - background.js
-     - options.js
-     - themes.js
-     - popup.js
-   - Styles
-         - popup.css
-         - options.css
-         - content.css
-         - themes.css
-         - header.css
-   - Pages
-         - options.html
-         - popup.html
-
 ---
 
 ## Forks & Mini-Projects
@@ -228,8 +201,9 @@ WIP
 - We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
 
 - Mini-Projects Created by [@Klingri](https://github.com/Klingri)
-  - [VortexGalactic (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexGalactic)
-  - [VortexUltra (Discontinued as of 04.07.2026)](https://github.com/Klingri/VortexUltra)
+   - Discontinued as of 04.07.2026
+      - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
+      - [VortexUltra](https://github.com/Klingri/VortexUltra)
   - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged Forks & Partial-Forks (All of the alleged forks are incompatible.)
@@ -256,19 +230,7 @@ You can support the continuation of development of this browser extension by Sta
 ---
 
 **Supported Languages**
-#### All Since 05.05.2026
-- <img src="https://flagcdn.com/w20/us.png" width="20"> English US
-- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK
-- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada
-- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia
-
-**Planned**
-
-#### Support planned for mid 2026.
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin)
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic)
-- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский
-- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch
-- <img src="https://flagcdn.com/w20/es.png" width="20"> Español
+#### Since 05.05.2026
+<img src="https://flagcdn.com/w20/gb.png" width="20"> <img src="https://flagcdn.com/w20/us.png" width="20"> <img src="https://flagcdn.com/w20/ca.png" width="20"> <img src="https://flagcdn.com/w20/au.png" width="20">
 
 ---

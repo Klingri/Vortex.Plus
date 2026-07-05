@@ -1,8 +1,8 @@
 {
   "name": "VortexPro",
-  "version": "2.4",
+  "version": "2.5",
   "manifest_version": 3,
-  "description": "2.4 Pre-Alpha 01.07.2026",
+  "description": "2.5 Pre-Alpha 05.07.2026",
   "icons": {
     "16": "assets/icons/icon16.png",
     "32": "assets/icons/icon32.png",
@@ -10,10 +10,6 @@
     "128": "assets/icons/icon128.png"
   },
   "update_url": "https://klingri.github.io/VortexPro/updates.xml",
-  "options_ui": {
-    "page": "settings/options.html",
-    "open_in_tab": true
-  },
   "host_permissions": [
     "https://pastebin.com/*",
     "https://playvortex.io/*"
@@ -24,9 +20,6 @@
     "declarativeNetRequest",
     "scripting"
   ],
-  "action": {
-    "default_popup": "popup/popup.html"
-  },
   "content_scripts": [
     {
       "matches": [
@@ -41,9 +34,10 @@
         "content/website/content.js",
         "content/website/themes.js",
         "content/website/background.js",
-        "content/header/header.js"
+        "content/header/header.js",
+        "content/pages/settings.js"
       ],
-      "run_at": "document_start",
+      "run_at": "document_idle",
       "world": "MAIN",
       "all_frames": false
     }
@@ -53,8 +47,7 @@
       "resources": [
         "content/website/content.css",
         "images/*.png",
-        "assets/fonts/*",
-        "settings/options.html"
+        "assets/fonts/*"
       ],
       "matches": [
         "https://playvortex.io/*"
