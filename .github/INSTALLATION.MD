@@ -107,4 +107,4 @@ If everything is set up correctly, you should see the following output:
 * **Issue:** Another common pitfall.
   **Fix:** Solution.
 
-*Need more help? Check out our full [Documentation](insert-link) or open an issue in the [Issue Tracker](insert-link).*
+*Need more help? Check out our full [Documentation](insert-link) or open an issue in the [Issue Tracker](https://github.com/Klingri/VortexPro/issues/new).*

@@ -53,6 +53,17 @@ settingsButton.addEventListener('click', function () {
     settingsTitle.innerText = 'VortexPro Settings // Work in Progress'
     settingsTitle.className = 'settings-text';
     settingsTitle.style.textAlign = "center";
+    const navStnBar = document.createElement('div');
+    const navbar2 = document.createElement('nav');
+    navbar2.className = 'settings-navbar';
+    navStnBar.className = 'settings-navbar';
+    navStnBar.style.alignContent = 'left';
+    navStnBar.style.alignItems = 'left';
+    navStnBar.style.alignSelf = 'left';
+    navStnBar.style.justifyContent = 'left';
+    navStnBar.style.justifySelf = 'left';
+    navStnBar.style.justifyItems = 'left';
+    navStnBar.appendChild(settingsTitle);
     settingsPage.appendChild(settingsTitle);
     theBody.appendChild(settingsPage)
 

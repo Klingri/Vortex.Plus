@@ -14,9 +14,25 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
+body, .ban-page {
     background: var(--bg-main);
     color: var(--text-main);
+}
+
+.ban-label, .ban-value {
+color: var(--text-main) !important;
+}
+
+.ban-page{
+    text-align: center;
+}
+
+.ban-card{
+    border: 1px solid #ff4646 !important;
+}
+
+.ban-link{
+    color: #920000 !important;
 }
 
 .site-footer {
@@ -337,7 +353,7 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover {
+.dl-footer-note:hover, .ban-label:hover, .ban-value:hover, .ban-sub:hover {
     cursor: default !important;
 }
 
@@ -416,7 +432,7 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover {
+.dl-footer-note:hover, .ban-label:hover, .ban-value:hover, .ban-legal:hover, .ban-link:hover, .ban-sub:hover {
     text-decoration: underline;
     transition: 0.2s;
 }

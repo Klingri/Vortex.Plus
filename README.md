@@ -2,9 +2,9 @@
 
 # VortexPro - Pre-Alpha
 
-### Privacy-First, Community Extension, You take back Control.
+### "The function of good software is to make the complex appear to be simple." — Grady Booch.
 
-**Customization, features and control is what a lot of people want, this project is working to achieve that for you.**
+**If you want features, control and customization, you found the right place.**
 
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Klingri/VortexPro/total)
@@ -12,7 +12,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
 ![GitHub top language](https://img.shields.io/github/languages/top/Klingri/VortexPro)
 ![GitHub branch status](https://img.shields.io/github/checks-status/Klingri/VortexPro/stable)
-![GitHub code search count](https://img.shields.io/github/search?query=VortexPro)
 ![GitHub branch count](https://img.shields.io/github/branches/Klingri/VortexPro)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/Klingri/VortexPro/latest)
 ![GitHub contributors](https://img.shields.io/github/contributors/Klingri/VortexPro)
@@ -27,33 +26,39 @@
 
 ## Why VortexPro Exists
 
-On the 5th of May 2026, Klingri joined the Vortex Platform and was frustrated with the lack of a native dark mode feature, barebones UI, not much functionality and barely and control or customization options. This is why [VortexPro](https://klingri.github.io/VortexPro/), Formerly Vortex+ began.
+When Klingri joined the Vortex Platform on May 5, 2026, he found the experience deeply frustrating. The interface was barebones, functionality was limited, and there was no native dark mode or custom control. This lack of user freedom inspired the creation of [VortexPro.](https://klingri.github.io/VortexPro/)
 
 **VortexPro is what Vortex should have been:**
 
-- All of Vortex's strengths (gamees, friends, bio's, the website)
-- Zero of its weaknesses (beautiful UI, lots of animations and themes)
-- Plus everything users have been asking for but never got (we dont have everything just yet)
+<ul>
+    <li>All of Vortex's strengths (games, friends, bio's, the website)</li>
+    <li>Zero of its weaknesses (beautiful UI, lots of animations and themes)</li>
+    <li>
+    Plus everything users have been asking for but never got (we dont have everything just yet)</li>
+  </ul>
 
 ---
 
 ## Disclaimers
 
-- The Browser Extension Isn't guaranteed to function on firefox-based web browsers.
+<ul>
+    <li>We cannot guarantee this extension will work on Firefox. For the best experience, please use a Chromium-based browser.</li>
+    <li>This extension is safe and contains no malware. Our source code is fully open for review. Any script actions are strictly for core features, such as automatic updates and safe external integrations</li>
+    <li>
+    Our extension is not obfuscated, and it is perfectly safe. While we try to provide readable code whenever possible, we cannot guarantee that every section is fully de-obfuscated.</li>
+    <li>
+    To use this extension, you must agree to the Vortex and VortexPro terms of service</li>
+    <li>
+    We aren't trying to be the best extension with the most features, just the most High Quality.</li>
+    <li>
+    I was unexpectedly banned from the Vortex platform without explanation, I remain fully committed to developing the extension.</li>
+    <li>
+    There are many misunderstandings circulating about this project. Please reach out directly if you have any questions.
+</li>
+<li>
+Klingri is the only developer working on this extension. Because of this, updates may take some time.</li>
+  </ul>
 
-- This extension does not contain malware. The code is entirely open for inspection, and any detected injection scripts are solely for functionality, such as the auto-updater or external integrations.
-
-- The extension is NOT "obfuscated" and even if it was, it's not malicious and we do want to de-obfuscate whenever we can but we can't guarantee that everything is de-obfuscated.
-
-- Obviously, to use this extension you must agree to the Vortex platform's terms of service and VortexPro's terms of service.
-
-- We aren't trying to be the best extension with the most features, just the most High Quality.
-
-- I was unexpectedly banned from the Vortex website without explanation, I remain fully committed to developing the extension.
-
-- Please don't believe everything you hear. I urge you to ignore the misinformation being spread about this project.
-
-- Klingri is the sole concurrent contributor to the extension, so updates may take some time.
 ---
 ## Installation
 For other methods of Installation, please see our [full Installation guide.](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
@@ -75,11 +80,12 @@ For other methods of Installation, please see our [full Installation guide.](htt
 ---
 
 ## Known Issues & Stability
-View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
+View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md)
+
 - **Performance:** These experimental updates may cause performance issues on lower-end systems.
 - **UI Glitches:** Minor UI display issues may occur on certain places.
 - **No native Auto-Updater:** Manual updating, the same way you first downloaded it.
-- **Compatibility:** The extension may be incompatible with Firefox and Firefox-based browsers, The extension may or may not be compatible with other extensions made by Klingri,
+- **Compatibility:** The extension may be incompatible with Firefox and Firefox-based browsers, The extension may or may not be compatible with other extensions made by Klingri.
 
 **Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
 
@@ -121,16 +127,16 @@ For more frequently asked questions, go [here.](https://github.com/Klingri/Vorte
 | Topic | Question | Answer
 | :--- | :--- | :--- |
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
-General | **Is the extension malware?** | No, the extension is not malware but feel free to not use it.
-Drama | **You were in a drama, you're not trustable?** | Feel free to not use the extension.
+General | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
+Drama | **You were in a controversy, are you not trustable?** | Feel free to not use the extension.
 General | **How Often does the extension update?** | Typically every few days, however the extension may go weeks without updates if it's not needed.
-General | **Is this project open-source?** | Yes.
-General | **Can I contribute or develop for this extension?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
+General | **Is VortexPro open-source?** | Yes.
+General | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
 
 ---
 
 ## Current Features
-- The Following below are list of the most important features:
+- The most important features are listed below:
 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
@@ -142,30 +148,36 @@ General | **Can I contribute or develop for this extension?** | Currently, no co
 
 [Full Road map & List of Features here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
-[Full Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md) Currently we only keep track of recent versions.
+[Recent Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md) Currently we only keep track of recent versions.
 
 ---
 
 ## Accesibility
 VortexPro is commited to making the Vortex Platform more accessible.
-- We will be Adding new options to make the Vortex Platform more accessible.
-- Read the entire Accesibility info [here.](https://github.com/Klingri/VortexPro/blob/stable/ACCESIBILITY.md)
+
+- We are adding new options to make the Vortex Platform more accessible.
+
+- Read the entire Accesibility info [here.](https://github.com/Klingri/VortexPro/blob/stable/FEATURES.md)
 
 ---
 
 ## Our Commitments
-- We are commited to being responsible (WIP)
-- We are commited to deobfuscation whenever possible
+
+<ul>
+    <li>We are commited to being responsible. (WIP)</li>
+    <li>We prioritize deobfuscation when possible.</li>
+  </ul>
 
 ---
 
 ## Trivia
 
-- VortexPro (Vortex+) is the first browser extension of the vortex platform to ever be created, and it inspired many other people to make their own extensions, like Vortex2plus2.
+<ul>
+    <li>VortexPro was the first Vortex platform extension. It sparked a wave of fan-made extensions like Vortex2plus2.</li>
+    <li>VortexPro leads the Vortex platform as its very first browser extension with a built-in dark mode.</li>
+  </ul>
 
-- VortexPro (Vortex+) is the first browser extension of the vortex platform to have dark mode.
-
-- Klingri [(UserID_847)](https://playvortex.io/users/847/profile) the creator of VortexPro got banned from the Vortex Platform.
+- Klingri [(UserID_847)](https://playvortex.io/users/847/profile) The creator of VortexPro is banned from the Vortex platform.
 
 - Milestones
    - Pre-Alpha Release, Achieved on 05.05.2026
@@ -175,57 +187,51 @@ VortexPro is commited to making the Vortex Platform more accessible.
 ---
 
 ## Further Reading & Shortcuts
-- **Want to Learn More?** Click the shortcuts (WIP NOT DONE).
-- Security
-   - [Support](https://github.com/Klingri/VortexPro/blob/stable/.github/SUPPORT.md)
-   - [Security](https://github.com/Klingri/VortexPro/blob/stable/.github/SECURITY.md)
-- Legal
-   - [Code_Of_Conduct](https://github.com/Klingri/VortexPro/blob/stable/.github/CODE_OF_CONDUCT.md)
-- General
-  - [Compatability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
-  - [Contributing](https://github.com/Klingri/VortexPro/blob/stable/CONTRIBUTING.md)
-  - [Features](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Forks & Projects](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Frequently_Asked_Questions](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Issues_Stability](https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES_STABILITY.md)
-  - [Installation](https://github.com/Klingri/VortexPro/blob/stable/.github/INSTALLATION.MD)
-  - [Localization](https://github.com/Klingri/VortexPro/blob/stable/.github/ACCESIBILITY.md)
-  - [Roadmap](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-  - [Version History](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md)
+
+**Want to Learn More?** Click the shortcuts on this [page.](https://github.com/Klingri/VortexPro/tree/stable/.github)
 
 ---
 
 ## Forks & Mini-Projects
+
 [The Full list of Forks & Mini-Projects Here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 WIP
-- We sometimes make mini-projects and people sometimes allegedly have forked and allegedly partially-forked the project.
+
+- I occasionally create mini-projects, which some people have reportedly copied or adapted.
 
 - Mini-Projects Created by [@Klingri](https://github.com/Klingri)
-   - Discontinued as of 04.07.2026
-      - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
-      - [VortexUltra](https://github.com/Klingri/VortexUltra)
-  - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
-  - [VortexWiki](https://github.com/Klingri/VortexWiki)
-- Alleged Forks & Partial-Forks (All of the alleged forks are incompatible.)
-- The following below allegedly either originally began as partial fork's, features or extensions by VortexPro or Vortex2plus2.
+      - Discontinued as of 04.07.2026
+            - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
+            - [VortexUltra](https://github.com/Klingri/VortexUltra)
+    - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
+   - [VortexWiki](https://github.com/Klingri/VortexWiki)
+- Alleged and partial forks are all incompatible
+- The following features and extensions allegedly began as partial forks by VortexPro or Vortex2plus2.
   - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2)
-      - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon)
-      - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web)
-      - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter)
+         - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon)
+         - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web)
+         - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter)
   - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS)
   - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT)
 
 ---
 
 ## Support
-You can support the continuation of development of this browser extension by Staring it, following me on Github, and spreading awareness.
-- Thank you for all the support! ♥️
+Support future development by starring this repository, following me on GitHub, and sharing the project with others.
+
+<div align="center">
+  <ul>
+    <p>Thank you for all the support! ♥️</p>
+  </ul>
+</div>
 
 ---
   
 ## License
-- Distributed under the **MIT License**. See `LICENSE` for more information.
-- Special thanks to our former contributors: **[@Myroshlaug](https://github.com/myroshlaug), [@enkubik](https://github.com/enkubik), [@inuk84](https://github.com/inuk84), [@codep1ltio](https://github.com/codep1ltio), [@KodiDaBear](https://github.com/KodiDaBear), [@Hayden](https://github.com/HaydenGitHub-2), [@Isfadev](https://github.com/Isfadev), [@Slimeking](https://github.com/Slimeking463).**
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+* Special thanks to our former contributors: **[@Myroshlaug](https://github.com/myroshlaug), [@enkubik](https://github.com/enkubik), [@inuk84](https://github.com/inuk84), [@codep1ltio](https://github.com/codep1ltio), [@KodiDaBear](https://github.com/KodiDaBear), [@Hayden](https://github.com/HaydenGitHub-2), [@Isfadev](https://github.com/Isfadev), [@Slimeking](https://github.com/Slimeking463).**
 
 ---
 
