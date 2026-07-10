@@ -1,11 +1,19 @@
 // The Comments Explain The Code.
 // Have fun reading. the vovels were deleted for faster coding and shortening.
 // Press ' TO OPEN MENU'.
+// Should Probably merge this with settings.
 // Purple Horse is an outlier.
 //Made by Myro.
 (function () {
     const prsts = [
-        { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#d6d6d6" },//Default Themes.
+        { nm: "Old Roblox Purple", bg: "#f2f2f2", ac: "#6E31AA", tx: "#111", br: "#4e0e79" },//Default Themes.
+        { nm: "Red Tomato", bg: "#d40000", ac: "#aa3131", tx: "#111", br: "#bd0000" },//Added by Klingri.
+        { nm: "Cyan Diamond", bg: "#00b4d4", ac: "#3198aa", tx: "#111", br: "#00a1bd" },//Added by Klingri.
+        { nm: "Navy Blue", bg: "#0004d4", ac: "#3931aa", tx: "#111", br: "#001cbd" },//Added by Klingri.
+        { nm: "Pink Flower", bg: "#d4009f", ac: "#aa3190", tx: "#111", br: "#bd00bd" },//Added by Klingri.
+        { nm: "Purple Lilac", bg: "#8600d4", ac: "#9631aa", tx: "#111", br: "#8100bd" },//Added by Klingri.
+        { nm: "Grey Stone", bg: "#c4c4c4", ac: "#161616", tx: "#111", br: "#8b8b8b" },//Added by Klingri.
+        { nm: "Total Darkness", bg: "#000000", ac: "#0e0000", tx: "#111", br: "#070000" },//Added by Klingri.
         { nm: "Dimmed Beige", bg: "#c2b9a3", ac: "#6b5a44", tx: "#333", br: "#8e8671" },// Old Roblox is Work In Progress.
         { nm: "Swampy Green", bg: "#1f5017", ac: "#8e49aa", tx: "#0c011f", br: "#0c0900" },// Added by Klingri
         { nm: "Sunny Yellow", bg: "#e3f115", ac: "#9caa49", tx: "#0c011f", br: "#0c0900" },// Added by Klingri

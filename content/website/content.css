@@ -1,4 +1,5 @@
 /*Made by Klingri*/
+/*Heres da plan, i move prety much all of dis code into their own css files for organization and not losing mah mind*/
 
 :root {
     /* Default theme*/
@@ -14,24 +15,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body, .ban-page {
+body,
+.ban-page {
     background: var(--bg-main);
     color: var(--text-main);
 }
 
-.ban-label, .ban-value {
-color: var(--text-main) !important;
+.ban-label,
+.ban-value {
+    color: var(--text-main) !important;
 }
 
-.ban-page{
+.ban-page {
     text-align: center;
 }
 
-.ban-card{
+.ban-card {
     border: 1px solid #ff4646 !important;
 }
 
-.ban-link{
+.ban-link {
     color: #920000 !important;
 }
 
@@ -48,6 +51,8 @@ color: var(--text-main) !important;
     border: var(--card-bg) !important;
     border-color: var(--card-bg) !important;
 }
+
+/* --- Buttons --- */
 
 .profile-actions button,
 .tag {
@@ -94,7 +99,8 @@ color: var(--text-main) !important;
     color: #FFF !important;
 }
 
-.bio-label button, .bio-editor-footer button {
+.bio-label button,
+.bio-editor-footer button {
     border-radius: 8px !important;
     padding: 8px 15px !important;
     transition: all 0.3s ease;
@@ -108,7 +114,8 @@ color: var(--text-main) !important;
     color: #FFF !important;
 }
 
-.bio-label button:hover, .bio-editor-footer button:hover {
+.bio-label button:hover,
+.bio-editor-footer button:hover {
     border-radius: 8px !important;
     padding: 8px 15px !important;
     transition: all 0.3s ease;
@@ -325,7 +332,7 @@ body::selection {
     background-color: #920000;
 }
 
-.profile-info-panel {
+.profile-info-panel, .error-msg {
     text-align: center;
 }
 
@@ -353,7 +360,10 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover, .ban-label:hover, .ban-value:hover, .ban-sub:hover {
+.dl-footer-note:hover,
+.ban-label:hover,
+.ban-value:hover,
+.ban-sub:hover, .error-msg:hover {
     cursor: default !important;
 }
 
@@ -410,7 +420,7 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover {
+.dl-footer-note:hover, .error-msg:hover {
     color: hsl(0, 0%, 65%) !important;
     transition: 0.5s;
 }
@@ -432,7 +442,12 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover, .ban-label:hover, .ban-value:hover, .ban-legal:hover, .ban-link:hover, .ban-sub:hover {
+.dl-footer-note:hover,
+.ban-label:hover,
+.ban-value:hover,
+.ban-legal:hover,
+.ban-link:hover,
+.ban-sub:hover, .error-msg:hover {
     text-decoration: underline;
     transition: 0.2s;
 }
@@ -477,7 +492,11 @@ body::selection {
 
 /* Game play button animation */
 
-.btn-primary:hover, .user-card-actions button, .user-card-actions button:hover, .site-footer-links a, .site-footer-links a:hover {
+.btn-primary:hover,
+.user-card-actions button,
+.user-card-actions button:hover,
+.site-footer-links a,
+.site-footer-links a:hover {
     transform: scale(1.075);
     transition: 0.2s;
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);

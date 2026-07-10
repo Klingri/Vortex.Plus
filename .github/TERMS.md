@@ -1,108 +1,98 @@
-# **[Klingri]** TERMS OF SERVICE
+Terms of Service
+Last updated July 10th, 2026
 
-Last Updated: **[11.05.2026]**
+Please read these terms and conditions carefully before using Our Service.
 
-These terms of service ("Terms") apply to your access and use of **[VortexPro]** (the "Service"). Please read them carefully.
+### Interpretation and Definitions
+#### Interpretation
+The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
-## Accepting these Terms
+#### Definitions
+For the purposes of these Terms and Conditions:
 
-If you access or use the Service, it means you agree to be bound by all of the terms below. So, before you use the Service, please read all of the terms. If you don't agree to all of the terms below, please do not use the Service. Also, if a term does not make sense to you, please let us know by contacting my discord username **[Klingri]**.
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
-## Changes to these Terms
+Country refers to: Arizona, United States
 
-We reserve the right to modify these Terms at any time. For instance, we may need to change these Terms if we come out with a new feature or for some other reason.
+Company (referred to as either "the Company", "We", "Us"; or "Our" in this Agreement) refers to VortexPro.
 
-Whenever we make changes to these Terms, the changes are effective **[7 days]** after we post such revised Terms (indicated by revising the date at the top of these Terms) or upon your acceptance if we provide a mechanism for your immediate acceptance of the revised Terms (such as a click-through confirmation or acceptance button). It is your responsibility to check **[VortexPro]** for changes to these Terms.
+Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 
-If you continue to use the Service after the revised Terms go into effect, then you have accepted the changes to these Terms.
+Service refers to the Website.
 
-## Privacy Policy
+Terms and Conditions (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the Terms and Conditions Generator.
 
-For information about how we collect and use information about users of the Service, please check out our privacy policy available at **[INSERT LINK]**.
+Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 
-## Third-Party Services
+Website refers to VortexPro, accessible from https://github.com/Klingri/VortexProWebsite
 
-From time to time, we may provide you with links to third party websites or services that we do not own or control. Your use of the Service may also include the use of applications that are developed or owned by a third party. Your use of such third party applications, websites, and services is governed by that party's own terms of service or privacy policies. We encourage you to read the terms and conditions and privacy policy of any third party application, website or service that you visit or use.
+You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
-## Creating Accounts
+### Acknowledgment
+These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
 
-When you create an account or use another service to log in to the Service, you agree to maintain the security of your password and accept all risks of unauthorized access to any data or other information you provide to the Service.
+Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
 
-If you discover or suspect any Service security breaches, please let us know as soon as possible.
+By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
 
-## Your Content & Conduct
+You represent that you are over the age of 13. The Company does not permit those under 13 to use the Service.
 
-Our Service allows you and other users to contribute, share, post, link and otherwise make available content. You are responsible for the content that you make available to the Service, including its legality, reliability, and appropriateness.
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
-When you post, link or otherwise make available content to the Service, you grant us the right and license to use, reproduce, modify, publicly perform, publicly display and distribute your content on or through the Service. We may format your content for display throughout the Service, but we will not edit or revise the substance of your content itself.
+### Links to Other Websites
+Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
 
-Aside from our limited right to your content, you retain all of your rights to the content you post, link and otherwise make available on or through the Service.
+The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
 
-You can remove the content that you posted by deleting it. Once you delete your content, it will not appear on the Service, but copies of your deleted content may remain in our system or backups for some period of time. We will retain web server access logs for a maximum of **[TIME PERIOD]** and then delete them.
+We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
 
-You may not post, link and otherwise make available on or through the Service any of the following:
+### Termination
+We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
 
-* Content that is libelous, defamatory, bigoted, fraudulent or deceptive;
-* Content that is illegal or unlawful, that would otherwise create liability;
-* Content that may infringe or violate any patent, trademark, trade secret, copyright, right of privacy, right of publicity or other intellectual or other right of any party;
-* Mass or repeated promotions, political campaigning or commercial messages directed at users who do not follow you (SPAM);
-* Private information of any third party (e.g., addresses, phone numbers, email addresses, Social Security numbers and credit card numbers); and
-* Viruses, corrupted data or other harmful, disruptive or destructive files or code.
+Upon termination, Your right to use the Service will cease immediately.
 
-Also, you agree that you will not do any of the following in connection with the Service or other users:
+### Limitation of Liability
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
 
-* Use the Service in any manner that could interfere with, disrupt, negatively affect or inhibit other users from fully enjoying the Service or that could damage, disable, overburden or impair the functioning of the Service;
-* Impersonate or post on behalf of any person or entity or otherwise misrepresent your affiliation with a person or entity;
-* Collect any personal information about other users, or intimidate, threaten, stalk or otherwise harass other users of the Service;
-* Create an account or post any content if you are not over 13 years of age years of age; and
-* Circumvent or attempt to circumvent any filtering, security measures, rate limits or other features designed to protect the Service, users of the Service, or third parties.
+To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
 
-## **[Klingri]** Materials
+Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
 
-We put a lot of effort into creating the Service including, the logo and all designs, text, graphics, pictures, information and other content (excluding your content). This property is owned by us or our licensors and it is protected by U.S. and international copyright laws. We grant you the right to use it.
+### "AS IS" and "AS AVAILABLE" Disclaimer
+The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
 
-However, unless we expressly state otherwise, your rights do not include: (i) publicly performing or publicly displaying the Service; (ii) modifying or otherwise making any derivative uses of the Service or any portion thereof; (iii) using any data mining, robots or similar data gathering or extraction methods; (iv) downloading (other than page caching) of any portion of the Service or any information contained therein; (v) reverse engineering or accessing the Service in order to build a competitive product or service; or (vi) using the Service other than for its intended purposes. If you do any of this stuff, we may terminate your use of the Service.
+Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
 
-## Hyperlinks and Third Party Content
+Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
 
-You may create a hyperlink to the Service. But, you may not use, frame or utilize framing techniques to enclose any of our trademarks, logos or other proprietary information without our express written consent.
+### Governing Law
+The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
 
-**[Klingri]** makes no claim or representation regarding, and accepts no responsibility for third party websites accessible by hyperlink from the Service or websites linking to the Service. When you leave the Service, you should be aware that these Terms and our policies no longer govern.
+### Disputes Resolution
+If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
 
-If there is any content on the Service from you and others, we don't review, verify or authenticate it, and it may include inaccuracies or false information. We make no representations, warranties, or guarantees relating to the quality, suitability, truth, accuracy or completeness of any content contained in the Service. You acknowledge sole responsibility for and assume all risk arising from your use of or reliance on any content.
+### For European Union (EU) Users
+If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which You are resident.
 
-## Unavoidable Legal Stuff
+### United States Legal Compliance
+You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
 
-THE SERVICE AND ANY OTHER SERVICE AND CONTENT INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SERVICE ARE PROVIDED TO YOU ON AN AS IS OR AS AVAILABLE BASIS WITHOUT ANY REPRESENTATIONS OR WARRANTIES OF ANY KIND. WE DISCLAIM ANY AND ALL WARRANTIES AND REPRESENTATIONS (EXPRESS OR IMPLIED, ORAL OR WRITTEN) WITH RESPECT TO THE SERVICE AND CONTENT INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SERVICE WHETHER ALLEGED TO ARISE BY OPERATION OF LAW, BY REASON OF CUSTOM OR USAGE IN THE TRADE, BY COURSE OF DEALING OR OTHERWISE.
+### Severability and Waiver
+#### Severability
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
 
-IN NO EVENT WILL **[DEVELOPER NAME]** BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY SPECIAL, INDIRECT, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THE SERVICE OR ANY OTHER SERVICE AND/OR CONTENT INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SERVICE, REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR ARE AWARE OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY FOR ALL CAUSES OF ACTION AND UNDER ALL THEORIES OF LIABILITY WILL BE LIMITED TO THE AMOUNT YOU PAID TO **[DEVELOPER NAME]**. THIS SECTION WILL BE GIVEN FULL EFFECT EVEN IF ANY REMEDY SPECIFIED IN THIS AGREEMENT IS DEEMED TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.
+#### Waiver
+Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not affect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
 
-You agree to defend, indemnify and hold us harmless from and against any and all costs, damages, liabilities, and expenses (including attorneys' fees, costs, penalties, interest and disbursements) we incur in relation to, arising from, or for the purpose of avoiding, any claim or demand from a third party relating to your use of the Service or the use of the Service by any person using your account, including any claim that your use of the Service violates any applicable law or regulation, or the rights of any third party, and/or your violation of these Terms.
+### Translation Interpretation
+These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
 
-## Copyright Complaints
+### Changes to These Terms and Conditions
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
 
-We take intellectual property rights seriously. In accordance with the Digital Millennium Copyright Act ("DMCA") and other applicable law, we have adopted a policy of terminating, in appropriate circumstances and, at our sole discretion, access to the service for users who are deemed to be repeat infringers. **[LINK TO FULL COPYRIGHT POLICY IF APPLICABLE.]**
+By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
 
-## Governing Law
+### Contact Us
+If you have any questions about these Terms and Conditions, You can contact us:
 
-The validity of these Terms and the rights, obligations, and relations of the parties under these Terms will be construed and determined under and in accordance with the laws of the **[Republic of Serbia]**, without regard to conflicts of law principles.
-
-## Jurisdiction
-
-You expressly agree that exclusive jurisdiction for any dispute with the Service or relating to your use of it, resides in the courts of the **[Republic of Serbia]** and you further agree and expressly consent to the exercise of personal jurisdiction in the courts of the **[Republic of Serbia]** located in the **[Republic of Serbia]** in connection with any such dispute including any claim involving Service. You further agree that you and Service will not commence against the other a class action, class arbitration or other representative action or proceeding.
-
-## Termination
-
-If you breach any of these Terms, we have the right to suspend or disable your access to or use of the Service.
-
-## Entire Agreement
-
-These Terms constitute the entire agreement between you and **[Klingri]** regarding the use of the Service, superseding any prior agreements between you and **[Klingri]** relating to your use of the Service.
-
-## Feedback
-
-Please let us know what you think of the Service, these Terms and, in general, **[VortexPro]**. When you provide us with any feedback, comments or suggestions about the Service, these Terms and, in general, **[VortexPro]**, you irrevocably assign to us all of your right, title and interest in and to your feedback, comments and suggestions.
-
-## Questions & Contact Information
-
-Questions or comments about the Service may be directed to us at my discord username **[Klingri]**.
+By github: https://github.com/Klingri

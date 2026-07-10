@@ -1,12 +1,14 @@
-## Current Features
-- The most important features are listed below:
+## Current (notable) Features
+The most important features are listed below:
 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
-| **Dark Mode** | Full platform-wide dark theme. | @Klingri |
-| **Improved Accesibility** | Nice. | @Klingri |
-| **Animations & Effects** | Beautiful Animations and effects. | @Klingri |
-| **Hover Animations** | Instant dopamine. | @Klingri |
+| **Dark Mode** | Full platform-wide dark theme. | @Klingri
+| **Improved Accesibility** | Nice. |
+| **Animations & Effects** | Beautiful Animations and effects. |
+| **Hover Animations** | Instant dopamine. |
+| **Custom VortexPro Settings** | Customization. |
+| **Custom Friends button on navbar** | Easy shortcut. | All above made by Klingri.
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
 
 ## Roadmap
@@ -22,16 +24,21 @@ Please note that this roadmap is subject to change. Features may be added, remov
 | **Tools** | Useful and functional tools. | High |
 | **Groups** | Communities for players. | High |
 
-## FAQ
+## Q&A
+
+more questions [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
-General | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
-Drama | **You were in a controversy, are you not trustable?** | Feel free to not use the extension.
-General | **How Often does the extension update?** | Typically every few days, however the extension may go weeks without updates if it's not needed.
-General | **Is VortexPro open-source?** | Yes.
-General | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
+Security | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
+General | **You were in a controversy, are you not trustable?** | Feel free to not use the extension.
+Updating | **How Often does VortexPro update?** | Typically every few days, however VortexPro may go weeks without updates if it's not needed.
+General | **Is VortexPro Free & open-source?** | Yes.
+Contribution | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
+Compatibility | **Can I use an older version of VortexPro?** | Yes but older versions may not work if the website url changed and the elements got changed or re-named.
+Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experienc with using VortexPro.
+Other | **My question isn't listed here?** | Ask me a question somewhere I guess.
 
 ## Forks & Mini-Projects
 WIP

@@ -92,3 +92,13 @@ const resetButton = document.createElement('button');
 resetButton.className = '#save-btn';
 resetButton.innerText = 'Reset';
 saveButton.appendChild(resetButton);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const targetElement = document.querySelector('.btn-download-nav');
+  
+  if (targetElement) {
+    targetElement.addEventListener('click', function () {
+      targetElement.remove();
+    });
+  }
+});

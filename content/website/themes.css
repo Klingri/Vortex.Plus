@@ -119,19 +119,23 @@
 .cl-cntnt::-webkit-scrollbar {
     width: 6px;
 }
+
 .cl-cntnt::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
+
 .cl-cntnt::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 3px !important;
 }
+
 .cl-cntnt::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* Buttons */
-.thm-bttn, #v-thm-mn button {
+.thm-bttn,
+#v-thm-mn button {
     padding: 8px 10px;
     cursor: pointer;
     text-align: left;
@@ -143,11 +147,13 @@
     transition: background var(--transition-speed) ease, border-color var(--transition-speed) ease;
 }
 
-.thm-bttn:hover, #v-thm-mn button:hover {
+.thm-bttn:hover,
+#v-thm-mn button:hover {
     background: #333;
     border-color: #444;
 }
 
-.thm-bttn:active, #v-thm-mn button:active {
+.thm-bttn:active,
+#v-thm-mn button:active {
     transform: translateY(1px);
 }

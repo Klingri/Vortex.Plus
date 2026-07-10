@@ -6,7 +6,7 @@ const originalElemente = document.querySelector('.profile-info-row');
 if (originalElemente) {
   // 2. Clone it with all its children
   const clonedElement = originalElemente.cloneNode(true);
-  
+
   // (Optional) Remove the ID attribute to prevent duplicate IDs on the page
   clonedElement.removeAttribute('id');
 

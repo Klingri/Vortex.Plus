@@ -54,3 +54,33 @@
 
 # Version 3.0
 - ?.??.2026 - 3.0 (Release Title: The JavaScript Update Part 6)
+
+# Version 3.1
+- ?.??.2026 - 3.1 (Release Title: The JavaScript Update Part 7?)
+
+# Version 3.2
+- ?.??.2026 - 3.2 (Release Title: The JavaScript Update Part 8?)
+
+# Version 3.3
+- ?.??.2026 - 3.3 (Release Title: The JavaScript Update Part 9?)
+
+# Version 3.4
+- ?.??.2026 - 3.4 (Release Title: The JavaScript Update Part 10?)
+
+# Version 3.5
+- ?.??.2026 - 3.5 (Release Title: The JavaScript Update Part 11?)
+
+# Version 3.6
+- ?.??.???? - 3.6 (Release Title: The JavaScript Update?)
+
+# Version 3.7
+- ?.??.???? - 3.7 (Release Title: The JavaScript Update?)
+
+# Version 3.8
+- ?.??.???? - 3.8 (Release Title: The JavaScript Update?)
+
+# Version 3.9
+- ?.??.???? - 3.9 (Release Title: The JavaScript Update?)
+
+# Version 4.0
+- ?.??.???? - 4.0 (Release Title: The JavaScript Update?)
