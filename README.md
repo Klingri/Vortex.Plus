@@ -8,7 +8,7 @@
 
 ## Why VortexPro Exists
 
-When Klingri joined the Vortex Platform on May 5, 2026, he found the experience deeply frustrating. The interface was barebones, functionality was limited, and there was no native dark mode or custom control. This lack of user freedom inspired the creation of [VortexPro.](https://klingri.github.io/VortexPro/)
+When I joined the Vortex Platform on May 5, 2026, I found the experience deeply frustrating. The interface was barebones, functionality was limited, and there was no native dark mode or custom control. This lack of user freedom inspired the creation of [VortexPro.](https://klingri.github.io/VortexPro/)
 
 **VortexPro is what Vortex should have been:**
 
@@ -21,21 +21,22 @@ When Klingri joined the Vortex Platform on May 5, 2026, he found the experience 
 
 ---
 
-## Disclaimers
+## Disclaimers (please read)
 
 <ul>
-    <li>I cannot guarantee that VortexPro will work on Firefox. For the best experience, please use a Chromium-based browser.</li><li>
-    VortexPro is not affiliated, associated, or endorsed by Vortex Platform. Vortex and its various marks and logos are trademarks of Vortex Platform.</li>
-    <li>VortexPro is safe and contains no malware. Our source code is fully open for review. Any script actions are strictly for core features, such as automatic updates and safe external integrations</li>
+    <li>
+    VortexPro is not affiliated, associated, or endorsed by Vortex Platform. Vortex and its various marks and logos are trademarks of Vortex.</li>
+    <li>VortexPro is safe and contains no malware. Our source code is fully open for review. Any script actions are strictly for core features, such as automatic updates and safe external integrations.</li>
     <li>
     VortexPro is not obfuscated, and it is perfectly safe. While I try to provide readable code whenever possible, I cannot guarantee that every section is fully de-obfuscated.</li>
     <li>
-    To use VortexPro, you must agree to the Vortex and VortexPro terms of service</li>
+    To use VortexPro, you must agree to the Vortex and VortexPro Terms of Service.</li>
     <li>
     We aren't trying to be the best extension with the most features, just the most High Quality.</li>
     <li>
     There are many misunderstandings circulating about VortexPro. Please reach out directly if you have any questions.
 </li>
+<li>After a new version releases, the older version immediately looses full and total support.</li>
   </ul>
 
 ---
@@ -65,7 +66,8 @@ View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/s
     <li><b>Performance:</b> These experimental updates may cause performance issues on lower-end systems.</li>
     <li><b>UI Glitches:</b> Minor UI display issues may occur on certain places.</li>
     <li><b>No native Auto-Updater:</b> Manual updating, the same way you first downloaded it.</li>
-    <li><b>Compatibility:</b> The extension may be incompatible with Firefox and Firefox-based browsers, The extension may or may not be compatible with other extensions made by Klingri.</li>
+    <li><b>Compatibility:</b> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li>
+    <li><b>Themes:</b> VortexPro looks best in Dark mode, as that was what it was designed for. we can't guarantee that light mode or other themes look good.</li>
   </ul>
 
 **Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
@@ -91,30 +93,6 @@ View the full list of Issues [here.](https://github.com/Klingri/VortexPro/blob/s
       <li>Run this command: <code>git clone https://github.com</code></li>
     </ul>
   </li>
-  <li>
-    <strong>Create a Feature Branch</strong>
-    <ul>
-      <li>Navigate into the project folder.</li>
-      <li>Create a new branch for your changes: <code>git checkout -b feature/your-feature-name</code></li>
-    </ul>
-  </li>
-  <li>
-    <strong>Commit and Push Changes</strong>
-    <ul>
-      <li>Save your modifications.</li>
-      <li>Commit your changes with a clear message: <code>git commit -am "Add some amazing feature"</code></li>
-      <li>Push the changes to your GitHub fork: <code>git push origin feature/your-feature-name</code></li>
-    </ul>
-  </li>
-  <li>
-    <strong>Open a Pull Request</strong>
-    <ul>
-      <li>Return to the original repository on GitHub.</li>
-      <li>Click the Compare & pull request button.</li>
-      <li>Describe your changes.</li>
-      <li>Click Create pull request.</li>
-    </ul>
-  </li>
 </ul>
 
 
@@ -128,11 +106,13 @@ more questions [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/
 | :--- | :--- | :--- |
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
 Security | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
-General | **You were in a controversy, are you not trustable?** | Feel free to not use the extension.
+General | **I dislike you and I suspect that VortexPro is malware, what should I do?** | Feel free to not download and not use VortexPro.
+General | **Someone gave me a link to download VortexPro?** | The only official and safe download of VortexPro is on Klingri's Github, nowhere else, they are likely trying to scam or hack you.
 Updating | **How Often does VortexPro update?** | Typically every few days, however VortexPro may go weeks without updates if it's not needed.
 General | **Is VortexPro Free & open-source?** | Yes.
 Contribution | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
 Compatibility | **Can I use an older version of VortexPro?** | Yes but older versions may not work if the website url changed and the elements got changed or re-named.
+Compatibility | **Will you port VortexPro to FireFox?** | No. VortexPro will not be ported over to Firefox currently as of July 12 2026.
 Mission | **Whats the end goal for VortexPro?** | To give Vortex user's more control, customization, and make the vortex platform a nicer place.
 Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experienc with using VortexPro.
 Other | **My question isn't listed here?** | Ask me a question somewhere I guess.
@@ -154,7 +134,7 @@ The most important features are listed below:
 
 [Full Road map & List of Features here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
 
-[Recent Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md) Currently we only keep track of recent versions.
+[Recent Version History List here.](https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md)
 
 ---
   
@@ -164,29 +144,19 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 * Special thanks to our former contributors: [@Myroshlaug](https://github.com/myroshlaug), [@enkubik](https://github.com/enkubik), [@inuk84](https://github.com/inuk84), [@codep1ltio](https://github.com/codep1ltio), [@KodiDaBear](https://github.com/KodiDaBear), [@Hayden](https://github.com/HaydenGitHub-2), [@Isfadev](https://github.com/Isfadev), [@Slimeking](https://github.com/Slimeking463).
 
-- Support future development by starring this repository, following me on GitHub, and sharing the project with others.
+<ul><li>
+Support future development by starring this repository, following me on GitHub, and sharing the project with others.</li></ul>
 
 <div align="center">
   <ul>
     <p>Thank you for all the support! ♥️</p>
-  </ul>
 </div>
 
 <ul>
-    <li>We are commited to being responsible. (WIP)</li>
+    <li>We are commited to being responsible.</li>
     <li>We prioritize deobfuscation when possible.</li>
+    <li>I occasionally create mini-projects, which some people have reportedly copied or adapted.</li><
   </ul>
-
-- Read the entire Accesibility info [here.](https://github.com/Klingri/VortexPro/blob/stable/FEATURES.md)
-
-**Supported Languages**
-#### Since 05.05.2026
-<img src="https://flagcdn.com/w20/gb.png" width="20"> <img src="https://flagcdn.com/w20/us.png" width="20"> <img src="https://flagcdn.com/w20/ca.png" width="20"> <img src="https://flagcdn.com/w20/au.png" width="20">
-
-[The Full list of Forks & Mini-Projects Here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
-WIP
-
-<ul><li>I occasionally create mini-projects, which some people have reportedly copied or adapted.</li></ul>
 
 Mini-Projects Created by [@Klingri](https://github.com/Klingri)
    - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
@@ -201,6 +171,7 @@ Mini-Projects Created by [@Klingri](https://github.com/Klingri)
     <li>VortexPro was the first Vortex platform extension. It sparked a wave of fan-made extensions.</li>
     <li>VortexPro leads the Vortex platform as its very first browser extension with a built-in dark mode.</li>
     <li>VortexPro is older than 99% of the accounts of the Vortex platform except for the original 2120 players.</li>
+    <li>VortexPro was the most popular Vortex extension of May 2026 alongside Vortex2plus2.</li>
   </ul>
 
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)

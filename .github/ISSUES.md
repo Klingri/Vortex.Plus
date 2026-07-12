@@ -7,12 +7,19 @@ To avoid strict compliance requirements, the VortexPro browser extension is dist
 
 **Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
 
-> [!WARNING]
-> **Compatibility:** Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
-
 - The Extension may suffer from a wide variety of Issues (WIP)
 
+| Bug/Issue | Details |
+| :--- | :--- |
+| **Component/Module** | *e.g., Auth, UI, Database* |
+| **Environment** | *e.g., Production, Staging, Local* |
+| **Severity / Priority** | *Low / Medium / High / Critical* |
+| **App Version** | *v1.2.3* |
+
 # Compatability
+
+- Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
+
 - Here's a list of all compatible browsers, extensions, forks and operating systems:
 
 ## Summary

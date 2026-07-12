@@ -77,30 +77,6 @@ Please open an issue in our repository and apply the `accessibility` or `a11y` l
 2. The exact page or URL where the barrier occurred.
 3. Your device, operating system, and assistive technology (e.g., screen reader version).
 
-# Localization (WIP)
+# Localization
 
-**Supported since 05.05.2026**
-- <img src="https://flagcdn.com/w20/us.png" width="20"> English US
-- <img src="https://flagcdn.com/w20/gb.png" width="20"> English UK
-- <img src="https://flagcdn.com/w20/ca.png" width="20"> English Canada
-- <img src="https://flagcdn.com/w20/au.png" width="20"> English Australia
-
-**Planned**
-
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> srpsko-hrvatski (Latin)
-- <img src="https://flagcdn.com/w20/rs.png" width="20"> српско-хрватски (Cyrillic)
-- <img src="https://flagcdn.com/w20/ru.png" width="20"> русский
-- <img src="https://flagcdn.com/w20/de.png" width="20"> Deutsch
-- <img src="https://flagcdn.com/w20/es.png" width="20"> Español
-
-- # Localization Guide
-
-Thank you for your interest in helping translate [VortexPro]! Your contributions help make this project accessible to a global audience.
-
-## Project Structure
-We follow a specific file naming convention for localized documents:
-- **Original:** `README.md`
-- **Localized:** `README-{{locale}}.md` (e.g., `README-ja.md` for Japanese)
-
-Alternatively, localized files may be stored in a dedicated directory:
-- `/localization/{{language-code}}-{{region-code}}/` (e.g., `localization/en-US/`)
+To translate the Vortex Platform into different languages, I recommend you use the 'translate' feature built-in the Microsoft Edge or Chrome Browser.

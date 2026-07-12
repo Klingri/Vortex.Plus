@@ -33,7 +33,6 @@
       "js": [
         "content/website/content.js",
         "content/website/themes.js",
-        "content/website/background.js",
         "content/header/header.js",
         "content/pages/settings.js"
       ],

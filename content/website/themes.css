@@ -8,30 +8,27 @@
     --border-focus: #555;
     --text-main: #FFF;
     --text-dark: #333;
-    --shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     --transition-speed: 0.25s;
 }
 
 #v-thm-mn {
     box-sizing: border-box;
-    position: fixed;
-    right: 20px;
-    top: 60px;
-    width: 260px;
+    position: relative; /* Changed from fixed to flow naturally in document */
+    width: 100%;        /* Now automatically fills the container space */
+    max-width: 500px;   /* Limits size so it doesn't stretch out too far on wide monitors */
+    margin: 15px 0;     /* Gives space between other settings elements */
     background: var(--bg-main);
     color: var(--text-main);
-    z-index: 1000000;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    display: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;      /* Keep it visible continuously */
     flex-direction: column;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     border-radius: 6px !important;
     overflow: hidden;
-    backdrop-filter: blur(10px);
 }
 
-/* Base resets for children inside menu */
 #v-thm-mn * {
     box-sizing: border-box;
     border: none;
@@ -39,7 +36,6 @@
     border-radius: 0 !important;
 }
 
-/* Header/Top Section */
 .m-tp {
     padding: 14px 16px;
     border-bottom: 1px solid var(--border-color);
@@ -47,24 +43,33 @@
     font-weight: 600;
 }
 
-.m-bt {
-    padding: 12px;
+/* Added a wrapper body for the color adjustments */
+.m-body {
+    padding: 14px 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-/* Row elements */
+.m-bt {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid var(--border-color);
+}
+
 .ed-r {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.8);
+    padding: 4px 0;
 }
 
 .ed-r input {
-    width: 70px;
+    width: 90px;
     padding: 6px 8px;
     background: var(--bg-input) !important;
     color: var(--text-main) !important;
@@ -79,7 +84,6 @@
     border-color: var(--border-focus) !important;
 }
 
-/* Dropdown/Collapsible */
 .cl-hd {
     padding: 10px 14px;
     background: var(--border-color);
@@ -94,24 +98,12 @@
     align-items: center;
 }
 
-.cl-hd::after {
-    content: "▼";
-    font-size: 8px;
-    opacity: 0.7;
-    transition: transform var(--transition-speed) ease;
-}
-
-.cl-hd.active::after {
-    transform: rotate(180deg);
-}
-
 .cl-cntnt {
-    display: none;
     padding: 10px;
     background: var(--bg-dropdown);
     flex-direction: column;
     gap: 6px;
-    max-height: 160px;
+    max-height: 200px;
     overflow-y: auto;
 }
 
@@ -119,18 +111,12 @@
 .cl-cntnt::-webkit-scrollbar {
     width: 6px;
 }
-
 .cl-cntnt::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);
 }
-
 .cl-cntnt::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 3px !important;
-}
-
-.cl-cntnt::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.4);
 }
 
 /* Buttons */
@@ -151,9 +137,4 @@
 #v-thm-mn button:hover {
     background: #333;
     border-color: #444;
-}
-
-.thm-bttn:active,
-#v-thm-mn button:active {
-    transform: translateY(1px);
 }

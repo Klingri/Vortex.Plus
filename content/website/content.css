@@ -4,15 +4,16 @@
 :root {
     /* Default theme*/
     --bg-main: #121212;
-    --text-main: #FFFFFF;
-    --accent: #2ecc71;
+    --text-main: #F8F9FA;
+    --accent: #27ae60;
     --nav-bg: rgba(53, 53, 53, 0.2);
     --card-bg: #252525;
     --input-bg: #2b2a2a;
+    --default-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--default-font)
 }
 
 body,
@@ -66,7 +67,7 @@ body,
     background-color: var(--nav-bg) !important;
     border: 0px none !important;
     border-color: none !important;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 .profile-actions button:hover,
@@ -81,22 +82,18 @@ body,
     background-color: var(--nav-bg) !important;
     border: 0px none !important;
     border-color: none !important;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 .profile-actions button:hover,
 .tag:hover {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: #ccb42e !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: #FFF !important;
+    cursor: pointer;
+    display: inline-block;
+    will-change: transform;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #bda627 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(204, 180, 46, 0.3);
 }
 
 .bio-label button,
@@ -111,7 +108,7 @@ body,
     background-color: var(--input-bg) !important;
     border: 0px none !important;
     border-color: none !important;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 .bio-label button:hover,
@@ -126,7 +123,7 @@ body,
     background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
     border: 0px none !important;
     border-color: none !important;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 
@@ -138,7 +135,7 @@ body,
 
 .btn-secondary {
     background-color: var(--input-bg) !important;
-    color: #888 !important;
+    color: #777777 !important;
     border: 0px none !important;
     border-color: none !important;
 }
@@ -154,8 +151,12 @@ body,
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 30px !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid #0000001a;
+    /* Modern layered shadow */
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
     margin-top: 20px;
 }
 
@@ -167,7 +168,7 @@ body,
     left: -30px;
     right: -30px;
     height: 120px;
-    background: linear-gradient(90deg, #dc2626, #9333ea);
+    background: linear-gradient(90deg, #b11a21, #7e22ce);
     z-index: -1;
     border-radius: 20px 20px 0 0;
     opacity: 0.6;
@@ -186,28 +187,33 @@ body,
     background: rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     padding: 15px;
-    border-left: 4px solid #dc2626;
+    border-left: 4px solid #b91c1c;
 }
 
 .bio-text {
     line-height: 1.6;
-    color: #888 !important;
+    color: #777777 !important;
 }
 
-.navbar-logo:hover {
+.navbar-logo:hover,
+.btn-play:hover {
     transform: scale(1.15);
-    transition: 0.4ms;
+    transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* Friend Cards hover effect */
 .friend-card {
-    transition: transform 0.3s ease, background 0.3s ease;
-    border-radius: 10px !important;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
+    border-radius: 10px;
+    will-change: transform;
 }
 
 .friend-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: #0000001a !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Smooth separators */
@@ -222,15 +228,16 @@ body,
 .profile-avatar-wrap {
     position: relative;
     padding: 5px;
-    background: linear-gradient(45deg, #ccb42e, #3498db);
+    background: linear-gradient(45deg, #d4af37, #3498db);
     border-radius: 50%;
 }
 
 .profile-stat {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 14px;
     text-align: center;
     padding: 20px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1);
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -268,6 +275,7 @@ body,
 .face-card:hover,
 .game-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .catalog-title {
@@ -280,18 +288,18 @@ body,
 }
 
 .tag:hover {
-    background-color: #1a743f !important;
+    background-color: #1b5e20;
+    transform: scale(1.05);
     transition: 0.7ms !important;
-    transform: scaleY(-3px) !important;
     border-radius: 8px !important;
     transition: all 0.3s ease;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 .carousel-arrow:hover {
     box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-    background: #888 !important;
+    background: #444444 !important;
     transform: scaleY(-3px) !important;
     border-radius: 14px !important;
 }
@@ -304,7 +312,7 @@ body,
 .game-card-title,
 .game-detail-title,
 .game-description-label {
-    color: #ccb42e !important;
+    color: #e9d569 !important;
 }
 
 h1,
@@ -329,10 +337,11 @@ input {
 
 /* Color for Selection */
 body::selection {
-    background-color: #920000;
+    background-color: #B22222;
 }
 
-.profile-info-panel, .error-msg {
+.profile-info-panel,
+.error-msg {
     text-align: center;
 }
 
@@ -363,14 +372,14 @@ body::selection {
 .dl-footer-note:hover,
 .ban-label:hover,
 .ban-value:hover,
-.ban-sub:hover, .error-msg:hover {
+.ban-sub:hover,
+.error-msg:hover {
     cursor: default !important;
 }
 
 /* Animation when Hovering */
 .navbar-actions a:hover,
 .navbar-actions button:hover,
-.navbar-search button:hover,
 .tag:hover,
 .btn-secondary:hover,
 .game-banner:hover,
@@ -384,13 +393,15 @@ body::selection {
 #rotate-toggle:hover,
 .color-swatch,
 .market-card {
-    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px;
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border-radius: 14px !important;
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.08),
+        0 14px 40px rgba(0, 0, 0, 0.12);
 }
 
 /* Animations for Hovering Things */
-.navbar-logo:hover,
 .profile-username:hover,
 .game-detail-title:hover,
 .game-detail-creator:hover,
@@ -420,16 +431,16 @@ body::selection {
 .dl-hero-sub:hover,
 .dl-card-platform:hover,
 .dl-notice:hover,
-.dl-footer-note:hover, .error-msg:hover {
-    color: hsl(0, 0%, 65%) !important;
-    transition: 0.5s;
+.dl-footer-note:hover,
+.error-msg:hover {
+    color: #a0a6ac;
+    transform: translateY(-2px);
 }
 
 .game-card-meta:hover,
 .game-stat-value:hover,
 .game-stat-label:hover,
 .btn-play:hover,
-.navbar-logo:hover,
 .section-title:hover,
 .page-title:hover,
 .friend-name:hover,
@@ -447,47 +458,62 @@ body::selection {
 .ban-value:hover,
 .ban-legal:hover,
 .ban-link:hover,
-.ban-sub:hover, .error-msg:hover {
+.ban-sub:hover,
+.error-msg:hover {
     text-decoration: underline;
-    transition: 0.2s;
+    text-decoration-color: currentColor;
+    text-underline-offset: 0.4em;/
 }
 
 .body-type-btn:hover {
-    background: #c447b3 !important;
+    background: #c864a7 !important;
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .body-type-btn.active:hover {
-    background: #4752c4 !important;
+    background: #2e4bcc !important;
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .color-swatch:hover {
-    background: #4752c4 !important;
+    background: #2e4bcc !important;
     transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* Make the profile avatar grow when hovered */
 .profile-avatar:hover {
     transform: scale(1.15);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .profile-stat:hover {
-    background: rgba(255, 255, 255, 0.07);
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .user-card-avatar:hover {
-    background: rgba(255, 255, 255, 0.07);
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    /* Adds a high-end glassmorphism feel */
+    transform: translateY(-6px) scale(1.02);
+    /* Layered shadow for a realistic, soft depth perception */
+    box-shadow:
+        0px 20px 40px rgba(0, 0, 0, 0.3),
+        0px 1px 3px rgba(255, 255, 255, 0.1) inset;
 }
 
 .site-footer-links a:hover:hover {
-    background: rgba(255, 2, 2, 0.726) !important;
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(239, 68, 68, 0.85) !important;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0px 20px 35px rgba(239, 68, 68, 0.35);
 }
 
 /* Game play button animation */
@@ -497,20 +523,19 @@ body::selection {
 .user-card-actions button:hover,
 .site-footer-links a,
 .site-footer-links a:hover {
-    transform: scale(1.075);
-    transition: 0.2s;
-    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px !important;
     padding: 8px 15px !important;
-    transition: all 0.3s ease;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
     margin-left: 2px;
     background-color: var(--input-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: #FFF !important;
+    border: none !important;
+    color: var(--text-main) !important;
+
 }
 
 .btn-play {
@@ -527,42 +552,41 @@ body::selection {
     background-color: var(--input-bg) !important;
     border: 0px none !important;
     border-color: none !important;
-    color: #FFF !important;
+    color: var(--text-main) !important;
 }
 
 .btn-play:hover {
     transform: scale(1.075);
-    transition: 0.2s;
-    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     border-radius: 8px !important;
     padding: 8px 15px !important;
-    transition: all 0.3s ease;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
     margin-left: 8px;
     background-color: var(--input-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: #FFF !important;
+    border: none !important;
+    color: var(--text-main) !important;
+
 }
 
 /* Animation for the online thingy on profiles */
 .status-dot.online {
     box-shadow: 0 0 8px var(--accent);
-    animation: pulse 4s infinite;
+    animation: smoothPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@keyframes pulse {
-    0% {
-        opacity: 1;
+@keyframes smoothPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 8px 0px rgba(var(--accent-rgb), 0.6);
+        transform: scale(1);
     }
 
     50% {
-        opacity: 0.2;
-    }
-
-    100% {
-        opacity: 1;
+        box-shadow: 0 0 20px 6px rgba(var(--accent-rgb), 0.9);
+        transform: scale(1.02);
+        /* Optional slight scale for depth */
     }
 }

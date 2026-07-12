@@ -102,3 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+const helloGreeting = document.querySelector('.profile-username')
+helloGreeting.innerHTML = 'Hello,'
