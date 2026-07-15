@@ -20,15 +20,12 @@ body,
 .ban-page {
     background: var(--bg-main);
     color: var(--text-main);
+    text-align: center;
 }
 
 .ban-label,
 .ban-value {
     color: var(--text-main) !important;
-}
-
-.ban-page {
-    text-align: center;
 }
 
 .ban-card {
@@ -373,7 +370,8 @@ body::selection {
 .ban-label:hover,
 .ban-value:hover,
 .ban-sub:hover,
-.error-msg:hover {
+.error-msg:hover,
+.ban-card h1:hover {
     cursor: default !important;
 }
 
@@ -459,7 +457,23 @@ body::selection {
 .ban-legal:hover,
 .ban-link:hover,
 .ban-sub:hover,
-.error-msg:hover {
+.error-msg:hover,
+.join-date-label:hover,
+.join-date-value:hover,
+.friend-name:hover,
+.profile-username:hover,
+.item-name:hover,
+.tab-btn:hover,
+.tab-btn.active,
+.info-msg:hover,
+.pagination-info:hover,
+.btn-download-nav:hover,
+.btn-signout-sm:hover,
+.btn-discord:hover,
+.settings-heading:hover,
+.modal-step-desc:hover,
+.ban-card h1:hover,
+.section-link:hover {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-underline-offset: 0.4em;/
@@ -472,7 +486,8 @@ body::selection {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.body-type-btn.active:hover {
+.body-type-btn.active:hover,
+.btn-download:hover {
     background: #2e4bcc !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);

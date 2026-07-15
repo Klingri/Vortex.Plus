@@ -32,7 +32,7 @@ When I joined the Vortex Platform on May 5, 2026, I found the experience deeply 
     <li>
     To use VortexPro, you must agree to the Vortex and VortexPro Terms of Service.</li>
     <li>
-    We aren't trying to be the best extension with the most features, just the most High Quality.</li>
+    VortexPro isn't trying to be the best extension with the most features, just the most High Quality.</li>
     <li>
     There are many misunderstandings circulating about VortexPro. Please reach out directly if you have any questions.
 </li>
@@ -112,6 +112,7 @@ Updating | **How Often does VortexPro update?** | Typically every few days, howe
 General | **Is VortexPro Free & open-source?** | Yes.
 Contribution | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
 Compatibility | **Can I use an older version of VortexPro?** | Yes but older versions may not work if the website url changed and the elements got changed or re-named.
+Compatibility | **Will you ever fix VortexPro versions prior to version <2.4 not working?** | If you mean the website URL, probably not any time soon as vortex changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, probably not any time soon, but you can attempt it yourself.
 Compatibility | **Will you port VortexPro to FireFox?** | No. VortexPro will not be ported over to Firefox currently as of July 12 2026.
 Mission | **Whats the end goal for VortexPro?** | To give Vortex user's more control, customization, and make the vortex platform a nicer place.
 Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experienc with using VortexPro.
@@ -155,7 +156,7 @@ Support future development by starring this repository, following me on GitHub, 
 <ul>
     <li>We are commited to being responsible.</li>
     <li>We prioritize deobfuscation when possible.</li>
-    <li>I occasionally create mini-projects, which some people have reportedly copied or adapted.</li><
+    <li>I occasionally create mini-projects, which some people have reportedly copied or adapted.</li>
   </ul>
 
 Mini-Projects Created by [@Klingri](https://github.com/Klingri)

@@ -79,4 +79,4 @@ Please open an issue in our repository and apply the `accessibility` or `a11y` l
 
 # Localization
 
-To translate the Vortex Platform into different languages, I recommend you use the 'translate' feature built-in the Microsoft Edge or Chrome Browser.
+To translate the Vortex Platform into different languages, I recommend you use the 'translate' feature built-in the Microsoft Edge or Chrome Web Browser.
