@@ -16,7 +16,7 @@ If you have found a bug in VortexPro, please help us fix it quickly by [opening 
 If you have an idea or feature request, please [submit a Feature Request](https://github.com/Klingri/VortexPro/issues) and tell us how this enhancement would benefit VortexPro.
 
 ## How You Can Support the Project
-Love using VortexPro? There are several ways you can show your support and help the VortexPro community grow:
+If you love using VortexPro, There are several ways you can show your support and help the VortexPro community grow:
 * **Star the Repository:** Click the ⭐ "Star" button at the top of the VortexPro repository page.
 * **Share the Project:** Mention VortexPro in group chats, comment sections, on social media, or tell your friends about it!
 * **Add a Backlink:** If you are using this in your own project, link back to this repository in your `README.md`. 

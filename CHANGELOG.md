@@ -2,7 +2,7 @@
 
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
-| ?.07.26 | v2.6  | Pre-Alpha | Upcoming release. |
+| 17.07.26 | v2.6  | Pre-Alpha | Quality of life changes. |
 | ?.07.26 | v2.7  | Pre-Alpha | Upcoming release. |
 | ?.08.26 | v2.8 | Pre-Alpha | Upcoming release. |
 | ?.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
@@ -28,7 +28,7 @@
 | ?.??.27 | v4.9  | Late Alpha | Upcoming release. |
 | ?.??.27 | v5.0  | Pre-Beta | Upcoming release. |
 
-- Currently we only keep track of recent versions.
+Currently we only keep track of recent versions.
 
 # Version 2.5
 
@@ -45,9 +45,14 @@
 - Added Alerts when clicking Navbar buttons
 
 # Version 2.6
-- ?.07.2026 - 2.6 (Release Title: The JavaScript Update Part 2)
 
 **Changelogs:**
+
+- 17.07.2026 - 2.6 (Release Title: *The JavaScript Update Part 2*)
+- Made colors look better in the themes manager
+- Renamed colors in themes manager
+- Added new animations while changing other animations
+- Changed all the style colors and hover animations in content.css
 
 # Version 2.7
 - ?.07.2026 - 2.7 (Release Title: The JavaScript Update Part 3)

@@ -14,14 +14,19 @@
 
 #v-thm-mn {
     box-sizing: border-box;
-    position: relative; /* Changed from fixed to flow naturally in document */
-    width: 100%;        /* Now automatically fills the container space */
-    max-width: 500px;   /* Limits size so it doesn't stretch out too far on wide monitors */
-    margin: 15px 0;     /* Gives space between other settings elements */
+    position: relative;
+    /* Changed from fixed to flow naturally in document */
+    width: 100%;
+    /* Now automatically fills the container space */
+    max-width: 500px;
+    /* Limits size so it doesn't stretch out too far on wide monitors */
+    margin: 15px 0;
+    /* Gives space between other settings elements */
     background: var(--bg-main);
     color: var(--text-main);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    display: flex;      /* Keep it visible continuously */
+    display: flex;
+    /* Keep it visible continuously */
     flex-direction: column;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
@@ -111,9 +116,11 @@
 .cl-cntnt::-webkit-scrollbar {
     width: 6px;
 }
+
 .cl-cntnt::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);
 }
+
 .cl-cntnt::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 3px !important;

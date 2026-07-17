@@ -82,7 +82,7 @@ alertTest2.addEventListener('click', function () {
 // Creating a new element out of thin air
 const versionText = document.createElement('div');
 versionText.className = 'custom-feature-box';
-versionText.innerText = 'VortexPro Pre-Alpha v2.5';
+versionText.innerText = 'VortexPro Pre-Alpha v2.6';
 
 // Appending it to the body of the page/popup
 document.body.appendChild(versionText);
@@ -94,13 +94,13 @@ resetButton.innerText = 'Reset';
 saveButton.appendChild(resetButton);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const targetElement = document.querySelector('.btn-download-nav');
-  
-  if (targetElement) {
-    targetElement.addEventListener('click', function () {
-      targetElement.remove();
-    });
-  }
+    const targetElement = document.querySelector('.btn-download-nav');
+
+    if (targetElement) {
+        targetElement.addEventListener('click', function () {
+            targetElement.remove();
+        });
+    }
 });
 
 const helloGreeting = document.querySelector('.profile-username')

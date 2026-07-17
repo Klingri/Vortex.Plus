@@ -1,6 +1,6 @@
 # Suggestion & Feedback Box
 
-Have an idea for a new feature, a design improvement, or found a bug? We’d love to hear from you! Please use the instructions below to submit your feedback.
+If you have an idea for a new feature, a design improvement, or found you a bug, Please use the steps below to submit feedback.
 
 ## 1. Suggestion Details
 * **Title/Summary:** [Give your suggestion a short, descriptive title]
@@ -10,7 +10,7 @@ Have an idea for a new feature, a design improvement, or found a bug? We’d lov
 ## 2. Description
 * **What is the current behavior or problem?**
 * **What is your suggested solution?**
-* **Why should this be implemented?** (e.g., how does it benefit users or the project?)
+* **Why should this be implemented?** (e.g., how does it benefit users or VortexPro?)
 
 ## 3. Context & Examples
 * **Screenshots, mockups, or code snippets:** [Attach or link any helpful images/files]

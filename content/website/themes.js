@@ -29,7 +29,7 @@
         let styl = document.getElementById('v-dyn-css') || document.createElement('style');
         styl.id = 'v-dyn-css';
         (document.head || document.documentElement).appendChild(styl);
-        
+
         styl.innerHTML = `
         body, .navbar, .page, .navbar-search input, .bio-textarea { background:${thm.bg}!important; color:${thm.tx}!important; }
         .btn-primary, .navbar-search bttn, .badge, .btn-play, .status-dot.online { background:${thm.ac}!important; color:${thm.bg}!important; border:none!important; }
@@ -52,7 +52,7 @@
         // 1. CHOOSE YOUR TARGET: Find the settings block container on your page
         // Replace '.settings-container' with the actual class or ID of your settings area
         const targetContainer = document.querySelector('.settings-page') || document.body;
-        
+
         if (document.getElementById('v-thm-mn') || !targetContainer) return;
 
         const gui = document.createElement('div');
@@ -68,7 +68,7 @@
             <div style="height:4px"></div>
             <div class="cl-hd" id="h-usr">▼ My Themes</div><div class="cl-cntnt" id="c-usr" style="display: flex;"></div>
         </div>`;
-        
+
         targetContainer.appendChild(gui);
 
         const tgl_sect = (hd, cnt) => {
@@ -136,7 +136,7 @@
         }
     };
 
- // Automatically build the panel ONLY if we are on the settings URL path
+    // Automatically build the panel ONLY if we are on the settings URL path
     const init_thm_manager = () => {
         // Change '/settings' to whatever matches your settings page URL path
         // For example, if the URL is 'roblox.com/settings' or 'localhost/settings.html'
