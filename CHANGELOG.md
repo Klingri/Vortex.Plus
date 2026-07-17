@@ -3,10 +3,10 @@
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
 | 17.07.26 | v2.6  | Pre-Alpha | Quality of life changes. |
-| ?.07.26 | v2.7  | Pre-Alpha | Upcoming release. |
-| ?.08.26 | v2.8 | Pre-Alpha | Upcoming release. |
-| ?.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
-| ?.09.26 | v3.0  | Pre-Alpha | Upcoming release. |
+| 24.07.26 | v2.7  | Pre-Alpha | Upcoming release. |
+| 29.07.26 | v2.8 | Pre-Alpha | Upcoming release. |
+| 01.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
+| 05.08.26 | v3.0  | Pre-Alpha | Upcoming release. |
 | ?.??.26 | v3.1  | Pre-Alpha | Upcoming release. |
 | ?.??.26 | v3.2  | Pre-Alpha | Upcoming release. |
 | ?.??.26 | v3.3  | Pre-Alpha | Upcoming release. |
@@ -28,13 +28,15 @@
 | ?.??.27 | v4.9  | Late Alpha | Upcoming release. |
 | ?.??.27 | v5.0  | Pre-Beta | Upcoming release. |
 
-Currently we only keep track of recent versions.
+Currently I only keep track of recent versions.
 
 # Version 2.5
+#### 05.07.2026
+#### 2.5 *The JavaScript Update Part 1*
+Massive update I would say, it removed and added a lot of things.
 
 **Changelogs:**
 
-- 05.07.2026 - 2.5 (Release Title: The JavaScript Update Part 1)
 - Removed popup and settings page
 - made components, features and pages folders
 - Removed image.png
@@ -45,131 +47,165 @@ Currently we only keep track of recent versions.
 - Added Alerts when clicking Navbar buttons
 
 # Version 2.6
+#### 17.07.2026
+#### 2.6 *The JavaScript Update Part 2*
+This update was more so a Quality of Life Update.
 
 **Changelogs:**
 
-- 17.07.2026 - 2.6 (Release Title: *The JavaScript Update Part 2*)
 - Made colors look better in the themes manager
 - Renamed colors in themes manager
 - Added new animations while changing other animations
 - Changed all the style colors and hover animations in content.css
 
 # Version 2.7
-- ?.07.2026 - 2.7 (Release Title: The JavaScript Update Part 3)
+#### 24.07.2026
+#### 2.7 *The JavaScript Update Part 3*
 
 **Changelogs:**
 
 # Version 2.8
-- ?.07.2026 - 2.8 (Release Title: The JavaScript Update Part 4)
+#### 29.07.2026
+#### 2.8 *The JavaScript Update Part 4*
 
 **Changelogs:**
 
 # Version 2.9
-- ?.07.2026 - 2.9 (Release Title: The JavaScript Update Part 5)
+#### 01.08.2026
+#### 2.9 *The JavaScript Update Part 5*
 
 **Changelogs:**
 
 # Version 3.0
-- ?.??.2026 - 3.0 (Release Title: The JavaScript Update Part 6)
+#### 05.08.2026
+#### 3.0 *The JavaScript Update Part 6*
 
 **Changelogs:**
 
 # Version 3.1
-- ?.??.2026 - 3.1 (Release Title: The JavaScript Update Part 7?)
+#### ??.??.2026
+#### 3.1 *The JavaScript Update Part 7?*
 
 **Changelogs:**
 
 # Version 3.2
-- ?.??.2026 - 3.2 (Release Title: The JavaScript Update Part 8?)
+#### ??.??.2026
+#### 3.2 *The JavaScript Update Part 8?*
 
 **Changelogs:**
 
 # Version 3.3
-- ?.??.2026 - 3.3 (Release Title: The JavaScript Update Part 9?)
+#### ??.??.2026
+#### 3.3 *The JavaScript Update Part 9?*
 
 **Changelogs:**
 
 # Version 3.4
-- ?.??.2026 - 3.4 (Release Title: The JavaScript Update Part 10?)
+#### ??.??.2026
+#### 3.4 *The JavaScript Update Part 10?*
+#### Scheduled Discontinuation of Pre-Alpha Development.
 
 **Changelogs:**
 
 # Version 3.5
-- ?.??.2026 - 3.5 (Release Title: The JavaScript Update Part 11?)
+#### ??.??.2026
+#### 3.5 *The JavaScript Update Part 11?*
+#### Scheduled beginning of Early-Alpha Development.
 
 **Changelogs:**
 
 # Version 3.6
-- ?.??.???? - 3.6 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 3.6 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 3.7
-- ?.??.???? - 3.7 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 3.7 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 3.8
-- ?.??.???? - 3.8 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 3.8 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 3.9
-- ?.??.???? - 3.9 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 3.9 *The JavaScript Update?*
+#### Scheduled Discontinuation of Early-Alpha Development.
 
 **Changelogs:**
 
 # Version 4.0
-- ?.??.???? - 4.0 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 4.0 *The JavaScript Update?*
+#### Scheduled beginning of Mid-Alpha Development.
 
 **Changelogs:**
 
 # Version 4.1
-- ?.??.???? - 4.1 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 4.1 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 4.2
-- ?.??.???? - 4.2 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 4.2 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 4.3
-- ?.??.???? - 4.3 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 4.3 *The JavaScript Update?*
 
 **Changelogs:**
 
 # Version 4.4
-- ?.??.???? - 4.4 (Release Title: The JavaScript Update?)
+#### ??.??.????
+#### 4.4 *The JavaScript Update?*
+#### Scheduled Discontinuation of Mid-Alpha Development.
 
 **Changelogs:**
 
 # Version 4.5
-- ?.??.???? - 4.5 (Release Title: ?)
+#### ??.??.????
+#### 4.5 *?*
+#### Scheduled beginning of Late-Alpha Development.
 
 **Changelogs:**
 
 # Version 4.6
-- ?.??.???? - 4.6 (Release Title: ?)
+#### ??.??.????
+#### 4.6 *?*
 
 **Changelogs:**
 
 # Version 4.7
-- ?.??.???? - 4.7 (Release Title: ?)
+#### ??.??.????
+#### 4.7 *?*
 
 **Changelogs:**
 
 # Version 4.8
-- ?.??.???? - 4.8 (Release Title: ?)
+#### ??.??.????
+#### 4.8 *?*
 
 **Changelogs:**
 
 # Version 4.9
-- ?.??.???? - 4.9 (Release Title: ?)
+#### ??.??.????
+#### 4.9 *?*
+#### Scheduled Discontinuation of Late-Alpha Development.
 
 **Changelogs:**
 
 # Version 5.0
-- ?.??.???? - 5.0 (Release Title: ?)
+#### ??.??.????
+#### 5.0 *?*
+#### Scheduled beginning of Early-Beta Development.
 
 **Changelogs:**

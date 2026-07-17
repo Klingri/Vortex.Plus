@@ -1,15 +1,20 @@
 ## Current (notable) Features
-The most important features are listed below:
+
+<p>The first 6 features on the table are fully made and contributed by @Klingri, the others by someone else. The most important features are listed below:</p>
 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
-| **Dark Mode** | Full platform-wide dark theme. | @Klingri
+| **Dark Mode** | Full platform-wide dark theme. |
 | **Improved Accesibility** | Nice. |
-| **Animations & Effects** | Beautiful Animations and effects. |
-| **Hover Animations** | Instant dopamine. |
+| **Animations & Effects** | Beautiful Animations & effects. |
+| **Hover Animations** | Instant satisfaction. |
 | **Custom VortexPro Settings** | Customization. |
-| **Custom Friends button on navbar** | Easy shortcut. | All above made by Klingri.
+| **Custom Friends button on navbar** | Easy shortcut. |
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
+
+<div align="center">
+<a href="https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md">Recent Version History List here.</a>
+</div>
 
 ## Roadmap
 
@@ -26,19 +31,25 @@ Please note that this roadmap is subject to change. Features may be added, remov
 
 ## Q&A
 
-more questions [here.](https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md)
+<div align="center">
+<p>more questions <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md">here.</a></p>
+</div>
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
 General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
 Security | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
-General | **You were in a controversy, are you not trustable?** | Feel free to not use the extension.
-Updating | **How Often does VortexPro update?** | Typically every few days, however VortexPro may go weeks without updates if it's not needed.
+General | **I dislike you and I suspect that VortexPro is malware, what should I do?** | Feel free to not download and not use VortexPro.
+General | **Someone gave me a link to download VortexPro?** | The only official and safe download of VortexPro is on Klingri's Github, nowhere else, they are likely trying to scam or hack you.
+Updating | **How Often does VortexPro update?** | Typically VortexPro Updates every few days, however VortexPro may go weeks without updates for many reasons.
 General | **Is VortexPro Free & open-source?** | Yes.
-Contribution | **Can I contribute or develop for VortexPro?** | Currently, no contributors are allowed and the only way to contribute is by giving feedback and suggestions.
-Compatibility | **Can I use an older version of VortexPro?** | Yes but older versions may not work if the website url changed and the elements got changed or re-named.
-Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experienc with using VortexPro.
-Other | **My question isn't listed here?** | Ask me a question somewhere I guess.
+Contribution | **Can I contribute or develop for VortexPro?** | I currently do not accept direct contributions. Instead, the only way to contribute is by giving feedback and suggestions.
+Compatibility | **Can I use an older version of VortexPro?** | Yes, but older versions may fail if the Vortex website URL or its underlying elements have changed.
+Compatibility | **Will you ever fix VortexPro versions prior to version <2.4 not working?** | If you mean the website URL, probably not any time soon as vortex changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, probably not any time soon, but you can attempt it yourself.
+Compatibility | **Will you ever port VortexPro to FireFox?** | No. VortexPro will not be ported over to Firefox at least not right now. maybe in the far far future.
+Mission | **Whats the end goal for VortexPro?** | To give Vortex user's more control, customization, and make the vortex platform a nicer place.
+Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experience with using VortexPro.
+Other | **My question isn't listed here?** |  feel free to ask me any questions somewhere.
 
 ## Forks & Mini-Projects
 WIP

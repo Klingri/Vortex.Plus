@@ -1,11 +1,20 @@
 # Issues & Stability
 
-To avoid strict compliance requirements, the VortexPro browser extension is distributed outside the Chrome Web Store. This means it requires manual updates. It is currently in early alpha testing with dark mode and themes enabled. Users should expect occasional bugs and instability prior to the stable full release.
+To avoid strict compliance requirements, the VortexPro browser extension is distributed outside the Chrome Web Store. This means it requires manual updates. It is currently in early alpha development with dark mode and themes enabled. Users should expect occasional bugs and instability prior to the stable full release.
 
-- **Performance:** These experimental updates may cause performance issues on lower-end systems.
-- **UI Glitches:** Minor UI display issues may occur on certain places.
+<div align="center">
+<p>View the full list of Issues <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
+</div>
 
-**Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).**
+<ul>
+    <li><strong>Performance:</strong> These experimental updates may cause performance issues on lower-end systems.</li>
+    <li><strong>UI Glitches:</strong> Minor UI display issues may occur on certain places.</li>
+    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded it.</li>
+    <li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li>
+    <li><strong>Themes:</strong> VortexPro looks best in Dark mode, as that was what it was designed for. I can't guarantee that light mode or other themes look good.</li>
+  </ul>
+
+*Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).*
 
 - The Extension may suffer from a wide variety of Issues (WIP)
 
@@ -18,9 +27,9 @@ To avoid strict compliance requirements, the VortexPro browser extension is dist
 
 # Compatability
 
-- Currently, the extension is incompatible with Firefox and Firefox-based browsers. While it works on Safari and Chromium-based browsers, functionality may vary, and we cannot guarantee a consistent experience across all platforms.
+<li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li><br>
 
-- Here's a list of all compatible browsers, extensions, forks and operating systems:
+Here's a list of all compatible browsers, extensions, forks and operating systems:
 
 ## Summary
 * **Current Status:** [Stable]

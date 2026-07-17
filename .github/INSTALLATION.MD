@@ -12,6 +12,7 @@
    - Opera/OperaGX: `opera://extensions`
    - Arc: `arc://extensions`
    - Helium: `helium://extensions`
+   - Yandex: `browser://extensions`
 4. **Developer Mode:** Toggle the **Developer mode** switch in the top right.
 5. **Load Unpacked:** Click **"Load unpacked"** and select the folder you just extracted.
 
