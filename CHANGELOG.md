@@ -61,42 +61,49 @@ This update was more so a Quality of Life Update.
 # Version 2.7
 #### 24.07.2026
 #### 2.7 *The JavaScript Update Part 3*
+Description
 
 **Changelogs:**
 
 # Version 2.8
 #### 29.07.2026
 #### 2.8 *The JavaScript Update Part 4*
+Description
 
 **Changelogs:**
 
 # Version 2.9
 #### 01.08.2026
 #### 2.9 *The JavaScript Update Part 5*
+Description
 
 **Changelogs:**
 
 # Version 3.0
 #### 05.08.2026
 #### 3.0 *The JavaScript Update Part 6*
+Description
 
 **Changelogs:**
 
 # Version 3.1
 #### ??.??.2026
 #### 3.1 *The JavaScript Update Part 7?*
+Description
 
 **Changelogs:**
 
 # Version 3.2
 #### ??.??.2026
 #### 3.2 *The JavaScript Update Part 8?*
+Description
 
 **Changelogs:**
 
 # Version 3.3
 #### ??.??.2026
 #### 3.3 *The JavaScript Update Part 9?*
+Description
 
 **Changelogs:**
 
@@ -104,6 +111,7 @@ This update was more so a Quality of Life Update.
 #### ??.??.2026
 #### 3.4 *The JavaScript Update Part 10?*
 #### Scheduled Discontinuation of Pre-Alpha Development.
+Description
 
 **Changelogs:**
 
@@ -111,63 +119,73 @@ This update was more so a Quality of Life Update.
 #### ??.??.2026
 #### 3.5 *The JavaScript Update Part 11?*
 #### Scheduled beginning of Early-Alpha Development.
+Description
 
 **Changelogs:**
 
 # Version 3.6
 #### ??.??.????
-#### 3.6 *The JavaScript Update?*
+#### 3.6 *The JavaScript Update Part 12?*
+Description
 
 **Changelogs:**
 
 # Version 3.7
 #### ??.??.????
-#### 3.7 *The JavaScript Update?*
+#### 3.7 *?*
+Description
 
 **Changelogs:**
 
 # Version 3.8
 #### ??.??.????
-#### 3.8 *The JavaScript Update?*
+#### 3.8 *?*
+Description
 
 **Changelogs:**
 
 # Version 3.9
 #### ??.??.????
-#### 3.9 *The JavaScript Update?*
+#### 3.9 *?*
 #### Scheduled Discontinuation of Early-Alpha Development.
+Description
 
 **Changelogs:**
 
 # Version 4.0
 #### ??.??.????
-#### 4.0 *The JavaScript Update?*
+#### 4.0 *?*
 #### Scheduled beginning of Mid-Alpha Development.
+Description
 
 **Changelogs:**
 
 # Version 4.1
 #### ??.??.????
-#### 4.1 *The JavaScript Update?*
+#### 4.1 *?*
+Description
 
 **Changelogs:**
 
 # Version 4.2
 #### ??.??.????
-#### 4.2 *The JavaScript Update?*
+#### 4.2 *?*
+Description
 
 **Changelogs:**
 
 # Version 4.3
 #### ??.??.????
-#### 4.3 *The JavaScript Update?*
+#### 4.3 *?*
+Description
 
 **Changelogs:**
 
 # Version 4.4
 #### ??.??.????
-#### 4.4 *The JavaScript Update?*
+#### 4.4 *?*
 #### Scheduled Discontinuation of Mid-Alpha Development.
+Description
 
 **Changelogs:**
 
@@ -175,24 +193,28 @@ This update was more so a Quality of Life Update.
 #### ??.??.????
 #### 4.5 *?*
 #### Scheduled beginning of Late-Alpha Development.
+Description
 
 **Changelogs:**
 
 # Version 4.6
 #### ??.??.????
 #### 4.6 *?*
+Description
 
 **Changelogs:**
 
 # Version 4.7
 #### ??.??.????
 #### 4.7 *?*
+Description
 
 **Changelogs:**
 
 # Version 4.8
 #### ??.??.????
 #### 4.8 *?*
+Description
 
 **Changelogs:**
 
@@ -200,6 +222,7 @@ This update was more so a Quality of Life Update.
 #### ??.??.????
 #### 4.9 *?*
 #### Scheduled Discontinuation of Late-Alpha Development.
+Description
 
 **Changelogs:**
 
@@ -207,5 +230,6 @@ This update was more so a Quality of Life Update.
 #### ??.??.????
 #### 5.0 *?*
 #### Scheduled beginning of Early-Beta Development.
+Description
 
 **Changelogs:**

@@ -1,6 +1,6 @@
 # Suggestion & Feedback Box
 
-If you have an idea for a new feature for VortexPro, a design improvement for VortexPro, or found you a bug in VortexPro, Please use the steps below to submit feedback.
+If you have an idea for a new feature for *VortexPro,* a design improvement for *VortexPro,* a feature request for *VortexPro* or you found a bug in *VortexPro,* Please use the steps below to submit feedback.
 
 ## 1. Suggestion Details
 * **Title/Summary:** [Give your suggestion a short, descriptive title]

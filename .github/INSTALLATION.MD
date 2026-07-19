@@ -68,4 +68,4 @@ Best for development, debugging, or unsupported platforms.
 * **Issue:** Another common pitfall.
   **Fix:** Solution.
 
-*Need more help? Check out our full [Documentation](insert-link) or open an issue in the [Issue Tracker](https://github.com/Klingri/VortexPro/issues/new).*
+*Need more help? Check out VortexPro's full [Documentation](insert-link) or open an issue in the [Issue Tracker](https://github.com/Klingri/VortexPro/issues/new).*

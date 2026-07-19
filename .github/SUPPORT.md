@@ -1,6 +1,3 @@
-# Support
-Thanks for using VortexPro! I want to make sure you have the best possible experience. Please review the resources below to find the help you need or learn how to support me and my projects.
-
 ## Need Help?
 If you have questions about using VortexPro, run into issues, or need to clarify a concept, please start by doing the following:
 1. **Check the Documentation:** Review the `README.md` and VortexPro's [Documentation](insert-docs-link-here) to see if your question is already answered.
