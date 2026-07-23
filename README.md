@@ -8,7 +8,7 @@
 
 ## Why VortexPro Exists
 
-<p>When I joined the Vortex Platform on May 5, 2026, It was underwhelming for me. The interface was basic and too bright, there was almost no functionality besides friending people, joining maps, browsing, and there was no native dark mode or custom control, this is why I created <a href="https://klingri.github.io/VortexPro/">VortexPro</a> the very same day, I wanted dark mode badly and I wasn't going to wait for it, I made it myself. Now months later VortexPro is more than a dark mode extension now.</p>
+<p>When I joined the Vortex Platform on May 5, 2026, It was underwhelming for me. The interface was basic and too bright, there was almost no functionality besides friending people, joining maps, browsing, and there was no native dark mode or custom control, this is why I created <a href="https://klingri.github.io/VortexPro/">VortexPro</a> the very same day, I wanted dark mode badly and I wasn't going to wait for it, I made it myself.</p>
 
 **VortexPro is what Vortex should have been:**
 
@@ -26,17 +26,17 @@
 <ul>
     <li>
     <i>VortexPro</i> is <b>not</b> affiliated, associated, or endorsed by Vortex Platform. Vortex and its various marks and logos are trademarks of Vortex.</li>
-    <li><i>VortexPro</i> is <b>safe</b> and contains no malware. VortexPro's source code is fully open for review. Any script actions are strictly for core features, such as automatic updates and safe external integrations.</li>
+    <li><i>VortexPro</i> is completely <b>safe,</b> malware-free, and transparently open-source, with all script actions strictly limited to core functions like updates and secure integrations.</li>
     <li>
     <i>VortexPro</i> is not obfuscated, and it is perfectly <b>safe.</b> I try to provide readable code whenever possible, and I cannot guarantee that every section is fully de-obfuscated.</li>
     <li>
     To use <i>VortexPro</i>, you must agree to the Vortex and VortexPro Terms of Service.</li>
     <li>
-    <i>VortexPro</i> isn't trying to be the best vortex extension with the most features, just the most <i>friendly.</i></li>
-    <li>Support future development of <i>VortexPro</i> by starring this repository, following me on GitHub, sharing the project with others and making videos using VortexPro.</li><li>
-    There are many misunderstandings circulating about <i>VortexPro.</i> Please reach out directly to me if you have any questions.
+    <i>VortexPro</i> isn't trying to be the best vortex extension with the most features, just the most <i>user friendly.</i></li>
+    <li>Support <i>VortexPro</i> by starring the repository, following me on GitHub, sharing the project, or creating showcase videos.</li><li>
+    Please reach out directly to me if you have any questions about <i>VortexPro.</i>
 </li>
-<li>After a new version releases, the older version immediately <strong>looses</strong> full and total support.</li>
+<li>As soon as a new version drops, support for the old version <strong>stops.</strong></li>
   </ul>
 
 <div align="center">
@@ -77,10 +77,10 @@
 
 <ul>
     <li><strong>Performance:</strong> Experimental updates may cause performance instability and looses on less capable hardware.</li>
-    <li><strong>UI Issues & UI Glitches:</strong> UI display issues may occur on certain elements.</li>
+    <li><strong>UI Issues & UI Glitches:</strong> Some elements may display incorrectly.</li>
     <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded VortexPro.</li>
-    <li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li>
-    <li><strong>Themes:</strong> VortexPro looks best in Dark mode, as that was what it was designed for. I can't guarantee that light mode or other themes look good.</li>
+    <li><strong>Compatibility:</strong> VortexPro might not work with Firefox or other vortex extensions.</li>
+    <li><strong>Themes:</strong> VortexPro looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
   </ul>
 
 <p><i>Submit bugs via <a href="https://github.com/Klingri/VortexPro/issues">GitHub Issues</a></i></p>

@@ -108,22 +108,6 @@ body,
     color: var(--text-main) !important;
 }
 
-.bio-label button:hover,
-.bio-editor-footer button:hover {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-
 #username,
 #password {
     border: 0px !important;
@@ -131,14 +115,10 @@ body,
 }
 
 .btn-secondary {
-    background-color: var(--input-bg) !important;
+    background-color: var(--card-bg) !important;
     color: #777777 !important;
     border: 0px none !important;
     border-color: none !important;
-}
-
-.profile-last-seen {
-    color: var(--text-main);
 }
 
 /* Ported over VortexUltra 02/07/2026 Version 2.4 Pre-Alpha*/
@@ -165,7 +145,7 @@ body,
     left: -30px;
     right: -30px;
     height: 120px;
-    background: linear-gradient(90deg, #b11a21, #7e22ce);
+    background: linear-gradient(90deg, #091E3A, #2F80ED, #2D9EE0);
     z-index: -1;
     border-radius: 20px 20px 0 0;
     opacity: 0.6;
@@ -192,25 +172,11 @@ body,
     color: #777777 !important;
 }
 
-.navbar-logo:hover,
-.btn-play:hover {
-    transform: scale(1.15);
-    transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
 /* Friend Cards hover effect */
 .friend-card {
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
     border-radius: 10px;
     will-change: transform;
-}
-
-.friend-card:hover {
-    transform: translateY(-5px);
-    background: #0000001a !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Smooth separators */
@@ -225,7 +191,7 @@ body,
 .profile-avatar-wrap {
     position: relative;
     padding: 5px;
-    background: linear-gradient(45deg, #d4af37, #3498db);
+    background: linear-gradient(45deg, #59CDE9, #0A2A88);
     border-radius: 50%;
 }
 
@@ -243,36 +209,23 @@ body,
     border: var(--accent) !important;
 }
 
-.user-card-name {
-    color: var(--text-main) !important;
-}
-
-.user-card-avatar:hover {
-    background-image: none !important;
-}
-
-.market-card {
-    background-color: var(--bg-main-bg) !important;
-    background: var(--input-bg) !important;
-}
-
 .catalog-section-divider,
-.catalog-header {
-    background-color: var(--bg-main-bg) !important;
+.catalog-header,
+.dl-notice,
+.dl-code,
+.market-card {
+    background-color: var(--bg-main) !important;
     background: var(--input-bg) !important;
     border: var(--card-bg) !important;
 }
 
-.dl-notice {
-    background-color: var(--bg-main-bg) !important;
-    background: var(--input-bg) !important;
+.games-grid,
+.body-colors-grid {
+    padding: 8px 15px;
 }
 
-.market-card:hover,
-.face-card:hover,
-.game-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.page-title button {
+    margin-left: 20px;
 }
 
 .catalog-title {
@@ -284,28 +237,22 @@ body,
     justify-items: center !important;
 }
 
-.tag:hover {
-    background-color: #1b5e20;
-    transform: scale(1.05);
-    transition: 0.7ms !important;
-    border-radius: 8px !important;
-    transition: all 0.3s ease;
+.user-card,
+.user-card-actions,
+.user-card-name {
+    background-color: var(--card-bg) !important;
+    background-color: var(--card-bg) !important;
     color: var(--text-main) !important;
 }
 
-.carousel-arrow:hover {
-    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-    background: #444444 !important;
-    transform: scaleY(-3px) !important;
-    border-radius: 14px !important;
-}
-
 .game-detail-info,
-.game-description-box {
+.game-description-box,
+.profile-info-panel,
+.error-msg {
     text-align: center;
 }
 
+/*makes game text yellow*/
 .game-card-title,
 .game-detail-title,
 .game-description-label {
@@ -328,18 +275,15 @@ label,
 .tab-btn.active,
 .user-row-name,
 .game-stat-value,
-input {
+input,
+.user-card-name,
+.profile-last-seen {
     color: var(--text-main) !important;
 }
 
 /* Color for Selection */
 body::selection {
     background-color: #B22222;
-}
-
-.profile-info-panel,
-.error-msg {
-    text-align: center;
 }
 
 /* Different Cursor State */
@@ -351,7 +295,7 @@ body::selection {
 .profile-username:hover,
 .info-msg:hover,
 .section-header:hover,
-.page-title:hover,
+.page-title h1:hover,
 .game-stat-value:hover,
 .profile-last-seen:hover,
 .game-detail-title:hover,
@@ -371,32 +315,11 @@ body::selection {
 .ban-value:hover,
 .ban-sub:hover,
 .error-msg:hover,
-.ban-card h1:hover {
+.ban-card h1:hover,
+.section-grid-header:hover,
+.pagination-info:hover,
+.nav-text:hover {
     cursor: default !important;
-}
-
-/* Animation when Hovering */
-.navbar-actions a:hover,
-.navbar-actions button:hover,
-.tag:hover,
-.btn-secondary:hover,
-.game-banner:hover,
-.game-stat:hover,
-.game-description-box:hover,
-.profile-info-panel:hover,
-.bio-box:hover,
-.game-card:hover,
-.profile-avatar-wrap:hover,
-#save-btn:hover,
-#rotate-toggle:hover,
-.color-swatch,
-.market-card {
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 14px !important;
-    transform: translateY(-4px);
-    box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.08),
-        0 14px 40px rgba(0, 0, 0, 0.12);
 }
 
 /* Animations for Hovering Things */
@@ -421,7 +344,7 @@ body::selection {
 .bio-label:hover,
 .profile-meta:hover,
 .profile-avatar:hover,
-.page-title:hover,
+.page-title h1:hover,
 .info-msg:hover,
 .catalog-title:hover,
 .catalog-section-divider:hover,
@@ -435,16 +358,17 @@ body::selection {
     transform: translateY(-2px);
 }
 
+/*text underline*/
 .game-card-meta:hover,
 .game-stat-value:hover,
 .game-stat-label:hover,
 .btn-play:hover,
 .section-title:hover,
-.page-title:hover,
+.page-title h1:hover,
 .friend-name:hover,
 .game-description-text:hover,
 .game-card-title:hover,
-.site-footer-links:hover,
+.site-footer-links a:hover,
 .catalog-title:hover,
 .catalog-section-divider:hover,
 .dl-hero-title:hover,
@@ -473,12 +397,15 @@ body::selection {
 .settings-heading:hover,
 .modal-step-desc:hover,
 .ban-card h1:hover,
-.section-link:hover {
+.section-link:hover,
+.section-grid-header:hover,
+.nav-text:hover {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-underline-offset: 0.4em;/
 }
 
+/*nav buttons*/
 .body-type-btn:hover {
     background: #c864a7 !important;
     transform: translateY(-1px);
@@ -487,7 +414,10 @@ body::selection {
 }
 
 .body-type-btn.active:hover,
-.btn-download:hover {
+.btn-download:hover,
+#rotate-toggle:hover,
+.btn-play:hover,
+#save-btn:hover {
     background: #2e4bcc !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -501,12 +431,42 @@ body::selection {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+#search-form button:hover,
+.btn-secondary:hover,
+.btn-primary:hover {
+    background: #2e4bcc !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
 /* Make the profile avatar grow when hovered */
 .profile-avatar:hover {
     transform: scale(1.15);
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+.user-card-avatar:hover {
+    background-image: none !important;
+}
+
+.bio-label button:hover,
+.bio-editor-footer button:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: var(--text-main) !important;
+}
+
+
+/*profile stats*/
 .profile-stat:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.1);
@@ -514,28 +474,46 @@ body::selection {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.user-card-avatar:hover {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
-    /* Adds a high-end glassmorphism feel */
-    transform: translateY(-6px) scale(1.02);
-    /* Layered shadow for a realistic, soft depth perception */
-    box-shadow:
-        0px 20px 40px rgba(0, 0, 0, 0.3),
-        0px 1px 3px rgba(255, 255, 255, 0.1) inset;
+.tag:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+    transition: 0.7ms !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    color: var(--text-main) !important;
 }
 
+.friend-card:hover {
+    transform: translateY(-5px);
+    background: #0000001a !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-arrow:hover {
+    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    background: #444444 !important;
+    transform: scaleY(-3px) !important;
+    border-radius: 14px !important;
+}
+
+.market-card:hover,
+.face-card:hover,
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*footer*/
 .site-footer-links a:hover:hover {
     background: rgba(239, 68, 68, 0.85) !important;
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0px 20px 35px rgba(239, 68, 68, 0.35);
 }
 
-/* Game play button animation */
-
-.btn-primary:hover,
 .user-card-actions button,
-.user-card-actions button:hover,
 .site-footer-links a,
 .site-footer-links a:hover {
     transform: scale(1);
@@ -551,57 +529,4 @@ body::selection {
     border: none !important;
     color: var(--text-main) !important;
 
-}
-
-.btn-play {
-    transform: scale(1.075);
-    transition: 0.2s;
-    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: var(--input-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-.btn-play:hover {
-    transform: scale(1.075);
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: var(--input-bg) !important;
-    border: none !important;
-    color: var(--text-main) !important;
-
-}
-
-/* Animation for the online thingy on profiles */
-.status-dot.online {
-    box-shadow: 0 0 8px var(--accent);
-    animation: smoothPulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes smoothPulse {
-
-    0%,
-    100% {
-        box-shadow: 0 0 8px 0px rgba(var(--accent-rgb), 0.6);
-        transform: scale(1);
-    }
-
-    50% {
-        box-shadow: 0 0 20px 6px rgba(var(--accent-rgb), 0.9);
-        transform: scale(1.02);
-        /* Optional slight scale for depth */
-    }
 }

@@ -1,6 +1,6 @@
-# Issues & Stability
+## Issues & Stability
 
-To avoid strict compliance requirements, the *VortexPro* browser extension is distributed outside the Chrome Web Store. This means it requires manual updates. It is currently in *early alpha* development with *dark mode* and *themes enabled.* Users should expect occasional *bugs* and *instability* prior to the stable full release.
+*VortexPro* is in early alpha with dark mode and themes enabled, meaning it is unstable and has bugs. Because it is distributed outside the Chrome Web Store to bypass strict rules, users must update it manually before the stable release.
 
 <div align="center">
 <p>View the full list of Issues <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
@@ -25,7 +25,7 @@ To avoid strict compliance requirements, the *VortexPro* browser extension is di
 | **Severity / Priority** | *Low / Medium / High / Critical* |
 | **App Version** | *v1.2.3* |
 
-# Compatability
+## Compatability
 
 <li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li><br>
 

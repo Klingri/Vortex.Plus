@@ -73,16 +73,8 @@
     padding: 8px 15px;
 }
 
-#search-form button:hover {
-    padding: 8px !important;
-    border: 0px none !important;
-    color: #FFF !important;
-    background-color: var(--input-bg) !important;
-    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    backface-visibility: hidden;
-    background-color: var(--input-bg-hover, #333) !important;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/*logo hover on navbar*/
+.navbar-logo:hover {
+    transform: scale(1.15);
+    transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }

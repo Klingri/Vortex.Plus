@@ -31,7 +31,7 @@ friendShortcut.addEventListener('click', function () {
 
 const navLogo = document.querySelector('.navbar');
 const navText = document.createElement('h6');
-navText.innerText = 'VortexPro v2.5';
+navText.innerText = 'VortexPro v2.6';
 navText.className = 'nav-text';
 navText.style.color = '#FFF';
 navLogo.appendChild(navText);
