@@ -10,7 +10,8 @@
 
 /* Enhancing mavbar Buttons */
 .navbar-actions a,
-.navbar-actions button {
+.navbar-actions button,
+.navbar-pill {
     border-radius: 8px !important;
     padding: 8px 15px !important;
     transition: all 0.3s ease;
@@ -24,17 +25,9 @@
     color: #FFF !important;
 }
 
-/*hover changing colors in navbar*/
-/* The download button turns green when you hover it*/
-.btn-download-nav:hover {
-    background-color: #48b84d !important;
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-
 /* The logout button turns red when you hover it*/
-#logout-btn:hover {
+#logout-btn:hover,
+#delete-account-open-btn:hover {
     background-color: #d93838 !important;
     transform: translateY(-2px) scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -49,32 +42,17 @@
 }
 
 /* The discord button turns blue when you hover it*/
-.btn-discord:hover {
+.navbar-icon-btn:hover,
+.navbar-pill-btn:hover {
     background-color: #5865F2 !important;
     transform: translateY(-2px) scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
-/* Search Bar Polish */
-#search-input {
-    border-radius: 20px 0 0 20px !important;
-    border: 1px solid #3e3e4a !important;
-    background: #1a1a1d !important;
-    color: white !important;
-    padding: 8px 15px !important;
-}
-
-#search-form button {
-    border-radius: 0 20px 20px 0 !important;
-    background: #3e3e4a !important;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-}
-
 /*logo hover on navbar*/
-.navbar-logo:hover {
+.navbar-logo:hover,
+.site-footer-logo:hover {
     transform: scale(1.15);
     transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }

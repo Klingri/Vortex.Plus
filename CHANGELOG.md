@@ -3,7 +3,7 @@
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
 | 17.07.26 | v2.6  | Pre-Alpha | Quality of life changes. |
-| 24.07.26 | v2.7  | Pre-Alpha | Upcoming release. |
+| 27.07.26 | v2.7  | Pre-Alpha | Fixed the extension. |
 | 29.07.26 | v2.8 | Pre-Alpha | Upcoming release. |
 | 01.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
 | 05.08.26 | v3.0  | Pre-Alpha | Upcoming release. |
@@ -61,7 +61,11 @@ This update was more so a Quality of Life Update.
 # Version 2.7
 #### 24.07.2026
 #### 2.7 *The JavaScript Update Part 3*
-Description
+This update mostly was about fixing and adapting to the new massive vortex website update.
+
+- Added 2 new buttons in navbar
+- Fixed styles
+- Small fixes
 
 **Changelogs:**
 

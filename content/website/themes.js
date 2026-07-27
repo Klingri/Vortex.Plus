@@ -1,6 +1,6 @@
 (function () {
     const prsts = [
-        { nm: "Vortex Purple", bg: "#ccccca", ac: "#4B0082", tx: "#111", br: "#B19CD9" },
+        { nm: "Beige White", bg: "#ccccca", ac: "#4B0082", tx: "#111", br: "#B19CD9" },
         { nm: "Red Tomato", bg: "#b30000", ac: "#2b2b2b", tx: "#990000", br: "#ff1a1a" },
         { nm: "Cyan Diamond", bg: "#00a2cc", ac: "#3198aa", tx: "#111", br: "#00b8d8" },
         { nm: "Navy Blue", bg: "#1a56db", ac: "#3931aa", tx: "#111", br: "#001cbd" },

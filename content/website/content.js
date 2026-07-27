@@ -13,3 +13,14 @@ if (originalElemente) {
   // 3. Insert the clone into the DOM (e.g., appending it to the body)
   document.body.appendChild(clonedElement);
 }
+
+const alertButton = document.querySelector('.load-notice')
+const deleteAlrtButton = document.createElement('div');
+deleteAlrtButton.className = 'alertDeleteBtn';
+deleteAlrtButton.innerText = 'Dismiss Alert';
+alertButton.appendChild(deleteAlrtButton);
+
+const avatarTest = document.querySelector('.avatar-render-box')
+avatarTest.addEventListener('click', function () {
+  window.location.href = "https://playvortex.io/catalog";
+});

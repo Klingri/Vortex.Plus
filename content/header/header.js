@@ -2,7 +2,8 @@
 const navButton = document.querySelector('.navbar');
 const newElement = document.createElement("a");
 newElement.innerText = 'Vpro Github';
-newElement.className = 'btn-discord';
+newElement.className = 'vpro-nav-btn';
+newElement.style.padding = '4px';
 newElement.style.backgroundColor = '#4c87af';
 navButton.appendChild(newElement);
 newElement.addEventListener('click', function () {
@@ -12,7 +13,7 @@ newElement.addEventListener('click', function () {
 const navArea = document.querySelector('.navbar');
 const vproSettings = document.createElement("a");
 vproSettings.innerText = 'Vpro Settings';
-vproSettings.className = 'btn-discord';
+vproSettings.className = 'vpro-nav-btn';
 vproSettings.style.backgroundColor = '#4c87af';
 navArea.appendChild(vproSettings);
 vproSettings.addEventListener('click', function () {
@@ -22,16 +23,37 @@ vproSettings.addEventListener('click', function () {
 const navPlace = document.querySelector('.navbar');
 const friendShortcut = document.createElement("a");
 friendShortcut.innerText = 'Friends';
-friendShortcut.className = 'btn-discord';
+friendShortcut.className = 'vpro-nav-btn';
 friendShortcut.style.backgroundColor = '#4c87af';
 navPlace.appendChild(friendShortcut);
 friendShortcut.addEventListener('click', function () {
     window.location.href = "https://playvortex.io/social?user=&tab=friends";
 });
 
+const navProfilePlace = document.querySelector('.navbar');
+const profileShortcut = document.createElement("a");
+profileShortcut.innerText = 'Halos Profile';
+profileShortcut.className = 'vpro-nav-btn';
+profileShortcut.style.backgroundColor = '#4c87af';
+navProfilePlace.appendChild(profileShortcut);
+profileShortcut.addEventListener('click', function () {
+    window.location.href = "https://playvortex.io/users/1/profile";
+});
+
+const navGamePlace = document.querySelector('.navbar');
+const playShortcut = document.createElement("a");
+playShortcut.innerText = 'Play Vortexia';
+playShortcut.className = 'vpro-nav-btn';
+playShortcut.style.backgroundColor = '#4c87af';
+navGamePlace.appendChild(playShortcut);
+playShortcut.addEventListener('click', function () {
+    window.location.href = "https://playvortex.io/games/8/play";
+});
+
+
 const navLogo = document.querySelector('.navbar');
 const navText = document.createElement('h6');
-navText.innerText = 'VortexPro v2.6';
+navText.innerText = 'VortexPro v2.7';
 navText.className = 'nav-text';
 navText.style.color = '#FFF';
 navLogo.appendChild(navText);
@@ -39,7 +61,7 @@ navLogo.appendChild(navText);
 const pageTitle = document.querySelector('.page-title');
 const settingsButton = document.createElement('button');
 settingsButton.innerText = 'VortexPro Settings';
-settingsButton.className = 'btn-discord';
+settingsButton.className = 'vpro-nav-btn';
 settingsButton.style.backgroundColor = '#014f8f';
 pageTitle.appendChild(settingsButton);
 
@@ -69,14 +91,26 @@ settingsButton.addEventListener('click', function () {
 
 });
 
-const alertTest = document.querySelector('.navbar-actions')
+const alertTest = document.querySelector('.btn-secondary')
 alertTest.addEventListener('click', function () {
     alert("Are you sure you want to click this?");
 });
 
+const alertTest3 = document.querySelector('.navbar-actions')
+alertTest3.addEventListener('click', function () {
+    alert("Are you sure you want to click this?");
+});
+
+
 const alertTest2 = document.querySelector('.item-image-wrap')
 alertTest2.addEventListener('click', function () {
     alert("Are you sure you want to click this?");
+});
+
+const alertTest4 = document.querySelector('.avatar-render-box')
+alertTest2.addEventListener('click', function () {
+    alert("Are you sure you want to click this?");
+    window.location.href = "https://playvortex.io/games/8";
 });
 
 // Creating a new element out of thin air
@@ -102,6 +136,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-const helloGreeting = document.querySelector('.profile-username')
-helloGreeting.innerHTML = 'Hello,'

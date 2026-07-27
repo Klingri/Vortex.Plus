@@ -2,7 +2,7 @@
 
 # VortexPro - Pre-Alpha
 
-###### Version 2.6 Pre-Alpha (17.07.2026).
+###### Version 2.7 Pre-Alpha (27.07.2026).
 
 ---
 
@@ -132,6 +132,7 @@ Compatibility | **Will you ever fix VortexPro versions prior to version <2.4 not
 Compatibility | **Will you ever port VortexPro to FireFox?** | **No.** *VortexPro* will not be ported over to Firefox at least not right now. maybe in the far far future.
 Mission | **Whats the end goal for VortexPro?** | *VortexPro's* goal is to give Vortex user's more control, customization, and make the vortex platform a nicer place.
 Finance | **Can I donate money to VortexPro?** | **No.** Support me instead by giving me feedback on your experience with using VortexPro.
+Updating | **Why doesn't VortexPro do much?** | **Because,** the Vortex Platform is still very earlly and so I am waiting it out for the platform to stabilize a bit more.
 Other | **My question isn't listed here?** |  feel free to ask me any questions somewhere.
 
 ---
@@ -142,7 +143,7 @@ Other | **My question isn't listed here?** |  feel free to ask me any questions 
 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
-| **Dark Mode** | Full platform-wide dark theme. |
+| **New Buttons** | New buttons. |
 | **Improved Accesibility** | nice. |
 | **Animations & Effects** | Beautiful Animations & effects. |
 | **Hover Animations** | Instant satisfaction. |
@@ -198,6 +199,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
     <li><i>VortexPro</i> leads the Vortex platform as its very first browser extension with a built-in dark mode.</li>
     <li><i>VortexPro</i> is older than 99% of the accounts of the Vortex platform except for the original 2120 players.</li>
     <li><i>VortexPro</i> was the most popular Vortex extension of May 2026 alongside Vortex2plus2.</li>
+    <li><i>VortexPro</i> added Dark mode on May 5, 2026, then Vortex added an official native dark mode 2.5 months later which is around a 80 day difference, so VortexPro had dark mode before vortex had it.</li>
   </ul>
 
   <div align="center">

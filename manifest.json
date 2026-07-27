@@ -1,8 +1,8 @@
 {
   "name": "VortexPro",
-  "version": "2.6",
+  "version": "2.7",
   "manifest_version": 3,
-  "description": "2.6 Pre-Alpha 17.07.2026",
+  "description": "2.7 Pre-Alpha 27.07.2026",
   "icons": {
     "16": "assets/icons/icon16.png",
     "32": "assets/icons/icon32.png",
