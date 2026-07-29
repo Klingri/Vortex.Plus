@@ -14,11 +14,15 @@ if (originalElemente) {
   document.body.appendChild(clonedElement);
 }
 
-const alertButton = document.querySelector('.load-notice')
-const deleteAlrtButton = document.createElement('div');
-deleteAlrtButton.className = 'alertDeleteBtn';
+const alertButton = document.querySelector('.notice')
+const deleteAlrtButton = document.createElement('button');
+
+deleteAlrtButton.className = 'vpro-nav-btn';
 deleteAlrtButton.innerText = 'Dismiss Alert';
 alertButton.appendChild(deleteAlrtButton);
+deleteAlrtButton.addEventListener('click', function () {
+  alertButton.remove();
+});
 
 const avatarTest = document.querySelector('.avatar-render-box')
 avatarTest.addEventListener('click', function () {

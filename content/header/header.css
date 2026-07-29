@@ -56,3 +56,14 @@
     transform: scale(1.15);
     transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
+/* All layout & alignment stays where it belongs */
+.settings-text {
+    text-align: center;
+}
+
+.settings-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

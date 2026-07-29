@@ -146,7 +146,7 @@ body,
     margin-top: 20px;
 }
 
-/* Add a profile banner */
+/* Add a profile bannerr */
 .profile-header::before {
     content: "";
     position: absolute;
