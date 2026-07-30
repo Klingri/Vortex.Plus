@@ -57,7 +57,7 @@
 
         const gui = document.createElement('div');
         gui.id = 'v-thm-mn';
-        gui.innerHTML = `<div class="m-tp">Theme Settings</div>
+        gui.innerHTML = `<div class="m-tp">Theme Settings (Being Discontinued and migrated shortly to a integrated built in one in the future settings page.</div>
         <div class="m-body">
             ${['Background', 'Accent', 'Text', 'Border'].map(lbl => `<div class="ed-r"><label>${lbl}</label><input id="e-${lbl.toLowerCase()}" type="text"></div>`).join('')}
             <button id="v-appl" style="width:100%;margin:5px 0;border:none;border-radius:0;background:#111;color:white;">Apply Changes</button>

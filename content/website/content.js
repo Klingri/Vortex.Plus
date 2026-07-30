@@ -28,3 +28,8 @@ const avatarTest = document.querySelector('.avatar-render-box')
 avatarTest.addEventListener('click', function () {
   window.location.href = "https://playvortex.io/catalog";
 });
+
+const friendsShortcutbtn = document.querySelector('#friends-title')
+friendsShortcutbtn.addEventListener('click', function () {
+  window.location.href = "https://playvortex.io/social?user=&tab=friends";
+});

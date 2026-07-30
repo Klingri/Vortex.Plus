@@ -67,3 +67,83 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.clans-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.clan-submenus,
+.clan-submenu,
+.clan-submenu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 128px;
+}
+
+.clan-submenu:hover {
+    border-bottom: 4px solid #078fff;
+}
+
+.clan-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: fit-content;
+    background-color: #01b82e;
+}
+
+.clan-img:hover {
+    background-color: #6f01b8;
+}
+
+.clans-navbar,
+.button-list,
+.stn-nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 4px;
+    padding: 2px;
+    margin-left: 16px;
+    background-color: #6f01b8;
+    width: fit-content;
+    height: fit-content;
+}
+
+.stn-nav-btn:hover {
+    border-left: 4px solid #078fff;
+}
+
+.shout-box {
+    max-width: 1000px;
+    width: 100%;
+    padding: 2px;
+    background-color: #6f01b8;
+    width: fit-content;
+    height: fit-content;
+    outline: none;
+    border-radius: 4px;
+    border-color: grey;
+}
+
+.clan-creator,
+.clan-detail,
+.clan-creator,
+.clan-a,
+.clan-create,
+.clan-welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 128px;
+}
