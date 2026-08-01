@@ -2,7 +2,7 @@
 
 # VortexPro - Pre-Alpha
 
-###### Version 2.7 Pre-Alpha (27.07.2026).
+###### Version 2.9 Pre-Alpha (01.08.2026).
 
 ---
 

@@ -3,9 +3,9 @@
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
 | 17.07.26 | v2.6  | Pre-Alpha | Quality of life changes. |
-| 27.07.26 | v2.7  | Pre-Alpha | Fixed the extension. |
-| 29.07.26 | v2.8 | Pre-Alpha | Upcoming release. |
-| 01.08.26 | v2.9 | Pre-Alpha | Upcoming release. |
+| 28.07.26 | v2.7  | Pre-Alpha | Fixed the extension. |
+| 31.07.26 | v2.8 | Pre-Alpha | new clan page. |
+| 01.08.26 | v2.9 | Pre-Alpha | some fixes. |
 | 05.08.26 | v3.0  | Pre-Alpha | Upcoming release. |
 | ?.??.26 | v3.1  | Pre-Alpha | Upcoming release. |
 | ?.??.26 | v3.2  | Pre-Alpha | Upcoming release. |
@@ -72,14 +72,22 @@ This update mostly was about fixing and adapting to the new massive vortex websi
 # Version 2.8
 #### 29.07.2026
 #### 2.8 *The JavaScript Update Part 4*
-Description
+This update added a new shortcut friends link, a new clan's page, more buttons and made the JavaScript code simpler using inner HTML.
+
+- Added new shortcut friend's link
+- New Clan's page
+- More Buttons
+- Made the JavaScript code simpler using inner HTML.
 
 **Changelogs:**
 
 # Version 2.9
 #### 01.08.2026
 #### 2.9 *The JavaScript Update Part 5*
-Description
+This update was super small but mainly was about making styles to the .empty-msg text and a new test button in the Vpro settings.
+
+- New styles to .empty-msg text
+- New Teat Button in Vpro Settings
 
 **Changelogs:**
 

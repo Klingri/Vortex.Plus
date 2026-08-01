@@ -1,4 +1,4 @@
-// Version 2.7 Pre Alpha 29.07.2026
+// Version 2.9 Pre Alpha 29.07.2026
 
 const navBar = document.querySelector('.navbar');
 
@@ -27,7 +27,7 @@ alerts.addEventListener('click', function () {
 const navLogo = document.querySelector('.navbar');
 const navText = document.createElement('h6');
 
-navText.innerText = 'VortexPro v2.7';
+navText.innerText = 'VortexPro v2.9';
 navText.className = 'nav-text';
 navText.style.color = '#FFF';
 navLogo.appendChild(navText);
@@ -48,7 +48,13 @@ settingsButton.addEventListener('click', function () {
 
     settingsPage.innerHTML = `
     <nav class="settings-navbar"><button class="vpro-set-btn">Go Back</button></nav>
-    <div class="settings-wrapper"></div>
+    <div class="settings-wrapper">
+        <div class="setting-box">
+                <p class="setting-txt">Test Setting</p>
+                <button id="setting-btn">On</button>
+        </div>
+    
+    </div>
     <div id="v-thm-mn">
     <div class="m-tp">Theme Settings</div>
         <div class="m-body">
@@ -187,4 +193,14 @@ const myButton = document.querySelector('vpro-set-btn');
 // 3. Attach your event listener
 myButton.addEventListener('click', () => {
     window.location.href = "https://playvortex.io/settings";
+});
+
+const settingbtn = document.getElementById('#setting-btn');
+
+settingbtn.addEventListener('click', () => {
+  if (settingbtn.textContent === 'On') {
+    settingbtn.textContent = 'Off';
+  } else {
+    settingbtn.textContent = 'On';
+  }
 });

@@ -276,6 +276,7 @@ body,
 .game-description-box,
 .profile-info-panel,
 .error-msg,
+.empty-msg,
 .catalog-title {
     text-align: center;
 }
@@ -328,6 +329,7 @@ body::selection {
 .profile-last-seen:hover,
 .game-detail-title:hover,
 .game-stat-label:hover,
+.empty-msg:hover,
 .game-description-label:hover,
 .game-description-text:hover,
 .profile-meta:hover,
@@ -373,6 +375,7 @@ body::selection {
 .game-card-title:hover,
 .game-card-meta:hover,
 .game-description-label:hover,
+.empty-msg:hover,
 .game-stat-value:hover,
 .game-stat-label:hover,
 .game-description-text:hover,
@@ -404,6 +407,7 @@ body::selection {
 .section-title:hover,
 .page-title h1:hover,
 .friend-name:hover,
+.empty-msg:hover,
 .game-description-text:hover,
 .game-card-title:hover,
 .site-footer-links a:hover,
