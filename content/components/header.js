@@ -15,6 +15,7 @@ function createNavButton(text, url) {
 // Now creating a button takes just one clean line:
 createNavButton('Vpro Settings', 'https://playvortex.io/settings');
 createNavButton('Vpro GitHub', 'https://github.com/Klingri/VortexPro');
+createNavButton('Vpro Update', 'https://github.com/Klingri/VortexPro/releases');
 createNavButton('Friends', 'https://playvortex.io/social?user=&tab=friends');
 createNavButton('Halos Profile', 'https://playvortex.io/users/1/profile');
 createNavButton('Play Vortexia', 'https://playvortex.io/games/8/play');

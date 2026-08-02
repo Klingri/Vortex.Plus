@@ -1,1 +1,1 @@
-// Discontinuedd
+// Discontinued

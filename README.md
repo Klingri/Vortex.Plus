@@ -8,9 +8,9 @@
 
 ## Why VortexPro Exists
 
-<p>When I joined the Vortex Platform on May 5, 2026, It was underwhelming for me. The interface was basic and too bright, there was almost no functionality besides friending people, joining maps, browsing, and there was no native dark mode or custom control, this is why I created <a href="https://klingri.github.io/VortexPro/">VortexPro</a> the very same day, I wanted dark mode badly and I wasn't going to wait for it, I made it myself.</p>
+<p>When I joined the Vortex Platform on May 4, 2026, It was underwhelming for me. The interface was basic and too bright, there was almost no functionality besides friending people, joining maps, browsing, and there was no native dark mode or custom control at the time, this is why I created <a href="https://klingri.github.io/VortexPro/">VortexPro</a> the very next day, I wanted dark mode badly because I don't like looking at bright lights for hour's.</p>
 
-**VortexPro is what Vortex should have been:**
+<strong>VortexPro is what Vortex should have been:</strong>
 
 <ul>
     <li>User <i>Control</i> and User <i>Freedom.</i></li>
@@ -25,18 +25,10 @@
 
 <ul>
     <li>
-    <i>VortexPro</i> is <b>not</b> affiliated, associated, or endorsed by Vortex Platform. Vortex and its various marks and logos are trademarks of Vortex.</li>
-    <li><i>VortexPro</i> is completely <b>safe,</b> malware-free, and transparently open-source, with all script actions strictly limited to core functions like updates and secure integrations.</li>
+    <i>VortexPro</i> is <b>not</b> affiliated, associated, or endorsed by Vortex (playvortex.io). Vortex and its various marks and logos are trademarks of Vortex. To use <i>VortexPro</i>, you must agree to the Vortex platform and VortexPro Terms of Service.</li>
+    <li><i>VortexPro</i> is <b>safe,</b> malware-free, and transparently open-source, with all script actions strictly limited to core functions like updates and secure integrations. <i>VortexPro</i> is not obfuscated, I try to provide readable code whenever possible, and I cannot guarantee that every section is fully de-obfuscated.</li>
     <li>
-    <i>VortexPro</i> is not obfuscated, and it is perfectly <b>safe.</b> I try to provide readable code whenever possible, and I cannot guarantee that every section is fully de-obfuscated.</li>
-    <li>
-    To use <i>VortexPro</i>, you must agree to the Vortex and VortexPro Terms of Service.</li>
-    <li>
-    <i>VortexPro</i> isn't trying to be the best vortex extension with the most features, just the most <i>user friendly.</i></li>
-    <li>Support <i>VortexPro</i> by starring the repository, following me on GitHub, sharing the project, or creating showcase videos.</li><li>
-    Please reach out directly to me if you have any questions about <i>VortexPro.</i>
-</li>
-<li>As soon as a new version drops, support for the old version <strong>stops.</strong></li>
+    <i>VortexPro</i> isn't trying to be the best vortex extension with the most features, just the most <i>user friendly. </i>As soon as a new version drops, support for the old version <strong>stops.</strong> Please reach out directly to me if you have any questions about <i>VortexPro.</li>
   </ul>
 
 <div align="center">
@@ -68,27 +60,6 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)</div>
 
----
-
-## Known Issues & Stability (so far)
-<div align="center">
-<p>View the list of Issues (so far) <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
-</div>
-
-<ul>
-    <li><strong>Performance:</strong> Experimental updates may cause performance instability and looses on less capable hardware.</li>
-    <li><strong>UI Issues & UI Glitches:</strong> Some elements may display incorrectly.</li>
-    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded VortexPro.</li>
-    <li><strong>Compatibility:</strong> VortexPro might not work with Firefox or other vortex extensions.</li>
-    <li><strong>Themes:</strong> VortexPro looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
-  </ul>
-
-<p><i>Submit bugs via <a href="https://github.com/Klingri/VortexPro/issues">GitHub Issues</a></i></p>
-
-![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
-
----
-
 ## Forking
 <ul>
   <li>
@@ -100,40 +71,7 @@
       <li>Click Create fork.</li>
     </ul>
   </li>
-  <li>
-    <strong>Clone Your Fork</strong>
-    <ul>
-      <li>Copy your fork's URL.</li>
-      <li>Open your local terminal.</li>
-      <li>Run this command: <code>git clone https://github.com</code></li>
-    </ul>
-  </li>
 </ul>
-
-
----
-
-## Q&A
-
-<div align="center">
-<p>more questions <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md">here.</a></p>
-</div>
-
-| Topic | Question | Answer
-| :--- | :--- | :--- |
-General | **How can I submit feedback or report a bug?** | Feel free to reach out to me via *GitHub.*
-Security | **Is VortexPro malware?** | **No,** *VortexPro* is not malware but feel free to not download and not use VortexPro.
-General | **Someone gave me a link to download VortexPro?** | The only official and safe download of VortexPro is on *@Klingri's* Github, nowhere else, they are likely trying to scam or hack you.
-Updating | **When does VortexPro update?** | Typically *VortexPro* Updates every **few days**, however VortexPro may go **weeks** without updates for many reasons, updates are random but are sometimes scheduled beforehand.
-General | **Is VortexPro Free & open-source?** | **Yes.** VortexPro is a free & open-source browser *extension.*
-Contribution | **Can I contribute or develop for VortexPro?** | I currently do **not accept** direct contributions. Instead, the only way to contribute is by giving *feedback* and *suggestions*.
-Compatibility | **Can I use an older version of VortexPro?** | **Yes,** but older versions may fail if the Vortex website URL or its underlying elements have changed.
-Compatibility | **Will you ever fix VortexPro versions prior to version <2.4 not working?** | If you mean the website URL, changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, **probably not any time soon,** but you can attempt it yourself.
-Compatibility | **Will you ever port VortexPro to FireFox?** | **No.** *VortexPro* will not be ported over to Firefox at least not right now. maybe in the far far future.
-Mission | **Whats the end goal for VortexPro?** | *VortexPro's* goal is to give Vortex user's more control, customization, and make the vortex platform a nicer place.
-Finance | **Can I donate money to VortexPro?** | **No.** Support me instead by giving me feedback on your experience with using VortexPro.
-Updating | **Why doesn't VortexPro do much?** | **Because,** the Vortex Platform is still very earlly and so I am waiting it out for the platform to stabilize a bit more.
-Other | **My question isn't listed here?** |  feel free to ask me any questions somewhere.
 
 ---
 
@@ -154,6 +92,40 @@ Other | **My question isn't listed here?** |  feel free to ask me any questions 
 <div align="center">
 <p>Full Roadmap & list of features <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md">here</a>, recent version history list <a href="https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md">here.</a></p>
 </div>
+
+## Known Issues & Stability (so far)
+<div align="center">
+<p>View the list of Issues (so far) <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
+</div>
+
+<ul>
+    <li><strong>Performance:</strong> Experimental updates may cause performance instability and looses on less capable hardware.</li>
+    <li><strong>UI Issues & UI Glitches:</strong> Some elements may display incorrectly.</li>
+    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded VortexPro.</li>
+    <li><strong>Compatibility:</strong> VortexPro might not work with Firefox, other vortex extensions or older versions of VortexPro.</li>
+    <li><strong>Themes:</strong> VortexPro looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
+  </ul>
+
+<p><i>Submit bugs via <a href="https://github.com/Klingri/VortexPro/issues">GitHub Issues</a></i></p>
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
+
+---
+
+## Q&A
+
+<div align="center">
+<p>more questions <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md">here.</a></p>
+</div>
+
+| Topic | Question | Answer
+| :--- | :--- | :--- |
+General | **How can I submit feedback or report a bug? and can I contribute or develop for VortexPro?** | Feel free to **reach out** to me via *GitHub.* for submitting feedbacks or reporting a bug, however, I currently do **not accept** direct contributions. Instead, the only way to contribute is by giving *feedback* and *suggestions.*
+Security | **Is VortexPro malware? and is VortexPro Free & open-source?** | **No,** *VortexPro* is not malware but feel free to not download and not use VortexPro, and **Yes.** VortexPro is a free & open-source browser *extension.*
+Updating | **When does VortexPro update? and why doesn't VortexPro do much?** | Typically *VortexPro* Updates every **few days**, however VortexPro may go **weeks** without updates for many reasons, updates are random but are sometimes scheduled beforehand. and the Vortex Platform is still very early and so I am waiting it out for the platform to stabilize a bit more so I can do much more.
+Compatibility | **Can I use an older version of VortexPro? will you ever fix VortexPro versions prior to version <2.5 not working? and will you ever port VortexPro to FireFox?** | **Yes you can use theoretically use an older version of VortexPro,** but older versions may fail if the Vortex website URL or its underlying elements have changed and If you mean the website URL, changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, **probably not any time soon,** but you can attempt it yourself. and **No.** *VortexPro* will not be ported over to Firefox at least not right now. maybe in the far far future.
+Mission | **Whats the end goal for VortexPro? and can I donate money to VortexPro?** | *VortexPro's* goal is to give Vortex user's more control, customization, and make the vortex platform a nicer place, and **No you can't donate money to VortexPro.** Support me instead by giving me feedback on your experience with using VortexPro.
+Other | **My question isn't listed here?** |  feel free to ask me any questions.
 
 ---
   
@@ -195,11 +167,12 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ## Fun Trivia
 
 <ul>
-    <li><i>VortexPro</i> was the first Vortex platform extension. It sparked a wave of fan-made extensions.</li>
-    <li><i>VortexPro</i> leads the Vortex platform as its very first browser extension with a built-in dark mode.</li>
-    <li><i>VortexPro</i> is older than 99% of the accounts of the Vortex platform except for the original 2120 players.</li>
-    <li><i>VortexPro</i> was the most popular Vortex extension of May 2026 alongside Vortex2plus2.</li>
-    <li><i>VortexPro</i> added Dark mode on May 5, 2026, then Vortex added an official native dark mode 2.5 months later which is around a 80 day difference, so VortexPro had dark mode before vortex had it.</li>
+    <i>VortexPro:</i>
+    <li>1. was the first Vortex platform extension. It sparked a wave of fan-made extensions.</li>
+    <li>2. leads the Vortex platform as its very first browser extension with a built-in dark mode.</li>
+    <li>3. is older than 99% of the accounts of the Vortex platform except for the original 2120 players.</li>
+    <li>4. was the most popular Vortex extension of May 2026 alongside Vortex2plus2.</li>
+    <li>5. added Dark mode on May 5, 2026, then Vortex added an official native dark mode 2.5 months later which is around a 80 day difference, so VortexPro had dark mode before vortex had it.</li>
   </ul>
 
   <div align="center">

@@ -1,5 +1,6 @@
-# Installation
+## Installation
 #### Recommended Method:
+### Step-by-Step:
 ### Step-by-Step:
 1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.
 2. **Extract:** Unzip the folder to a permanent location on your PC.
@@ -18,7 +19,24 @@
 
 - After you did all that it should work.
 
-# Installation Methods
+<div align="center">
+
+![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)</div>
+
+## Forking
+<ul>
+  <li>
+    <strong>Fork the Repository</strong>
+    <ul>
+      <li>Click the Fork button.</li>
+      <li>Find it at the top-right of this page.</li>
+      <li>Select your GitHub account as the owner.</li>
+      <li>Click Create fork.</li>
+    </ul>
+  </li>
+</ul>
+
+## Installation Methods
 
 Choose the installation method that best fits your environment. 
 

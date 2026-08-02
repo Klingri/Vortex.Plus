@@ -2,26 +2,22 @@
 
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
-| 17.07.26 | v2.6  | Pre-Alpha | Quality of life changes. |
-| 28.07.26 | v2.7  | Pre-Alpha | Fixed the extension. |
-| 31.07.26 | v2.8 | Pre-Alpha | new clan page. |
-| 01.08.26 | v2.9 | Pre-Alpha | some fixes. |
 | 05.08.26 | v3.0  | Pre-Alpha | Upcoming release. |
-| ?.??.26 | v3.1  | Pre-Alpha | Upcoming release. |
-| ?.??.26 | v3.2  | Pre-Alpha | Upcoming release. |
-| ?.??.26 | v3.3  | Pre-Alpha | Upcoming release. |
-| ?.??.26 | v3.4  | Pre-Alpha | Upcoming release. |
-| ?.??.?? | v3.5  | Early Alpha | Upcoming release. |
-| ?.??.?? | v3.6  | Early Alpha | Upcoming release. |
-| ?.??.?? | v3.7  | Early Alpha | Upcoming release. |
-| ?.??.?? | v3.8  | Early Alpha | Upcoming release. |
-| ?.??.?? | v3.9  | Early Alpha | Upcoming release. |
-| ?.??.?? | v4.0  | Mid-Alpha | Upcoming release. |
-| ?.??.?? | v4.1  | Mid-Alpha | Upcoming release. |
-| ?.??.?? | v4.2  | Mid-Alpha | Upcoming release. |
-| ?.??.?? | v4.3  | Mid-Alpha | Upcoming release. |
-| ?.??.?? | v4.4  | Mid-Alpha | Upcoming release. |
-| ?.??.?? | v4.5  | Late Alpha | Upcoming release. |
+|15.08.26 | v3.1  | Pre-Alpha | Upcoming release. |
+| 01.09.26 | v3.2  | Pre-Alpha | Upcoming release. |
+| 01.10.26 | v3.3  | Pre-Alpha | Upcoming release. |
+| 14.10.26 | v3.4  | Pre-Alpha | Upcoming release. |
+| 01.11.26 | v3.5  | Early Alpha | Upcoming release. |
+| 01.12.26 | v3.6  | Early Alpha | Upcoming release. |
+| 27.12.26 | v3.7  | Early Alpha | Upcoming release. |
+| 01.01.27 | v3.8  | Early Alpha | Upcoming release. |
+| ?.??.27 | v3.9  | Early Alpha | Upcoming release. |
+| ?.??.27 | v4.0  | Mid-Alpha | Upcoming release. |
+| ?.??.27 | v4.1  | Mid-Alpha | Upcoming release. |
+| ?.??.27 | v4.2  | Mid-Alpha | Upcoming release. |
+| ?.??.27 | v4.3  | Mid-Alpha | Upcoming release. |
+| ?.??.27 | v4.4  | Mid-Alpha | Upcoming release. |
+| ?.??.27 | v4.5  | Late Alpha | Upcoming release. |
 | ?.??.27 | v4.6  | Late Alpha | Upcoming release. |
 | ?.??.27 | v4.7  | Late Alpha | Upcoming release. |
 | ?.??.27 | v4.8  | Late Alpha | Upcoming release. |
@@ -63,33 +59,33 @@ This update was more so a Quality of Life Update.
 #### 2.7 *The JavaScript Update Part 3*
 This update mostly was about fixing and adapting to the new massive vortex website update.
 
+**Changelogs:**
+
 - Added 2 new buttons in navbar
 - Fixed styles
 - Small fixes
-
-**Changelogs:**
 
 # Version 2.8
 #### 29.07.2026
 #### 2.8 *The JavaScript Update Part 4*
 This update added a new shortcut friends link, a new clan's page, more buttons and made the JavaScript code simpler using inner HTML.
 
+**Changelogs:**
+
 - Added new shortcut friend's link
 - New Clan's page
 - More Buttons
 - Made the JavaScript code simpler using inner HTML.
-
-**Changelogs:**
 
 # Version 2.9
 #### 01.08.2026
 #### 2.9 *The JavaScript Update Part 5*
 This update was super small but mainly was about making styles to the .empty-msg text and a new test button in the Vpro settings.
 
+**Changelogs:**
+
 - New styles to .empty-msg text
 - New Teat Button in Vpro Settings
-
-**Changelogs:**
 
 # Version 3.0
 #### 05.08.2026

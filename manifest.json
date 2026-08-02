@@ -9,7 +9,6 @@
     "48": "assets/icons/icon48.png",
     "128": "assets/icons/icon128.png"
   },
-  "update_url": "https://klingri.github.io/VortexPro/updates.xml",
   "host_permissions": [
     "https://pastebin.com/*",
     "https://playvortex.io/*"
@@ -26,14 +25,20 @@
         "https://playvortex.io/*"
       ],
       "css": [
-        "content/website/content.css",
-        "content/website/themes.css",
-        "content/header/header.css"
+        "content/base/reset.css",
+        "content/base/typography.css",
+        "content/components/buttons.css",
+        "content/components/cards.css",
+        "content/components/header.css",
+        "content/features/themes.css",
+        "content/pages/home.css",
+        "content/pages/profile.css",
+        "content/main.css"
       ],
       "js": [
-        "content/website/content.js",
-        "content/website/themes.js",
-        "content/header/header.js",
+        "content/components/header.js",
+        "content/features/themes.js",
+        "content/pages/home.js",
         "content/pages/settings.js"
       ],
       "run_at": "document_idle",

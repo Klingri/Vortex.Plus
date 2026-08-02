@@ -1,11 +1,11 @@
 ## Current (notable) Features
 
-<p>The first 6 features on the table are fully made and contributed by @Klingri, the others by someone else. The most important features are listed below:</p>
+<p>The first 6 features on the table are fully made and contributed by <a href="https://github.com/Klingri">@Klingri</a>, the others by someone else. The most important features are listed below:</p>
 
 | Feature | Description | Contributor |
 | :--- | :--- | :--- |
-| **Dark Mode** | Full platform-wide dark theme. |
-| **Improved Accesibility** | Nice. |
+| **New Buttons** | New buttons. |
+| **Improved Accesibility** | nice. |
 | **Animations & Effects** | Beautiful Animations & effects. |
 | **Hover Animations** | Instant satisfaction. |
 | **Custom VortexPro Settings** | Customization. |
@@ -13,7 +13,7 @@
 | **Custom Theme Manager** | Enables theme customization. | [@Myroshlaug](https://github.com/myroshlaug) |
 
 <div align="center">
-<a href="https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md">Recent Version History List here.</a>
+<p>Full Roadmap & list of features <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/FEATURES.md">here</a>, recent version history list <a href="https://github.com/Klingri/VortexPro/blob/stable/CHANGELOG.md">here.</a></p>
 </div>
 
 ## Roadmap
@@ -37,29 +37,19 @@ Please note that this roadmap is subject to change. Features may be added, remov
 
 | Topic | Question | Answer
 | :--- | :--- | :--- |
-General | **How can I submit feedback or report a bug?** | Feel free to reach out via GitHub.
-Security | **Is VortexPro malware?** | No, VortexPro is not malware but feel free to not use it.
-General | **I dislike you and I suspect that VortexPro is malware, what should I do?** | Feel free to not download and not use VortexPro.
-General | **Someone gave me a link to download VortexPro?** | The only official and safe download of VortexPro is on Klingri's Github, nowhere else, they are likely trying to scam or hack you.
-Updating | **How Often does VortexPro update?** | Typically VortexPro Updates every few days, however VortexPro may go weeks without updates for many reasons.
-General | **Is VortexPro Free & open-source?** | Yes.
-Contribution | **Can I contribute or develop for VortexPro?** | I currently do not accept direct contributions. Instead, the only way to contribute is by giving feedback and suggestions.
-Compatibility | **Can I use an older version of VortexPro?** | Yes, but older versions may fail if the Vortex website URL or its underlying elements have changed.
-Compatibility | **Will you ever fix VortexPro versions prior to version <2.4 not working?** | If you mean the website URL, probably not any time soon as vortex changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, probably not any time soon, but you can attempt it yourself.
-Compatibility | **Will you ever port VortexPro to FireFox?** | No. VortexPro will not be ported over to Firefox at least not right now. maybe in the far far future.
-Mission | **Whats the end goal for VortexPro?** | To give Vortex user's more control, customization, and make the vortex platform a nicer place.
-Finance | **Can I donate money to VortexPro?** | No. Support me instead by giving me feedback on your experience with using VortexPro.
-Other | **My question isn't listed here?** |  feel free to ask me any questions somewhere.
+General | **How can I submit feedback or report a bug? and can I contribute or develop for VortexPro?** | Feel free to **reach out** to me via *GitHub.* for submitting feedbacks or reporting a bug, however, I currently do **not accept** direct contributions. Instead, the only way to contribute is by giving *feedback* and *suggestions.*
+Security | **Is VortexPro malware? and is VortexPro Free & open-source?** | **No,** *VortexPro* is not malware but feel free to not download and not use VortexPro, and **Yes.** VortexPro is a free & open-source browser *extension.*
+Updating | **When does VortexPro update? and why doesn't VortexPro do much?** | Typically *VortexPro* Updates every **few days**, however VortexPro may go **weeks** without updates for many reasons, updates are random but are sometimes scheduled beforehand. and the Vortex Platform is still very early and so I am waiting it out for the platform to stabilize a bit more so I can do much more.
+Compatibility | **Can I use an older version of VortexPro? will you ever fix VortexPro versions prior to version <2.5 not working? and will you ever port VortexPro to FireFox?** | **Yes you can use theoretically use an older version of VortexPro,** but older versions may fail if the Vortex website URL or its underlying elements have changed and If you mean the website URL, changed its domain from towerstats.vortex to playvortex.io, but as for the CSS literally breaking because the UI of vortex has changed or been renamed, **probably not any time soon,** but you can attempt it yourself. and **No.** *VortexPro* will not be ported over to Firefox at least not right now. maybe in the far far future.
+Mission | **Whats the end goal for VortexPro? and can I donate money to VortexPro?** | *VortexPro's* goal is to give Vortex user's more control, customization, and make the vortex platform a nicer place, and **No you can't donate money to VortexPro.** Support me instead by giving me feedback on your experience with using VortexPro.
+Other | **My question isn't listed here?** |  feel free to ask me any questions.
 
 ## Forks & Mini-Projects
 WIP
 - I occasionally create mini-projects, which some people have reportedly copied or adapted.
 
 - Mini-Projects Created by [@Klingri](https://github.com/Klingri)
-  - Discontinued as of 04.07.2026
-    - [VortexGalactic](https://github.com/Klingri/VortexGalactic)
-    - [VortexUltra](https://github.com/Klingri/VortexUltra)
-  - [XF-Tornado (Formerly Dvortek)](https://github.com/Klingri/XF_Tornado)
+  - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
   - [VortexWiki](https://github.com/Klingri/VortexWiki)
 - Alleged and partial forks are all incompatible
 - The following features and extensions allegedly began as partial forks by VortexPro or Vortex2plus2:

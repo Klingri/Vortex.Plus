@@ -2,19 +2,22 @@
 
 *VortexPro* is in early alpha with dark mode and themes enabled, meaning it is unstable and has bugs. Because it is distributed outside the Chrome Web Store to bypass strict rules, users must update it manually before the stable release.
 
+<## Known Issues & Stability (so far)
 <div align="center">
-<p>View the full list of Issues <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
+<p>View the list of Issues (so far) <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
 </div>
 
 <ul>
-    <li><strong>Performance:</strong> These experimental updates may cause performance issues on lower-end systems.</li>
-    <li><strong>UI Glitches:</strong> Minor UI display issues may occur on certain places.</li>
-    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded it.</li>
-    <li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li>
-    <li><strong>Themes:</strong> VortexPro looks best in Dark mode, as that was what it was designed for. I can't guarantee that light mode or other themes look good.</li>
+    <li><strong>Performance:</strong> Experimental updates may cause performance instability and looses on less capable hardware.</li>
+    <li><strong>UI Issues & UI Glitches:</strong> Some elements may display incorrectly.</li>
+    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded VortexPro.</li>
+    <li><strong>Compatibility:</strong> VortexPro might not work with Firefox, other vortex extensions or older versions of VortexPro.</li>
+    <li><strong>Themes:</strong> VortexPro looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
   </ul>
 
-*Submit bugs via [GitHub Issues](https://github.com/Klingri/VortexPro/issues).*
+<p><i>Submit bugs via <a href="https://github.com/Klingri/VortexPro/issues">GitHub Issues</a></i></p>
+
+![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
 
 - The Extension may suffer from a wide variety of Issues (WIP)
 
@@ -26,8 +29,6 @@
 | **App Version** | *v1.2.3* |
 
 ## Compatability
-
-<li><strong>Compatibility:</strong> VortexPro may be incompatible with Firefox and Firefox-based browsers, VortexPro may or may not be compatible with other extensions made by Klingri.</li><br>
 
 Here's a list of all compatible browsers, extensions, forks and operating systems:
 
@@ -61,3 +62,26 @@ Here's a list of all compatible browsers, extensions, forks and operating system
 ## Testing Environment
 * **OS/Environment:** [Windows_11]
 * **Last Verified:** [03.07.2026]
+
+## Suggestion & Feedback Box
+
+If you have an idea for a new feature, a design improvement, a feature request, or you found a bug in *VortexPro,* Please use the steps below to submit feedback.
+
+## 1. Suggestion Details
+* **Title/Summary:** [Give your suggestion a short, descriptive title]
+* **Category:** [Choose one: Feature Request / Bug Report / UI/UX Improvement / Documentation / Other]
+* **Priority/Urgency:** [Choose one: Low / Medium / High / Critical]
+
+## 2. Description
+* **What is the current behavior or problem?**
+* **What is your suggested solution?**
+* **Why should this be implemented?** (e.g., how does it benefit users or VortexPro?)
+
+## 3. Context & Examples
+* **Screenshots, mockups, or code snippets:** [Attach or link any helpful images/files]
+* **Additional details:** [Anything else we should know]
+
+## 4. Contact (Optional)
+* **GitHub Username:** [@yourhandle]
+* **Email:** [your-email@example.com]
+* *Note: You can leave this blank if you wish to submit anonymously.*
