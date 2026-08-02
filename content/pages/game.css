@@ -1,0 +1,8 @@
+/* New in VortexPro 3.0, August 5, 2026*/
+
+/*makes game text yellow*/
+.game-card-title,
+.game-detail-title,
+.game-description-label {
+    color: #e9d569 !important;
+}

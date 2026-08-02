@@ -9,11 +9,6 @@
     --nav-bg: rgba(53, 53, 53, 0.2);
     --card-bg: #252525;
     --input-bg: #2b2a2a;
-    --default-font: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-* {
-    font-family: var(--default-font)
 }
 
 body,
@@ -21,19 +16,6 @@ body,
     background: var(--bg-main);
     color: var(--text-main);
     text-align: center;
-}
-
-.ban-label,
-.ban-value {
-    color: var(--text-main) !important;
-}
-
-.ban-card {
-    border: 1px solid #ff4646 !important;
-}
-
-.ban-link {
-    color: #920000 !important;
 }
 
 .site-footer {
@@ -56,80 +38,6 @@ body,
     background: var(--bg-maing) !important;
 }
 
-/* --- Buttons --- */
-
-.profile-actions button,
-.tag,
-.user-card-actions button,
-.site-footer-links a,
-.site-footer-links a:hover {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: var(--nav-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-.profile-actions button:hover,
-.tag:hover {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: var(--nav-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-.profile-actions button:hover,
-.tag:hover {
-    cursor: pointer;
-    display: inline-block;
-    will-change: transform;
-    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: #bda627 !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(204, 180, 46, 0.3);
-}
-
-.bio-label button,
-.bio-editor-footer button {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: var(--input-bg) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-#username,
-#password {
-    border: 0px !important;
-    color: var(--text-main);
-}
-
-.btn-secondary {
-    background-color: var(--card-bg) !important;
-    color: #777777 !important;
-    border: 0px none !important;
-    border-color: none !important;
-}
-
 /* Container overhaul */
 #page {
     background: rgba(255, 255, 255, 0.05);
@@ -145,45 +53,6 @@ body,
     margin-top: 20px;
 }
 
-/* Add a profile bannerr */
-.profile-header::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    right: -30px;
-    height: 120px;
-    background: linear-gradient(90deg, #091E3A, #2F80ED, #2D9EE0);
-    z-index: -1;
-    border-radius: 20px 20px 0 0;
-    opacity: 0.6;
-}
-
-.profile-header {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-/* Bio Box styling */
-.bio-box {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    padding: 15px;
-    border-left: 4px solid #b91c1c;
-}
-
-.bio-text {
-    line-height: 1.6;
-    color: #777777 !important;
-}
-
-.home-intro {
-    border-bottom: solid 1px #444444 !important;
-}
-
 .vpro-nav-btn {
     border-radius: 8px !important;
     padding: 8px 15px !important;
@@ -196,43 +65,6 @@ body,
     border: 0px none !important;
     border-color: none !important;
     color: var(--text-main) !important;
-}
-
-/* Friend Cards hover effect */
-.friend-card {
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
-    border-radius: 10px;
-    will-change: transform;
-}
-
-/* Smooth separators */
-.section-sep {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    margin: 40px 0;
-}
-
-/* Profile Polish */
-.profile-avatar-wrap {
-    position: relative;
-    padding: 5px;
-    background: linear-gradient(45deg, #59CDE9, #0A2A88);
-    border-radius: 50%;
-}
-
-.profile-stat {
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 14px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.1);
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.user-card {
-    background-color: var(--bg-main) !important;
-    border: var(--accent) !important;
 }
 
 .load-notice {
@@ -255,22 +87,6 @@ body,
     padding: 8px 15px;
 }
 
-.page-title button {
-    margin-left: 20px;
-}
-
-.market-grid {
-    justify-content: center !important;
-    justify-items: center !important;
-}
-
-.user-card,
-.user-card-actions,
-.user-card-name {
-    background-color: var(--card-bg) !important;
-    color: var(--text-main) !important;
-}
-
 .game-detail-info,
 .game-description-box,
 .profile-info-panel,
@@ -278,13 +94,6 @@ body,
 .empty-msg,
 .catalog-title {
     text-align: center;
-}
-
-/*makes game text yellow*/
-.game-card-title,
-.game-detail-title,
-.game-description-label {
-    color: #e9d569 !important;
 }
 
 h1,
@@ -307,11 +116,6 @@ input,
 .user-card-name,
 .profile-last-seen {
     color: var(--text-main) !important;
-}
-
-/* Color for Selection */
-body::selection {
-    background-color: #B22222;
 }
 
 /* Different Cursor State */
@@ -341,135 +145,4 @@ textarea,
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-underline-offset: 0.4em;/
-}
-
-/* hover change color */
-:where(a, button, h1, h2, h3, h4, h5, h6, p, b, i, strong, h6, span):hover {
-    color: #a0a6ac;
-    transform: translateY(-2px);
-}
-
-
-.tabn-btn:hover {
-    border-bottom: 2px !important;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.fa-youtube:hover {
-    background: rgba(239, 68, 68, 0.85) !important;
-}
-
-/*nav buttons*/
-.body-type-btn:hover {
-    background: #c864a7 !important;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.body-type-btn.active:hover,
-.btn-download:hover,
-#rotate-toggle:hover,
-.btn-play:hover,
-#save-btn:hover,
-.site-footer-icon-btn:hover,
-.btn-join:hover,
-.vpro-nav-btn:hover {
-    background: #2e4bcc !important;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.color-swatch:hover {
-    transform: translateY(-3px);
-}
-
-.btn-secondary:hover,
-.btn-primary:hover,
-.color-swatch:hover {
-    background: #2e4bcc !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.btn-secondary:hover,
-.btn-primary:hover {
-    transform: translateY(-1px);
-}
-
-/* Make the profile avatar grow when hovered */
-.profile-avatar:hover,
-.server-avatar-cell:hover,
-.user-card-avatar:hover,
-.avatar-render-box:hover {
-    transform: scale(1.15);
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.bio-label button:hover,
-.bio-editor-footer button:hover {
-    border-radius: 8px !important;
-    padding: 8px 15px !important;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    margin-left: 8px;
-    background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
-    border: 0px none !important;
-    border-color: none !important;
-    color: var(--text-main) !important;
-}
-
-.home-greeting {
-    color: linear-gradient(45deg, #2e4bcc, #db3434) !important;
-}
-
-
-/*profile stats*/
-.profile-stat:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.tag:hover {
-    background-color: #1b5e20 !important;
-    transform: scale(1.05);
-    transition: 0.7ms !important;
-    border-radius: 8px !important;
-    transition: all 0.3s ease;
-    color: var(--text-main) !important;
-}
-
-.friend-card:hover {
-    transform: translateY(-5px);
-    background: #0000001a !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-arrow:hover {
-    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-    background: #444444 !important;
-    transform: scaleY(-3px) !important;
-    border-radius: 14px !important;
-}
-
-.market-card:hover,
-.face-card:hover,
-.game-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-/*footer*/
-.site-footer-links a:hover:hover {
-    background: rgba(239, 68, 68, 0.85) !important;
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0px 20px 35px rgba(239, 68, 68, 0.35);
 }

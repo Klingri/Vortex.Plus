@@ -1,1 +1,13 @@
 /* New in VortexPro 3.0, August 5, 2026*/
+:root {
+    --default-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    font-family: var(--default-font)
+}
+
+/* Color for Selection */
+body::selection {
+    background-color: #B22222;
+}

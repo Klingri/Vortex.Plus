@@ -1,0 +1,14 @@
+/* New in VortexPro 3.0, August 5, 2026*/
+
+.ban-label,
+.ban-value {
+    color: var(--text-main) !important;
+}
+
+.ban-card {
+    border: 1px solid #ff4646 !important;
+}
+
+.ban-link {
+    color: #920000 !important;
+}

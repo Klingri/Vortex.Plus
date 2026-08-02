@@ -33,13 +33,26 @@
         "content/features/themes.css",
         "content/pages/home.css",
         "content/pages/profile.css",
+        "content/pages/catalog.css",
+        "content/pages/banpage.css",
+        "content/pages/game.css",
+        "content/pages/settings.css",
         "content/main.css"
       ],
       "js": [
+        "content/base/reset.js",
+        "content/base/typography.js",
+        "content/components/buttons.js",
+        "content/components/cards.js",
         "content/components/header.js",
         "content/features/themes.js",
         "content/pages/home.js",
-        "content/pages/settings.js"
+        "content/pages/banpage.js",
+        "content/pages/catalog.js",
+        "content/pages/game.js",
+        "content/pages/profile.js",
+        "content/pages/settings.js",
+        "content/main.js"
       ],
       "run_at": "document_idle",
       "world": "MAIN",

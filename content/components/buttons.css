@@ -1,1 +1,180 @@
 /* New in VortexPro 3.0, August 5, 2026*/
+/* --- Buttons --- */
+
+.profile-actions button,
+.tag,
+.user-card-actions button,
+.site-footer-links a,
+.site-footer-links a:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--nav-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: var(--text-main) !important;
+}
+
+.profile-actions button:hover,
+.tag:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--nav-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: var(--text-main) !important;
+}
+
+.profile-actions button:hover,
+.tag:hover {
+    cursor: pointer;
+    display: inline-block;
+    will-change: transform;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #bda627 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(204, 180, 46, 0.3);
+}
+
+.bio-label button,
+.bio-editor-footer button {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background-color: var(--input-bg) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: var(--text-main) !important;
+}
+
+#username,
+#password {
+    border: 0px !important;
+    color: var(--text-main);
+}
+
+.btn-secondary {
+    background-color: var(--card-bg) !important;
+    color: #777777 !important;
+    border: 0px none !important;
+    border-color: none !important;
+}
+
+/* hover change color */
+:where(a, button, h1, h2, h3, h4, h5, h6, p, b, i, strong, h6, span):hover {
+    color: #a0a6ac;
+    transform: translateY(-2px);
+}
+
+
+.tabn-btn:hover {
+    border-bottom: 2px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fa-youtube:hover {
+    background: rgba(239, 68, 68, 0.85) !important;
+}
+
+/*nav buttons*/
+.body-type-btn:hover {
+    background: #c864a7 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.body-type-btn.active:hover,
+.btn-download:hover,
+#rotate-toggle:hover,
+.btn-play:hover,
+#save-btn:hover,
+.site-footer-icon-btn:hover,
+.btn-join:hover,
+.vpro-nav-btn:hover {
+    background: #2e4bcc !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.color-swatch:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary:hover,
+.btn-primary:hover,
+.color-swatch:hover {
+    background: #2e4bcc !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+    transform: translateY(-1px);
+}
+
+.tag:hover {
+    background-color: #1b5e20 !important;
+    transform: scale(1.05);
+    transition: 0.7ms !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    color: var(--text-main) !important;
+}
+
+/*footer*/
+.site-footer-links a:hover:hover {
+    background: rgba(239, 68, 68, 0.85) !important;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0px 20px 35px rgba(239, 68, 68, 0.35);
+}
+
+/*profile stats*/
+.profile-stat:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-arrow:hover {
+    box-shadow: hsl(0, 0%, 0%) 2px 4px 6px !important;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    background: #444444 !important;
+    transform: scaleY(-3px) !important;
+    border-radius: 14px !important;
+}
+
+.bio-label button:hover,
+.bio-editor-footer button:hover {
+    border-radius: 8px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 8px;
+    background: linear-gradient(45deg, #2e4bcc, #db3434) !important;
+    border: 0px none !important;
+    border-color: none !important;
+    color: var(--text-main) !important;
+}
+
+.page-title button {
+    margin-left: 20px;
+}
