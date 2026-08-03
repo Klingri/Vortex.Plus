@@ -1,8 +1,5 @@
-## Issues & Stability
+## Known Issues & Stability (so far)
 
-*VortexPro* is in early alpha with dark mode and themes enabled, meaning it is unstable and has bugs. Because it is distributed outside the Chrome Web Store to bypass strict rules, users must update it manually before the stable release.
-
-<## Known Issues & Stability (so far)
 <div align="center">
 <p>View the list of Issues (so far) <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
 </div>

@@ -44,22 +44,6 @@ Compatibility | **Can I use an older version of VortexPro? will you ever fix Vor
 Mission | **Whats the end goal for VortexPro? and can I donate money to VortexPro?** | *VortexPro's* goal is to give Vortex user's more control, customization, and make the vortex platform a nicer place, and **No you can't donate money to VortexPro.** Support me instead by giving me feedback on your experience with using VortexPro.
 Other | **My question isn't listed here?** |  feel free to ask me any questions.
 
-## Forks & Mini-Projects
-WIP
-- I occasionally create mini-projects, which some people have reportedly copied or adapted.
-
-- Mini-Projects Created by [@Klingri](https://github.com/Klingri)
-  - [XF-Tornado](https://github.com/Klingri/XF_Tornado)
-  - [VortexWiki](https://github.com/Klingri/VortexWiki)
-- Alleged and partial forks are all incompatible
-- The following features and extensions allegedly began as partial forks by VortexPro or Vortex2plus2:
-  - [Vortex2plus2](https://github.com/inuk84/Vortex2plus2) (or Vortex2+2)
-      - [Vortex2plus2Addon](https://github.com/exelerantt/Vortex2plus2Addon) (or Vortex2+2Addon)
-      - [Vortex-Web](https://github.com/craighulme/Vortex-Web) (or Vortex Web)
-      - [Rblx-Vrtx-Converter](https://github.com/FileNotFoundXD/Rblx-Vrtx-Converter) (or Vortex Converter)
-  - [VortexAIS](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS)
-  - [VortexAIS Bot](https://github.com/codep1ltio/Vortex.AIS) (or Vortex.AIS.BOT)
-
 # Accessibility Statement
 
 Welcome! We are committed to ensuring our project is accessible, inclusive, and usable by everyone, regardless of technology or ability. We strive to follow the [Web Content Accessibility Guidelines (WCAG) 2.2](https://w3.org) standards.

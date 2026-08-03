@@ -52,7 +52,7 @@ settingsButton.addEventListener('click', function () {
     <div class="settings-wrapper">
         <div class="setting-box">
                 <p class="setting-txt">Test Setting</p>
-                <button id="setting-btn">On</button>
+                <!--<button id="setting-btn">On</button>!-->
         </div>
     
     </div>
@@ -173,35 +173,44 @@ debugButton.addEventListener('click', function () {
 
 });
 
-const gobackBtn = document.querySelector('.vpro-set-btn');
+/*const gobackBtn = document.querySelector('.vpro-set-btn');
 gobackBtn.addEventListener('click', function () {
     window.location.href = "https://playvortex.io/settings";
-});
+});*/
 
 const greetingTxt = document.querySelector('#home-greeting');
 const dismissGreeting = document.createElement('button');
 dismissGreeting.innerText = 'Dismiss greeting';
 dismissGreeting.className = 'vpro-nav-btn';
-greetingTxt.append(dismissGreeting);
+dismissGreeting.append(greetingTxt);
 
 /*dismissGreeting.addEventListener('click', function () {
   greetingTxt.remove();
 });*/
 
 // 2. Select the button NOW that it exists in the DOM
-const myButton = document.querySelector('vpro-set-btn');
+/*const myButton = document.querySelector('.vpro-set-btn');
 
 // 3. Attach your event listener
 myButton.addEventListener('click', () => {
-    window.location.href = "https://playvortex.io/settings";
-});
+    window.location.href = 'https://playvortex.io/settings';
+});*/
 
-const settingbtn = document.getElementById('#setting-btn');
+const settingbtn = document.querySelector('setting-box');
+const settingthebutton = document.createElement('button');
+settingthebutton.className = 'setting-btn';
+settingthebutton.append(settingbtn);
 
-settingbtn.addEventListener('click', () => {
-  if (settingbtn.textContent === 'On') {
-    settingbtn.textContent = 'Off';
-  } else {
-    settingbtn.textContent = 'On';
-  }
+let isOn = false; // Track real state
+
+/*// Sets plain text
+settingbtn.textContent = "Click to Submit"; 
+
+// Sets HTML content
+settingbtn.innerHTML = "<strong>Loading...</strong>"; */
+
+settingthebutton.addEventListener('click', () => {
+  isOn = !isOn; // Flip state
+  settingthebutton.textContent = isOn ? 'On' : 'Off';
+  alert("Button was clicked!");
 });
