@@ -13,9 +13,9 @@ function createNavButton(text, url) {
 }
 
 // Now creating a button takes just one clean line:
-createNavButton('Vpro Settings', 'https://playvortex.io/settings');
-createNavButton('Vpro GitHub', 'https://github.com/Klingri/VortexPro');
-createNavButton('Vpro Update', 'https://github.com/Klingri/VortexPro/releases');
+createNavButton('BTVortex Settings', 'https://playvortex.io/settings');
+createNavButton('BTVortex GitHub', 'https://github.com/Klingri/BetterVortex');
+createNavButton('BTVortex Update', 'https://github.com/Klingri/BetterVortex/releases');
 createNavButton('Friends', 'https://playvortex.io/social?user=&tab=friends');
 createNavButton('Halos Profile', 'https://playvortex.io/users/1/profile');
 createNavButton('Play Vortexia', 'https://playvortex.io/games/8/play');
@@ -28,7 +28,7 @@ alerts.addEventListener('click', function () {
 const navLogo = document.querySelector('.navbar');
 const navText = document.createElement('h6');
 
-navText.innerText = 'VortexPro v2.9';
+navText.innerText = 'BetterVortex v3.0';
 navText.className = 'nav-text';
 navText.style.color = '#FFF';
 navLogo.appendChild(navText);
@@ -36,7 +36,7 @@ navLogo.appendChild(navText);
 const pageTitle = document.querySelector('.page-title');
 const settingsButton = document.createElement('button');
 
-settingsButton.innerText = 'VortexPro Settings';
+settingsButton.innerText = 'BetterVortex Settings';
 settingsButton.className = 'vpro-nav-btn';
 pageTitle.appendChild(settingsButton);
 
@@ -69,7 +69,7 @@ settingsButton.addEventListener('click', function () {
             <div class="cl-hd" id="h-usr">▼ My Themes</div><div class="cl-cntnt" id="c-usr" style="display: flex;"></div>
         </div>
     </div>
-    <h2 class="settings-text">VortexPro Settings // Work in Progress</h2>`;
+    <h2 class="settings-text">BetterVortex Settings // Work in Progress</h2>`;
 
     document.body.appendChild(settingsPage)
 
@@ -78,7 +78,7 @@ settingsButton.addEventListener('click', function () {
 const clanTitle = document.querySelector('.page-title');
 const clanButton = document.createElement('button');
 
-clanButton.innerText = 'VortexPro Clans';
+clanButton.innerText = 'BetterVortex Clans';
 clanButton.className = 'vpro-nav-btn';
 clanTitle.appendChild(clanButton);
 
@@ -143,7 +143,7 @@ clanButton.addEventListener('click', function () {
     
     
     </div>
-    <h2 class="settings-text">VortexPro Clans // Work in Progress</h2>`;
+    <h2 class="settings-text">BetterVortex Clans // Work in Progress</h2>`;
 
     document.body.appendChild(clanPage)
 
@@ -152,7 +152,7 @@ clanButton.addEventListener('click', function () {
 const debugTitle = document.querySelector('.page-title');
 const debugButton = document.createElement('button');
 
-debugButton.innerText = 'VortexPro Debug';
+debugButton.innerText = 'BetterVortex Debug';
 debugButton.className = 'vpro-nav-btn';
 debugTitle.appendChild(debugButton);
 
@@ -167,7 +167,7 @@ debugButton.addEventListener('click', function () {
     debugPage.innerHTML = `
     <nav class="settings-navbar"></nav>
     <div class="settings-wrapper"></div>
-    <h2 class="settings-text">VortexPro Debug // Work in Progress</h2>`;
+    <h2 class="settings-text">BetterVortex Debug // Work in Progress</h2>`;
 
     document.body.appendChild(debugPage)
 

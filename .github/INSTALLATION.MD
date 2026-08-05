@@ -1,7 +1,7 @@
 ## Installation
 #### Recommended Method:
 ### Step-by-Step:
-1. **Download:** Go to the [Releases](https://github.com/Klingri/VortexPro/releases) page and download the latest `Source code (zip)`.
+1. **Download:** Go to the [Releases](https://github.com/Klingri/BetterVortex/releases) page and download the latest `Source code (zip)`.
 2. **Extract:** Unzip the folder to a permanent location on your PC.
 3. **Open Extensions Page:**
    - Chrome: `chrome://extensions/`
@@ -20,7 +20,7 @@
 
 <div align="center">
 
-![GitHub Release](https://img.shields.io/github/v/release/Klingri/VortexPro)</div>
+![GitHub Release](https://img.shields.io/github/v/release/Klingri/BetterVortex)</div>
 
 ## Forking
 <ul>
@@ -85,4 +85,4 @@ Best for development, debugging, or unsupported platforms.
 * **Issue:** Another common pitfall.
   **Fix:** Solution.
 
-*Need more help? Check out VortexPro's full [.readme](https://github.com/Klingri/VortexPro) or open an issue in the [Issue Tracker](https://github.com/Klingri/VortexPro/issues/new).*
+*Need more help? Check out BetterVortex's full [.readme](https://github.com/Klingri/BetterVortex) or open an issue in the [Issue Tracker](https://github.com/Klingri/BetterVortex/issues/new).*

@@ -1,20 +1,20 @@
 ## Known Issues & Stability (so far)
 
 <div align="center">
-<p>View the list of Issues (so far) <a href="https://github.com/Klingri/VortexPro/blob/stable/.github/ISSUES.md">here.</a></p>
+<p>View the list of Issues (so far) <a href="https://github.com/Klingri/BetterVortex/blob/stable/.github/ISSUES.md">here.</a></p>
 </div>
 
 <ul>
     <li><strong>Performance:</strong> Experimental updates may cause performance instability and looses on less capable hardware.</li>
     <li><strong>UI Issues & UI Glitches:</strong> Some elements may display incorrectly.</li>
-    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded VortexPro.</li>
-    <li><strong>Compatibility:</strong> VortexPro might not work with Firefox, other vortex extensions or older versions of VortexPro.</li>
-    <li><strong>Themes:</strong> VortexPro looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
+    <li><strong>No native Auto-Updater:</strong> Manual updating, the same way you first downloaded BetterVortex.</li>
+    <li><strong>Compatibility:</strong> BetterVortex might not work with Firefox, other vortex extensions or older versions of BetterVortex.</li>
+    <li><strong>Themes:</strong> BetterVortex looks best in dark mode because it was built for it, and I cannot guarantee the look of light mode or other themes.</li>
   </ul>
 
-<p><i>Submit bugs via <a href="https://github.com/Klingri/VortexPro/issues">GitHub Issues</a></i></p>
+<p><i>Submit bugs via <a href="https://github.com/Klingri/BetterVortex/issues">GitHub Issues</a></i></p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/VortexPro)
+![GitHub repo size](https://img.shields.io/github/repo-size/Klingri/BetterVortex)
 
 - The Extension may suffer from a wide variety of Issues (WIP)
 
@@ -62,7 +62,7 @@ Here's a list of all compatible browsers, extensions, forks and operating system
 
 ## Suggestion & Feedback Box
 
-If you have an idea for a new feature, a design improvement, a feature request, or you found a bug in *VortexPro,* Please use the steps below to submit feedback.
+If you have an idea for a new feature, a design improvement, a feature request, or you found a bug in *BetterVortex,* Please use the steps below to submit feedback.
 
 ## 1. Suggestion Details
 * **Title/Summary:** [Give your suggestion a short, descriptive title]
@@ -72,7 +72,7 @@ If you have an idea for a new feature, a design improvement, a feature request, 
 ## 2. Description
 * **What is the current behavior or problem?**
 * **What is your suggested solution?**
-* **Why should this be implemented?** (e.g., how does it benefit users or VortexPro?)
+* **Why should this be implemented?** (e.g., how does it benefit users or BetterVortex?)
 
 ## 3. Context & Examples
 * **Screenshots, mockups, or code snippets:** [Attach or link any helpful images/files]

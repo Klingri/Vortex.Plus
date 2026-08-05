@@ -1,1 +1,1 @@
-/* New in VortexPro 3.0, August 5, 2026*/
+/* New in BetterVortex 3.0, August 5, 2026*/

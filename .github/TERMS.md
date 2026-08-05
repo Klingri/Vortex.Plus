@@ -1,5 +1,5 @@
 Terms of Service
-Last updated July 10th, 2026
+Last updated August 5th, 2026
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -14,7 +14,7 @@ Affiliate means an entity that controls, is controlled by or is under common con
 
 Country refers to: Arizona, United States
 
-Company (referred to as either "the Company", "We", "Us"; or "Our" in this Agreement) refers to VortexPro.
+Company (referred to as either "the Company", "We", "Us"; or "Our" in this Agreement) refers to BetterVortex.
 
 Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 
@@ -24,7 +24,7 @@ Terms and Conditions (also referred as "Terms") mean these Terms and Conditions 
 
 Third-party Social Media Service means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 
-Website refers to VortexPro, accessible from https://github.com/Klingri/VortexProWebsite
+Website refers to BetterVortex, accessible from https://github.com/Klingri/BetterVortexWebsite
 
 You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 

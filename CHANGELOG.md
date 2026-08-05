@@ -2,7 +2,7 @@
 
 | Date | Version | Release | Additions/Changes |
 |------|-----------|--------|-------------------|
-| 05.08.26 | v3.0  | Pre-Alpha | Upcoming release. |
+| 05.08.26 | v3.0  | Pre-Alpha | Renamed to BetterVortex. |
 |15.08.26 | v3.1  | Pre-Alpha | Upcoming release. |
 | 01.09.26 | v3.2  | Pre-Alpha | Upcoming release. |
 | 01.10.26 | v3.3  | Pre-Alpha | Upcoming release. |
@@ -90,9 +90,13 @@ This update was super small but mainly was about making styles to the .empty-msg
 # Version 3.0
 #### 05.08.2026
 #### 3.0 *The JavaScript Update Part 6*
-Description
+This update added nothing new, just made a new file structure and renamed the extension to BetterVortex.
 
 **Changelogs:**
+
+- Renamed VortexPro to BetterVortex
+- New File Structure
+- New Logo
 
 # Version 3.1
 #### ??.??.2026
