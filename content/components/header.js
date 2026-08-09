@@ -17,6 +17,7 @@ createNavButton('BTVortex Settings', 'https://playvortex.io/settings');
 createNavButton('BTVortex GitHub', 'https://github.com/Klingri/BetterVortex');
 createNavButton('BTVortex Update', 'https://github.com/Klingri/BetterVortex/releases');
 createNavButton('Friends', 'https://playvortex.io/social?user=&tab=friends');
+createNavButton('Notifications', 'https://playvortex.io');
 createNavButton('Halos Profile', 'https://playvortex.io/users/1/profile');
 createNavButton('Play Vortexia', 'https://playvortex.io/games/8/play');
 
